@@ -14,7 +14,7 @@ This was not used to solve the challenge.
 
 # Probing the zip
 
-The zip is encrypted, but we can see that we have the `images.jpg` both encrypted and unencrypted. They have the same name and size (7944).
+The zip is encrypted, but the `images.jpg` can be found both encrypted and unencrypted. They have the same name and size (7944).
 
 ![](screenshots/1.png)
 
