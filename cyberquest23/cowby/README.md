@@ -2,10 +2,9 @@
 
 TODO: challenge info comes here
 
-# Hints
-
 <details>
-  <summary>Spoiler warning</summary> 
+  <summary>Hints</summary> 
+  
 TODO: optional hints comes here
 
 </details>
@@ -13,4 +12,4 @@ TODO: optional hints comes here
 
 # Writeup
 
-[Writeup](writeup.md)
+[Writeup](WRITEUP.md)
