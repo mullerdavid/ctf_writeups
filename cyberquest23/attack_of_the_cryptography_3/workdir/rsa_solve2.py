@@ -5,7 +5,7 @@ e = 3
 
 def main():
     c = bytes_to_long(ct)
-    m = iroot(c, 3)
+    m = iroot(c, e)
     pt=long_to_bytes(m[0])
     print("PTout:", pt)
 

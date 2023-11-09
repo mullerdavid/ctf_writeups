@@ -45,7 +45,7 @@ ct = long_to_bytes(0x04a79e9c67598005715b233e00e7d9bc3e2d4ebe10864667726214e43eb
 e = 3
 
 c = bytes_to_long(ct)
-m = iroot(c, 3)
+m = iroot(c, e)
 pt=long_to_bytes(m[0])
 print("PTout:", pt)
 ```
