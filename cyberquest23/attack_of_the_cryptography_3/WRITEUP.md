@@ -36,7 +36,7 @@ TODO: math here?
 
 # Small exponent
 
-If [e is sufficiently small](https://ir0nstone.gitbook.io/crypto/rsa/public-exponent-attacks/small-e), the exponent is ineffective at encrypting the message. Cube root will give us the solution.
+If [e is sufficiently small](https://ir0nstone.gitbook.io/crypto/rsa/public-exponent-attacks/small-e), the exponent is ineffective at encrypting the message. [Cube root](workdir/rsa_solve2.py) will give us the solution.
 
 ```python
 from gmpy2 import iroot # pip install gmpy2
