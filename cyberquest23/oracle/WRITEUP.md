@@ -88,7 +88,7 @@ FUN_0040146b is presumably the main function, it is allocating 2 buffers (size 0
 
 The reader function is ignoring the destination buffer size and overflow can occur. This can overwrite the random part. 
 
-Pwntools can be used to generate some cyclic strings to easily spot memory patterns.
+Pwntools can be used to check various protections or generate some cyclic strings to easily spot memory patterns.
 
 ![](screenshots/2.png)
 
@@ -106,7 +106,7 @@ During a run with overflow, the random is overwritten with the given input.
 
 ![](screenshots/4.png)
 
-## Exploit
+# Exploit
 
 The allocated heap structure is deterministic, always allocating the same size in the same order.
 
@@ -116,7 +116,7 @@ The first question can overwrite the random with known value and the second ques
 ![](screenshots/6.png)
 
 
-The second read to the input buffer with gets is after the check, and can restore the corrupted heap structure. Writing back the fixed structure fixing the problem.
+There is a second read to the input buffer after the check with gets, and can restore the corrupted heap structure. Writing back the fixed structure fixing the problem.
 
 ```bash
 python -c 'print("A"*32+"X"*31+"\n"+"X"*31+"\n"+"A"*24+"\x31\x00\x00\x00\x00\x00\x00\x00")' | ./oracle
@@ -127,6 +127,6 @@ python -c 'print("A"*32+"X"*31+"\n"+"X"*31+"\n"+"A"*24+"\x31\x00\x00\x00\x00\x00
 
 TODO: replace screenshot from live environment
 
-## Flag
+# Flag
 
 TODO: add flag from live env

