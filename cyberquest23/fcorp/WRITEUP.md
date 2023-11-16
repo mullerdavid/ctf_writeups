@@ -2,6 +2,8 @@
 
 The file is a windows executable that can be statically or dynamically analysed.
 
+Some files are zipped with a password to prevent antivirus programs instantly deleting them. Zip password is `infected`.
+
 # Loading in a virtual machine
 
 The binary was executed inside Windows Sandbox, but any other VM should suffice.
