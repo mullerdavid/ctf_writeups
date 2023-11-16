@@ -1,5 +1,7 @@
 # Challenge
 
+TODO: challenge info comes here
+
 There were 2 physical machines running something available with a can output. Also some can to usb interface was provided, with recommended settings.
 
 There are 2 flags hidden somewhere.
