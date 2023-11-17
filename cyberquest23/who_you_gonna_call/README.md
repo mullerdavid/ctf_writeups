@@ -2,13 +2,9 @@
 
 TODO: challenge info comes here
 
-<details>
-  <summary>Hints</summary> 
-  
-TODO: optional hints comes here
+A single file was given.
 
-</details>
-
+[scary](files/scary)
 
 # Writeup
 
