@@ -16,6 +16,15 @@ Go, check out our new monster-themed costume shop for all kinds of Halloween cre
 
 [costumery](files/costumery)
 
+<details>
+  <summary>Hints -90</summary> 
+
+Ready, set, jump! And you won. #savetheenvironment #savetheworld
+
+</details>
+
+
+
 # Writeup
 
 [Writeup](WRITEUP.md)

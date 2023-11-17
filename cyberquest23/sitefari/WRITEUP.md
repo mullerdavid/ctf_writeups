@@ -7,13 +7,13 @@ The site is always redirecting to `localhost:45619` with 301 Moved Permanently.
 Changing the hostname to the above solves the issue.
 
 ```bash
-curl -v -H 'Host: localhost:45619' sitefari:8080
+curl -v -H 'Host: localhost:45619' http://10.10.3.11:45619
 ```
 
 Alternatively a reverse proxy on localhost also solves the issue.
 
 ```bash
-socat TCP-LISTEN:45619,reuseaddr,fork TCP:sitefari:8080
+socat TCP-LISTEN:45619,reuseaddr,fork TCP:10.10.3.11:45619
 ```
 
 # Checking the site (again)

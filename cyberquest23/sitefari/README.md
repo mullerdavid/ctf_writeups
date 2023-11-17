@@ -10,7 +10,7 @@ We have intercepted supernatural powers that are trying everything in their powe
 
 *By MJ - Contact me on Discord with the same nick if you think you found an issue or open a ticket in #help-tickets.*
 
-X.X.X.X:8080
+10.10.3.11:45619
 
 # Writeup
 

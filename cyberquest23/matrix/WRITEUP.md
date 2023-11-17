@@ -49,31 +49,34 @@ The instagram has 3 photos.
 
 ![](screenshots/4.png)
 
-Hovering over the pills reveal 2 other profiles: <https://www.instagram.com/___redpill__/> and <https://www.instagram.com/___bluepill___/>
-
-Visiting them has 2 steam profiles.
-
-![](screenshots/5.png)
-
-This profile has Steam and username `Incarrnati0n`.
-
-There was an other Steam profile on the blue pill. 
-
-[Legendary Koma](https://steamcommunity.com/profiles/76561198070007507)
-
-# Steam
-
-Amongst the friends of [Legendary Koma](https://steamcommunity.com/profiles/76561198070007507/friends/), [Incarrnati0n](https://steamcommunity.com/id/IMIHORVATH) can be found.
+Opening the inages and clicking over the pills reveal 2 other profiles, they are tagged on the image.
 
 ![](screenshots/6.png)
 
-The flag was there in the comments.
+
+<https://www.instagram.com/___redpill__/>
+
+<https://www.instagram.com/___bluepill___/>
+
+Visiting them has 2 steam names mentioned.
+
+![](screenshots/5.png)
+
+The Steam usernames are:
+ - `Incarrnati0n`
+   - <https://steamcommunity.com/search/users/#text=Incarrnati0n>
+   - [Incarrnati0n](https://steamcommunity.com/id/IMIHORVATH)
+ - `Legendary Koma`
+   - <https://steamcommunity.com/search/users/#text=Legendary+Koma>
+   - [Incarrnati0n](https://steamcommunity.com/profiles/76561198070007507)
+
+# Steam
+
+They are friends of each others. `Incarrnati0n` has only a few comments and reviews. Checking the reviews reveals the flag.
 
 https://steamcommunity.com/id/IMIHORVATH/recommended/
 
 ![](screenshots/7.png)
-
-It has only a few comments and revies. Checking the reviews reveals the flag.
 
 ![](screenshots/8.png)
 
