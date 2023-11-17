@@ -11,7 +11,7 @@ ohohoo, It's that time of the year again! All the frightening creatures are read
 
 *By MJ - Contact me on Discord with the same nick if you think you found an issue or open a ticket in #help-tickets.*
 
-TODO: IP address
+10.10.2.10:8080
 
 # Writeup
 

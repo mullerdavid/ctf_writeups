@@ -88,6 +88,8 @@ wpscan --url http://localhost:45619 --enumerate 'u' --passwords wordlist.txt
 
 ![](screenshots/4.png)
 
+Or is it?
+
 # Manual login attempts
 
 Trying the username manually reveals the flag though without logging in. It is in the [locked user's message](https://wordpress.org/plugins/lock-user-account/). 
