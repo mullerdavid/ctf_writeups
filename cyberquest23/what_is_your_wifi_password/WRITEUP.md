@@ -14,6 +14,8 @@ convert image.png -channel RGB -negate inverted.png
 zbarimg inverted.png
 ```
 
+![](workdir/inverted.png)
+
 ```
 WIFI:S:bbehind_the_scenes;T:WPA;P:NearToTheSolutionButPWNotEnoughToGetItTryMoreHarder;CQ23{nothing-extra-here-but-now-still-there};
 ```
