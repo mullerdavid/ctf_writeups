@@ -32,7 +32,7 @@ The ciphertext has only printable characters, which might indicate it is not XOR
 
 The `xortool` can be used to check and fiddle with XOR based encryption.
 
-Starting without parameter can guess the key lenth for cyclical keys.
+Starting without parameter can guess the key length for cyclical keys.
 
 ![](screenshots/1.png)
 
@@ -51,7 +51,7 @@ This results no hits. As a last resort, a 1 length key can be attempted.
 xortool -l 1 -b -p "QC23" ../files/haystack.txt > /dev/null && grep -r QC23 xortool_out
 ```
 
-Which finnaly finds the flag. The key is unexpectedly short and the message is filled with junk.
+Which finally finds the flag. The key is unexpectedly short and the message is filled with junk.
 
 ![](screenshots/2.png)
 
