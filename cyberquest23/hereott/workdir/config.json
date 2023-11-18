@@ -1,0 +1,43 @@
+{
+    "status": "OK",
+    "Token": {
+        "key": "72411d0e-6909-47c5-b3f9-8ad5176602cb",
+        "exp": "1700943115"
+    },
+    "Version": {
+        "id": "42",
+        "appName": "HereOtt",
+        "version": "1.0.0"
+    },
+    "clientRegion": "Meseorszag",
+    "currency": "FABATKA",
+    "logCollectionUrl": "https://hereott.honeylab.hu:48490/v1/log",
+    "DeviceProfiles": [
+        {
+            "name": "Web_OTT_1080p"
+        },
+        {
+            "name": "Web_OTT_720p"
+        }
+    ],
+    "apiBase": "https://hereott.honeylab.hu:48490",
+    "apiVersion": "v1",
+    "locale": "hu-HU",
+    "appsListUrl": "https://hereott.honeylab.hu:48490/files/apps_list_Meseorszag_v1.json",
+    "ParentalGuidanceRatings": [
+        {
+            "name": "0",
+            "value": "Visibly safe for children"
+        },
+        {
+            "name": "12",
+            "value": "Not recommended for children under 12"
+        }
+    ],
+    "epgBackwardsDays": 7,
+    "epgForwardsDays": 7,
+    "epgFetchChunkSize": 100,
+    "watermarkedMedia": false,
+    "loginWithCode": true,
+    "pvrEnabled": true
+}

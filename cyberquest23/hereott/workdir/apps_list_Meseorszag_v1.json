@@ -1,0 +1,36 @@
+[
+    {
+        "appid": "mediaplayer",
+        "name": {
+            "en-GB": "Media Player",
+            "hu-HU": "Medialejatszo"
+        },
+        "logo": {
+            "216x216": "https://localhost:56789/apps/MediaPlayer/images/mediaplayer.png"
+        },
+        "url": "https://localhost:56789/apps/MediaPlayer/index.html",
+        "description": "With the Media Player you can play your own content from a USB stick or from a DLNA server.",
+        "audio": true,
+        "background": false,
+        "profile": "MediaPlayer",
+        "privacyNotice": true,
+        "consentNotice": true
+    },
+    {
+        "appid": "selfcare",
+        "name": {
+            "en-GB": "Selfcare",
+            "hu-HU": "Selfcare"
+        },
+        "logo": {
+            "216x216": "https://10.10.3.11:48490/images/selfcare.png"
+        },
+        "url": "https://10.10.3.11:48490/selfcare/selfcare-frontend/",
+        "description": "With the Selfcare app you can manage your account. Pair and unpair your devices directly from your TV!",
+        "audio": false,
+        "background": false,
+        "profile": "SelfCare",
+        "privacyNotice": true,
+        "consentNotice": true
+    }
+]
