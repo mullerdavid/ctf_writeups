@@ -330,9 +330,135 @@ It is `{"error": "Invalid PIN code"}` now. Using the decrypted QR code value `35
 
 ![](screenshots/18.png)
 
+And the new device is successfully added on the selfcare website as well.
+
+![](screenshots/19.png)
 
 # Bonus webassembly
 
+The `workdir/wasm` folder can be used as a sandbox for live debug for this web assembly file. Starting a webserver to serve the files is necessery.
+
+```bash
+python -m http.server
+```
+
+The [index.html](workdir/wasm/index.html) is a thin wrapper around the webasm using stubs similar to the original javascript with some parts beautified or renamed.
+
+The [5c56ebcf9201bf3d.wat](workdir/wasm/5c56ebcf9201bf3d.wat) is a heavily modified version to the one the version the site is running. The wasm was simply converted to wat and manually modified. After modification, it can be converted back to wasm with the following.
+
+```bash
+wat2wasm 5c56ebcf9201bf3d.wat
+```
+
+The modifications include the following:
+ - Adding on the JS side and importing `console log`, `console logparam` and `console logstr` functions on the wasm side so it can be used to print things on the console. 
+ - The random on the JS side can be fixed to generate same numbers
+ - Adding various extra console logging to the webasm file for function calls and various parameters inside core functions.
+
+![](screenshots/20.png)
+
+![](screenshots/21.png)
+
+The same sandbox was used to dynamically analyze the signature and uid. This way the wasm can be stopped, edited, experimented. Also the chrome based browsers has the ability for the Memory inspector part to check the raw memory during runtime.
+
+A few random serials generated with this.
+
+```
+565-2215164
+296-6787554
+316-6781436
+182-0658612
+351-2335546
+560-1133544
+250-1888854
+275-4100673
+```
+
+The function basically does the following. The offsets in [5c56ebcf9201bf3d.wasm](workdir/wasm/5c56ebcf9201bf3d.wasm) was used.
+
+Getting a random float, multiplying it with 998 and rounding it down. It is a schema to generate random between 2 numbers, in this between 0 and 998 (the end is exclusive).
+
+```
+0x03d39 call $wbg.__wbg_random_5f61cd0d6777a993
+0x03d3b f64.const 998
+0x03d44 f64.mul
+0x03d45 f64.floor
+```
+
+After that, it is checking if that random was not 333, 444, 555, 666, 777, 888. All this in a loop,  regenerating the random if the check fails. This part is used as the part before the dash.
+
+```
+0x03d7e   local.tee $var1
+0x03d80   i32.const 665
+0x03d83   i32.le_s
+0x03d84   if
+0x03d86     local.get $var1
+0x03d88     i32.const 333
+0x03d8b     i32.eq
+0x03d8c     local.get $var1
+0x03d8e     i32.const 444
+0x03d91     i32.eq
+0x03d92     i32.or
+0x03d93     local.get $var1
+0x03d95     i32.const 555
+0x03d98     i32.eq
+0x03d99     i32.or
+0x03d9a     br_if $label1
+0x03d9c     br $label2
+0x03d9e   end
+0x03d9f   local.get $var1
+0x03da1   i32.const 666
+0x03da4   i32.eq
+0x03da5   local.get $var1
+0x03da7   i32.const 777
+0x03daa   i32.eq
+0x03dab   i32.or
+0x03dac   local.get $var1
+0x03dae   i32.const 888
+0x03db1   i32.eq
+0x03db2   i32.or
+0x03db3   br_if $label1
+0x03db5 end $label2
+```
+
+The next step is to generate 6 more numbers in a loop, between 0-9 and 1 more between 1-7.
+
+```
+0x03e20 call $wbg.__wbg_random_5f61cd0d6777a993
+0x03e22 f64.const 9
+0x03e2b f64.mul
+0x03e2c f64.floor
+...
+0x03eb8 call $wbg.__wbg_random_5f61cd0d6777a993
+0x03eba f64.const 6
+0x03ec3 f64.mul
+0x03ec4 f64.floor
+```
+
+The last step is regenerating numbers in a loop, between 0-6, until the sum of the 7 numbers divided with 7 has 0 remainder (sum mod 7 == 0).
+
+```
+0x03f74 local.get $var5
+0x03f76 i32.add
+0x03f77 local.set $var5
+...
+0x03f8e local.get $var5
+0x03f8c i32.const 7
+0x03f8e i32.rem_u
+0x03f90 i32.eqz
+0x03f92 br_if $label7
+```
+
+The [Windows 95 retail key](https://en.wikipedia.org/wiki/Product_key#Windows_95_retail_key) works like this.
+
+# Bonus flag
+Windows 95
 
 
-https://blog.tst.sh/reverse-engineering-flutter-apps-part-1/
+# Flutter
+
+Flutter is used, this can be seen in the resources as well. The code is compiled to native code, `.so` files.
+
+Some resources for reversing:
+
+ - <https://blog.tst.sh/reverse-engineering-flutter-apps-part-1/>

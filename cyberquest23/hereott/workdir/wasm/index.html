@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>WASM sandbox</title>
+	<link rel="shortcut icon"type="image/x-icon" href="data:image/x-icon;,">
+  </head>
+
+  <body>
+  WASM sandbox
+ 
+    <script>
+		const memory = new WebAssembly.Memory({ initial: 17 });
+		
+		let int32cache = null;
+		function int32array() {
+			return null !== int32cache && 0 !== int32cache.byteLength || (int32cache = new Int32Array(memory.buffer)), int32cache
+		}
+		u = int32array
+		let uint8cache = null;
+		function uint8array() {
+			return null !== uint8cache && 0 !== uint8cache.byteLength || (uint8cache = new Uint8Array(memory.buffer)), uint8cache
+		}
+		a = uint8array
+		const i = new TextDecoder("utf-8",{ignoreBOM: !0, fatal: !0 })
+		function str(off, len) {
+			return off >>>= 0,
+			i.decode(uint8array().subarray(off, off + len))
+		}
+		c = str
+		
+		function get_uid(r) {
+			let e, n;
+			try {
+				const o = r.__wbindgen_add_to_stack_pointer(-16);
+				r.get_uid(o);
+				e = int32array()[o / 4 + 0];
+				n = int32array()[o / 4 + 1];
+				return str(e, n)
+			} finally {
+				r.__wbindgen_add_to_stack_pointer(16),
+				r.__wbindgen_free(e, n, 1)
+			}
+		}
+		
+		function gen_serial(r) {
+			let e, n;
+			try {
+				const o = r.__wbindgen_add_to_stack_pointer(-16);
+				r.gen_serial(o);
+				e = int32array()[o / 4 + 0];
+				n = int32array()[o / 4 + 1];
+				return str(e, n)
+			} finally {
+				r.__wbindgen_add_to_stack_pointer(16),
+				r.__wbindgen_free(e, n, 1)
+			}
+		}
+		
+		function main(r) {
+			console.log(gen_serial(r))
+			//console.log(get_uid(r))
+		}
+		
+		//var rnd = [0.998,0.1,0.1,0.4,0.1,0.1,0.6, 0.9037373970465561]
+		//var rnd = [0.124,0.1,0.8,0.2,0.1,0.1,0.1,0.06277596619164494,0.5743272059483511,0.3214146271266536,0.14653049632810022,0.8635260662323383]
+		var rnd = []
+		var n = 0
+		
+		const importObject = {
+			console: {
+				log: function(arg) {
+					console.log(arg);
+				},
+				logparam: function(arg) {
+					var x = ""
+					var y = ""
+					if (arg > 0xffff) {
+						try {
+							var x = str(arg, 16)
+							var y = uint8array().subarray(arg, arg+16)
+						} catch {}
+					}
+					console.log("\t", arg, "(0x"+arg.toString(16)+")", x, y);
+				},
+				logstr: function(off, len) {
+					const string = str(off, len)
+					console.log(string);
+				}
+			},
+			wbg: {
+				__wbg_random_5f61cd0d6777a993: function() {
+					var ret = Math.random();
+					if (n < rnd.length) {ret = rnd[n++]}					
+					console.log("RND", ret);
+					return ret;
+				},
+				__wbindgen_throw: function(e, n) {
+					console.log(e, n);
+					throw new Error(c(e, n))
+				}
+			},
+			js: {
+				mem: memory
+			}
+		};
+
+		WebAssembly.instantiateStreaming(fetch("5c56ebcf9201bf3d.wasm"), importObject).then( obj => {main(obj.instance.exports); });
+    </script>
+  </body>
+
+</html>
