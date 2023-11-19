@@ -125,8 +125,6 @@ python -c 'print("A"*32+"X"*31+"\n"+"X"*31+"\n"+"A"*24+"\x31\x00\x00\x00\x00\x00
 
 ![](screenshots/8.png)
 
-TODO: replace screenshot from live environment
-
 # Flag
 
-TODO: add flag from live env
+cq23{sUch_@_typ1c4l_r341_w0rld_siTUaT10n_righT?}

@@ -120,11 +120,9 @@ python -c 'print("A"*32+"X"*31+"\n"+"X"*31+"\n")' | nc 10.10.8.10 55364
 
 ![](screenshots/8.png)
 
-TODO: replace screenshot from live environment
-
 # Flag
 
-TODO: add flag from live env
+cq23{l3t_mE_t3ll_UR_FUtuRe:ur_g0nna_be_4_gr3at_h4ck3r}
 
 # Pwndbg
 
