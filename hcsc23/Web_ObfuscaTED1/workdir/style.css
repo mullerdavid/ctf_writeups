@@ -1,0 +1,64 @@
+/* code and idea from https://github.com/PwnFunction/Blank-Rick-Roll */
+
+  html {
+    display: flex;
+    height:100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    animation: bodyBg 20s infinite linear;
+  }
+  
+  body::before, body::after {
+    font-weight: bold;
+    font-family: 'SF Mono', 'Courier New', Courier, monospace;
+    font-size: 42px;
+    color: #c00;
+  }
+  
+  head { 
+    display: block;
+    background-image: url(https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif);
+    height:20rem;
+    width:20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    border-style: dashed;
+  }
+  
+  body::before {
+    display: inline-block;
+    padding-top: 3rem;
+    content: "Never gonna give you up...";
+  }
+  
+  body::after {
+    margin-left: 16px;
+    display: inline-block;
+    content: "_";
+    background: #c00;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes bodyBg {
+    0% { background-color: #484353; }
+    20% { background-color: #437b43; }
+    40% { background-color: #35355f; }
+    60% { background-color: #31735f; }
+    80% { background-color: #347733; }
+    100% { background-color: #73307d; }
+  }
+
+  @keyframes blink {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
