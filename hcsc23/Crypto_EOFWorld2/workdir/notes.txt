@@ -1,0 +1,146 @@
+EOFWorld #2
+400
+
+Közlegény! A kulcs: kitartás! Mindig tartsd szorosan a csomókat a viharban; ne hagyd magad idegen vizekre sodorni... Alul felül feszes legyen a vitorla!
+A fájlokat keresd az "EOFWorld #1"-nél 
+
+HINT
+1.) Olvass el figyelmesen: https://www.da.vidbuchanan.co.uk/blog/hello-png.html 
+2.) Biztos nincs hint az eredeti képen? 
+3.) AES-128. De mi a kulcs, az IV és a mód?
+	
+-------------------------------
+
+43 2e 9e b4 07 9c b5 47 5e 69 00 a6 7c 05 ec 72
+79 17 6b f1 ff 68 94 9a aa 96 48 30 7f 95 bb f2
+b2 ec 8c b4 0e 3b 19 65 2a 9c 5f 8a 71 c1 c3 2e
+e5 b9 29 15 9c 7a b4 25 d2 fb 8c ad 68 f1 bb 0a
+da ef 90 7f 4b 6a 9e b2 fc fc 9a 2b 45 b1 62 72
+95 31 b5 d4 72 82 f7 30 70 ae da fc 76 bc 3b e3
+be 3a 22 0e ad 64 23 44 af 37 df 4b 3f 4a a6 12
+0c 97 4f b4 66 ea 12 7f 23 18 44 99 d4 37 55 e7
+d9 d3 ac 74 83 68 ee 4f ee d2 d8 4c a6 25 b2 65
+6e 46 5f 92 4f da 02 4f f7 aa 8a 2a 2f 05 81 26
+48 87 f5 a8 de 26 64 c8 a5 7c bc 68 6d b6 9c 1e
+b4 60 d4 20 66 c3 50 c6 37 92 d5 1e b6 6f 03 8a
+dd 6b d6 1b 41 26 a0 c7 0a 8f 45 f6 d2 76 9d c0
+b2 c7 57 c6 9d c5 55 13 2e ba f9 1b 50 23 e0 da
+54 74 2c 61 f2 cb 37 0b 69 df 8e ca fa b9 15 79
+b3 60 c6 3c 16 52 9e d6 73 7b ba 7d 5a 0b 30 50
+dc fc 44 a6 0a b1 ab be ab 34 cc 5f 2b 19 09 ba
+8c 8a 68 6c 9a 8e ec 7b a7 ce ca 35 d3 5a c1 ca
+6b 5c 1e 58 0d cd 6c f8 64 91 bc 01 13 90 2b 30
+d6 08 04 8a 38 17 5b ca fe 2f 82 cc 56 b0 2f d9
+9b 3d e0 61 1c 25 e8 12 3a 78 85 6f da 19 c6 0f
+7f 52 f2 5c d0 f2 64 7f 00 2c d5 50 07 b2 79 8a
+e2 c9 83 f2 fb 5d 63 68 a5 29 62 f8 58 0a 22 54
+8d 27 1e bf d6 0d 2d 72 d3 ed fc b8 f8 72 d6 61
+1d 7c ca 0a c2 5b 85 76 5d ad 98 05 08 a5 c6 d8
+
+AES-128
+16 bytes IV
+16 bytes Key
+
+Fantasy Arts
+#498
+
+Diff
+
+
+https://www.da.vidbuchanan.co.uk/blog/exploiting-acropalypse.html
+https://www.da.vidbuchanan.co.uk/blog/hello-png.html
+-------------------------------
+from PIL import Image
+import re
+
+im1 = Image.open('acropalypse_853x498.png', 'r')
+im2 = Image.open('picture-enlarge.png', 'r')
+pix1 = list(im1.getdata())
+pix2 = list(im2.getdata())
+
+for i in range(200):
+	print(pix1[9*853+i],end="")
+	print(pix2[9*853+i])
+	
+for i in range(200):	
+	a=pix1[9*853+i]
+	b=pix2[9*853+i]
+	#p=(a[0]-b[0],a[1]-b[1],a[2]-b[2])
+	p=(a[0]-b[0]+1,a[1]-b[1]+1,a[2]-b[2]+1)
+	print(re.sub('\D', '', str(p)),end="")
+	
+-------------------------------
+
+with open("flag.bin", "rb") as f:
+	while (byte := f.read(1)):
+		print(str(bin(int.from_bytes(byte, byteorder=sys.byteorder) ))[2:].replace("1", "#").replace("0", " "), end="")
+		
+
+LSB/MSB nem igazan nyert
+
+
+Vonalkod a restorolt kepen
+UDI GS1-128 ??
+
+
+
+
+-------------------------------
+struct placeholder_t {
+    char height_upper_part[1];
+    u16 height_lower [[comment("Image height")]];
+    u8 bit_depth;
+    ColorType color_type [[comment("PNG Image Type")]];
+    u8 compression_method [[comment("Only 0x0 = zlib supported by most")]];
+    u8 filter_method [[comment("Only 0x0 = adaptive supported by most")]];
+    Interlacing interlacing;
+    u32 crc;
+};
+placeholder_t placeholder @ $ [[comment("Placeholder"), name("Placehpolder")]];
+chunk_set set2 @ $ [[comment("PNG Chunks"), name("Chunks"), inline]];
+chunk_t iend_chunk2 @ $ [[comment("Image End Chunk"), name("IEND")]];
+-------------------------------
+001101110122
+001100110111
+012200111122
+2121122010111222010001110211011100000122212111101111112122221222001101212001122122111111122112100101122211211222112212221211122122110110222112100101001110100111111112212112122211100110111101221211122112010110122112101100122111010111122112101111122211211110010101100211011100100111010101101101010000000110001101101000122111121110110001212211011001121110111001100111011112121111112101211212122211211111011112211212122211211221211101221111112221100011001100110110001100121011121111110111001122110110100101212221011101000110010101110010122112121222001101221211122121121221222001100111
+
+-------------------------------
+cutting out from 0x15-0x949d9 also reveals the second image
+-------------------------------
+zsteg on the extracted acropalypse
+72:http://silverstone:pirateflavoredrum@challengeserverip:36147/interesting
+-------------------------------
+http://silverstone:pirateflavoredrum@10.10.8.10:36147/interesting
+http://silverstone:pirateflavoredrum@10.10.8.11:36147/interesting
+http://silverstone:pirateflavoredrum@10.10.8.12:36147/interesting
+
+
+-------------------------------
+curl -v http://silverstone:pirateflavoredrum@10.10.8.11:36147/interesting
+wget http://silverstone:pirateflavoredrum@10.10.8.11:36147/interesting
+-------------------------------
+yenc
+remove space from header and footer at file size
+decode, result is pdf
+-------------------------------
+(i)ssues and (v)iewers has a italic/different starting letters
+-------------------------------
+120103 -> 120072 offsets are wrong?? 31 diff
+dual %PDF header
+31 bytes at start
+-------------------------------
+If a PDF file contains binary data, as most do (see Section 3.1, “Lexical Conventions”), it is recommended that the header line be immediately followed by a comment line containing at least four binary characters—that is, characters whose codes are 128 or greater. This ensures proper behavior of file transfer applications that inspect data near the beginning of a file to determine whether to treat the file’s contents as text or as binary.
+https://opensource.adobe.com/dc-acrobat-sdk-docs/pdfstandards/PDF32000_2008.pdf
+-------------------------------
+after first pdf header, plus the binary placeholder, there are 16 bytes before the real pdf header
+4B 47 7B 46 AE 3D A4 DA D4 5C 6A 63 F8 D3 88 21
+
+/FormXob.63123a782b0f2086bdac6cf5544f3f75 11 0 R
+63 12 3a 78 2b 0f 20 86 bd ac 6c f5 54 4f 3f 75
+-------------------------------
+Zeroes
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+First line of flag.bin
+43 2e 9e b4 07 9c b5 47 5e 69 00 a6 7c 05 ec 72
