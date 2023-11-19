@@ -50,23 +50,28 @@ Jumping there on return would result a shell. See [exploit.py](workdir/exploit.p
 
 # Looking for the flag
 
-There is a flag.txt or similar file, with something like "Where did I store the flage?" comment.
+There is a flag.txt in `/home/challenger/`, but it has no flag. 
 
-The environment is limited, not many executable is available. To print out the processes without ps, the following snippet can be used.
+```
+Yayy, we are in! But where is the flag? I remember I saved it somewhere, but where?
+```
+
+The environment is limited, not many executable is available. To print out the processes without `ps`, the following snippet can be used.
 
 ```bash
 for i in `ls -1 /proc/ | egrep "([0-9]+)"`; do echo "$i:[`cat /proc/$i/comm`] `cat /proc/$i/cmdline`"; done
 ```
 
-There aren't many processes running. In the process with PID 1, the flag can be found hidden in the environment variables.
+There aren't many processes running. While `grep` is not available, `egrep` is. It has issues at certain places, like `/proc`, it can stuck in an infinite loop. Using `find` and `timeout` to circumvent it, which are also available.
 
 ```bash
-egrep -s -H -r cq23 /
+find / -type f -exec timeout 1 egrep -s -H -i cq23 {} \;
 cat /proc/1/environ
 ```
+In the process with PID 1, the flag can be found hidden in the environment variables. The reason it is not in the shell environment is that we used `execve` with an empty environment.
 
-TODO: replace screenshot from live environment
+![](screenshots/5.png)
 
 # Flag
 
-TODO: add flag from live env
+cq23{e45y_p34zy_l3m0n_squ33zy_455857558d7d1499aa7498949546a2b2}
