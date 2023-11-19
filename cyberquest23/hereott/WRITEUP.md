@@ -462,3 +462,4 @@ Flutter is used, this can be seen in the resources as well. The code is compiled
 Some resources for reversing:
 
  - <https://blog.tst.sh/reverse-engineering-flutter-apps-part-1/>
+ - <https://github.com/ptswarm/reFlutter>
