@@ -1,0 +1,31 @@
+Mit válaszoljunk neki? Az egyiket már elkaptuk, de kellene még egy jó válasz, hogy a másikat is csőbe húzzuk. A válasz a flag (nem flag formátum)
+
+    宏伟?
+    嗯
+    这是王林
+    非安全通道，少说信息
+    好
+    我们需要缺少那部分
+    周一9点，在布达佩斯Z地点
+    最后确认，谁在问?
+
+
+A	grand?
+B	Um
+A	This is Wang Lin
+B	Non-secure channel, less information
+A	good
+B	we need that missing part
+A	Monday at 9:00 am at Z location in Budapest
+B	Final confirmation, who's asking?
+
+王林
+Wang Lin
+
+https://www.google.com/search?q=%E7%8E%8B%E6%9E%97+%E5%AE%8F%E4%BC%9F
+
+
+https://www.fbi.gov/wanted/counterintelligence/wang-lin/chinese-wang_lin.pdf
+https://www.fbi.gov/wanted/counterintelligence/dong-ting/chinese-dong_ting.pdf
+
+flag 董婷 <- Dong Ting
