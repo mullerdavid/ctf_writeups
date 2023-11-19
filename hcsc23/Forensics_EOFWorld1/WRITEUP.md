@@ -32,6 +32,10 @@ There is a better variant, with an in depth explanation of the problem.
 
 Using this, the result is quite good. At 853x498 resolution there is no extra magenta bar at the top.
 
+```bash
+python acropalypse_matching_sha256.py 853 498 picture.png acropalypse_py.png
+```
+
 ![](workdir/acropalypse_py.png)
 
 There is a "barcode" at the bottom. The numbers under it are barely readable, but they give out the flag.
