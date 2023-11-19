@@ -1,0 +1,16 @@
+Egy híres kalóz idézet egyenesen a Fekete Gyöngy vitorlájáról (eredeti nyelven, utólag színezve):
+
+    YaRrr! Most idi-yotts can't even spell Buccaneer nowadays. Did you know it originates from the Caribbeans?
+
+
+853x480
+binwalk -e picture.png
+
+
+acropalypse
+https://acropalypse.app/
+853x640
+
+bar code like
+72 67 83 67 123 119 105 115 104 100 48 109 95 108 51 52 100 53 95 116 111 095 112 097 114 116 104 51 110 048 110 125
+HCSC{wishd0m_l34d5_to_parth3n0n}
