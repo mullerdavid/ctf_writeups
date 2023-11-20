@@ -2,13 +2,14 @@
 
 A virtual machine image was distributed with multiple challenges of different types.
 
-TODO: upload VM somewhere accessible
+The VM files are hosted here: <https://1drv.ms/f/s!AhobjPOnjp03hDe14gRHWLEI-7qY?e=ARSfD0>
 
 # Forensics 1.
 
 ** After logging in, you are likely to get an error message of the Recycle bin being corrupted - this is not part of any of the challenges, you can ignore this message. **
 
 This is not the first time you have come across the activities of hackers from a competing company, so you read through all your old notes. Based on this, you think that the attackers could have gained access to the system by taking advantage of a vulnerability in the server. What is the full path to the first file you put on the machine?
+
 (example: hcsc{C:\Folder1..\FolderN\file.name})
 
 # Forensics 2.
@@ -59,7 +60,7 @@ Due to an OPSEC error, we can get sensitive information about hackers, because t
 
 (example: hcsc{texthiddeninthepersiscencefile})
 
-Forensics 8/3.
+# Forensics 8/3.
 
 The attackers placed a backdoor on the server. What is the full path of the malware?
 
