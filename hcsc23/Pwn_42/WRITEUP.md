@@ -57,7 +57,7 @@ The offset of rip is calculatable, but using pwntools it is easy with some cycli
 
 ![](screenshots/2.png)
 
-The libc address is changing from run to run, a leak is necessery.
+The libc address is changing from run to run, a leak is necessary.
 
 # ROP chain
 
@@ -78,7 +78,7 @@ In the first iteration it is leaking a libc address. Based on this the address o
 
 Leak:
  - rdi <-- puts got
- - puts() (az rdi az első paraméter, amit majd futtat)
+ - puts() (rdi is the first parameter, which should be the executable)
  - main()
  
 Exploit:
