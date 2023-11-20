@@ -1,0 +1,14 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-04-28 00:39 CEST
+Nmap scan report for 10.10.8.12
+Host is up (0.021s latency).
+Not shown: 65526 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE
+22/tcp    filtered ssh
+2357/tcp  open     unihub-server
+3468/tcp  open     ttcmremotectrl
+4681/tcp  open     parliant
+21214/tcp open     unknown
+49585/tcp open     unknown
+53530/tcp open     unknown
+65000/tcp filtered unknown
+65001/tcp filtered unknown
