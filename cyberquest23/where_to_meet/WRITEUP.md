@@ -19,6 +19,8 @@ Downloading and using the TeamTalk client with the server on port `10333` reveal
 
 Based on the documentation an example guest user was found. It's credentials `guest:guest` also works on the TeamTalk server.
 
+Using the [tt5admin.php](https://github.com/BearWare/TeamTalk5/raw/master/Client/ttphpadmin/tt5admin.php) variant of the client, modifying it slightly to allow non-admin login [tt5test.php](workdir/tt5test.php) works for logging in, but has no extra permission.
+
 # SSH
 
 On port `10334` there is an SSH server running.
