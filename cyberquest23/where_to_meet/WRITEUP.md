@@ -15,13 +15,17 @@ PORT      STATE    SERVICE  VERSION
 
 # TeamTalk
 
-Downloading and using the TeamTalk client with the server reveals nothing.
+Downloading and using the TeamTalk client with the server on port `10333` reveals nothing. 
+
+Based on the documentation an example guest user was found. It's credentials `guest:guest` also works on the TeamTalk server.
 
 # SSH
 
-There were no credentials and it was explicitly mentioned brute force was not required.
+On port `10334` there is an SSH server running.
 
-After the hint, we received credentials: `teamtalkguest:teamtalkguestpassword`.
+There were no credentials and it was explicitly mentioned brute force was not required. The previous `guest:guest` is not working.
+
+After the hint, we received credentials: `teamtalkguest:teamtalkguestpassword`. Logging in with this works.
 
 # Looking around
 
@@ -34,5 +38,4 @@ Joining to that hidden channel now reveals the flag.
 TODO: screenshots
 
 # Flag
-
-TODO: flag
+CQ23{Bearware-TeamTalk-514-Latest-Best-Conference-Sys}
