@@ -1,4 +1,4 @@
-# Challenge
+# Mázli
 
 Elég szerencsés vagy hogy jól megtippeld a számot?
 

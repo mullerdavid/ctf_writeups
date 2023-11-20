@@ -1,4 +1,4 @@
-# Challenge
+# Kelepce
 
 Mit válaszoljunk neki? Az egyiket már elkaptuk, de kellene még egy jó válasz, hogy a másikat is csőbe húzzuk. A válasz a flag (nem flag formátum)
 

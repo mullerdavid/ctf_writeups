@@ -1,4 +1,4 @@
-# Challenge
+# EOFWorld #2
 
 Közlegény! A kulcs: kitartás! Mindig tartsd szorosan a csomókat a viharban; ne hagyd magad idegen vizekre sodorni... Alul felül feszes legyen a vitorla!
 

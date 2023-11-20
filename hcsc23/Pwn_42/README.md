@@ -1,4 +1,4 @@
-# Challenge
+# 42
 
 Na mi a válasz mindenre? Nem, nem a flag.
 nc 10.10.(1-9).11:36255

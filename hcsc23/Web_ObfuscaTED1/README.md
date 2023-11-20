@@ -1,4 +1,4 @@
-# Challenge
+# ObfuscaTED #1
 
 Mit gondolsz az új über-menő átmenetileg telepített weboldalamról? Ezt a stílust a Githubon találtam, és szerintem csodálatos.
 

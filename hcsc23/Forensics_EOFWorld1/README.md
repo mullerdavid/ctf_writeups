@@ -1,4 +1,4 @@
-# Challenge
+# EOFWorld #1
 
 Egy híres kalóz idézet egyenesen a Fekete Gyöngy vitorlájáról (eredeti nyelven, utólag színezve):
 YaRrr! Most idi-yotts can't even spell Buccaneer nowadays. Did you know it originates from the Caribbeans?

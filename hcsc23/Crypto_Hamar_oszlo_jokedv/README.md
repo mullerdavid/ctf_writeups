@@ -1,4 +1,4 @@
-# Challenge
+# Hamar oszló jókedv
 
 A türelem rózsát terem. A rózsa boldogságot. Vissza tudod fejteni az üzenetet?
 https://hu.wikipedia.org/wiki/Alan_Turing
