@@ -1,8 +1,14 @@
 # Challenge
 
-TODO: challenge info comes here
+We have intercepted a letter.
+Using UV, X-ray scans and weighing it, it seemed like the letter was empty, thus we speculate that the confidential information is printed on the letter itself.
 
-An image was given with some comment like the letter was empty so the message must be the envelope itself.
+
+![CQ23-LETTER.jpg](/files/9f43abe55937a71146595e09464b1c12/CQ23-LETTER.jpg)
+
+The flag format is the usual:
+
+CQ23{....}
 
 ![](files/CQ23-LETTER.jpg)
 

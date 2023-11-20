@@ -1,8 +1,11 @@
 # Challenge
 
-TODO: challenge info comes here
+The government upgraded to stream ciphers.
+We have intercepted communications and this text file containing the flag.
+Looks like a needle in a haystack. I am trusting you to handle it
 
-A file was given. With some message about stream ciphers. Also the flag format is QC23{}.
+Flag format
+QC23{}
 
 [haystack.txt](files/haystack.txt)
 

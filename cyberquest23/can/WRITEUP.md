@@ -64,11 +64,8 @@ Continuing more reveals the flag.
 
 ![](screenshots/6.png)
 
-# Flag 1
+# Flag
 cq23{C4N_H4CK1NG_B4S1CS}
-
-# Other flag
-As the environment is not available anymore and nobody fully solved the challenge. It required some packet injection, possibly a replay attack.
 
 # candump 
 The tool `candump` can be used to dump the packets in text format which might be easier to process. Might need to enable `can_raw` driver. This variant is in [log.zip](workdir/log.zip).
@@ -96,5 +93,7 @@ ip link add can0 type vcan
 ip link set can0 up
 canplayer -I can.log
 ```
+
+# Credits
 
 Credits to Alex for the tip.

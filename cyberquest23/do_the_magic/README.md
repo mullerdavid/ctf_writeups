@@ -1,8 +1,8 @@
 # Challenge
 
-TODO: challenge info comes here
+You have a picture, do the magic on it... I hope you're not going to byte your lips too hard ;D
 
-A single file was given.
+**Flag format**: QC{}
 
 [NotAPicture.jpg](files/NotAPicture.jpg)
 
