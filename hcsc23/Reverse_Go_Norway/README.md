@@ -5,7 +5,7 @@ https://alfahir.hu/hirek/szalaybobrovniczky-kristof-magyarorszag-legvedelmet-hig
 
 10.10.(1-9).11:8527
 
-Melléklet: [challenge.zip](files/challenge.zip) (note, note_2, note_3, reverse)
+[challenge.zip](files/challenge.zip) (note, note_2, note_3, reverse)
 
 # Writeup
 
