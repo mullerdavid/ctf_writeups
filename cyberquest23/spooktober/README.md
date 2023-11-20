@@ -1,4 +1,4 @@
-# Challenge
+# Spooktober
 
 The time of spooks and frights is here once again.
 

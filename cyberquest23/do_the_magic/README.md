@@ -1,4 +1,4 @@
-# Challenge
+# Do_The_Magic
 
 You have a picture, do the magic on it... I hope you're not going to byte your lips too hard ;D
 

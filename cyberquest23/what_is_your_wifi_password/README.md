@@ -1,4 +1,4 @@
-# Challenge
+# What is your Wi-Fi pw?
 
 Do you remember the times when you arrived to a place, you asked the Wi-Fi pw?
 there are many and many new solutions to avoid the letter-by-letter typing that is very frustrating if you the Nth guest.

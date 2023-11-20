@@ -1,4 +1,4 @@
-# Challenge
+# US Post Service
 
 We have intercepted a letter.
 Using UV, X-ray scans and weighing it, it seemed like the letter was empty, thus we speculate that the confidential information is printed on the letter itself.

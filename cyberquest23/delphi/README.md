@@ -1,4 +1,4 @@
-# Challenge
+# Delphi
 
 Dear traveller, you just found out that Pythia really exists and the legend of the Oracle of Delphi is at your mercy. Shall you have your future predicted?
 

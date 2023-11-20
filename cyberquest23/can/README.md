@@ -1,4 +1,4 @@
-# Challenge
+# CAN Security 101
 
 If you hook onto a CAN bus, you see all the communication that\u2019s on it. Secure, right?
 

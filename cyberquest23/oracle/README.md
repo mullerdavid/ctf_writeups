@@ -1,4 +1,4 @@
-# Challenge
+# Oracle
 
 Have you done your part at Delphi? Seems like there is a much bigger challenge awaiting for you... Figure out what Pythia has to say to you!
 

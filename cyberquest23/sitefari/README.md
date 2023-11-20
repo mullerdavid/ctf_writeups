@@ -1,4 +1,4 @@
-# Challenge
+# Sitefari
 
 We have intercepted supernatural powers that are trying everything in their power to compromise our blog about monster stories. It seems to have broken the site down to pieces...
 

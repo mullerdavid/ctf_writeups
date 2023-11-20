@@ -1,4 +1,4 @@
-# Challenge
+# Where to meet that hosted by me?
 
 Hmmm ... Where can we meet with our Team to Talk in
 high quality, watch a video together and share files?

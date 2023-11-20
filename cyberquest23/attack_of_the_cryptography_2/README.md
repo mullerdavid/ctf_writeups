@@ -1,4 +1,4 @@
-# Challenge
+# AttackOfTheCryptography II.
 
 The government upgraded to stream ciphers.
 We have intercepted communications and this text file containing the flag.

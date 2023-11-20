@@ -1,4 +1,4 @@
-# Challenge
+# Costumery
 
 Go, check out our new monster-themed costume shop for all kinds of Halloween creatures! Because we stand for accessibility and prefer dark areas, it's even a text based interface!
 

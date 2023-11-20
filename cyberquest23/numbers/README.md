@@ -1,4 +1,4 @@
-# Challenge
+# Numbers
 
 The numbers
 I was supposed to meet with my contact at this restaurant, but I didn't find him here. All I found was this menu with some cypher looking things on it.

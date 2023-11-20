@@ -1,4 +1,4 @@
-# Challenge
+# Privacy leak
 
 Did you join our Discord server already? If not, head over to this link, since we announce important news and it's easier to get help as well over there: https://discord.honeylab.hu/ Now, we put a flag somewhere there, but flags are just like spiders. They like to hide in the shadows... Do you know Discord enough to find what you are looking for? Not? Well, well... The almighty search engine might be your friend. \u2728
 

@@ -1,4 +1,4 @@
-# Challenge
+# Application Ointment
 
 ohohoo, It's that time of the year again! All the frightening creatures are ready for their spiritual time travel party. One of them created a cool appointment picker app for that. Is it safe to trust a monster though? **Solving this challenge has no particular algorithm or method... It's like flipping a token and observing whether the outcome is heads, or tails...**
 

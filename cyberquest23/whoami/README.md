@@ -1,4 +1,4 @@
-# Challenge
+# Whoami
 
 Dive into the extraordinary world of pet recognition with Whoami, a cutting-edge creation by Honeylab Technologies. TM **NEW**: Try our API now for free in the API explorer using a secure, selfmade API proxy before purchasing.
 
