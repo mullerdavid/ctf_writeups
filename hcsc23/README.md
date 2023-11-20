@@ -6,3 +6,5 @@ Hungarian Cyber Security Challenge organized by gov.
 
 Some challenge descriptions are in Hungarian and kept as original. Google translate can be used to translate them.
 
+# Scoreboard 
+![](scoreboard.png)
