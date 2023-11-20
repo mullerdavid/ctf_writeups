@@ -31,13 +31,24 @@ After the hint, we received credentials: `teamtalkguest:teamtalkguestpassword`. 
 
 # Looking around
 
-There was a backup configuration file. Inside there is a hidden channel with the password.
+There was a teamtalk configuration file in [/srv/tt5srv.xml](workdir/tt5srv.xml). Inside there is a hidden channel with the password.
 
-TODO: exact location
+```xml
+<channel>
+    <!--  Channel path: /cq23.getFlag/  -->
+    <channel-id>2</channel-id>
+    <name>cq23.getFlag</name>
+    <password>C23QqQq??</password>
+    <topic/>
+    ...
+</channel>
+```
+
+# Teamtalk channel
 
 Joining to that hidden channel now reveals the flag.
 
-TODO: screenshots
+TODO: screenshots from live env
 
 # Flag
 CQ23{Bearware-TeamTalk-514-Latest-Best-Conference-Sys}
