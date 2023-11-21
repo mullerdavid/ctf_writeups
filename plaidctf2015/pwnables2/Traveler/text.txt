@@ -1,0 +1,8 @@
+ Pwnable (280 pts)
+
+ You find an artifact that looks ancient, but yet looks like it's from the future... Upon further inspection, it looks like some sort of calculator, but it's calculation seems rather questionable. Maybe you can find who the owner of this is...
+
+ Problem is located in /home/traveller. SSH for access 52.6.29.61
+
+ You can SSH to the (same) machine for env reasons. Your credentials are on your profile.
+

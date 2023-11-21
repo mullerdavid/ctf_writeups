@@ -1,0 +1,24 @@
+Metamask
+Y9ds6unFwTjDyrVr
+film priority pass celery add black novel weapon guess ill urban regret
+0x563748Fcd1C4E9F5ff5433028Ada85770E4E1F60
+
+
+
+https://kzen-networks.github.io/mnemonic-recovery/src/index.html
+0x94E3AEFf4E99C1947558228512b259b1c3717039
+stamp always lens skill excite liar liberty moment rib outer talent ? (wink) 
+
+
+
+http://admin:admin@ico.cryptoctf.org:8081/admin
+
+
+https://medium.com/@borisdinkevich/hacking-an-ethereum-contract-3181cd93589f
+https://github.com/paritytech/parity-ethereum
+
+
+http://cryptosmarty.cryptoctf.org/wallet.dat
+
+web3.eth.sendTransaction({ from: '0x25c3827520223c76091c374F66b56f7fFBf99024', to: '0x25c3827520223c76091c374F66b56f7fFBf99024', value: '0'})
+web3.eth.sendTransaction({ from: '0x25c3827520223c76091c374F66b56f7fFBf99024', to: '0x8bc33edb511f20ecfadb7185d07ce67fb761889b', value: '0', data: '0x3e8d7a30'})

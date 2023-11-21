@@ -1,0 +1,3 @@
+ Misc (1 pts)
+
+ Plaid CTF 2015 requires internet to play. Do you have internet?

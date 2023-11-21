@@ -1,0 +1,3 @@
+ Crypto (180 pts)
+
+ My knapsack brings all the boys to the yard, and they're like "that crypto is hard" (note: this flag is not in the flag{} format)

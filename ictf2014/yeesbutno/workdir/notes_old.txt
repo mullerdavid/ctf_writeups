@@ -1,0 +1,44 @@
+set follow-fork-mode child
+set detach-on-fork off
+
+
+after 128 move:
+convert_moves_to_buffer(&v10, v6, &v11, &v7);
+if ( (unsigned int)is_it_valid(&master_hash, 16LL, &v11, v7, *((_DWORD *)ptr + 2)) != 0 )
+	entry_screen((__int64)ptr);
+	
+br *0x000000000040134b (convert_moves_to_buffer call)
+br *0x0000000000401379 (is_it_valid call)
+br *0x0000000000402964 (create_forward_secure_tokens call)
+br *0x0000000000401385 (before jumping based on if comp)
+jump *0x000000000040138b (entry_screen)
+	
+patch:
+entry_screen is a backdoor for anyone's secret, skip the if:
+0x0000000000401385: je 0x40143f       -> jmpq 0x40143f 
+0x0000000000401385: 0f 84 b4 20 20 20 -> e9 b5 20 20 20 90 
+
+Function calls:
+//Basically packs wnse (0123) as 2 bits/char into a buffer
+__int64 __fastcall convert_moves_to_buffer(char *a1, unsigned int a2, unsigned __int8 *a3, unsigned int *a4);
+a1 = string_of_moves = $rdi
+a2 = string_of_moves_len = 128 = $rsi
+a3 = packed_buffer = $rdx
+a4 = packed_buffer_len = $rcx
+
+__int64 __fastcall is_it_valid(unsigned __int8 *a1, __int64 a2, unsigned __int8 *a3, unsigned int a4, int a5)
+a1 = master_hash = $rdi
+a2 = master_hash_len = 16 = $rsi
+a3 = packed_buffer = $rdx
+a4 = packed_buffer_len = 32 = $rcx
+a5 = generated_epoch = $r8
+{
+  ...
+  create_forward_secure_tokens(a3, a4, (unsigned __int8 *)&s1, a5);
+  result = memcmp(&s1, a1, 0x10uLL) == 0;
+  return result;
+}
+0x6054f0 <master_hash>: 		80      67      14      211     155     40      218     226
+0x6054f8 <master_hash+8>:       90      162     233     139     75      145     7       181
+
+

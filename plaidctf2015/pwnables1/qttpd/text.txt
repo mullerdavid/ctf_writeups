@@ -1,0 +1,8 @@
+ Pwnable (950 pts)
+
+ There are 3 (three) flags to be had at
+ http://107.189.94.25 or
+ http://107.189.94.255 or
+ http://107.189.94.252 or
+ http://107.189.94.253
+ ... good luck!

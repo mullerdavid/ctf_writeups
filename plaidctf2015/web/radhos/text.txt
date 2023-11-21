@@ -1,0 +1,6 @@
+ Web (250 pts)
+
+ A web scale key value store, for your enjoyment!
+
+ Should be working
+ Running at 52.6.62.188 port 9009

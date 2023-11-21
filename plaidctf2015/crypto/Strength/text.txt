@@ -1,0 +1,5 @@
+ Crypto (110 pts)
+
+ Strength in Difference
+
+ We've captured the flag encrypted several times... do you think you can recover it?

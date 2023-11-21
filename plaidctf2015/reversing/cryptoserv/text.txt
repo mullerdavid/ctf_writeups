@@ -1,0 +1,7 @@
+ Reversing (250 pts)
+
+ A tablespoon of reversing, a dash of crypto, and three cups of love.
+
+ Running at 52.4.141.125 4141
+
+ Note that the binary you get is redacted version of the original (but, functionally equivalent).

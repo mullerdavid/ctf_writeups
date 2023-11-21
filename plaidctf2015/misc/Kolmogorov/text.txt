@@ -1,0 +1,3 @@
+ Misc (150 pts)
+
+ All we know about Kolmogorov's Pet Snake is that the flag has no uppercase letters nor numbers (note: this flag is not in the flag{} format)...

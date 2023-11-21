@@ -1,0 +1,38 @@
+c0082eb33c3ef7745189b611e6c4cc87
+7ikki7
+C0082EB33C3EF7745189B611E6C4CC87
+
+
+md5(02c2d30c4a309ede56e02abe8f78cd2f)=358f54108c15739adb18200908106067
+
+02c2d30c4a309ede56e02abe8f78cd2f:vs9g9sv
+
+
+hashcat.exe -a 3 -m 10 -w 4 80dfa2a481229b1cf3b9b19734a437d9:jqbwvfol1 -i ?1?1?1?1?1?1?1?1?1 -1 jqbwvfol1
+hashcat.exe -a 3 -m 10 -w 4 d734e165fbc4adae1843259eafc38266:16wc8gfm3r -i ?1?1?1?1?1?1?1?1?1?1 -1 16wc8gfm3r
+hashcat.exe -a 3 -m 10 -w 4 8c1097408cef3d7d7765c61d22023ca5:ev3hdo9xc7y -i ?1?1?1?1?1?1?1?1?1?1?1 -1 ev3hdo9xc7y
+hashcat.exe -a 3 -m 10 -w 4 6dfe4c2892c831001c76cdadafedb732:mbh5afxodti9 -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 mbh5afxodti9
+hashcat.exe -a 3 -m 10 -w 4 2900b1b67640fd1fb784eae02d663036:tqi64el5vxy0m -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 tqi64el5vxy0m
+hashcat.exe -a 3 -m 10 -w 4 381fe55542247d8b0425e74d5bc1b29c:xgu7d5hqsrn84l -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 xgu7d5hqsrn84l
+hashcat.exe -a 3 -m 10 -w 4 c7c1e67d720bce550729e520154abc24:hyd231jne845769 -i ?1?1?1??1?1?1?1?1?1?1?1?1 -1 hyd231jne845769
+hashcat.exe -a 3 -m 10 -w 4 9f61904e101d4add5d068c39e7c943ea:lde9rpaui4thjvw3 -i ?1?1?1??1?1?1?1?1?1?1?1?1 -1 lde9rpaui4thjvw3
+hashcat.exe -a 3 -m 10 -w 4 e6fb9a32b109255551db1a5660332a7b:1q3r2tfdpv5u7mwkg -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 1q3r2tfdpv5u7mwkg
+hashcat.exe -a 3 -m 10 -w 4 6ac5612817d1d42e27185b4b836c7b30:xpuvj1dg2l9m47isrb -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 xpuvj1dg2l9m47isrb
+hashcat.exe -a 3 -m 10 -w 4 ba8908123af7b4bda3bdd4cf84595a33:h6t1bwvqxjp7amcoig0 -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 h6t1bwvqxjp7amcoig0
+hashcat.exe -a 3 -m 10 -w 4 c094de7e23a35a02b0e2f37f50a78c82:icmq3owjb4dknf5e1uhv -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 icmq3owjb4dknf5e1uhv
+hashcat.exe -a 3 -m 10 -w 4 b94aa96921b3abc3b711b5a8a7aa8c49:78zhkyxo21ibsmfaru9de -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 78zhkyxo21ibsmfaru9de
+hashcat.exe -a 3 -m 10 -w 4 c0af4d8ac058781d846d1ab1365065e6:phoragvqb38efidwlnuy5c -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 phoragvqb38efidwlnuy5c
+hashcat.exe -a 3 -m 10 -w 4 fe1e0aa59695e5aaff4062b0413c5491:3mqgjco7wd9h2btlxs1kfaz -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 3mqgjco7wd9h2btlxs1kfaz
+hashcat.exe -a 3 -m 10 -w 4 dbde73f5ae0dd80e1d0dd8c113cd911c:xl0z4rhcfie7sdnbkj2ut158 -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 xl0z4rhcfie7sdnbkj2ut158
+hashcat.exe -a 3 -m 10 -w 4 1e2abb3191d1ddbe59fd0e0bcc93cfa2:8lcrmbnxt4qfivo01epshduw7 -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 8lcrmbnxt4qfivo01epshduw7
+hashcat.exe -a 3 -m 10 -w 4 e6c07c5417174c672229146c5123d301:xl5qnzmaufbho9rv7ykdisgc84 -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 xl5qnzmaufbho9rv7ykdisgc84
+hashcat.exe -a 3 -m 10 -w 4 3d01f914d707542167d3f5faa37c8e09:adn629wok7ycgjpetqri0zu1hsb -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 adn629wok7ycgjpetqri0zu1hsb
+hashcat.exe -a 3 -m 10 -w 4 98c7b6aec4941cc134330b4f0824e313:bi96 -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 bi96
+hashcat.exe -a 3 -m 10 -w 4 a6cfd0666cbad430ce328eb3ee2ef95f:s0azi -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 s0azi
+hashcat.exe -a 3 -m 10 -w 4 a964fbac52dc6996dec3dce507589afe:vz7rpl -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 vz7rpl
+hashcat.exe -a 3 -m 10 -w 4 19a9241b3e7532b5fd05f8003d2cf5c9:zh6rpqwl -i ?1?1?1?1?1?1?1?1?1?1?1?1 -1 zh6rpqwl --show
+
+
+curl 'https://74bdad0abe1b29e725ce3e4a9a6db549395e5ec8.next.avatao-challenge.com/api/submit_pw' -X POST -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0' -H 'Accept: */*' -H 'Accept-Language: hu-HU,hu;q=0.8,en-US;q=0.5,en;q=0.3' --compressed -H 'Content-type: application/x-www-form-urlencoded' -H 'Origin: https://74bdad0abe1b29e725ce3e4a9a6db549395e5ec8.next.avatao-challenge.com' -H 'Connection: keep-alive' -H 'Referer: https://74bdad0abe1b29e725ce3e4a9a6db549395e5ec8.next.avatao-challenge.com/' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' -H 'TE: trailers' --data-raw 'password=7vh4w'
+
+curl 'https://74bdad0abe1b29e725ce3e4a9a6db549395e5ec8.next.avatao-challenge.com/api/get_hash' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0' -H 'Accept: */*' -H 'Accept-Language: hu-HU,hu;q=0.8,en-US;q=0.5,en;q=0.3' --compressed -H 'Connection: keep-alive' -H 'Referer: https://74bdad0abe1b29e725ce3e4a9a6db549395e5ec8.next.avatao-challenge.com/' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' -H 'TE: trailers'

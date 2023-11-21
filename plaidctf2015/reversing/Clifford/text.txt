@@ -1,0 +1,6 @@
+ Reversing (100 pts)
+
+ "It's a keygen problem"
+
+
+ (This is the original binary, it is 100% superseded by the new one and there is no reason you should look at it, but it is here for posterity. )

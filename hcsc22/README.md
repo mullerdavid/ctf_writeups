@@ -1,6 +1,6 @@
 # HCSC
 
-Hungarian Cyber Security Challenge organized by gov.
+Hungarian Cyber Security Challenge 2022 organized by gov.
 
 <https://nki.gov.hu/rendezvenyek/hcsc/>
 

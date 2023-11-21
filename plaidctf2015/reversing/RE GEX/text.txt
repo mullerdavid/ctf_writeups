@@ -1,0 +1,7 @@
+ Reversing (250 pts)
+
+ Wow that's a big regex.... luckily regular languages are easy.
+
+ Server with this regex running at 52.6.11.111
+
+ (Note our reference solution takes a couple hours (OFFLINE) so don't leave this to the last minute!) Oops, never mind, our reference solution doesn't take hours :-)

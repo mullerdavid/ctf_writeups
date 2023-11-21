@@ -1,0 +1,5 @@
+python vol.py -f ../mem-forensics/mem_dump.lime imageinfo
+python vol.py -f ../mem-forensics/mem_dump.lime --profile=LinuxDebian-4_19_0-16-amd64x64 linux_banner
+python vol.py -f ../mem-forensics/mem_dump.lime --profile=LinuxDebian-4_19_0-16-amd64x64 linux_apihooks
+python vol.py -f ../mem-forensics/mem_dump.lime --profile=LinuxDebian-4_19_0-16-amd64x64 linux_plthook
+python vol.py -f ../mem-forensics/mem_dump.lime --profile=LinuxDebian-4_19_0-16-amd64x64 linux_check_syscall

@@ -1,0 +1,8 @@
+ Crypto (375 pts)
+
+ After going bankrupt last year, the folks behind parlor from last year have decided to set up a new betting service!
+
+ Fixed Server running at 52.6.11.111
+
+ (Old server with short recv, posted for posterity:
+ here)

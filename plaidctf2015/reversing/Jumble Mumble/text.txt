@@ -1,0 +1,5 @@
+ Reversing (200 pts)
+
+ My binary seems to be a little bit jumbled! But I'm sure you can still recover the key...
+
+ tylerni7 is a terrible person, so md5sum your flag before submitting it.. (strip trailing 0s and md5sum lowercased input with no newline)

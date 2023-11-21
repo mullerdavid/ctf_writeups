@@ -1,0 +1,7 @@
+ Pwnable (550 pts)
+
+ Exploit this database server
+
+ Libc
+
+ Running at 52.4.86.204 64613

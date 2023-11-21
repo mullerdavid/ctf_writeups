@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<@
+    SCRIPT_EXT = ".shtml";
+    page = "";
+
+    include("../includes/base.inc");
+
+    if (page == "")
+        page = "index";
+@>
+<head>
+	<meta charset="UTF-8">
+	<title>Bhaccasyoniztas Beach Resort Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			<div id="header">
+				<div id="logo">
+					<a href="/?page=index"><img src="images/logo.png" alt="LOGO" height="112" width="118"></a>
+				</div>
+				<div id="navigation">
+					<ul>
+						<li <@ if (page == "index") printf("%s", "class=\"selected\""); @>>
+							<a href="/?page=index">Home</a>
+						</li>
+						<li <@ if (page == "about") printf("%s", "class=\"selected\""); @>>
+							<a href="/?page=about">About</a>
+						</li>
+						<li <@ if (page == "rooms") printf("%s", "class=\"selected\""); @>>
+							<a href="/?page=rooms">Rooms</a>
+						</li>
+						<li <@ if (page == "dives") printf("%s", "class=\"selected\""); @>>
+							<a href="/?page=dives">Dive Site</a>
+						</li>
+						<li <@ if (page == "foods") printf("%s", "class=\"selected\""); @>>
+							<a href="/?page=foods">Food</a>
+						</li>
+						<li <@ if (page == "news") printf("%s", "class=\"selected\""); @>>
+							<a href="/?page=news">News</a>
+						</li>
+						<li <@ if (page == "contact") printf("%s", "class=\"selected\""); @>>
+							<a href="/?page=contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="contents">
+				<div id="adbox">
+					<img src="images/sea-sound.jpg" alt="Img">
+					<h1>Enjoy the Summer with Us!</h1>
+					<p>
+						This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forum</a>.
+					</p>
+				</div>
+				<div id="main">
+<@
+    path = "../pages/" . page;
+    if (exists(path))
+    {
+        send_file(path);
+    }
+    else
+    {
+        path = "../pages/" . page . SCRIPT_EXT;
+        if (exists(path))
+        {
+            include(path);
+        }
+        else
+        {
+            printf("File not found (%s)\n", path);
+        }
+    }
+@>
+				</div>
+<@ if (page == "index" ) { @>
+				<div id="sidebar">
+					<div class="section">
+						<a href="/?page=rooms"><img src="images/rooms.png" alt="Img"></a>
+					</div>
+					<div class="section">
+						<a href="/?page=dives"><img src="images/dive-site.png" alt="Img"></a>
+					</div>
+					<div class="section">
+						<a href="/?page=foods"><img src="images/food.png" alt="Img"></a>
+					</div>
+				</div>
+<@ } @>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<ul class="navigation">
+						<li <@ if (page == "index") printf("%s", "class=\"active\""); @>>
+							<a href="/?page=index">Home</a>
+						</li>
+						<li <@ if (page == "about") printf("%s", "class=\"active\""); @>>
+							<a href="/?page=about">About</a>
+						</li>
+						<li <@ if (page == "rooms") printf("%s", "class=\"active\""); @>>
+							<a href="/?page=rooms">Rooms</a>
+						</li>
+						<li <@ if (page == "dives") printf("%s", "class=\"active\""); @>>
+							<a href="/?page=dives">Dive Site</a>
+						</li>
+						<li <@ if (page == "foods") printf("%s", "class=\"active\""); @>>
+							<a href="/?page=foods">Food</a>
+						</li>
+						<li <@ if (page == "news") printf("%s", "class=\"active\""); @>>
+							<a href="/?page=news">News</a>
+						</li>
+						<li <@ if (page == "contact") printf("%s", "class=\"active\""); @>>
+							<a href="/?page=contact">Contact</a>
+						</li>
+				</ul>
+				<div id="connect">
+				</div>
+			</div>
+			<p>
+				© 2023 by BHACCASYONIZTAS BEACH RESORT. All Rights Reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>
