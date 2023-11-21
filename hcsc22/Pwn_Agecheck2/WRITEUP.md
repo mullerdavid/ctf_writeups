@@ -88,3 +88,6 @@ Exploit:
  - system()
 
 The completed script is in [exploit.py](workdir/exploit.py).
+
+# Flag
+TODO: Missing flag value

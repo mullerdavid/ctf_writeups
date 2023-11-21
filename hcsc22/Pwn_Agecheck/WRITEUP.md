@@ -93,6 +93,8 @@ Leak:
 
 The completed exploit can be found in [exploit.py](workdir/exploit.py).
 
+The flag is inside the file `flag`.
+
 # Without ROP chain
 
 There was an easier solution. There is a `test` backdoor function. Overwriting the return address to point inside the function executes the shell.
@@ -109,3 +111,6 @@ void test(void)
 ![](screenshots/8.png)
 
 This version is in [exploit-new.py](workdir/exploit-new.py).
+
+# Flag
+HCSC2022{gdghdhgfhgljlk65564}

@@ -1,0 +1,2 @@
+# Medusa v.2.2 (2022-07-29 15:52:58)
+# medusa -h 10.10.2.10 -n 8081 -U ../_wordlists/simple-users.txt -P ../_wordlists/10000_common_passwords.txt -M http -m DIR:/webdav -m AUTH:DIGEST -T 10 -O medusa-log.txt 
