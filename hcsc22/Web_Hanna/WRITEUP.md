@@ -14,7 +14,7 @@ dirb http://10.10.3.10:8081
 
 ![](screenshots/2.png)
 
-Unfortunatelly, it is asking for credentials. Our favourite mythical creatures can not help here with the usual wordlists. Apollo on the other hand can log in with his credentials: `admin:apollo13`. See [Apollo challenge](../Pentest_Apollo/) details.
+Unfortunatelly, it is asking for credentials. Our favourite mythical creatures can not help here with the usual wordlists. Apollo on the other hand can log in with his credentials: `admin:apollo13`. See [Apollo challenge (SPOILER)](../Pentest_Apollo/WRITEUP.md#spoiler) for details.
 
 The directory listing is turned on, and the flag is here.
 
