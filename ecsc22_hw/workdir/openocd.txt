@@ -1,0 +1,30 @@
+UF2 Bootloader v3.0
+Model: Raspberry Pi RP2
+Board-ID: RPI-RP2
+
+
+https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf
+	25q32jvsiq flash nor chip
+	address map
+		XIP 0x10000000, 0x10200000 ??
+		XIP 0x10000000, 0x18000000 ??
+		SRAM 0x20000000, 264kB continous, 0x20042000
+		
+> flash banks
+#0 : rp2040.flash (rp2040_flash) at 0x10000000, size 0x00200000, buswidth 32, chipwidth 1
+flash read_bank 0 flash.bin
+> flash read_bank 0 flash.bin
+RP2040 B0 Flash Probe: 2097152 bytes @10000000, in 512 sectors
+
+https://github.com/majbthrd/pico-debug/blob/master/howto/openocd.md
+	add "bindto 0.0.0.0" in cfg for remote debug
+	
+openocd -f board/pico-debug.cfg
+gdb-multiarch
+target extended-remote 192.168.254.1:3333
+dump binary memory sram-4c.bin 0x20000000 0x20042000
+load
+monitor reset init
+continue
+set $pc = 0x20003279
+disassemble $pc,+48
