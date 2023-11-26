@@ -395,4 +395,4 @@ Submitting on <https://bitbuster.eu/boards/cookiecrasher-c2/flagservice> gives u
 ![](screenshots/29.png)
 
 # Flag 
-ACSC{*nom* what a nice cookie *nom* thank you *nom* <3}
+ACSC{\*nom\* what a nice cookie \*nom\* thank you \*nom\* <3}
