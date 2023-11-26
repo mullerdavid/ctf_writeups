@@ -128,6 +128,8 @@ This revealed some interesting structures. There are mainly 4 different waves, a
 
 ![](screenshots/10.png)
 
+These numbers are used later for referencing the shapes.
+
 # Simple Power Analysis
 
 The modular pow has the following source code in the target device. 
@@ -300,7 +302,7 @@ Sometimes the fix is not that obvious from 4 dumps (eg no majority vote), but in
 ![](screenshots/26.png)
 ![](screenshots/27.png)
 
-It can be clearly seen that this is not the start of the loop, so it should be `o` in this case.
+It can be clearly seen that this is not the start of the loop, so it should be `o` in this case (going from left to right on the image).
 
 Repeating the process works well up until the very end with only a few visual lookup.
 
