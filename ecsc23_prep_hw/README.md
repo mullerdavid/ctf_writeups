@@ -1,6 +1,6 @@
 # ECSC preparatoion HW
 
-These are some hardware challeges that were created for ECSC preparation.
+These are some hardware challenges that were created for ECSC preparation.
 
 While using the `SWD` debug interface would make things easier, it shouldn't be used.
 

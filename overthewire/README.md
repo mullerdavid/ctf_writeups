@@ -1,6 +1,6 @@
 # Over the Wire
 
-Wargames by <overthewire.org>.
+Wargames by overthewire.org.
 
 <https://overthewire.org/wargames/>
 

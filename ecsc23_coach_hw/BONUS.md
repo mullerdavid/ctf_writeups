@@ -12,7 +12,7 @@ The secrets can be found in plaintext form inside the firmware. Could have been 
 
 The original firmware is in [fw.bin](bonus/fw.bin) for reference.
 
-The Micropthon firmware had the modules as frozen modules to prevent easy extraction from the internal `littleFS` filesystem. See `picotool info` [info_all.txt](bonus/info_all.txt).
+The Micropython firmware had the modules as frozen modules to prevent easy extraction from the internal `littleFS` filesystem. See `picotool info` [info_all.txt](bonus/info_all.txt).
 
 These are compiled to [mpy files](https://docs.micropython.org/en/latest/reference/mpyfiles.html) and integrated into the firmware. Similarly an mpy file can be installed to the internal storage as obfuscation without freezing the module, but that would enable modifying some other functionality.
 

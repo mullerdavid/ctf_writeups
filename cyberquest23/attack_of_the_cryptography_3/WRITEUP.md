@@ -15,7 +15,7 @@ def decrypt(self, cyphertext: bytes) -> bytes:
 
 It also has an error generating the keys, sometimes raising an exception: `ValueError: base is not invertible for the given modulus`. Therefore the generation was added to a loop with exception handling.
 
-The modified [rsa_test.py](workdir/rsa_test.py) shows that even with 2 disctinct random key pairs, we receive the same ciphertext. This indicate a serious flaw already in the process.
+The modified [rsa_test.py](workdir/rsa_test.py) shows that even with 2 distinct random key pairs, we receive the same ciphertext. This indicate a serious flaw already in the process.
 
 ![](screenshots/1.png)
 
@@ -51,5 +51,4 @@ print("PTout:", pt)
 ```
 
 # Flag
-
-CQ23{Re4dy_s3t_AtT4cK!}
+`CQ23{Re4dy_s3t_AtT4cK!}`

@@ -18,7 +18,7 @@ It is encoded in the changing background color.
  - 0x48 -> H
  - 0x43 -> C
  - 0x53 -> S
- - etc
+ - etc.
 
 ```
 484353437b4335355f31735f34773373307d
@@ -28,4 +28,4 @@ It is encoded in the changing background color.
 
 
 # Flag
-HCSC{C55_1s_4w3s0}
+`HCSC{C55_1s_4w3s0}`

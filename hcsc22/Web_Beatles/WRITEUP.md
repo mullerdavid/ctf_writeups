@@ -9,7 +9,7 @@ Visiting the site has the following. A simple song lookup with Beatles songs.
 
 The dropdown menus operate with GET parameters, one index each. The text based search works with POST parameters, 3 inputs.
 
-The SQL query is printed out on requests, eg `SELECT * FROM Song Where title like '%%’;`. It is clear even after a single query that the 3 inputs are simply concatenated, 30-30-31 long.
+The SQL query is printed out on requests, e.g. `SELECT * FROM Song Where title like '%%’;`. It is clear even after a single query that the 3 inputs are simply concatenated, 30-30-31 long.
 
 It is a basic SQL injection with limited length. For example `123` reveals nothing, but `123' OR 1=1#` reveals all songs.
 
@@ -48,4 +48,4 @@ There is a `SuperSecretFlag` table, with the flag inside.
 ![](screenshots/3.png)
 
 # Flag
-HCSC{k0mp0nalt_SQ1_1njekcio_konnyu?}
+`HCSC{k0mp0nalt_SQ1_1njekcio_konnyu?}`

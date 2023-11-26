@@ -24,7 +24,7 @@ The `dah-di-di-di-dah` should be the `=` not `<BT>`. Based on this, we get the f
 =.. .=== .=.. .=== ..=. =. .==== == .. ==... == =.=. .=== .==. ....= ..... .=.. ....= .= =.. == ....= .=. == .==. ..===
 ```
 
-This is an another morse code. Decoding resutls in `DJLJFN1MI7MCJP45L4ADM4RMP2`.
+This is an another morse code. Decoding results in `DJLJFN1MI7MCJP45L4ADM4RMP2`.
 
 The sample given is also a morse code in text. Decoding into [sample-decoded.txt](workdir/sample-decoded.txt).
 
@@ -50,4 +50,4 @@ The `{ }` symbols can not be found in the sample, they were guessed based on the
 The uppercase version was not good. The morse code is not differentiating upper and lower case, therefore it was attempted with the lowercase version, which worked.
 
 # Flag
-hcsc{frequency-is-the-key}
+`hcsc{frequency-is-the-key}`

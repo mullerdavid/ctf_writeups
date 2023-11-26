@@ -1,6 +1,6 @@
 # QR code
 
-Visiting the QR code is a deadend, going to <ceair.com>.
+Visiting the QR code is a dead-end, going to <ceair.com>.
 
 The image has GPS coordinates from the creation and can be found with exiftool.
 
@@ -17,4 +17,4 @@ Looking in [Google Maps](https://www.google.hu/maps/place/46%C2%B012'23.6%22N+10
 The coordinate are right next to a river, Tuin.
 
 # Flag
-Tuin
+`Tuin`

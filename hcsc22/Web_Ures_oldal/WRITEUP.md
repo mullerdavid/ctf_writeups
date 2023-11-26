@@ -14,7 +14,7 @@ http://10.10.3.10:2002/index.php?cmd=index.php
 
 ![](screenshots/2.png)
 
-It is using `cat` internally, directly concatenating the input and running it with system. There are a few checks for blakclist, but they are not actually used. Using `;` any command can be used to run after cat.
+It is using `cat` internally, directly concatenating the input and running it with system. There are a few checks for blacklist, but they are not actually used. Using `;` any command can be used to run after cat.
 
 Looking around the flag is in `/var/hcsc2022secret/flag`.
 

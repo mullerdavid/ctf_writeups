@@ -73,5 +73,4 @@ In the process with PID 1, the flag can be found hidden in the environment varia
 ![](screenshots/5.png)
 
 # Flag
-
-cq23{e45y_p34zy_l3m0n_squ33zy_455857558d7d1499aa7498949546a2b2}
+`cq23{e45y_p34zy_l3m0n_squ33zy_455857558d7d1499aa7498949546a2b2}`

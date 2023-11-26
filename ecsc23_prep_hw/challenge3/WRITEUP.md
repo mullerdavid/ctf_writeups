@@ -58,4 +58,4 @@ The flag is decrypted at the end.
 ![](screenshots/12.png)
 
 # Flag
-DB{9f0da760555afe0f657c6a18d688}
+`DB{9f0da760555afe0f657c6a18d688}`

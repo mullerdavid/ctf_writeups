@@ -6,4 +6,4 @@ Visiting the site gives us the flag as a warmup.
 
 # Flag
 
-HCSC{W3LC0M3}
+`HCSC{W3LC0M3}`

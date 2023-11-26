@@ -1,12 +1,12 @@
 # Twitter
 
-Twitteren has such a user.
+Twitter has such a user.
 
 <https://twitter.com/search?q=Di%C3%A1na%20Szuperl%C3%A1ny>
 
 ![](screenshots/1.png)
 
-It has some location / coordinats in the bio.
+It has some location / coordinates in the bio.
 
 ```
 ///hamster.agents.saints
@@ -21,7 +21,7 @@ It has some location / coordinats in the bio.
 ![](screenshots/2.png)
 
 # Flag
-Szamos Csokoládé Múzeum
+`Szamos Csokoládé Múzeum`
 
 # Wonder Woman
 

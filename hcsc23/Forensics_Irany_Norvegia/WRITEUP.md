@@ -26,4 +26,4 @@ The file can be decoded easier. The tool at <https://morsecode.world/internation
 With a small manual fix, the flag is acquired.
 
 # Flag
-HCSC2023(DUERMERENNGODNOK)
+`HCSC2023(DUERMERENNGODNOK)`

@@ -52,7 +52,7 @@ The answer to every question is 42. With a twist.
 ```
 
 # Using the hint
-Using the filter: `can.id == 0x0000f146 or can.id == 0x0000f147` reveals some alternating datastream.
+Using the filter: `can.id == 0x0000f146 or can.id == 0x0000f147` reveals some alternating data stream.
 
 ![](screenshots/4.png)
 
@@ -65,7 +65,7 @@ Continuing more reveals the flag.
 ![](screenshots/6.png)
 
 # Flag
-cq23{C4N_H4CK1NG_B4S1CS}
+`cq23{C4N_H4CK1NG_B4S1CS}`
 
 # candump 
 The tool `candump` can be used to dump the packets in text format which might be easier to process. Might need to enable `can_raw` driver. This variant is in [log.zip](workdir/log.zip).

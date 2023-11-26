@@ -64,7 +64,7 @@ Even php files can be uploaded as well, there is no restriction. Our favourite w
 ![](screenshots/8.png)
 
 # Flag local
-{HCSC}-This;is;the;l0cal;flag{4}TSAI!!4
+`{HCSC}-This;is;the;l0cal;flag{4}TSAI!!4`
 
 # Root
 
@@ -81,4 +81,4 @@ Reusing this for the `root` user, the privileges can be escalated.
 ![](screenshots/10.png)
 
 # Flag root
-{HCSC}T5@!:[R0otFl4G!]
+`{HCSC}T5@!:[R0otFl4G!]`

@@ -33,11 +33,11 @@ RE23{ZXAZgBBP}
 
 This is not quite the flag, but the numbers and special chars are correct.
 
-# Vigenere
+# Vigenère
 
-Might be a Vigenere cipher, as only the letters are encoded and `C->R` is not same distance as `Q->E`. 
+Might be a Vigenère cipher, as only the letters are encoded and `C->R` is not same distance as `Q->E`. 
 
 With `POST` key, the flag is decoded.
 
 # Flag
-CQ23{HELLoIMB}
+`CQ23{HELLoIMB}`

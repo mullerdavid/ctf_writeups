@@ -49,7 +49,7 @@ The instagram has 3 photos.
 
 ![](screenshots/4.png)
 
-Opening the inages and clicking over the pills reveal 2 other profiles, they are tagged on the image.
+Opening the images and clicking over the pills reveal 2 other profiles, they are tagged on the image.
 
 ![](screenshots/6.png)
 
@@ -68,7 +68,7 @@ The Steam usernames are:
    - [Incarrnati0n](https://steamcommunity.com/id/IMIHORVATH)
  - `Legendary Koma`
    - <https://steamcommunity.com/search/users/#text=Legendary+Koma>
-   - [Incarrnati0n](https://steamcommunity.com/profiles/76561198070007507)
+   - [Legendary Koma](https://steamcommunity.com/profiles/76561198070007507)
 
 # Steam
 
@@ -81,4 +81,4 @@ https://steamcommunity.com/id/IMIHORVATH/recommended/
 ![](screenshots/8.png)
 
 # Flag
-QC23{tH3Wh1t3R4bB1T}
+`QC23{tH3Wh1t3R4bB1T}`

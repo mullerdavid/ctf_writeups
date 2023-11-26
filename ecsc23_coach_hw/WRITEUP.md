@@ -46,7 +46,7 @@ The scope had fixed 16MiB storage for the data. These settings captured the full
 
 ## Simple GUI
 
-The `Simple GUI` offered basic funcionality for setting the parameters, doing the capture and dumping the data. It could be also used to check the shape of the captured data option for basic look around.
+The `Simple GUI` offered basic functionality for setting the parameters, doing the capture and dumping the data. It could be also used to check the shape of the captured data option for basic look around.
 
 Very beginning of the capture.
 
@@ -122,7 +122,7 @@ As indicated, the `Simple GUI` reached it's limits for checking and processing t
 
 MS Excel is quite flexible and visual. Easy to experiment with moderately sized data. In the first iteration, it was used to look into the data and look for patterns. To fit into the row limits, only every 10th data point was used.
 
-The start of the process is really noisy, therefore the end was lookend upon first. 
+The start of the process is really noisy, therefore the end was looked upon first. 
 
 This revealed some interesting structures. There are mainly 4 different waves, and their order follow 2 different patterns.
 
@@ -196,15 +196,15 @@ There are thousands of waves, classifying them manually would be tedious and err
 
 ## Machine learning
 
-It is quite distinguishable by a human to spot the patterns by eyeballing it, therefore a ML could do similarly. Unfortunatelly the sample size is not that big, and it would require labeling the data extensively, to the point where doing everything manually would be probably a better alternative. 
+It is quite distinguishable by a human to spot the patterns by eyeballing it, therefore a ML could do similarly. Unfortunately the sample size is not that big, and it would require labeling the data extensively, to the point where doing everything manually would be probably a better alternative. 
 
 ## Distance based
 
-Matching the waves to a selected wave (or averages of waves) and using pointwise euclidean distance to recognize the distance from the pattern works well for selecting neighbouring patterns (even in smaller sets like last couple of waves). `Stumpy` was used for this task.
+Matching the waves to a selected wave (or averages of waves) and using pointwise Euclidean distance to recognize the distance from the pattern works well for selecting neighboring patterns (even in smaller sets like last couple of waves). `Stumpy` was used for this task.
 
 ![](screenshots/18.png)
 
-Unfortunatelly, the waves are quite close distance wise, so using the distance profile for classification was not that helpful.
+Unfortunately, the waves are quite close distance wise, so using the distance profile for classification was not that helpful.
 
 ![](screenshots/19.png)
 
@@ -239,7 +239,7 @@ loop = np.lib.stride_tricks.sliding_window_view((data-mean), window).sum(1)
 
 ### Peaks
 
-Choosing the threashold and finding a single peak in a window (400) can mark each operation and loop. This can be found in [classify.py](workdir/classify.py).
+Choosing the threshold and finding a single peak in a window (400) can mark each operation and loop. This can be found in [classify.py](workdir/classify.py).
 
 ```python
 threshold = 5.3
@@ -295,9 +295,9 @@ The errors can be usually detected by simply spotting invalid patterns, like `oo
 
 ![](screenshots/25.png)
 
-Fixing is usually switching a letter or deleting some letters. It can be easily done with hand and a simple text editor. Each dump in it's own line. The differences can be seen, and resyncing the patterns can also be done visally.
+Fixing is usually switching a letter or deleting some letters. It can be easily done with hand and a simple text editor. Each dump in it's own line. The differences can be seen, and resyncing the patterns can also be done visually.
 
-Sometimes the fix is not that obvious from 4 dumps (eg no majority vote), but in that case, the index is easy to obtain for that pattern and can be done visally on an interactive graph. Like when there are `oooL` and `oLoL` in the picture above at the same index, there are 2 votes for each letter.
+Sometimes the fix is not that obvious from 4 dumps (e.g. no majority vote), but in that case, the index is easy to obtain for that pattern and can be done visually on an interactive graph. Like when there are `oooL` and `oLoL` in the picture above at the same index, there are 2 votes for each letter.
 
 ![](screenshots/26.png)
 ![](screenshots/27.png)
@@ -399,4 +399,4 @@ Submitting on <https://bitbuster.eu/boards/cookiecrasher-c2/flagservice> gives u
 ![](screenshots/29.png)
 
 # Flag 
-ACSC{\*nom\* what a nice cookie \*nom\* thank you \*nom\* <3}
+`ACSC{*nom* what a nice cookie *nom* thank you *nom* <3}`

@@ -36,4 +36,4 @@ fetch("https://discordapp.com/api/v9/guilds/1153388061275721738/channels", {head
 The `privacy-leak` hidden channel topic contains the flag.
 
 # Flag
-cq23{th3_int3rn3t_doesn7_4GET_c1b3f4b5ca07b09306c29238640218b8}
+`cq23{th3_int3rn3t_doesn7_4GET_c1b3f4b5ca07b09306c29238640218b8}`

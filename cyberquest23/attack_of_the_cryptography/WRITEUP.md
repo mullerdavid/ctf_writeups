@@ -34,5 +34,5 @@ ONION=$(sed -z 's/[^A-Za-z0-9+/=]//g' nintendo64.txt) ; while [ -n "$ONION" ]; d
 ![](screenshots/3.png)
 
 # Flag
-QC23{SuP3R_M4r10_64}
+`QC23{SuP3R_M4r10_64}`
 

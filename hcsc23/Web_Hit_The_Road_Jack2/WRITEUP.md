@@ -20,11 +20,11 @@ The websocket is sending new number every 5 seconds, similarly to `#1`, disconne
 
 # Random
 
-Based on the python documentation, the [random](https://docs.python.org/3/library/random.html) generator is using Mersenne Twister with a period of 19937. This is the [MT19937](https://en.wikipedia.org/wiki/Mersenne_Twister). It is not cryptogrphically secure, the internal state can be recovered after 624 iteration and the next numbers predicted.
+Based on the python documentation, the [random](https://docs.python.org/3/library/random.html) generator is using Mersenne Twister with a period of 19937. This is the [MT19937](https://en.wikipedia.org/wiki/Mersenne_Twister). It is not cryptographically secure, the internal state can be recovered after 624 iteration and the next numbers predicted.
 
 ![](screenshots/4.png)
 
-There are off-the-shelp predictors, for example <https://github.com/kmyk/mersenne-twister-predictor>. Giving 624 past numbers can generate every future number. 
+There are off-the-shelf predictors, for example <https://github.com/kmyk/mersenne-twister-predictor>. Giving 624 past numbers can generate every future number. 
 
 New numbers can be generated actively or waiting ~1 hour passively can gather the required amount.
 
@@ -51,4 +51,4 @@ curl -X POST http://10.10.8.12:28167/post/send_number -H 'Content-Type: applicat
 In case someone is actively generating new numbers, there is not enough time between ticks to guess this way. An attempt to solve this is in [run.py](workdir/run.py).
 
 # Flag
-HCSC{y0u_LucKy_b4stard}
+`HCSC{y0u_LucKy_b4stard}`

@@ -74,7 +74,7 @@ ropper --file ./agecheck2 --nocolor > rop.txt
 ropper --file ./libc.so.6 --nocolor > rop-libc.txt
 ```
 
-Based on the gadgets and requirements, 2 ROP chains were creaed. It is calling libc [system](https://cplusplus.com/reference/cstdlib/system/) at the end. 
+Based on the gadgets and requirements, 2 ROP chains were created. It is calling libc [system](https://cplusplus.com/reference/cstdlib/system/) at the end. 
 
 In the first iteration it is leaking a libc address. Based on this the address of `system` can be calculated, and can be executed at the second step. Fun fact, there is a `/bin/bash` string in libc already, so no issue generating it. The following gadgets were used.
 

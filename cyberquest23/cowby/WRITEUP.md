@@ -65,8 +65,7 @@ Based on the filename, this is how an sms might have been written.
 | 222* | c |
 | 777 | s |
 
-For `777*` s was used, as in the wikipedia image (no Q and Z). Also probably `9*` is incorrect. The word `balkapocs` can mean `{` in hungarian, `jobbkapocs` can be `}`.
+For `777*` s was used, as in the Wikipedia image (no Q and Z). Also probably `9*` is incorrect. The word `balkapocs` can mean `{` in Hungarian, `jobbkapocs` can be `}`.
 
 # Flag
-
 `{ket.hang.egyidoben}`

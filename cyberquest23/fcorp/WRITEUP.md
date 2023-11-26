@@ -1,6 +1,6 @@
 # Executable
 
-The file is a windows executable that can be statically or dynamically analysed.
+The file is a windows executable that can be statically or dynamically analyzed.
 
 Some files are zipped with a password to prevent antivirus programs instantly deleting them. Zip password is `infected`.
 
@@ -45,9 +45,9 @@ net user /add FCorpAdm FCorpAdm
 ## Obfuscation and calling convention
 A lot of string is xored with various strings, like `US`, `October` etc. These are used to rebuild various strings, load dlls via [LoadLibraryA](https://learn.microsoft.com/en-us/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) and getting winapi functions with [GetProcAddress](https://learn.microsoft.com/en-us/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) int `rax` then calling it from there.
 
-This is a reoccuring pattern later, so every `call rax` will be set as a breakpoint for easier debugging. See [Target system](#target-system) for example.
+This is a reoccurring pattern later, so every `call rax` will be set as a breakpoint for easier debugging. See [Target system](#target-system) for example.
 
-The anti-debug and anti-analysis checks are used multiple times inbetween calls.
+The anti-debug and anti-analysis checks are used multiple times in-between calls.
 
 ## Target system
 
@@ -83,9 +83,9 @@ New-Item -Path HKCU:\Software\s3cr3ts | New-ItemProperty -Name 'p4th' -PropertyT
 
 ## Dropping the payload
 
-After pasing all the checks, it is creating a file `public:leavemehere`. This is an [NTFS Alternate Data Stream](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-fscc/c54dec26-1551-4d3a-a0ea-4fa40f848eb3) which is good for [hiding information](https://www.youtube.com/watch?v=S4MBzeni9Eo) as well. 
+After passing all the checks, it is creating a file `public:leavemehere`. This is an [NTFS Alternate Data Stream](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-fscc/c54dec26-1551-4d3a-a0ea-4fa40f848eb3) which is good for [hiding information](https://www.youtube.com/watch?v=S4MBzeni9Eo) as well. 
 
-The initial filename can be patched to prevent creating alternate data stream, eg `public_leavemehere` if preferred.
+The initial filename can be patched to prevent creating alternate data stream, e.g. `public_leavemehere` if preferred.
 
 ![](screenshots/7.png)
 
@@ -159,7 +159,7 @@ test\inject_local.exe loader.bin
 
 ![](screenshots/13.png)
 
-Unfortunatelly it is not running the `public:leavemehere` payload. Might be version difference, but the exact reason was not investigated.
+Unfortunately it is not running the `public:leavemehere` payload. Might be version difference, but the exact reason was not investigated.
 
 # Unpacking the executable
 
@@ -200,4 +200,4 @@ $listener.Stop()
 ![](screenshots/15.png)
 
 # Flag
-QC23{v3ry_s3ns1t1v3_1nfO}
+`QC23{v3ry_s3ns1t1v3_1nfO}`

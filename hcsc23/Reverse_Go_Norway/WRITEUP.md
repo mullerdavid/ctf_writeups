@@ -111,7 +111,7 @@ Uploading the modified `note` to the server reveals the flag.
 ![](screenshots/18.png)
 
 # Flag
-HCSC{Sm3ll5_l1ke_t00n_sp1r1t5}
+`HCSC{Sm3ll5_l1ke_t00n_sp1r1t5}`
 
 # Filename key generation
 

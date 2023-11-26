@@ -21,4 +21,4 @@ WIFI:S:bbehind_the_scenes;T:WPA;P:NearToTheSolutionButPWNotEnoughToGetItTryMoreH
 ```
 
 # Flag
-CQ23{nothing-extra-here-but-now-still-there}
+`CQ23{nothing-extra-here-but-now-still-there}`

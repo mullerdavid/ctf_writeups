@@ -34,9 +34,9 @@ Based on the challenge description and hint, it has something with the types.
 
 Fuzzing with various number formats and various types like `{}`, `[]`, `NaN`, returns nothing useful.
 
-Giving type instead of value is accepted on the other hand. Sending `number` reveals the flag. Other numeric types like `float`, `int`, etc also works.
+Giving type instead of value is accepted on the other hand. Sending `number` reveals the flag. Other numeric types like `float`, `int`, etc. also works.
 
 ![](screenshots/6.png)
 
 # Flag
-HCSC{r34l_p1r4t3s_4r3_4lw4y5_3qu4l}
+`HCSC{r34l_p1r4t3s_4r3_4lw4y5_3qu4l}`

@@ -81,4 +81,4 @@ purejs(canbehard(purejs(canbehard(urlToLoad))))
 ![](screenshots/12.png)
 
 # Flag
-HCSC{y0o_re4lly_s33m_t0_l1k3_JS_0bfusc4t10n}
+`HCSC{y0o_re4lly_s33m_t0_l1k3_JS_0bfusc4t10n}`

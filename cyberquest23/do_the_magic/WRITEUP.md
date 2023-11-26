@@ -24,4 +24,4 @@ Just replacing the bytes from the test donor is enough fixing the image.
 
 # Flag
 
-QC{Y0u_d1d_Th3_m4gic}
+`QC{Y0u_d1d_Th3_m4gic}`

@@ -1,6 +1,6 @@
 # Domain enumeration
 
-A domain subdomainjeit Security Trails-en megvizsgálva a következőt kapkjuk. 
+Checking the subdomains on Security Trails: 
 <https://securitytrails.com/list/apex_domain/ecsc.hu>
 
  - ecsc.hu
@@ -26,7 +26,7 @@ Searching the [hitler lenin battle](https://www.google.com/search?q=hitler+lenin
 
 ![](screenshots/1.png)
 
-With the name of the defense. `Sicilian`, `Szicíliai` in hungarian.
+With the name of the defense. `Sicilian`, `Szicíliai` in Hungarian.
 
 # Flag
-Szicíliai
+`Szicíliai`

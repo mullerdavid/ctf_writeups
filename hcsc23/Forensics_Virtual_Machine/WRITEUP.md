@@ -4,7 +4,7 @@ The virtual machine was imported. Before booting it, the disk was mounted and ev
 
 # Initial entry
 
-In the `c:\inetpub\logs\LogFiles\W3SVC1\u_ex230404.log` webserver logs there are a few entries with suspicious User-Agent: eg `python-requests/2.28.1`. These requests are successful to files that should not be there normally.
+In the `c:\inetpub\logs\LogFiles\W3SVC1\u_ex230404.log` webserver logs there are a few entries with suspicious User-Agent: e.g. `python-requests/2.28.1`. These requests are successful to files that should not be there normally.
 
 ![](screenshots/1.png)
 
@@ -12,12 +12,12 @@ Checking the previously saved event logs, sysmon is installed and logging. Sysmo
 
 ![](screenshots/2.png)
 
-The webserver proocess (`c:\windows\system32\inetsrv\w3wp.exe`) created the file. There is a similar entry for `myshell.aspx` later.
+The webserver process (`c:\windows\system32\inetsrv\w3wp.exe`) created the file. There is a similar entry for `myshell.aspx` later.
 
 Based on this, the time range `2023.04.04 11:37:30` around/after should be investigated in details.
 
 # Flag 1
-hcsc{C:\Program Files\Microsoft\Exchange Server\V15\FrontEnd\HttpProxy\owa\auth\logverify.aspx}
+`hcsc{C:\Program Files\Microsoft\Exchange Server\V15\FrontEnd\HttpProxy\owa\auth\logverify.aspx}`
 
 # AV evasion
 
@@ -28,27 +28,27 @@ The first of such processes is adding the entire C drive to the anti virus excep
 ![](screenshots/3.png)
 
 # Flag 2
-hcsc{powershell -Command Add-MpPreference -ExclusionPath 'C:'}
+`hcsc{powershell -Command Add-MpPreference -ExclusionPath 'C:'}`
 
 # Following the processes
 
 Continuing with the process logs, an entire trail can be recovered. 
 
-The builtin `certutil` utility was used to download `procdump`.
+The built-in `certutil` utility was used to download `procdump`.
 
 ![](screenshots/4.png)
 
 # Flag 3
-hcsc{https://live.sysinternals.com/procdump.exe}
+`hcsc{https://live.sysinternals.com/procdump.exe}`
 
 # FTP
 
-The builtin `ftp` utility was unsuccessfully attempted. The credentials for the attackers are visible in the logs in the pass parameter.
+The built-in `ftp` utility was unsuccessfully attempted. The credentials for the attackers are visible in the logs in the pass parameter.
 
 ![](screenshots/5.png)
 
 # Flag 4
-hcsc{adatszivargas@hcsc.flag}
+`hcsc{adatszivargas@hcsc.flag}`
 
 # Firewall
 
@@ -57,7 +57,7 @@ The firewall had to be turned off for ftp to work.
 ![](screenshots/6.png)
 
 # Flag 5
-hcsc{cmd.exe /C netsh advfirewall set allprofiles state off}
+`hcsc{cmd.exe /C netsh advfirewall set allprofiles state off}`
 
 # Exfiltration
 
@@ -69,7 +69,7 @@ Going further in the process logs, more ftp connections can be seen.
 ![](screenshots/10.png)
 
 # Flag 6
-hcsc{mslogtrace-1-2.dmp,mslogtrace-1-1.dmp,mslogtrace.dmp}
+`hcsc{mslogtrace-1-2.dmp,mslogtrace-1-1.dmp,mslogtrace.dmp}`
 
 # Exfiltration 2
 Later in the MSExchange Management logs, the mailbox exports (Event ID 1) can be found.
@@ -83,15 +83,15 @@ That folder is still shared via SMB.
 ![](screenshots/12.png)
 
 # Flag 7
-hcsc{jibenjamin.pst}
+`hcsc{jibenjamin.pst}`
 
 # Persistence
 
-Autoruns found a pesistence entry under `WMI Database Entries`.
+Autoruns found a persistence entry under `WMI Database Entries`.
 
 ![](screenshots/13.png)
 
-Any of the keywords (`CommandLineEventConsumer`, `PersistenceHello` etc) can be used to search for the file under `c:\Windows` to find the file.
+Any of the keywords (`CommandLineEventConsumer`, `PersistenceHello` etc.) can be used to search for the file under `c:\Windows` to find the file.
 
 ![](screenshots/14.png)
 
@@ -136,32 +136,32 @@ Defender also picks the executable file up after removing the C drive from the e
 ![](screenshots/17.png)
 
 # Flag 8/1
-hcsc{C:\Windows\System32\wbem\communication.mof}
+`hcsc{C:\Windows\System32\wbem\communication.mof}`
 
 # Flag 8/2
-hcsc{akkor_maradok_meg_egy_kicsit_csokolom}
+`hcsc{akkor_maradok_meg_egy_kicsit_csokolom}`
 
 # Flag 8/3
-hcsc{C:\Windows\System32\persistence.exe}
+`hcsc{C:\Windows\System32\persistence.exe}`
 
-# Flag 8/3
-hcsc{PersistenceHello,winlogon.exe}
+# Flag 8/4
+`hcsc{PersistenceHello,winlogon.exe}`
 
 # Reversing the backdoor
 
-The [malware](workdir/malware/persistence.exe.zip) can be analysed dynamically.
+The [malware](workdir/malware/persistence.exe.zip) can be analyzed dynamically.
 
 Running it with Proocmon reveals that the malware is looking for [thumbs.db](workdir/malware/thumbs.db) in `C:\Users\Public\Music\thumbs.db`, which is not that common. This path is one of the flags.
 
 ![](screenshots/25.png)
 
-An file named `thumbs.db` can be found in `c:\Windows\System32` directory, which is definetly not normal. Copying it to the `Music` folder makes the malware running.
+An file named `thumbs.db` can be found in `c:\Windows\System32` directory, which is definitely not normal. Copying it to the `Music` folder makes the malware running.
 
-It can be also seen here that the `CreateFile` call was orignating from `0x401246`. Th origin can be seen from the stack. There is also a `ReadFile` later with good config file supplied.
+It can be also seen here that the `CreateFile` call was originating from `0x401246`. Th origin can be seen from the stack. There is also a `ReadFile` later with good config file supplied.
 
 ![](screenshots/26.png)
 
-Running the malware in a debugger (eg x64dbg, olly2) with the valid config file reveals various things. 
+Running the malware in a debugger (e.g. x64dbg, olly2) with the valid config file reveals various things. 
 
 A few steps after the file related methods, the decrypted config can be found at `0x40F0A8`. The debugger shows this at multiple places along the steps. This decrypted config is one of the flags.
 
@@ -206,11 +206,11 @@ xortool-xor -s "x\x00" -f persistence.exe.bin > persistence.exe.bin.xor
 ```
 
 # Flag 9/1
-hcsc{Mozilla/5.0 (Windows NT %d.%d) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36}
+`hcsc{Mozilla/5.0 (Windows NT %d.%d) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36}`
 
 # Flag 9/2
-hcsc{C:\Users\Public\Music\thumbs.db}
+`hcsc{C:\Users\Public\Music\thumbs.db}`
 
 # Flag 9/3
-hcsc{c2OfGamerKings}
+`hcsc{c2OfGamerKings}`
 

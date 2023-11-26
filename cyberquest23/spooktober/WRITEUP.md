@@ -6,7 +6,7 @@ The file was a big bmp file, 8000x4500 pixels.
 
 # Checking the image
 
-Running image manipulation tools (like brightness etc) doesn't reveal anything.
+Running image manipulation tools (like brightness etc.) doesn't reveal anything.
 
 Running [zsteg](https://github.com/zed-0xff/zsteg) is also not showing anything.
 
@@ -54,7 +54,7 @@ It has [final.wav](workdir/final.wav) and a text file with `Visualize the fear!`
 
 [Sonic Visualiser](https://www.sonicvisualiser.org/) is free and can do various visualizations on sound files.
 
-Adding a spectogram reveals a text: `dontpad.com/noflaghere`.
+Adding a spectrogram reveals a text: `dontpad.com/noflaghere`.
 
 ![](screenshots/4.png)
 
@@ -65,4 +65,4 @@ Actually there is a flag at <https://dontpad.com/noflaghere> with some ASCII art
 ![](screenshots/5.png)
 
 # Flag
-QC23{1t_iS_Sp00ky_M0ntH}
+`QC23{1t_iS_Sp00ky_M0ntH}`

@@ -6,4 +6,4 @@ Visiting the site gives us the flag as a warmup.
 
 # Flag
 
-HCSC{Udvozojuk_a_versenyben}
+`HCSC{Udvozojuk_a_versenyben}`

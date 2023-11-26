@@ -113,4 +113,4 @@ void test(void)
 This version is in [exploit-new.py](workdir/exploit-new.py).
 
 # Flag
-HCSC2022{gdghdhgfhgljlk65564}
+`HCSC2022{gdghdhgfhgljlk65564}`

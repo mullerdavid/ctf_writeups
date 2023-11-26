@@ -56,5 +56,5 @@ Which finally finds the flag. The key is unexpectedly short and the message is f
 ![](screenshots/2.png)
 
 # Flag
-QC23{K3y!}
+`QC23{K3y!}`
 

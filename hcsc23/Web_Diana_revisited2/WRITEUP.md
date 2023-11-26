@@ -47,7 +47,7 @@ Reading the `index.php` reveals the existence of `connect.php`. This has the fla
 ![](screenshots/3.png)
 
 # Flag
-HCSC2023{M4gis_h0l_m4sh0l_l4nne_4_fl4g}
+`HCSC2023{M4gis_h0l_m4sh0l_l4nne_4_fl4g}`
 
 # Without guessing LFI
 If we failed to stumble upon the LFI part, the database can be read. There is a length limitation on the input, which prevents [sqlmap](https://sqlmap.org/) to work, but it can be done manually similarly to it's attempts.

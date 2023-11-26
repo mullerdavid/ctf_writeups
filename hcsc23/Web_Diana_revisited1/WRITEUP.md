@@ -57,4 +57,4 @@ exiftool 477574637.png
 
 
 # Flag
-HCSC2023{D1ana_I_am_crazy_l0ving_y0u}
+`HCSC2023{D1ana_I_am_crazy_l0ving_y0u}`

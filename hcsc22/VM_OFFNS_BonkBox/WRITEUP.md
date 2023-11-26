@@ -23,7 +23,7 @@ There is a text based telnet like service on port `5000`.
 
 ![](screenshots/2.png)
 
-After experimenting with the inputs, it turns out it is a javascript interpreter, but certain keywords (`+`, `eval`, `btoa`, etc) are filtered.
+After experimenting with the inputs, it turns out it is a javascript interpreter, but certain keywords (`+`, `eval`, `btoa`, etc.) are filtered.
 
 ![](screenshots/3.png)
 
@@ -50,7 +50,7 @@ The flag is in the user's home directory.
 ![](screenshots/5.png)
 
 # Flag 1
-flag{off_5_58c90a12b6000de2b030b694e54f3ead}
+`flag{off_5_58c90a12b6000de2b030b694e54f3ead}`
 
 # 8080
 On the other port, there is a website with login form.
@@ -111,11 +111,11 @@ The ~~war~~ jar file can be analyzed locally. The jar files are using zip as con
 
 With the database config and password from command line, the H2 console can be used to connect to the in-memory database.
 
-Unfortunatelly, the H2 database is not available remotely.
+Unfortunately, the H2 database is not available remotely.
 
 ![](screenshots/9.png)
 
-Fortunatelly, we have code execution already. Creating a reverse proxy allows connecting from "localhost".
+Fortunately, we have code execution already. Creating a reverse proxy allows connecting from "localhost".
 
 ```
 socat TCP-LISTEN:8081,fork TCP:127.0.0.1:8080
@@ -143,5 +143,5 @@ CALL EXECVE('/root/flag');
 
 The flag is not a txt, but a binary, running it outputs the flag. It is checking a few things (for example password hash for root), so the easiest is running it on the machine itself.
 
-# Flag
-flag{off_6_58c90a12b6000de2b030b694e54f3ead}
+# Flag 2
+`flag{off_6_58c90a12b6000de2b030b694e54f3ead}`

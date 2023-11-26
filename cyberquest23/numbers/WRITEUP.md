@@ -111,7 +111,7 @@ Ps: Watch out for the rotations
 
 ## Password
 
-The synopsys has 6 lines. The first column of the map has index ranging 1 to 6. It was a common cipher method to use page and letter indexes from books. Using the row number and the character at position yields the following: `sfbpvrgl`. Using rot13, as the ps suggests: `fsociety`.
+The synopsis has 6 lines. The first column of the map has index ranging 1 to 6. It was a common cipher method to use page and letter indexes from books. Using the row number and the character at position yields the following: `sfbpvrgl`. Using rot13, as the ps suggests: `fsociety`.
 
 The password unpacks [key.wav](workdir/key.wav).
 

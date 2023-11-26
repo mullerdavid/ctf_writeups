@@ -41,7 +41,7 @@ The master_hash is `50 43 0e d3 9b 28 da e2 5a a2 e9 8b 4b 91 07 b5`. Can be fou
 
 The AES key/iv is `PRENEELAPPROVESMAYBE`. The AES key/iv can be found with static analysis in dohash local variables or dynamic analysis.
 
-The first `do_hash()` round is done on 2 blocks, the rest is on only one. We can transfer the chain the way to make only single block AES encrypt/decrypt steps. The only difference is that the second execution is using the plaintext (second 16 bytes) as IV insted the key. We can do it because XOR inputs are exchangeable. See image.
+The first `do_hash()` round is done on 2 blocks, the rest is on only one. We can transfer the chain the way to make only single block AES encrypt/decrypt steps. The only difference is that the second execution is using the plaintext (second 16 bytes) as IV instead the key. We can do it because XOR inputs are exchangeable. See image.
 
 ![](screenshots/yeesbutno_cypher.png)
 

@@ -14,14 +14,14 @@ dirb http://10.10.3.10:8081
 
 ![](screenshots/2.png)
 
-Unfortunatelly, it is asking for credentials. Our favourite mythical creatures can not help here with the usual wordlists. Apollo on the other hand can log in with his credentials: `admin:apollo13`. See [Apollo challenge (SPOILER)](../Pentest_Apollo/WRITEUP.md#spoiler) for details.
+Unfortunately, it is asking for credentials. Our favorite mythical creatures can not help here with the usual wordlists. Apollo on the other hand can log in with his credentials: `admin:apollo13`. See [Apollo challenge (SPOILER)](../Pentest_Apollo/WRITEUP.md#spoiler) for details.
 
 The directory listing is turned on, and the flag is here.
 
 ![](screenshots/3.png)
 
 # Flag local
-{HCSC}!hanN@:l0CAL-FlaG
+`{HCSC}!hanN@:l0CAL-FlaG`
 
 # Upload
 
@@ -42,4 +42,4 @@ Of course, the `root` user has the same `apollo13` password, so it is reused eve
 
 
 # Flag root
-{HCSC}_r0otFl4g:4:H@nnA
+`{HCSC}_r0otFl4g:4:H@nnA`

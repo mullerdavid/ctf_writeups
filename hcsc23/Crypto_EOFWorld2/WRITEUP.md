@@ -2,7 +2,7 @@
 
 Based on EOFWorld #1 the original and recovered image has small differences.
  - Some pixels are different, colors are different by +-1 on all 3 RGB channel
- - The "barcode" with the pixesl
+ - The "barcode" with the pixels
  - `Fantasy Arts #W498` text in bottom right corner
  - White stripe on top and bottom
 

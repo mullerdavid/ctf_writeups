@@ -81,9 +81,9 @@ undefined8 FUN_001013bf(void)
 
 ```
 
-FUN_00101341 is used to read some input to a large enough buffer, then it copies strlen(buffer) amount into it's parameter deestination. 
+FUN_00101341 is used to read some input to a large enough buffer, then it copies strlen(buffer) amount into it's parameter destination. 
 
-FUN_001013bf is presumably the main function, it is allocating 2 buffers (size 0x10 and 0x20) with malloc and randomizing the latter with some filtering. The former is passed to the FUN_00101341 read function to hould our input. A third smaller local buffer is used to read some bytes in the second question, and this value is compared to the random one. Upon successfully guessing the random number, the flag is given out.
+FUN_001013bf is presumably the main function, it is allocating 2 buffers (size 0x10 and 0x20) with malloc and randomizing the latter with some filtering. The former is passed to the FUN_00101341 read function to hold our input. A third smaller local buffer is used to read some bytes in the second question, and this value is compared to the random one. Upon successfully guessing the random number, the flag is given out.
 
 # The problem
 
@@ -122,7 +122,7 @@ python -c 'print("A"*32+"X"*31+"\n"+"X"*31+"\n")' | nc 10.10.8.10 55364
 
 # Flag
 
-cq23{l3t_mE_t3ll_UR_FUtuRe:ur_g0nna_be_4_gr3at_h4ck3r}
+`cq23{l3t_mE_t3ll_UR_FUtuRe:ur_g0nna_be_4_gr3at_h4ck3r}`
 
 # Pwndbg
 

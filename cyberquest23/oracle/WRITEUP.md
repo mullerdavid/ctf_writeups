@@ -80,9 +80,9 @@ LAB_0040165d:
 
 ```
 
-FUN_00401334 is used to read some input to a large enough buffer, then it copies strlen(buffer) amount into it's parameter deestination. 
+FUN_00401334 is used to read some input to a large enough buffer, then it copies strlen(buffer) amount into it's parameter destination. 
 
-FUN_0040146b is presumably the main function, it is allocating 2 buffers (size 0x10 and 0x20) with malloc and randomizing the latter with some filtering. The former is passed to the FUN_00401334 read function to hould our input. A third smaller local buffer is used to read some bytes in the second question, and this value is compared to the random one. Upon successfully guessing the random number, we receive an another chance to read into the input buffer, this time with gets, and the flag is given out.
+FUN_0040146b is presumably the main function, it is allocating 2 buffers (size 0x10 and 0x20) with malloc and randomizing the latter with some filtering. The former is passed to the FUN_00401334 read function to hold our input. A third smaller local buffer is used to read some bytes in the second question, and this value is compared to the random one. Upon successfully guessing the random number, we receive an another chance to read into the input buffer, this time with gets, and the flag is given out.
 
 # The problem
 
@@ -127,4 +127,4 @@ python -c 'print("A"*32+"X"*31+"\n"+"X"*31+"\n"+"A"*24+"\x31\x00\x00\x00\x00\x00
 
 # Flag
 
-cq23{sUch_@_typ1c4l_r341_w0rld_siTUaT10n_righT?}
+`cq23{sUch_@_typ1c4l_r341_w0rld_siTUaT10n_righT?}`

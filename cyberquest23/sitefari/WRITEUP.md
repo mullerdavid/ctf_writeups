@@ -97,4 +97,4 @@ Trying the username manually reveals the flag though without logging in. It is i
 ![](screenshots/5.png)
 
 # Flag
-cq23{WP_s3cur1ty_4t_1t5_fiNEST_be5abd115b783b87e5394a7f6bf9265d}
+`cq23{WP_s3cur1ty_4t_1t5_fiNEST_be5abd115b783b87e5394a7f6bf9265d}`

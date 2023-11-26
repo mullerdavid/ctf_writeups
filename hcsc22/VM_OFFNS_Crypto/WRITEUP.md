@@ -34,7 +34,7 @@ After a lot of experimentations, the following can be noted.
  - Block size is 16.
  - Modifying a byte in the cyphertext is thrashing that block, and rarely a byte in next block, but nothing else.
  - The `apiKey` and `operation` is mandatory, can occur more than once, only the last one is used.
- - The `apiKey` can contail `1337` if it is not the last.
+ - The `apiKey` can contain `1337` if it is not the last.
  - Some `comment` keys can be added with arbitrary content, it has no effect.
  - Valid JSON is required.
 
@@ -46,7 +46,7 @@ After a lot of experimentations, the following can be noted.
 
 ![](screenshots/4.png)
 
-Based on the observations, a JSON can be created with 2 `apiKey`s, where the second one is empty (no `1337`) and can fit in a block, sorrounded with comments. It is structured in a way that if the block is thrashed, it should still be a valid JSON, because the garbage will be inside the quotes.
+Based on the observations, a JSON can be created with 2 `apiKey`s, where the second one is empty (no `1337`) and can fit in a block, surrounded with comments. It is structured in a way that if the block is thrashed, it should still be a valid JSON, because the garbage will be inside the quotes.
 
 ```json
 {"apiKey":"1337d74c985b01ab9d4f996690a8dde658ec307313c1a521810bdcff6d964b4e","comment2":"AAAAAAAAA","apiKey":"\"", "commenttttttttt":"","operation": "getFlag"} 
@@ -57,7 +57,7 @@ Modifying the returned cyphertext byte at offset 218 results in the flag, becaus
 ![](screenshots/5.png)
 
 # Flag 1
-flag{off_3_8861a4661b4436d2e81165a36adc486c}
+`flag{off_3_8861a4661b4436d2e81165a36adc486c}`
 
 # SSH key
 There is a `getSshKey` operation as well. Crafting an input like earlier can use this command.
@@ -121,4 +121,4 @@ The flag is not a txt, but a binary, running it outputs the flag. It is checking
 ![](screenshots/10.png)
 
 # Flag 2
-flag{off_4_e946801225142d40d50d416e3a77d6d9}
+`flag{off_4_e946801225142d40d50d416e3a77d6d9}`

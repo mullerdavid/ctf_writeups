@@ -85,7 +85,7 @@ The overflow works, but we need more control to get a second flat. We have to se
 
 # Shellcode
 
-We also have the buffer address printed as help, we can use that to store a shellcode and jumpt to it.
+We also have the buffer address printed as help, we can use that to store a shellcode and jump to it.
 The GNU assembler `as` from the pico sdk can be used to construct a shellcode. 
 
 [exploit_shellcode.s](workdir/exploit_shellcode.s) .
@@ -192,6 +192,6 @@ while True:
 ![](screenshots/10.png)
 
 # Flags
-DB{23ba345e029c137179fc3551503c}
+`DB{23ba345e029c137179fc3551503c}`
 
-DB{ea4d25a78cddc9fda52f1e465eb8}
+`DB{ea4d25a78cddc9fda52f1e465eb8}`

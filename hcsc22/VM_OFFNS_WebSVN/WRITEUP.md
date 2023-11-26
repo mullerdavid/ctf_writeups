@@ -46,7 +46,7 @@ print("[*] Request send. Did you get what you wanted?")
 ![](screenshots/2.png)
 
 # Flag 1
-flag{off_1_7b0f0f2d08a0c77baee541b00cbcf3d4}
+`flag{off_1_7b0f0f2d08a0c77baee541b00cbcf3d4}`
 
 # Privesc
 
@@ -60,8 +60,6 @@ sudo -l
 
 The `vi` process is running as `root` this way, which is trivial to escape.
 
-A vi így rootként fut, melyből triviális parancsokat futtatni.
-
 ```
 :!/bin/bash 
 ```
@@ -69,4 +67,4 @@ A vi így rootként fut, melyből triviális parancsokat futtatni.
 ![](screenshots/4.png)
 
 # Flag 2
-flag{off_2_c80872811fde160d6f44e6a8f062df60}
+`flag{off_2_c80872811fde160d6f44e6a8f062df60}`

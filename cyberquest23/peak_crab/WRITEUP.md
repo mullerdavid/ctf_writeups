@@ -49,4 +49,4 @@ Amongst the streams, there is a HTTP stream with the flag inside.
 ![](screenshots/5.png)
 
 # Flag
-cq23{br1dg3_m0de_ftw_98ac6b4b086b5a2f47677b15e786d9ba}
+`cq23{br1dg3_m0de_ftw_98ac6b4b086b5a2f47677b15e786d9ba}`

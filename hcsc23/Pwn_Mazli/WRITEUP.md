@@ -59,4 +59,4 @@ Based on this, the solution is `0xd06f00d1 XOR 0x6b8b4567 = 3152299446 (dec)`, t
 ![](screenshots/2.png)
 
 # Flag
-HCSC2023{Lucky_y0u_or_y0u_knew_the_tr1ck?}
+`HCSC2023{Lucky_y0u_or_y0u_knew_the_tr1ck?}`

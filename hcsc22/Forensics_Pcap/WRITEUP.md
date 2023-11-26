@@ -10,7 +10,7 @@ Right click on the packet, Follow, UDP Stream. Saving the file in Raw format (ot
 
 # PDF
 
-Opening the file, there is a message about non-existing second page in hungarian. The page was hidden.
+Opening the file, there is a message about non-existing second page in Hungarian. The page was hidden.
 
 ![](screenshots/3.png)
 
@@ -48,5 +48,5 @@ Opening the pdf afterwards has the second page.
 ![](screenshots/10.png)
 
 # Flag
-HCSC2022{476hvhjgj989cvbdfdesfzjjk3}
+`HCSC2022{476hvhjgj989cvbdfdesfzjjk3}`
  

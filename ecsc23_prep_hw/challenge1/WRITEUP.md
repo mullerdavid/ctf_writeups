@@ -43,7 +43,7 @@ Which in turn is decrypting the flag from the parameter given, with some sliding
 
 ![](screenshots/9.png)
 
-`0x10000000` – `0x102000000` is the builtin flash (4MB for regular pico, see datasheet).
+`0x10000000` – `0x102000000` is the built-in flash (4MB for regular pico, see datasheet).
 
 # Solution 1
 
@@ -58,7 +58,7 @@ Sending `A` while shorting any of these passing the authentication.
 
 # Solution 2
 
-We can patch the check in the binary (eg removing the jump via hexedit) and reupload it to pass the auth.
+We can patch the check in the binary (e.g. removing the jump via hexedit) and reupload it to pass the auth.
 
 # Solution 3
 
@@ -68,7 +68,7 @@ Implement our own fw to read the address above, and run the decryption.
 Alternatively export that part with picotool (or manually from uf2) and manually reverse the encryption.
 
 # Flag
-DB{4cc3400aa0adf4d2b38d57810e1a}
+`DB{4cc3400aa0adf4d2b38d57810e1a}`
 
 # Fuzzing
-The chellenge was a little bit too simple. There were solutions just pressing the button while sending `A`.
+The challenge was a little bit too simple. There were solutions just pressing the button while sending `A`.
