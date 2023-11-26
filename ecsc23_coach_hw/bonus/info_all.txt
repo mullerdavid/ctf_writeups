@@ -1,0 +1,21 @@
+File all.bin:
+
+Program Information
+ name:            MicroPython
+ version:         v1.20.0-162-gd080d427e-dirty
+ features:        thread support
+                  USB REPL
+ frozen modules:  secrets, comms, main, util, tpm
+ binary start:    0x10000000
+ binary end:      0x1004aaa0
+ embedded drive:  0x100a0000-0x10200000 (1408K): MicroPython
+
+Fixed Pin Information
+ none
+
+Build Information
+ sdk version:       1.5.0
+ pico_board:        powerslot
+ boot2_name:        boot2_w25q080
+ build date:        Sep 30 2023
+ build attributes:  MinSizeRel
