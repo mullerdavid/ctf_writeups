@@ -4,7 +4,7 @@ Team Austria offered a hw challenge for coaches.
 
 > ![](screenshots/1mod.png)
 >
-> @coaches: If anyone likes to take a break from memeing around and is interested, drop by for a **power-analysis hardware coach-challenge**_**!
+> @coaches: If anyone likes to take a break from memeing around and is interested, drop by for a **power-analysis hardware coach-challenge**!
 > We're in the coach zone near the corner where team czechia is at.
 >
 > ![](screenshots/2.jpg)
