@@ -1,6 +1,6 @@
 # Nmap
 
-Scanning the host reveals tcp port 10333 and 10334 that possibly belongst to the challenge.
+Scanning the host reveals tcp port 10333 and 10334 that possibly belongs to the challenge.
 
 ```
 Nmap scan report for 10.10.2.12
@@ -51,4 +51,4 @@ Joining to that hidden channel now reveals the flag.
 TODO: screenshots from live env
 
 # Flag
-CQ23{Bearware-TeamTalk-514-Latest-Best-Conference-Sys}
+`CQ23{Bearware-TeamTalk-514-Latest-Best-Conference-Sys}`

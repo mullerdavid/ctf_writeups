@@ -92,7 +92,7 @@ The `syscall` is available as gadget, and we can store arbitrary data at known a
 
 ![](screenshots/5.png)
 
-Also need gadgets to write values to RAX, RDI, RSI, RDX. Fortunatelly all are available as simple pop gadgets. 
+Also need gadgets to write values to RAX, RDI, RSI, RDX. Fortunately all are available as simple pop gadgets. 
 
 ```
 0x0000000000401481: pop rax; ret;

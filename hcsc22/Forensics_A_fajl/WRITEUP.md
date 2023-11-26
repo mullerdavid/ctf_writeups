@@ -37,4 +37,4 @@ With the recovered `yg5d` password, the zip can extract the flag in png format.
 ![](workdir/flag.png)
 
 # Flag
-HCSC{hgd4fju39974vbd}
+`HCSC{hgd4fju39974vbd}`

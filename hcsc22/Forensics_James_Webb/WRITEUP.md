@@ -59,4 +59,4 @@ Online translator can be used for example. <https://morsecode.world/internationa
 ![](screenshots/4.png)
 
 # Flag
-HCSC(UFOSSUPPORTTHEHUNTEAM)
+`HCSC(UFOSSUPPORTTHEHUNTEAM)`

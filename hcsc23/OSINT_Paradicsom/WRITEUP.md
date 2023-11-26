@@ -24,4 +24,4 @@ Github: DIANÁSCUKOR
 ```
 
 # Flag
-DIANÁSCUKOR
+`DIANÁSCUKOR`

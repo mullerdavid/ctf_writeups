@@ -183,7 +183,7 @@ Upon starting the application, we can see the application sending out some crede
 
 ![](screenshots/7.png)
 
-Username: `HereOttMobileApp`, password: `97967af0db478e842e16dbf7aea6e93a` (after b64 deccode). Unfortunatelly this credential is not useful for anything else.
+Username: `HereOttMobileApp`, password: `97967af0db478e842e16dbf7aea6e93a` (after b64 decode). Unfortunately this credential is not useful for anything else.
 
 There is an other json in the [config](workdir/config.json) that was acquired: <https://hereott.honeylab.hu:48490/files/apps_list_Meseorszag_v1.json>. 
 
@@ -205,7 +205,7 @@ The frontend also sending some credentials to the backend.
 Authorization: Basic aGVyZW90dHNlbGZjYXJlOmhlcmVvdHRzZWxmY2FyZQ==
 ```
 
-Username: `hereottselfcare`, password: `hereottselfcare`. Unfortunatelly this credential is not useful for anything else either.
+Username: `hereottselfcare`, password: `hereottselfcare`. Unfortunately this credential is not useful for anything else either.
 
 Replicating such requests via curl looks like the following.
 
@@ -274,7 +274,7 @@ Using the `Login with QR Code` feature in the app and scanning the QR code retur
 ![](screenshots/16.png)
 
 # Flag
-cq23{Ott_Pl4tform_5ecurity_1s_the_b3st_4bb1d4ed701b3}
+`cq23{Ott_Pl4tform_5ecurity_1s_the_b3st_4bb1d4ed701b3}`
 
 # Without camera
 

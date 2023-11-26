@@ -39,7 +39,7 @@ The flag is found in the memory afterwards.
 ```
 
 # Flag
-cq23{Y0u_4r3_4_tru3_C4N_h4ck3r!}
+`cq23{Y0u_4r3_4_tru3_C4N_h4ck3r!}`
 
 # Credits
 Credits to MJ for the base of writeup, dumps and poc.

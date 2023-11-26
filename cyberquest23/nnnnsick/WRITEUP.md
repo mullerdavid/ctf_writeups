@@ -37,4 +37,4 @@ The audio file ([codes.wav](workdir/codes.wav)) is the flag itself, saying it ou
 
 # Flag
 
-CQ23{G722ROCKS4115}
+`CQ23{G722ROCKS4115}`

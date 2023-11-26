@@ -127,4 +127,4 @@ The decoded morse data is `ev1lc0rp`.
 
 # Flag
 
-cq23{ev1lc0rp}
+`cq23{ev1lc0rp}`

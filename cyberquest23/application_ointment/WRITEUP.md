@@ -67,7 +67,7 @@ Payload:
 
 For some reason, JWT tokens can be signed with the None algorithm, and insecure applications do accept them. Let's also edit the payload and flip `isAdm` and make it never expire.
 
-The `=` padding has to be ommited for JWT tokens.
+The `=` padding has to be omitted for JWT tokens.
 
 Header:
 
@@ -95,4 +95,4 @@ This logs us in with admin.
 ![](screenshots/6.png)
 
 # Flag
-cq23{g0tta_c4tch_th3m_4ll_6d8441095772cfcf12a846450d}
+`cq23{g0tta_c4tch_th3m_4ll_6d8441095772cfcf12a846450d}`
