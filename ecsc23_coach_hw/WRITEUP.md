@@ -353,6 +353,8 @@ Substituting `oooL` and then `oL` with the binary gives the recovered `d`.
 1100101101110111111110101011010111000011101111011001111001000110110100?1
 ```
 
+Alternative option (was not investigated) might be to use certainty when matching the waves and use brute force or lattice to decode the low certainty ones.
+
 # Checking the result 
 Inserting the number in the [secrets.py](workdir/cookie-crasher_desktop/secrets.py) file. 
 

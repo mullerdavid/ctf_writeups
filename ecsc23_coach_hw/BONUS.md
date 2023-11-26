@@ -57,6 +57,11 @@ It was not attempted, but patching the blacklisted message to something else wou
 # Regulator design
 As a tip from the creators, you'll need custom regulator design to run the challenge at home, because without it you cannot have larger resistors than a few ohms without the chip brownouting and then you cant measure anything.
 
-The red board we received had this schematics (does not show that R21 should not be populated, otherwise the power sensing will not work): [900-007-B_PowerAnalysis_RP2040_DUT_Schematics.PDF](bonus/900-007-B_PowerAnalysis_RP2040_DUT_Schematics.PDF) .
+
+The red board we received had this schematics (does not show that R21 should not be populated, otherwise the power sensing will not work): 
+
+![](screenshots/33.png)
 
 TODO: Add actual PDF as it is redacted for the request of creators until finalized
+
+[MISSING 900-007-B_PowerAnalysis_RP2040_DUT_Schematics.PDF](bonus/900-007-B_PowerAnalysis_RP2040_DUT_Schematics.PDF)
