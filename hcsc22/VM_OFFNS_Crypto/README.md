@@ -2,7 +2,7 @@
 
 Some virtual machine images were distributed with challenges to work offline.
 
-The VM files are hosted here: <https://1drv.ms/f/s!AhobjPOnjp03hDtoFIP1MapZusS_>
+The VM files are hosted here: <https://1drv.ms/f/s!AhobjPOnjp03hDWQSgC0uDadb0xk> in the hcsc22 subfolder.
 
 # OFFNS_Crypto#1
 

@@ -2,7 +2,7 @@
 
 A virtual machine image was distributed with multiple challenges of different types.
 
-The VM files are hosted here: <https://1drv.ms/f/s!AhobjPOnjp03hDazN2qdxiFgMdA_>
+The VM files are hosted here: <https://1drv.ms/f/s!AhobjPOnjp03hDWQSgC0uDadb0xk> in the hcsc23 subfolder.
 
 # Forensics 1.
 
