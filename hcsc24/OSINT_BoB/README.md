@@ -10,7 +10,7 @@ Minden magyar szereti a söröket, de vannak akik ezt túlzásba viszik. Egy ism
 
 By: incarrnati0n
 
-10.10.1-9.10
+`10.10.1-9.10`
 
 
 <details>

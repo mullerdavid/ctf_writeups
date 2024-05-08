@@ -16,7 +16,7 @@ The snapshot on 2024.04.12. has a social media tag at the bottom, `Follow me: @I
 
 The user can be found on Picuki with various tools, like [maigret](https://github.com/soxoj/maigret/).
 
-```
+```bash
 docker pull soxoj/maigret
 docker run -v /mydir:/app/reports soxoj/maigret:latest Imreeeh --html
 ```

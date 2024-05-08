@@ -53,6 +53,7 @@ The port challenge mapping are the following
  - `5966` Trekking (HTTP: Traverse through)
  - `7385` ThereOTT (HTTP: 204 No Content, leftover)
  - `53369` Handy (HTTP: Bee Image Classification)
+ 
 # 10.10.x.12
 
 ```

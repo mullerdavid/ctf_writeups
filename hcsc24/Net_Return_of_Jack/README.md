@@ -41,7 +41,8 @@ Flag formátum: HCSC24{...}
 Köszönet Zaletnyik Péternek az IPv6-os kérdéseimmel kapcsolatban nyújtott válaszaiért!
 
 By MJ
-193.225.251.62 (erre az IP-re szabad út jár, bármit ér küldeni rá) 
+
+`193.225.251.62 `(erre az IP-re szabad út jár, bármit ér küldeni rá) 
 
 <details>
   <summary>Hints (last day)</summary> 

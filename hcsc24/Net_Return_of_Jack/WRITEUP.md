@@ -23,7 +23,7 @@ Using the `2001:470:6d:d6::1337` hint endpoint as target first, we can confirm t
 
 ICMPv6 is used based on the request/reply IDs from the challenge description.
 
-```
+```python
 sendp( Ether() / IP(dst="193.225.251.62", proto=41) / IPv6(src="2001:470:6d:db::1337", dst="2001:470:6d:d6::1337") / ICMPv6EchoRequest(), iface="eth0")
 ```
 
