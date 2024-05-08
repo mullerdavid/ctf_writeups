@@ -4,12 +4,12 @@ Készítettem egy Minecraft szervert (1.20.4) a haveroknak. Kezdetben Hamachi se
 
 Az IP-cím, ahol a szerver futott: 193.225.250.153
 
-MEGJEGYZÉS: Kérlek, ne próbálj meg semmilyen szolgáltatást elérni a megadott IP-címen. A szerveren már biztosan nem fogod megtalálni a Minecraft szervert. A challenge nem az adott IP feltöréséről, hanem a szerverre vonatkozó információk gyűjtéséről szól. A jogosulatlan hozzáférés vagy támadás bármilyen formája törvénybe ütközik!
+**MEGJEGYZÉS: Kérlek, ne próbálj meg semmilyen szolgáltatást elérni a megadott IP-címen. A szerveren már biztosan nem fogod megtalálni a Minecraft szervert. A challenge nem az adott IP feltöréséről, hanem a szerverre vonatkozó információk gyűjtéséről szól. A jogosulatlan hozzáférés vagy támadás bármilyen formája törvénybe ütközik!**
 
-    Készítői kommentek:
-
-        a flag lehetséges, hogy darabokban van, a megfelelő összeillesztés a játékos feladata
-        VPN kapcsolat nem szükséges
+> Készítői kommentek:
+> 
+> a flag lehetséges, hogy darabokban van, a megfelelő összeillesztés a játékos feladata
+> VPN kapcsolat nem szükséges
 
 Flag formátum: HCSC24{...}
 

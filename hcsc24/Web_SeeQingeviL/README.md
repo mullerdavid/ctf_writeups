@@ -1,23 +1,23 @@
 # !SeeQingeviL
 
-    Summer: Nagypapa Mr.Needful megint elkezdte a hülye Web3 projektjét!
+> Summer: Nagypapa Mr.Needful megint elkezdte a hülye Web3 projektjét!
 
-    Rick: B***** meg magát úgy látszik megint meg kell verni, hagyd hogy nagypapa dolgozzon.
+> Rick: B***** meg magát úgy látszik megint meg kell verni, hagyd hogy nagypapa dolgozzon.
 
-    Morty: Hey Rick mit csináltok?
+> Morty: Hey Rick mit csináltok?
 
-    Summer: Mr. Needful-t sz***** meg megint.
+> Summer: Mr. Needful-t sz***** meg megint.
 
-    Rick: éééés kész csináltam erre a f*** oldalra fiókokat, úgy látom van egy admin is azt kéne átvenni.
+> Rick: éééés kész csináltam erre a f*** oldalra fiókokat, úgy látom van egy admin is azt kéne átvenni.
 
-    Morty: Ohh istenem Rick nincs erre valami egyszerűbb megoldás?
+> Morty: Ohh istenem Rick nincs erre valami egyszerűbb megoldás?
 
-    Rick: Nincs b***** Fogd be a szád és tedd hasznossá magad.
+> Rick: Nincs b***** Fogd be a szád és tedd hasznossá magad.
 
-    Készítői kommentek
-
-        VPN kapcsolat szükséges
-        A flag-et pontosan kell beírni
+> Készítői kommentek
+> 
+> * VPN kapcsolat szükséges
+> * A flag-et pontosan kell beírni
 
 By: incarrnati0n
 
