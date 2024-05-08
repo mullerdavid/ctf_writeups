@@ -1,0 +1,253 @@
+┌──(mullerdavid㉿DESKTOP-DAVID2)-[~]
+└─$ nmap -T5 -sV 10.10.3.10 -p1-65535
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-04-30 13:49 CEST
+Nmap scan report for 10.10.3.10
+Host is up (0.0039s latency).
+Not shown: 65527 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE VERSION
+22/tcp    filtered ssh
+8746/tcp  open     ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13 (Ubuntu Linux; protocol 2.0)
+32860/tcp open     ssh     MikroTik RouterOS sshd (protocol 2.0)
+46901/tcp open     http    nginx 1.25.5
+54847/tcp open     unknown
+61370/tcp open     nbd     Network Block Device (new handshake)
+65000/tcp filtered unknown
+65001/tcp filtered unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port54847-TCP:V=7.94SVN%I=7%D=4/30%Time=6630DAE6%P=x86_64-pc-linux-gnu%
+SF:r(NULL,350,"\x20\x20\x20\x20\x20\x20,-'\"\"`-,\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\n,'\x20\x20\x20\x20\x20\x20\x20\x20
+SF:`\.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\n/\x20\x20\x20\
+SF:x20_,,,_\x20\x20\x20\\\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:n/\x20\x20\x20,'\x20\x20\|\x20\x20`\\/\\\\\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\n/\x20\x20\x20/,--'\x20`--\.\x20\x20`\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\n\|\x20\x20\x20/\x20\x20\x20\x20\x20\x20___\
+SF:\_\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\n\|\x20\x20\|\x20/\x
+SF:20\x20______\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\n\|\
+SF:x20\x20\|\x20\|\x20\x20\|_'\x20\\'\|\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\n\\\x20,'\x20\(\x20\x20\x20_\)\x20-`\|\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\n'---\x20\\\x20'-\.--\x20/\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\n______/`--'--<\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\n\|\x20\x20\x20\x20\|`-\
+SF:.\x20\x20,;/``--\._\x20\x20\x20\x20\x20\x20\x20\x20\n\|\x20\x20\x20\x20
+SF:\|-\.\x20_///\x20\x20\x20\x20\x20,'`\\\x20\x20\x20\x20\x20\x20\n\|\x20\
+SF:x20\x20\x20\|`-Y;'/\x20\x20\x20\x20\x20/\x20\x20,-'\\\x20\x20\x20\x20\n
+SF:\|\x20\x20\x20\x20\|\x20//\x20<_\x20\x20\x20\x20/\x20,'\x20\x20,-'\\\x2
+SF:0\x20\n'----'//\x20--\x20`-\./,'\x20,-'\x20\x20\\/\x20\x20\n\|\x20\x20\
+SF:x20//\[==\]\x20\x20\x20\x20\x20\\,'\x20\\_\.,-\\\x20\x20\n\|\x20\x20//\
+SF:x20\x20\x20\x20\x20\x20`\x20\x20--\x20\|\x20\\__\.,-'\x20\n//\x20-\[==\
+SF:]_\x20\x20\x20\x20\x20\x20\|\x20\x20\x20____\\\x20\n//\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20`--\x20\|--'\x20\|\x20\x20\x20\\\n\x20\x20\x20\x
+SF:20\[==__,,,,--'\x20\x20\x20\x20\|-'\"\x20\n---\"\"''\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\|\x20\x20\x20\x20\nhjm\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20___\.\.\.____/\x20\x20\x20\x20\x20\n\x20\x20\x
+SF:20\x20--------------------\.\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20,\.\x20\x20\x20\x20\x20\x20\x20\x20--\.\|\n\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20/\|\|\\\x20\x20\x20\x20\x20\x20\x20\x20/\|\|\n\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\|\|\x20\x20\x20\x20\x20\x20\x20\x20/
+SF:\x20\x20\|\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\|\x20\x20\x2
+SF:0\x20\x20\x20\x20/\x20\x20\x20\|\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\|\x20\x20\x20\x20\x20\x20/\x20\x20\x20\x20\|\n\nBeep,\x20bo
+SF:op!\x20Give\x20me\x20a\x20message\x20to\x20encrypt:\x20");
+Service Info: OS: Linux; Device: router; CPE: cpe:/o:linux:linux_kernel, cpe:/o:mikrotik:routeros
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 93.37 seconds
+
+┌──(mullerdavid㉿DESKTOP-DAVID2)-[~]
+└─$ nmap -T5 -sV 10.10.3.11 -p1-65535
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-04-30 13:53 CEST
+Nmap scan report for 10.10.3.11
+Host is up (0.0033s latency).
+Not shown: 65528 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE VERSION
+22/tcp    filtered ssh
+5028/tcp  open     http    nginx 1.25.5
+5966/tcp  open     http    nginx 1.25.5
+7385/tcp  open     unknown
+53369/tcp open     unknown
+65000/tcp filtered unknown
+65001/tcp filtered unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port7385-TCP:V=7.94SVN%I=7%D=4/30%Time=6630DBD7%P=x86_64-pc-linux-gnu%r
+SF:(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(GetRequest,8A,"HTTP/1\.0\x20204\x20No\x20Content\r\nCo
+SF:ntent-Type:\x20text/plain;\x20charset=utf-8\r\nX-Content-Type-Options:\
+SF:x20nosniff\r\nDate:\x20Tue,\x2030\x20Apr\x202024\x2011:53:53\x20GMT\r\n
+SF:\r\n")%r(HTTPOptions,8A,"HTTP/1\.0\x20204\x20No\x20Content\r\nContent-T
+SF:ype:\x20text/plain;\x20charset=utf-8\r\nX-Content-Type-Options:\x20nosn
+SF:iff\r\nDate:\x20Tue,\x2030\x20Apr\x202024\x2011:53:53\x20GMT\r\n\r\n")%
+SF:r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent
+SF:-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n4
+SF:00\x20Bad\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20R
+SF:equest\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\
+SF:x20close\r\n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20chars
+SF:et=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSe
+SF:ssionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20tex
+SF:t/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20
+SF:Request")%r(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-
+SF:Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n40
+SF:0\x20Bad\x20Request")%r(FourOhFourRequest,8A,"HTTP/1\.0\x20204\x20No\x2
+SF:0Content\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nX-Content-
+SF:Type-Options:\x20nosniff\r\nDate:\x20Tue,\x2030\x20Apr\x202024\x2011:54
+SF::18\x20GMT\r\n\r\n")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request
+SF:\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20clo
+SF:se\r\n\r\n400\x20Bad\x20Request")%r(LDAPSearchReq,67,"HTTP/1\.1\x20400\
+SF:x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nC
+SF:onnection:\x20close\r\n\r\n400\x20Bad\x20Request");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port53369-TCP:V=7.94SVN%I=7%D=4/30%Time=6630DBD7%P=x86_64-pc-linux-gnu%
+SF:r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\
+SF:x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20B
+SF:ad\x20Request")%r(GetRequest,A01,"HTTP/1\.0\x20200\x20OK\r\nContent-Enc
+SF:oding:\x20identity\r\nContent-Type:\x20text/html\r\nDate:\x20Tue,\x2030
+SF:\x20Apr\x202024\x2011:53:53\x20GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20
+SF:lang=\"en\">\n<head>\n\t<meta\x20charset=\"UTF-8\">\n\t<meta\x20name=\"
+SF:viewport\"\x20content=\"width=device-width,\x20initial-scale=1\.0\">\n\
+SF:t<title>Bee\x20Image\x20Classification</title>\n\t<style>\n\t\tbody\x20
+SF:{\n\t\t\tfont-family:\x20'Segoe\x20UI',\x20Tahoma,\x20Geneva,\x20Verdan
+SF:a,\x20sans-serif;\n\t\t\tmargin:\x200;\n\t\t\tpadding:\x200;\n\t\t\tbac
+SF:kground-color:\x20#f8f9fa;\n\t\t}\n\t\t\.container\x20{\n\t\t\tmax-widt
+SF:h:\x20800px;\n\t\t\tmargin:\x200\x20auto;\n\t\t\tpadding:\x2020px;\n\t\
+SF:t\ttext-align:\x20center;\n\t\t}\n\t\th1\x20{\n\t\t\ttext-align:\x20cen
+SF:ter;\n\t\t\tmargin-top:\x2030px;\n\t\t\tcolor:\x20#3e3e3e;\n\t\t}\n\t\t
+SF:p\x20{\n\t\t\ttext-align:\x20center;\n\t\t\tcolor:\x20#6c757d;\n\t\t}\n
+SF:\t\t\.instructions\x20{\n\t\t\tbackground-color:\x20#fff;\n\t\t\tpaddin
+SF:g:\x2020px;\n\t\t\tborder-radius:\x2010px;\n\t\t\tbox-shadow:\x200\x204
+SF:px\x206px\x20rgba\(0,\x200,\x200,\x200\.1\);\n\t\t\tmargin-top:\x2020px
+SF:;\n\t\t\ttext-align:\x20left;\n\t\t}\n\t\t\.instructions\x20h2\x20{\n\t
+SF:\t\tcolor:\x20#3e3e3e;\n\t\t}\n\t\t\.instructions\x20ol\x20{")%r(HTTPOp
+SF:tions,A01,"HTTP/1\.0\x20200\x20OK\r\nContent-Encoding:\x20identity\r\nC
+SF:ontent-Type:\x20text/html\r\nDate:\x20Tue,\x2030\x20Apr\x202024\x2011:5
+SF:3:53\x20GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=\"en\">\n<head>\n\
+SF:t<meta\x20charset=\"UTF-8\">\n\t<meta\x20name=\"viewport\"\x20content=\
+SF:"width=device-width,\x20initial-scale=1\.0\">\n\t<title>Bee\x20Image\x2
+SF:0Classification</title>\n\t<style>\n\t\tbody\x20{\n\t\t\tfont-family:\x
+SF:20'Segoe\x20UI',\x20Tahoma,\x20Geneva,\x20Verdana,\x20sans-serif;\n\t\t
+SF:\tmargin:\x200;\n\t\t\tpadding:\x200;\n\t\t\tbackground-color:\x20#f8f9
+SF:fa;\n\t\t}\n\t\t\.container\x20{\n\t\t\tmax-width:\x20800px;\n\t\t\tmar
+SF:gin:\x200\x20auto;\n\t\t\tpadding:\x2020px;\n\t\t\ttext-align:\x20cente
+SF:r;\n\t\t}\n\t\th1\x20{\n\t\t\ttext-align:\x20center;\n\t\t\tmargin-top:
+SF:\x2030px;\n\t\t\tcolor:\x20#3e3e3e;\n\t\t}\n\t\tp\x20{\n\t\t\ttext-alig
+SF:n:\x20center;\n\t\t\tcolor:\x20#6c757d;\n\t\t}\n\t\t\.instructions\x20{
+SF:\n\t\t\tbackground-color:\x20#fff;\n\t\t\tpadding:\x2020px;\n\t\t\tbord
+SF:er-radius:\x2010px;\n\t\t\tbox-shadow:\x200\x204px\x206px\x20rgba\(0,\x
+SF:200,\x200,\x200\.1\);\n\t\t\tmargin-top:\x2020px;\n\t\t\ttext-align:\x2
+SF:0left;\n\t\t}\n\t\t\.instructions\x20h2\x20{\n\t\t\tcolor:\x20#3e3e3e;\
+SF:n\t\t}\n\t\t\.instructions\x20ol\x20{");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 93.32 seconds
+
+┌──(mullerdavid㉿DESKTOP-DAVID2)-[~]
+└─$ nmap -T5 -sV 10.10.3.12 -p1-65535
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-04-30 13:55 CEST
+Warning: 10.10.3.12 giving up on port because retransmission cap hit (2).
+Nmap scan report for 10.10.3.12
+Host is up (0.0026s latency).
+Not shown: 65528 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE VERSION
+22/tcp    filtered ssh
+10990/tcp open     rmiaux?
+20882/tcp open     unknown
+49428/tcp open     unknown
+50211/tcp open     http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+65000/tcp filtered unknown
+65001/tcp filtered unknown
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port10990-TCP:V=7.94SVN%I=7%D=4/30%Time=6630DC58%P=x86_64-pc-linux-gnu%
+SF:r(NULL,2B,"Prequel's\x20Revenge\x20v1\.0\.2\nEnter\x20your\x20name:\x20
+SF:\n")%r(JavaRMI,2B,"Prequel's\x20Revenge\x20v1\.0\.2\nEnter\x20your\x20n
+SF:ame:\x20\n")%r(RPCCheck,2B,"Prequel's\x20Revenge\x20v1\.0\.2\nEnter\x20
+SF:your\x20name:\x20\n")%r(DNSVersionBindReqTCP,2B,"Prequel's\x20Revenge\x
+SF:20v1\.0\.2\nEnter\x20your\x20name:\x20\n")%r(DNSStatusRequestTCP,2B,"Pr
+SF:equel's\x20Revenge\x20v1\.0\.2\nEnter\x20your\x20name:\x20\n")%r(Help,4
+SF:4,"Prequel's\x20Revenge\x20v1\.0\.2\nEnter\x20your\x20name:\x20\nFetchi
+SF:ng\x20your\x20message\.\.\.\n")%r(SMBProgNeg,2B,"Prequel's\x20Revenge\x
+SF:20v1\.0\.2\nEnter\x20your\x20name:\x20\n")%r(X11Probe,2B,"Prequel's\x20
+SF:Revenge\x20v1\.0\.2\nEnter\x20your\x20name:\x20\n")%r(LPDString,44,"Pre
+SF:quel's\x20Revenge\x20v1\.0\.2\nEnter\x20your\x20name:\x20\nFetching\x20
+SF:your\x20message\.\.\.\n")%r(LDAPBindReq,2B,"Prequel's\x20Revenge\x20v1\
+SF:.0\.2\nEnter\x20your\x20name:\x20\n")%r(LANDesk-RC,2B,"Prequel's\x20Rev
+SF:enge\x20v1\.0\.2\nEnter\x20your\x20name:\x20\n")%r(TerminalServer,2B,"P
+SF:requel's\x20Revenge\x20v1\.0\.2\nEnter\x20your\x20name:\x20\n")%r(NCP,2
+SF:B,"Prequel's\x20Revenge\x20v1\.0\.2\nEnter\x20your\x20name:\x20\n")%r(N
+SF:otesRPC,2B,"Prequel's\x20Revenge\x20v1\.0\.2\nEnter\x20your\x20name:\x2
+SF:0\n")%r(WMSRequest,2B,"Prequel's\x20Revenge\x20v1\.0\.2\nEnter\x20your\
+SF:x20name:\x20\n")%r(oracle-tns,2B,"Prequel's\x20Revenge\x20v1\.0\.2\nEnt
+SF:er\x20your\x20name:\x20\n")%r(ms-sql-s,2B,"Prequel's\x20Revenge\x20v1\.
+SF:0\.2\nEnter\x20your\x20name:\x20\n")%r(afp,2B,"Prequel's\x20Revenge\x20
+SF:v1\.0\.2\nEnter\x20your\x20name:\x20\n")%r(giop,2B,"Prequel's\x20Reveng
+SF:e\x20v1\.0\.2\nEnter\x20your\x20name:\x20\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port20882-TCP:V=7.94SVN%I=7%D=4/30%Time=6630DC58%P=x86_64-pc-linux-gnu%
+SF:r(NULL,21,"Prequel\x20v1\.0\.1\nEnter\x20your\x20name:\x20\n")%r(RPCChe
+SF:ck,21,"Prequel\x20v1\.0\.1\nEnter\x20your\x20name:\x20\n")%r(DNSVersion
+SF:BindReqTCP,21,"Prequel\x20v1\.0\.1\nEnter\x20your\x20name:\x20\n")%r(DN
+SF:SStatusRequestTCP,21,"Prequel\x20v1\.0\.1\nEnter\x20your\x20name:\x20\n
+SF:")%r(Help,3A,"Prequel\x20v1\.0\.1\nEnter\x20your\x20name:\x20\nFetching
+SF:\x20your\x20message\.\.\.\n")%r(SMBProgNeg,21,"Prequel\x20v1\.0\.1\nEnt
+SF:er\x20your\x20name:\x20\n")%r(X11Probe,21,"Prequel\x20v1\.0\.1\nEnter\x
+SF:20your\x20name:\x20\n")%r(LPDString,3A,"Prequel\x20v1\.0\.1\nEnter\x20y
+SF:our\x20name:\x20\nFetching\x20your\x20message\.\.\.\n")%r(LDAPBindReq,2
+SF:1,"Prequel\x20v1\.0\.1\nEnter\x20your\x20name:\x20\n")%r(LANDesk-RC,21,
+SF:"Prequel\x20v1\.0\.1\nEnter\x20your\x20name:\x20\n")%r(TerminalServer,2
+SF:1,"Prequel\x20v1\.0\.1\nEnter\x20your\x20name:\x20\n")%r(NCP,21,"Preque
+SF:l\x20v1\.0\.1\nEnter\x20your\x20name:\x20\n")%r(NotesRPC,21,"Prequel\x2
+SF:0v1\.0\.1\nEnter\x20your\x20name:\x20\n")%r(JavaRMI,21,"Prequel\x20v1\.
+SF:0\.1\nEnter\x20your\x20name:\x20\n")%r(WMSRequest,21,"Prequel\x20v1\.0\
+SF:.1\nEnter\x20your\x20name:\x20\n")%r(oracle-tns,21,"Prequel\x20v1\.0\.1
+SF:\nEnter\x20your\x20name:\x20\n")%r(ms-sql-s,21,"Prequel\x20v1\.0\.1\nEn
+SF:ter\x20your\x20name:\x20\n")%r(afp,21,"Prequel\x20v1\.0\.1\nEnter\x20yo
+SF:ur\x20name:\x20\n")%r(giop,21,"Prequel\x20v1\.0\.1\nEnter\x20your\x20na
+SF:me:\x20\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port49428-TCP:V=7.94SVN%I=7%D=4/30%Time=6630DC58%P=x86_64-pc-linux-gnu%
+SF:r(NULL,21F,"I\x20got\x20a\x20simple\x20challenge\x20for\x20you!\x20You\
+SF:x20are\x20in\x20control\x20of\x20x,\x20y,\x20and\x20z\.\x20They\x20need
+SF:\x20to\x20be\x20positive\x20integers\x20with\x20at\x20most\x20200\x20di
+SF:gits\.\x20Supply\x20some\x20values\x20that\x20satisfy\x20the\x20followi
+SF:ng\x20equation:\n\nx/\(y\+z\)\x20\+\x20y/\(x\+z\)\x20\+\x20z/\(x\+y\)\x
+SF:20=\x2010\n\\frac{x}{y\+z}\x20\+\x20\\frac{y}{x\+z}\x20\+\x20\\frac{z}{
+SF:x\+y}\x20=\x2010\x20\(the\x20same,\x20but\x20in\x20LaTeX\x20format\)\n\
+SF:nWe\x20would\x20appreciate\x20if\x20you\x20wouldn't\x20DoS\x20the\x20pu
+SF:blic\x20instance\x20with\x20a\x20high\x20number\x20of\x20connections\x2
+SF:0or\x20requests\.\x20The\x20source\x20is\x20provided\x20for\x20you\x20t
+SF:o\x20run\x20your\x20own\x20instance\.\n\nYou\x20have\x2030\x20seconds\x
+SF:20to\x20send\x20your\x20answer\.\x20Good\x20luck!\n\nEnter\x20the\x20va
+SF:lue\x20for\x20x:\x20")%r(GenericLines,243,"I\x20got\x20a\x20simple\x20c
+SF:hallenge\x20for\x20you!\x20You\x20are\x20in\x20control\x20of\x20x,\x20y
+SF:,\x20and\x20z\.\x20They\x20need\x20to\x20be\x20positive\x20integers\x20
+SF:with\x20at\x20most\x20200\x20digits\.\x20Supply\x20some\x20values\x20th
+SF:at\x20satisfy\x20the\x20following\x20equation:\n\nx/\(y\+z\)\x20\+\x20y
+SF:/\(x\+z\)\x20\+\x20z/\(x\+y\)\x20=\x2010\n\\frac{x}{y\+z}\x20\+\x20\\fr
+SF:ac{y}{x\+z}\x20\+\x20\\frac{z}{x\+y}\x20=\x2010\x20\(the\x20same,\x20bu
+SF:t\x20in\x20LaTeX\x20format\)\n\nWe\x20would\x20appreciate\x20if\x20you\
+SF:x20wouldn't\x20DoS\x20the\x20public\x20instance\x20with\x20a\x20high\x2
+SF:0number\x20of\x20connections\x20or\x20requests\.\x20The\x20source\x20is
+SF:\x20provided\x20for\x20you\x20to\x20run\x20your\x20own\x20instance\.\n\
+SF:nYou\x20have\x2030\x20seconds\x20to\x20send\x20your\x20answer\.\x20Good
+SF:\x20luck!\n\nEnter\x20the\x20value\x20for\x20x:\x20nope\nError\x20readi
+SF:ng\x20x:\x20invalid\x20input\n")%r(GetRequest,252,"I\x20got\x20a\x20sim
+SF:ple\x20challenge\x20for\x20you!\x20You\x20are\x20in\x20control\x20of\x2
+SF:0x,\x20y,\x20and\x20z\.\x20They\x20need\x20to\x20be\x20positive\x20inte
+SF:gers\x20with\x20at\x20most\x20200\x20digits\.\x20Supply\x20some\x20valu
+SF:es\x20that\x20satisfy\x20the\x20following\x20equation:\n\nx/\(y\+z\)\x2
+SF:0\+\x20y/\(x\+z\)\x20\+\x20z/\(x\+y\)\x20=\x2010\n\\frac{x}{y\+z}\x20\+
+SF:\x20\\frac{y}{x\+z}\x20\+\x20\\frac{z}{x\+y}\x20=\x2010\x20\(the\x20sam
+SF:e,\x20but\x20in\x20LaTeX\x20format\)\n\nWe\x20would\x20appreciate\x20if
+SF:\x20you\x20wouldn't\x20DoS\x20the\x20public\x20instance\x20with\x20a\x2
+SF:0high\x20number\x20of\x20connections\x20or\x20requests\.\x20The\x20sour
+SF:ce\x20is\x20provided\x20for\x20you\x20to\x20run\x20your\x20own\x20insta
+SF:nce\.\n\nYou\x20have\x2030\x20seconds\x20to\x20send\x20your\x20answer\.
+SF:\x20Good\x20luck!\n\nEnter\x20the\x20value\x20for\x20x:\x20nope\nError\
+SF:x20reading\x20x:\x20value\x20must\x20be\x20a\x20whole\x20number\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 93.30 seconds
