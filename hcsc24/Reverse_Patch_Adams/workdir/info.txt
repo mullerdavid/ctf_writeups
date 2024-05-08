@@ -1,0 +1,131 @@
+
+┌──(david㉿NOTEBOOK-DAVID3)-[~]
+└─$ curl 'http://193.225.250.188:36032/' -d 'command1=s' -d 'argument1=0x142d' -d 'command2=pdb' -d 'argument2='
+Radare2 Output:
+; DATA XREF from entry0 @ 0x10fd(r)
+/ 72: fcn.0000142d ();
+|           0x0000142d      55             push rbp
+|           0x0000142e      4889e5         mov rbp, rsp
+|           0x00001431      bf00000000     mov edi, 0
+|           0x00001436      e865fcffff     call sym.imp.time           ; time_t time(time_t *timer)
+|           0x0000143b      89c7           mov edi, eax
+|           0x0000143d      e83efcffff     call sym.imp.srand          ; void srand(int seed)
+|           0x00001442      b800000000     mov eax, 0
+|           0x00001447      e8a0feffff     call fcn.000012ec
+|           0x0000144c      84c0           test al, al
+|       ,=< 0x0000144e      7414           je 0x1464
+
+Final Binary Output:
+Unauthorized
+
+┌──(david㉿NOTEBOOK-DAVID3)-[~]
+└─$ curl 'http://193.225.250.188:36032/' -d 'command1=s' -d 'argument1=0x142d' -d 'command2=pdb' -d 'argument2='
+Radare2 Output:
+; DATA XREF from entry0 @ 0x10fd(r)
+/ 72: fcn.0000142d ();
+|           0x0000142d      55             push rbp
+|           0x0000142e      4889e5         mov rbp, rsp
+|           0x00001431      bf00000000     mov edi, 0
+|           0x00001436      e865fcffff     call sym.imp.time           ; time_t time(time_t *timer)
+|           0x0000143b      89c7           mov edi, eax
+|           0x0000143d      e83efcffff     call sym.imp.srand          ; void srand(int seed)
+|           0x00001442      b800000000     mov eax, 0
+|           0x00001447      e8a0feffff     call fcn.000012ec
+|           0x0000144c      84c0           test al, al
+|       ,=< 0x0000144e      7414           je 0x1464
+
+Final Binary Output:
+Unauthorized
+
+┌──(david㉿NOTEBOOK-DAVID3)-[~]
+└─$ curl 'http://193.225.250.188:36032/' -d 'argument1=0x139d' -d 'command2=pdf' -d 'argument2=' -d 'command1=s'
+Radare2 Output:
+/ 144: fcn.0000139d ();
+|           ; var int64_t var_8h @ rbp-0x8
+|           ; var int64_t var_70h @ rbp-0x70
+|           ; var int64_t var_78h @ rbp-0x78
+|           0x0000139d      55             push rbp
+|           0x0000139e      4889e5         mov rbp, rsp
+|           0x000013a1      4883c480       add rsp, 0xffffffffffffff80
+|           0x000013a5      64488b042528.  mov rax, qword fs:[0x28]
+|           0x000013ae      488945f8       mov qword [var_8h], rax
+|           0x000013b2      31c0           xor eax, eax
+|           0x000013b4      488d057e1100.  lea rax, [0x00002539]       ; "r"
+|           0x000013bb      4889c6         mov rsi, rax
+|           0x000013be      488d05b21100.  lea rax, str._secret_flag.txt ; 0x2577 ; "/secret/flag.txt"
+|           0x000013c5      4889c7         mov rdi, rax
+|           0x000013c8      e8a3fcffff     call sym.imp.fopen          ; file*fopen(const char *filename, const char *mode)
+|           0x000013cd      48894588       mov qword [var_78h], rax
+|           0x000013d1      48837d8800     cmp qword [var_78h], 0
+|       ,=< 0x000013d6      742f           je 0x1407
+|       |   0x000013d8      488b5588       mov rdx, qword [var_78h]
+|       |   0x000013dc      488d4590       lea rax, [var_70h]
+|       |   0x000013e0      be64000000     mov esi, 0x64               ; 'd'
+|       |   0x000013e5      4889c7         mov rdi, rax
+|       |   0x000013e8      e843fcffff     call sym.imp.fgets          ; char *fgets(char *s, int size, FILE *stream)
+|       |   0x000013ed      488d4590       lea rax, [var_70h]
+|       |   0x000013f1      4889c7         mov rdi, rax
+|       |   0x000013f4      e847fcffff     call sym.imp.puts           ; int puts(const char *s)
+|       |   0x000013f9      488b4588       mov rax, qword [var_78h]
+|       |   0x000013fd      4889c7         mov rdi, rax
+|       |   0x00001400      e88bfcffff     call sym.imp.fclose         ; int fclose(FILE *stream)
+|      ,==< 0x00001405      eb0f           jmp 0x1416
+|      ||   ; CODE XREF from fcn.0000139d @ 0x13d6(x)
+|      |`-> 0x00001407      488d057a1100.  lea rax, str.Error:_flag.txt_not_found ; 0x2588 ; "Error: flag.txt not found"
+|      |    0x0000140e      4889c7         mov rdi, rax
+|      |    0x00001411      e82afcffff     call sym.imp.puts           ; int puts(const char *s)
+|      |    ; CODE XREF from fcn.0000139d @ 0x1405(x)
+|      `--> 0x00001416      90             nop
+|           0x00001417      488b45f8       mov rax, qword [var_8h]
+|           0x0000141b      64482b042528.  sub rax, qword fs:[0x28]
+|       ,=< 0x00001424      7405           je 0x142b
+|       |   0x00001426      e825fcffff     call sym.imp.__stack_chk_fail ; void __stack_chk_fail(void)
+|       |   ; CODE XREF from fcn.0000139d @ 0x1424(x)
+|       `-> 0x0000142b      c9             leave
+\           0x0000142c      c3             ret
+
+Final Binary Output:
+Unauthorized
+
+┌──(david㉿NOTEBOOK-DAVID3)-[~]
+└─$ curl 'http://193.225.250.188:36032/' -d 'command1=s' -d 'argument1=0x144e' -d 'command2=wa' -d 'argument2=call 0x139d'
+Error executing final binary: signal: segmentation fault
+
+┌──(david㉿NOTEBOOK-DAVID3)-[~]
+└─$ curl 'http://193.225.250.188:36032/' -d 'command1=wa' -d 'argument1=call 0x139d' -d 'command2=pdb' -d 'argument2='
+Error executing final binary: signal: segmentation fault
+
+┌──(david㉿NOTEBOOK-DAVID3)-[~]
+└─$
+curl 'http://193.225.250.188:36032/' -d 'command1=s' -d 'argument1=0x144e' -d 'command2=wa' -d 'argument2=je 0x1464'
+Radare2 Output:
+
+
+Final Binary Output:
+Unauthorized
+
+┌──(david㉿NOTEBOOK-DAVID3)-[~]
+└─$ curl 'http://193.225.250.188:36032/' -d 'command1=s' -d 'argument1=0x144e' -d 'command2=wa' -d 'argument2=je 0x139d'
+Error executing final binary: signal: segmentation fault
+
+┌──(david㉿NOTEBOOK-DAVID3)-[~]
+└─$ curl 'http://193.225.250.188:36032/' -d 'command1=s' -d 'argument1=0x144e' -d 'command2=wa' -d 'argument2=call 0x1215'
+Error executing final binary: signal: segmentation fault
+
+┌──(david㉿NOTEBOOK-DAVID3)-[~]
+└─$ curl 'http://193.225.250.188:36032/' -d 'command1=s' -d 'argument1=0x144e' -d 'command2=wa' -d 'argument2=jne 0x1464'
+Radare2 Output:
+
+
+Final Binary Output:
+We need to start treating the patient as well as the disease
+
+┌──(david㉿NOTEBOOK-DAVID3)-[~]
+└─$
+curl 'http://193.225.250.188:36032/' -d 'command1=s' -d 'argument1=0x1469' -d 'command2=wa' -d 'argument2=call 0x139d'
+Radare2 Output:
+
+
+Final Binary Output:
+HCSC24{d0ct0r_0r_nOt_U_r3c0v3r3d_7h3_fl4g}
+
