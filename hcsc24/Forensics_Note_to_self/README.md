@@ -1,14 +1,8 @@
-# Challenge
+#  Note to self
 
-TODO: challenge info comes here
+Flag formátum: HCSC24{md5hash}
 
-<details>
-  <summary>Hints</summary> 
-  
-TODO: optional hints comes here
-
-</details>
-
+`10.10.1-9.10` 
 
 # Writeup
 
