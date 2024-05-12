@@ -124,7 +124,7 @@ c=486237874538064262673731810148497763721905732356465890768665333959971445479055
 
 # Alternative solution 2
 
-Using [sage](https://www.sagemath.org/) to solve the equation. Credits for this goes to Alex.
+Using [sage](https://www.sagemath.org/) to solve the equation. [Credits for this goes to Alex](https://github.com/ahornyai/ctf_writeups/blob/master/hcsc2024/crypto_epiclitl_curve/WRITEUP.md).
 
 ```
 sage: R.<x,y,z> = QQ[]
