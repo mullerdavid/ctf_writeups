@@ -1,0 +1,10 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2024-03-19 03:53:32
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2024-03-19 03:53:32 192.168.238.129 GET /certsrv/ - 80 - 192.168.238.130 - - 401 2 5 218
+2024-03-19 03:53:35 192.168.238.129 GET /hcsc-WIN-5T67MMTJTVE-CA_CES_Kerberos/service.svc - 80 - 192.168.238.130 - - 404 0 2 0
+2024-03-19 03:53:35 192.168.238.129 GET /ADPolicyProvider_CEP_Kerberos/service.svc - 80 - 192.168.238.130 - - 404 0 2 0
+2024-03-19 03:53:35 192.168.238.129 GET /certsrv/mscep/ - 80 - 192.168.238.130 - - 401 2 5 15
+2024-03-19 03:53:35 192.168.238.129 GET /certsrv/mscep/ - 80 HCSC\jibenjamin 192.168.238.130 - - 404 0 2 0
+2024-03-19 03:53:44 192.168.238.129 GET /certsrv/ - 80 HCSC\jibenjamin 192.168.238.130 - - 200 0 64 11343

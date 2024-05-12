@@ -1,0 +1,1001 @@
+employee_id,full_name,job_title,department,hire_date,salary,manager_id,employment_status
+1,Ky Roberti,Tax Accountant,Marketing,1/19/2024,74804.78,1,Resigned
+2,Artus Belbin,Social Worker,Business Development,10/21/2023,141455.71,2,On Leave
+3,Tarrah Putman,Financial Analyst,Marketing,11/25/2023,66387.34,3,Active
+4,Alameda Gier,Legal Assistant,Support,1/30/2023,33178.23,4,On Leave
+5,Cosme Shird,Web Developer I,Support,11/21/2023,113207.18,5,Resigned
+6,Paola Deerr,Geologist III,Research and Development,3/4/2024,44811.4,6,Resigned
+7,Bradley Flaonier,Marketing Manager,Support,10/20/2023,133533.76,7,On Leave
+8,Ezekiel Kilcoyne,Budget/Accounting Analyst IV,Engineering,2/15/2024,31706.34,8,Resigned
+9,Otha Germaine,Administrative Assistant III,Legal,2/14/2023,45983.44,9,Resigned
+10,Verney Moff,Accounting Assistant II,Accounting,2/8/2023,117577.92,10,On Leave
+11,Ginelle Rosedale,Legal Assistant,Marketing,12/17/2023,100047.68,11,Resigned
+12,Bernardo Toone,Mechanical Systems Engineer,Support,8/14/2023,101312.71,12,Active
+13,Ula McCrohon,Assistant Media Planner,Research and Development,2/18/2023,52769.03,13,On Leave
+14,Bria Pereira,Software Consultant,Business Development,7/5/2023,60224.74,14,Terminated
+15,Alika Aburrow,Chief Design Engineer,Legal,1/16/2024,51627.11,15,On Leave
+16,Zollie Bratley,Assistant Manager,Engineering,2/23/2023,103140.1,16,Terminated
+17,Jean Javes,Project Manager,Training,9/28/2023,145861.47,17,Resigned
+18,Brittni Broy,Programmer III,Sales,2/13/2023,64137.69,18,Terminated
+19,Carlotta Lafoy,Senior Financial Analyst,Support,4/21/2023,39950.31,19,Terminated
+20,Alberik Durran,Professor,Support,1/28/2024,95183.84,20,Resigned
+21,Leoine Crosswaite,Marketing Manager,Product Management,5/6/2023,146341.17,21,Active
+22,Mariquilla Rigglesford,Programmer Analyst IV,Accounting,12/26/2023,80467.73,22,Active
+23,Moria Sailes,Paralegal,Marketing,7/16/2023,83902.65,23,Active
+24,Even Flewitt,Safety Technician I,Services,2/10/2024,86539.0,24,Active
+25,Efrem Hearn,Recruiter,Marketing,7/14/2023,47317.64,25,On Leave
+26,Katy Digwood,Recruiting Manager,Services,1/5/2024,101013.04,26,On Leave
+27,Zita Wigfield,Recruiter,Human Resources,3/12/2023,122353.73,27,Terminated
+28,Inge Perone,Marketing Manager,Research and Development,2/13/2023,96582.85,28,On Leave
+29,Alejoa Rouke,Software Test Engineer IV,Training,10/29/2023,46832.91,29,On Leave
+30,Lorette Searight,Database Administrator IV,Research and Development,2/19/2024,97342.84,30,Resigned
+31,Milty Fallis,Senior Cost Accountant,Sales,3/8/2024,35054.05,31,Resigned
+32,Guy Franzonetti,Human Resources Assistant II,Engineering,9/7/2023,45646.55,32,Terminated
+33,Arvin Romeril,Assistant Media Planner,Human Resources,6/4/2023,149810.06,33,Resigned
+34,Jarrett Chittey,Paralegal,Accounting,12/1/2023,71719.27,34,Active
+35,Fredia Coulbeck,Community Outreach Specialist,Training,2/8/2023,133250.07,35,Resigned
+36,Jasen Ingledew,VP Accounting,Business Development,12/9/2023,142366.11,36,Active
+37,Druci Camillo,VP Product Management,Human Resources,3/21/2023,51485.32,37,On Leave
+38,Junina Welton,Quality Engineer,Product Management,1/10/2023,149482.93,38,On Leave
+39,Dolf Von Brook,Administrative Officer,Product Management,1/11/2024,35525.74,39,Resigned
+40,Carlita Blundan,Help Desk Technician,Training,2/15/2024,57924.82,40,Active
+41,Say McKune,Marketing Manager,Sales,8/1/2023,69358.08,41,Active
+42,Andrea Chamberlaine,Help Desk Technician,Business Development,3/24/2023,93042.66,42,Terminated
+43,Wynne Coombes,Web Designer I,Sales,10/21/2023,146205.14,43,Terminated
+44,Elbertine Mougeot,Developer I,Training,10/6/2023,76349.36,44,On Leave
+45,Lonny Pascho,Internal Auditor,Accounting,2/14/2024,43134.05,45,Terminated
+46,Philbert Hughill,Safety Technician I,Research and Development,6/18/2023,116958.58,46,Resigned
+47,Katey Atlay,Assistant Manager,Product Management,7/12/2023,55261.73,47,Active
+48,Nathalie Stile,Programmer III,Legal,1/30/2024,57891.87,48,Terminated
+49,Mace Cockshut,Environmental Tech,Human Resources,2/27/2024,79643.85,49,Active
+50,Gabe Novis,Senior Editor,Research and Development,1/30/2024,32443.54,50,Resigned
+51,Job Tilly,Database Administrator I,Product Management,7/3/2023,130789.92,51,Terminated
+52,Theodora Bohl,Food Chemist,Engineering,12/30/2023,35500.56,52,On Leave
+53,Kelby Hymans,Pharmacist,Product Management,2/11/2024,120615.91,53,Terminated
+54,Tani Curry,Accounting Assistant III,Business Development,5/1/2023,52960.19,54,Terminated
+55,Charmian Attwoul,Safety Technician IV,Support,7/6/2023,122268.41,55,Active
+56,Sammy Brigham,Nurse Practicioner,Training,8/1/2023,145989.97,56,Active
+57,Normand Nottram,Financial Analyst,Support,1/1/2023,48350.43,57,Active
+58,Tessy Sikorsky,Programmer Analyst I,Marketing,9/8/2023,131303.13,58,Resigned
+59,Allard Andryushin,Senior Cost Accountant,Support,4/4/2023,96614.32,59,Active
+60,Adina Curwood,Programmer Analyst I,Legal,7/11/2023,141614.2,60,Active
+61,Kristan Geyton,Help Desk Technician,Engineering,10/7/2023,36435.8,61,On Leave
+62,Norean Elvy,Quality Control Specialist,Training,8/21/2023,131778.4,62,On Leave
+63,Carver Bassam,Chief Design Engineer,Sales,7/20/2023,103653.7,63,Active
+64,Philipa Elan,Clinical Specialist,Legal,11/28/2023,120019.62,64,On Leave
+65,Cristian Wyld,Biostatistician I,Product Management,7/23/2023,71457.23,65,Active
+66,Joey Carnduff,Senior Financial Analyst,Training,8/31/2023,129274.94,66,On Leave
+67,Pace Shirlaw,Human Resources Manager,Research and Development,4/15/2023,71882.57,67,Active
+68,Jannelle Rickaert,Geologist II,Marketing,11/15/2023,40519.3,68,Resigned
+69,Abie Nestle,Software Test Engineer I,Engineering,12/6/2023,51819.3,69,Active
+70,Charo Dautry,Analyst Programmer,Business Development,1/31/2023,84506.43,70,On Leave
+71,Trixie Le Maitre,Research Associate,Marketing,1/5/2023,64632.04,71,On Leave
+72,Pauletta Esgate,Mechanical Systems Engineer,Sales,11/30/2023,119917.33,72,Resigned
+73,Christophorus Garr,Research Nurse,Research and Development,1/4/2023,47616.77,73,Terminated
+74,Lowell Lempenny,Help Desk Technician,Marketing,1/28/2023,83460.27,74,Resigned
+75,Cathrine Dinning,Human Resources Assistant I,Sales,3/10/2024,121750.82,75,On Leave
+76,Evie Southorn,Financial Advisor,Legal,10/15/2023,144756.69,76,Resigned
+77,Nari Gatheral,Office Assistant I,Training,1/10/2024,120647.12,77,Active
+78,Joanie Sanders,Assistant Manager,Legal,6/5/2023,47316.33,78,Resigned
+79,Reggi Denkin,Research Assistant II,Support,2/25/2023,79481.81,79,Resigned
+80,Smitty Lorain,Dental Hygienist,Support,2/28/2024,94346.04,80,Resigned
+81,Nert Walmsley,Geologist I,Services,10/26/2023,32383.28,81,Active
+82,Freeland McGrill,Compensation Analyst,Support,9/2/2023,132500.81,82,Active
+83,Philippine MacAleese,Payment Adjustment Coordinator,Marketing,1/29/2023,91297.09,83,Resigned
+84,Harald Mayman,Web Designer IV,Legal,5/1/2023,37301.19,84,Terminated
+85,Kamila Fetherston,Environmental Specialist,Training,12/4/2023,36076.24,85,Terminated
+86,Elvin Elldred,Pharmacist,Legal,4/16/2023,58796.81,86,Resigned
+87,Mead Laurenceau,Internal Auditor,Sales,3/24/2023,144567.25,87,Terminated
+88,Orel Papa,Sales Associate,Sales,6/18/2023,40868.62,88,On Leave
+89,Barron Alessandone,Health Coach IV,Product Management,3/24/2023,51356.33,89,Active
+90,Alley Crookall,Software Test Engineer II,Training,2/19/2023,30275.45,90,Terminated
+91,Madalena Willwood,Budget/Accounting Analyst IV,Accounting,6/11/2023,105261.22,91,On Leave
+92,Scottie Coley,Environmental Specialist,Services,3/11/2023,127722.75,92,Resigned
+93,Hetti Etchells,Programmer II,Training,3/5/2024,102033.52,93,Resigned
+94,Jordana Bizley,Compensation Analyst,Services,11/16/2023,31451.8,94,Active
+95,Emili Cazin,Data Coordinator,Human Resources,1/1/2023,34420.21,95,Terminated
+96,Clemente Rockell,Dental Hygienist,Business Development,12/5/2023,127095.36,96,On Leave
+97,Lisette Stirzaker,Database Administrator III,Accounting,7/24/2023,132522.99,97,Terminated
+98,Giavani Caudle,Payment Adjustment Coordinator,Accounting,12/10/2023,80279.86,98,Active
+99,Henry Kennan,Clinical Specialist,Human Resources,1/21/2024,47499.56,99,Terminated
+100,Christabella Feeley,Nurse Practicioner,Accounting,3/2/2023,105455.04,100,Active
+101,Shoshanna Spottswood,Data Coordinator,Accounting,2/14/2024,65545.49,101,Resigned
+102,Enid Beddie,Budget/Accounting Analyst III,Training,8/15/2023,45330.4,102,On Leave
+103,Ira Spellar,Human Resources Manager,Legal,1/28/2023,44585.19,103,Terminated
+104,Eada Hitcham,Analyst Programmer,Business Development,6/12/2023,59955.17,104,Terminated
+105,Pascale Broz,Professor,Training,4/17/2023,128190.54,105,On Leave
+106,Finn Pownall,Accountant III,Legal,2/12/2023,134231.02,106,Active
+107,Mia Ramalhete,Administrative Assistant I,Training,2/29/2024,103026.92,107,On Leave
+108,Nevil Daveley,Legal Assistant,Support,6/17/2023,30388.84,108,On Leave
+109,Geoff Ruilton,Project Manager,Legal,6/26/2023,98430.06,109,On Leave
+110,Kennedy Pollen,Account Coordinator,Training,5/5/2023,87347.59,110,Resigned
+111,Liv Millmore,Actuary,Services,12/9/2023,128792.74,111,Active
+112,Arabelle Faulkes,Community Outreach Specialist,Marketing,4/21/2023,70795.3,112,Resigned
+113,Flin Marte,Operator,Marketing,10/16/2023,41478.84,113,On Leave
+114,Violante Boor,Analyst Programmer,Training,11/24/2023,50433.53,114,Terminated
+115,Arney Valentelli,Mechanical Systems Engineer,Human Resources,8/8/2023,54813.29,115,On Leave
+116,Eimile Sambidge,Human Resources Manager,Legal,10/17/2023,95561.37,116,Resigned
+117,Brianna Jevons,Cost Accountant,Training,8/10/2023,49335.75,117,Active
+118,Jarrad Orlton,Structural Engineer,Accounting,6/14/2023,115097.97,118,On Leave
+119,Honor Tern,Senior Cost Accountant,Marketing,10/9/2023,123196.78,119,On Leave
+120,Vernice Carik,Associate Professor,Accounting,2/24/2024,102331.03,120,On Leave
+121,Joella Kemwall,Chemical Engineer,Services,1/6/2024,118540.7,121,Active
+122,Darnall Ridde,Editor,Product Management,12/18/2023,106856.81,122,Resigned
+123,Zia Hazelton,Junior Executive,Training,5/13/2023,136819.06,123,Resigned
+124,Katheryn Peasgood,Administrative Assistant III,Product Management,10/24/2023,142387.85,124,Terminated
+125,Maxie Braybrook,Occupational Therapist,Support,5/1/2023,100953.8,125,On Leave
+126,Natalya Rouke,Editor,Services,8/15/2023,111608.53,126,Terminated
+127,Torey Bratcher,Environmental Tech,Engineering,10/15/2023,114782.14,127,On Leave
+128,Elihu Desorts,Professor,Training,12/17/2023,37253.07,128,Resigned
+129,Giacinta Austen,Developer I,Sales,12/24/2023,58350.45,129,On Leave
+130,Auroora Allington,Cost Accountant,Product Management,8/2/2023,142491.72,130,Active
+131,Evaleen Waistell,Cost Accountant,Human Resources,4/19/2023,89391.17,131,On Leave
+132,Jessie Kynforth,Senior Cost Accountant,Human Resources,11/25/2023,108276.58,132,Terminated
+133,Friedrich Castiglio,Community Outreach Specialist,Business Development,1/21/2023,78736.78,133,Terminated
+134,Goraud Haistwell,Research Associate,Legal,1/26/2024,49034.57,134,On Leave
+135,Pamelina O'Shea,Civil Engineer,Accounting,5/3/2023,144327.07,135,Resigned
+136,Sara Walsh,Legal Assistant,Research and Development,3/16/2023,74276.12,136,Resigned
+137,Lottie Stonard,Web Developer II,Services,8/4/2023,123782.19,137,Terminated
+138,Wolfie Faers,Senior Developer,Product Management,5/24/2023,128426.64,138,Resigned
+139,Gunter Vogeller,Recruiter,Business Development,5/31/2023,90597.61,139,Active
+140,Melisandra Townes,Analyst Programmer,Marketing,7/30/2023,94982.19,140,On Leave
+141,Lydie Coplestone,Nurse,Services,6/30/2023,132510.3,141,On Leave
+142,Renado Arbuckel,Administrative Assistant IV,Marketing,1/28/2023,91787.16,142,On Leave
+143,Kellina Pottes,Actuary,Marketing,1/1/2024,110594.65,143,Resigned
+144,Stacee Roderighi,Junior Executive,Training,8/24/2023,136208.17,144,Active
+145,Trescha Cardinal,Health Coach III,Accounting,2/28/2024,34219.2,145,Resigned
+146,Tadeo Venney,Nurse,Services,2/28/2023,144186.4,146,Terminated
+147,Donetta Gilbane,Director of Sales,Services,7/21/2023,32078.07,147,Active
+148,Aurel Pavolini,Junior Executive,Legal,7/26/2023,100051.76,148,On Leave
+149,Chalmers Canty,VP Product Management,Legal,10/24/2023,111515.09,149,On Leave
+150,Arabel Stollard,Occupational Therapist,Engineering,2/19/2023,51042.46,150,Resigned
+151,Brandie Shaughnessy,Statistician II,Business Development,2/3/2023,79609.14,151,On Leave
+152,Fulvia Raw,Legal Assistant,Support,12/16/2023,102904.16,152,On Leave
+153,Mahalia Gaskill,Accounting Assistant IV,Support,3/4/2023,51841.25,153,On Leave
+154,Asa Widdup,Director of Sales,Training,3/6/2023,48495.76,154,On Leave
+155,Raffarty Olenikov,GIS Technical Architect,Marketing,6/13/2023,104659.18,155,Terminated
+156,Francesca Pee,Environmental Tech,Legal,12/16/2023,114995.54,156,On Leave
+157,Beckie Dominighi,Help Desk Operator,Legal,11/27/2023,53323.45,157,Terminated
+158,Xymenes Luxton,Environmental Tech,Accounting,2/16/2024,131584.42,158,Active
+159,Corissa Yerby,Senior Sales Associate,Human Resources,4/6/2023,70286.35,159,Terminated
+160,Carver Gregorin,Account Representative IV,Research and Development,10/5/2023,127522.98,160,Terminated
+161,Reynold Dowderswell,Clinical Specialist,Engineering,12/16/2023,38337.82,161,Active
+162,Timmi Hebron,Software Consultant,Human Resources,6/17/2023,132546.92,162,On Leave
+163,Agnesse Jarratt,Registered Nurse,Product Management,1/1/2023,133939.11,163,Resigned
+164,Wayne Bernot,Office Assistant IV,Training,7/18/2023,85062.95,164,Terminated
+165,Jessie Paireman,Pharmacist,Training,2/11/2024,96805.98,165,Resigned
+166,Brande Ruzek,Recruiter,Training,12/22/2023,31325.03,166,Terminated
+167,Cass Lismer,General Manager,Accounting,8/3/2023,81063.26,167,Resigned
+168,Skippy Hache,Associate Professor,Accounting,2/1/2024,106559.34,168,Terminated
+169,Aldwin Minall,Senior Developer,Product Management,8/11/2023,139165.75,169,Terminated
+170,Edithe Sherr,Professor,Services,7/11/2023,136404.04,170,Resigned
+171,Cullan Wynne,Pharmacist,Business Development,2/11/2024,95612.23,171,Resigned
+172,Vivia Smees,Executive Secretary,Product Management,6/10/2023,97932.43,172,Resigned
+173,Sophronia Scarbarrow,Help Desk Operator,Support,1/3/2024,67846.84,173,On Leave
+174,Hobey Dymock,Quality Engineer,Services,11/18/2023,44103.56,174,Terminated
+175,Steffane McGookin,Quality Control Specialist,Training,4/30/2023,116524.87,175,On Leave
+176,Stanford Gerbl,Analyst Programmer,Marketing,12/14/2023,145502.3,176,Active
+177,Skipp Grishkov,Web Developer III,Legal,9/16/2023,89426.67,177,Active
+178,Suzie Thrustle,Nurse Practicioner,Training,3/12/2024,70999.85,178,Terminated
+179,Christoph Ajsik,Accountant I,Business Development,5/29/2023,98373.76,179,Resigned
+180,Koral Clapston,Engineer II,Training,2/16/2023,90137.66,180,On Leave
+181,Agnesse De Ferraris,Mechanical Systems Engineer,Engineering,12/12/2023,46846.16,181,Active
+182,Faythe Reichartz,Systems Administrator I,Training,3/24/2023,82127.75,182,Resigned
+183,Lois Erley,Recruiting Manager,Engineering,9/17/2023,137739.55,183,Terminated
+184,Justinian Thurlbeck,Professor,Sales,6/6/2023,122814.95,184,On Leave
+185,Ebeneser Hamblett,Media Manager IV,Services,9/30/2023,104996.65,185,On Leave
+186,Valida Ivell,Dental Hygienist,Services,10/28/2023,52646.56,186,Resigned
+187,Winni Buard,Human Resources Manager,Sales,6/18/2023,137974.78,187,On Leave
+188,Cinda Doughartie,Graphic Designer,Research and Development,7/1/2023,106918.35,188,Resigned
+189,Dela Dickin,Office Assistant II,Human Resources,4/14/2023,118091.38,189,Resigned
+190,Dannie Kubicki,Research Nurse,Product Management,12/30/2023,143024.82,190,On Leave
+191,Yvette Pattle,Financial Analyst,Accounting,8/5/2023,40671.53,191,Terminated
+192,Gaile Catton,Assistant Manager,Marketing,1/16/2024,79945.73,192,Resigned
+193,Bren Pyatt,Financial Advisor,Marketing,11/7/2023,109432.93,193,Terminated
+194,Lanie Peet,Web Designer IV,Research and Development,7/25/2023,97769.37,194,Terminated
+195,Francklin Almond,Engineer I,Business Development,3/14/2024,100720.0,195,Active
+196,Kore Roggeman,Assistant Professor,Legal,11/23/2023,55827.24,196,On Leave
+197,Woodie Schenfisch,Physical Therapy Assistant,Legal,3/7/2023,52633.19,197,Terminated
+198,Oliy Wandless,Database Administrator III,Human Resources,3/4/2024,38540.48,198,Resigned
+199,Adrian McArt,Community Outreach Specialist,Legal,2/18/2023,69503.02,199,Resigned
+200,Delcina Joint,Accounting Assistant IV,Accounting,9/17/2023,68580.84,200,On Leave
+201,Haley Grinaugh,Payment Adjustment Coordinator,Business Development,1/1/2024,116836.34,201,Active
+202,Web Barbey,Technical Writer,Accounting,4/14/2023,51375.83,202,Terminated
+203,Cletis Cleeve,Financial Analyst,Marketing,10/20/2023,30713.65,203,Active
+204,Lorens McGavin,Junior Executive,Sales,1/28/2023,71736.5,204,Terminated
+205,Ximenez Tugman,Media Manager II,Business Development,6/1/2023,106683.19,205,Terminated
+206,Terri-jo Saurin,Professor,Accounting,9/14/2023,129173.35,206,Active
+207,Alon Duncan,Health Coach II,Human Resources,11/6/2023,141969.06,207,Active
+208,Harry Demongeot,Pharmacist,Human Resources,5/21/2023,91993.08,208,Active
+209,Ernaline Killich,Research Assistant IV,Legal,9/14/2023,46756.31,209,Active
+210,Maisie Gentsch,Research Nurse,Business Development,3/14/2024,135011.89,210,Terminated
+211,Roze Learmonth,Sales Associate,Research and Development,9/6/2023,37527.39,211,On Leave
+212,Abra Murrison,Safety Technician I,Training,4/5/2023,139026.45,212,On Leave
+213,Si Rabson,Budget/Accounting Analyst II,Business Development,10/12/2023,36187.27,213,Terminated
+214,Georgi Guidi,Software Engineer I,Engineering,2/28/2023,56513.2,214,On Leave
+215,Bondon Iles,Pharmacist,Accounting,1/2/2023,41565.12,215,Terminated
+216,Brock Archley,Chemical Engineer,Research and Development,11/25/2023,98843.66,216,Active
+217,Collin Hawe,Staff Scientist,Training,1/13/2023,98784.79,217,Resigned
+218,Teena Gerretsen,Speech Pathologist,Support,1/30/2024,129990.02,218,On Leave
+219,Bab Currum,Social Worker,Human Resources,8/28/2023,39696.01,219,Active
+220,Monro World,General Manager,Training,5/24/2023,139335.76,220,Terminated
+221,Katinka Shillum,Help Desk Operator,Business Development,6/18/2023,109907.01,221,Resigned
+222,Sallyanne Jaggi,Project Manager,Training,12/26/2023,104554.59,222,On Leave
+223,Andrew Laurenty,Quality Engineer,Sales,11/10/2023,143319.07,223,Terminated
+224,Lelia Skuse,Mechanical Systems Engineer,Support,10/18/2023,42885.35,224,Active
+225,Burtie Whittingham,Analog Circuit Design manager,Support,2/27/2023,36594.13,225,On Leave
+226,Vincents Laugheran,Director of Sales,Legal,9/21/2023,109721.65,226,On Leave
+227,Moore Filde,Quality Control Specialist,Services,9/27/2023,132565.34,227,Active
+228,Kennett Joreau,Operator,Engineering,1/16/2023,40276.38,228,Active
+229,Napoleon Malafe,Tax Accountant,Human Resources,1/20/2023,89270.92,229,On Leave
+230,Bastien Coare,Technical Writer,Human Resources,5/22/2023,62611.55,230,Resigned
+231,Hubert MacConchie,Human Resources Manager,Human Resources,8/12/2023,123391.1,231,Active
+232,Cordell Manifould,Nurse,Sales,2/10/2023,31011.38,232,Terminated
+233,Dylan Tremayne,Assistant Manager,Support,2/5/2024,52174.55,233,Active
+234,Dimitry Wither,Pharmacist,Product Management,9/25/2023,142295.37,234,Terminated
+235,Sherrie Mabbett,Analyst Programmer,Marketing,7/19/2023,80055.72,235,Terminated
+236,Kikelia Fairholm,Account Executive,Engineering,12/22/2023,56330.84,236,Active
+237,Constantin Kingdon,Analog Circuit Design manager,Sales,11/6/2023,47138.88,237,On Leave
+238,Carter MacMeanma,Executive Secretary,Engineering,8/17/2023,135343.55,238,Active
+239,Nels Romaine,Physical Therapy Assistant,Marketing,5/29/2023,102874.88,239,Active
+240,Erhart Angric,Budget/Accounting Analyst I,Business Development,2/21/2024,77805.7,240,Terminated
+241,Tobiah Klug,Financial Advisor,Business Development,1/18/2024,127802.58,241,On Leave
+242,Bil Praundl,Senior Developer,Marketing,5/27/2023,133278.25,242,Active
+243,Vincent Wackley,Geological Engineer,Research and Development,2/14/2024,147713.21,243,Active
+244,Enrika Demer,Nuclear Power Engineer,Accounting,2/28/2024,87893.73,244,On Leave
+245,Merry Longmate,Speech Pathologist,Marketing,12/12/2023,121541.85,245,Active
+246,Flossie McElwee,Information Systems Manager,Support,8/24/2023,145691.34,246,Resigned
+247,Leif Siuda,Budget/Accounting Analyst II,Research and Development,7/2/2023,101723.02,247,Active
+248,Farica Getch,Payment Adjustment Coordinator,Engineering,6/4/2023,92999.86,248,Terminated
+249,Melissa Beagrie,Chief Design Engineer,Accounting,4/6/2023,61503.42,249,Terminated
+250,Laverna Qusklay,Senior Sales Associate,Marketing,6/12/2023,111541.19,250,On Leave
+251,Burnard Friedman,Librarian,Engineering,1/21/2023,123961.08,251,Resigned
+252,Hussein Atlay,Information Systems Manager,Training,3/3/2024,129307.67,252,Terminated
+253,Anett Trinder,Quality Control Specialist,Services,10/18/2023,118507.75,253,Terminated
+254,Pier Momery,Cost Accountant,Research and Development,8/13/2023,46192.76,254,Active
+255,Ryun Levene,Environmental Specialist,Sales,12/1/2023,122466.9,255,Active
+256,Elmira Jovovic,Help Desk Technician,Services,11/14/2023,61987.85,256,Terminated
+257,Clemence Masey,Information Systems Manager,Business Development,4/18/2023,69558.02,257,Terminated
+258,Arnaldo Bonde,Actuary,Human Resources,1/25/2024,137466.71,258,Active
+259,Eilis Crosbie,Programmer II,Accounting,1/30/2023,54497.46,259,On Leave
+260,Roddie Ferriby,Staff Accountant I,Legal,12/18/2023,62105.59,260,On Leave
+261,Reg Cadwell,Structural Engineer,Human Resources,8/27/2023,148202.65,261,Terminated
+262,Inna Loddon,Nuclear Power Engineer,Training,8/18/2023,62107.11,262,Terminated
+263,Jacinta Binnion,Geologist III,Training,6/27/2023,100659.33,263,Resigned
+264,Jannel Brittle,Librarian,Research and Development,4/12/2023,138935.29,264,On Leave
+265,Teri Serjeantson,Assistant Manager,Sales,8/21/2023,87017.96,265,On Leave
+266,Harwilll Barde,Marketing Assistant,Business Development,7/21/2023,37158.17,266,Resigned
+267,Lindsay Fewtrell,Automation Specialist I,Support,9/12/2023,116840.85,267,Terminated
+268,Thelma Duester,Help Desk Operator,Sales,3/10/2023,125686.88,268,On Leave
+269,Jo-ann Olliffe,Programmer Analyst IV,Legal,12/8/2023,34363.92,269,Terminated
+270,Minetta Paiton,Cost Accountant,Marketing,6/15/2023,64745.02,270,Terminated
+271,Tabina Schuck,Cost Accountant,Services,5/21/2023,33655.37,271,Resigned
+272,Ole Woolf,Recruiting Manager,Human Resources,1/12/2024,76601.89,272,Active
+273,Massimiliano Pickles,Speech Pathologist,Human Resources,2/7/2024,142163.75,273,On Leave
+274,Frank Walkey,Professor,Research and Development,2/7/2024,59400.8,274,Resigned
+275,Coral Fitzsymonds,Chief Design Engineer,Marketing,2/14/2023,100449.9,275,Terminated
+276,Melisenda Bright,VP Marketing,Human Resources,5/22/2023,72104.3,276,Resigned
+277,Peggy Gatrill,Tax Accountant,Engineering,8/16/2023,131577.84,277,On Leave
+278,Inge Petroulis,Systems Administrator III,Research and Development,12/20/2023,63356.53,278,On Leave
+279,Mill Cicetti,Developer I,Accounting,12/24/2023,102948.56,279,Resigned
+280,Christoforo Dorsett,VP Product Management,Training,12/30/2023,88608.42,280,On Leave
+281,Heriberto Wickwarth,Actuary,Services,2/5/2023,130678.71,281,Resigned
+282,Maurits Ive,Food Chemist,Product Management,4/16/2023,46602.3,282,Terminated
+283,Gwenora Eaden,Business Systems Development Analyst,Legal,8/5/2023,106967.38,283,Terminated
+284,Binnie Bailes,VP Quality Control,Services,12/14/2023,111552.29,284,Terminated
+285,Piotr Freeburn,Geologist III,Business Development,9/25/2023,89144.04,285,On Leave
+286,Angelico Enderson,Administrative Assistant IV,Services,10/24/2023,147588.51,286,On Leave
+287,Janith Dewer,Legal Assistant,Support,2/27/2024,30563.01,287,Active
+288,Gonzalo Rablin,VP Product Management,Research and Development,11/10/2023,125170.55,288,Active
+289,Caroline Merrifield,Safety Technician I,Sales,8/4/2023,91363.54,289,Resigned
+290,Allyce Halbard,Financial Analyst,Services,12/30/2023,61155.56,290,On Leave
+291,Lotty Hartrick,Structural Engineer,Research and Development,6/21/2023,70071.46,291,Resigned
+292,Kaitlyn Boucher,Analyst Programmer,Product Management,2/26/2024,70547.3,292,Terminated
+293,Gerri Bunny,Senior Quality Engineer,Training,6/20/2023,104247.9,293,On Leave
+294,Arnuad Lardiner,Cost Accountant,Engineering,11/26/2023,108365.04,294,Terminated
+295,Alistair Skehan,Programmer III,Sales,6/17/2023,146722.66,295,On Leave
+296,Winston Rains,Geological Engineer,Legal,10/13/2023,70783.31,296,Terminated
+297,Dawn Maxwaile,Administrative Assistant III,Engineering,2/17/2023,75819.23,297,On Leave
+298,Vivian Bogies,Software Engineer II,Product Management,6/11/2023,133192.15,298,On Leave
+299,Humberto Matys,Structural Engineer,Support,1/2/2023,114035.31,299,On Leave
+300,Alfi Tear,Systems Administrator III,Product Management,5/13/2023,72190.79,300,Terminated
+301,Merrill Flegg,Structural Engineer,Product Management,9/9/2023,73293.12,301,Resigned
+302,Beitris Naisey,Nurse,Product Management,9/30/2023,96531.78,302,Resigned
+303,Joe Mapples,Biostatistician I,Services,8/15/2023,122566.26,303,On Leave
+304,Reynold Warrell,Sales Associate,Sales,9/13/2023,55244.0,304,On Leave
+305,Daloris Roberson,Safety Technician I,Research and Development,10/26/2023,50924.77,305,Terminated
+306,Lorianna Dimitrie,VP Sales,Support,3/30/2023,63058.97,306,Resigned
+307,Barbra O'Toole,Business Systems Development Analyst,Product Management,1/19/2024,132457.46,307,Resigned
+308,Ceil Garnsworth,Research Associate,Research and Development,3/7/2024,134888.64,308,On Leave
+309,Patti Rembrandt,Business Systems Development Analyst,Training,6/1/2023,53645.55,309,Terminated
+310,Sholom Breakwell,Director of Sales,Engineering,1/16/2023,121350.07,310,On Leave
+311,Bonnibelle Pinkett,Staff Scientist,Research and Development,2/18/2024,145628.97,311,Terminated
+312,Merry Ravilious,Business Systems Development Analyst,Sales,4/23/2023,127958.29,312,Terminated
+313,Arel Longhurst,Senior Editor,Accounting,4/18/2023,71567.17,313,Terminated
+314,Charin Tixier,Accounting Assistant II,Human Resources,8/27/2023,34171.37,314,Resigned
+315,Zelig Meachan,Staff Accountant III,Marketing,7/3/2023,143334.53,315,Active
+316,Ardith Waterhous,GIS Technical Architect,Services,2/1/2023,43187.47,316,Terminated
+317,Orson Blackesland,Biostatistician I,Marketing,12/11/2023,53151.82,317,On Leave
+318,Agace Goulbourne,Software Test Engineer III,Business Development,6/14/2023,74724.29,318,Terminated
+319,Conroy Sayse,Assistant Manager,Services,3/9/2023,91167.4,319,Active
+320,Nessie Warriner,Structural Analysis Engineer,Legal,11/22/2023,100317.98,320,Active
+321,Brett Minney,VP Sales,Services,6/15/2023,145445.17,321,Resigned
+322,Vivianna Adkin,Food Chemist,Sales,4/21/2023,132569.8,322,Terminated
+323,Obadiah Hrishanok,Software Test Engineer III,Business Development,10/3/2023,47880.27,323,Terminated
+324,Baily Brimblecombe,Director of Sales,Legal,3/16/2023,120851.68,324,Terminated
+325,Kacey Harcourt,Nurse Practicioner,Research and Development,3/8/2023,66883.99,325,Resigned
+326,Drew Budgen,Information Systems Manager,Support,12/4/2023,145476.95,326,Resigned
+327,Amil Zanelli,Director of Sales,Human Resources,12/4/2023,132731.33,327,Resigned
+328,Adriano Farnill,Senior Financial Analyst,Human Resources,8/16/2023,43504.41,328,Resigned
+329,Shay Emblow,Database Administrator II,Research and Development,6/10/2023,53927.25,329,Terminated
+330,Ynez Tibbits,Computer Systems Analyst II,Engineering,5/31/2023,115836.65,330,Active
+331,Cullin Alyonov,Software Consultant,Services,6/28/2023,127060.94,331,Resigned
+332,Lauren Taleworth,Recruiting Manager,Engineering,11/16/2023,143662.7,332,Active
+333,Portie Passy,Systems Administrator I,Engineering,8/21/2023,49051.37,333,On Leave
+334,Cherry Hearsum,Cost Accountant,Engineering,3/21/2023,79306.61,334,Active
+335,Hussein Harrower,Business Systems Development Analyst,Research and Development,1/26/2024,106274.35,335,Terminated
+336,Neal Starr,Programmer Analyst IV,Product Management,10/10/2023,43561.8,336,Active
+337,Isidora Tregido,Computer Systems Analyst II,Business Development,2/28/2024,147548.0,337,On Leave
+338,Darbie Smyley,Geological Engineer,Services,11/29/2023,126584.55,338,Resigned
+339,Esmeralda Yurasov,Operator,Research and Development,3/14/2023,65483.14,339,Terminated
+340,Duky Margerrison,Office Assistant III,Accounting,7/4/2023,66454.33,340,On Leave
+341,Arv Rizziello,Financial Advisor,Services,7/23/2023,74347.36,341,Terminated
+342,Janet Pidon,Senior Cost Accountant,Product Management,2/6/2024,30428.77,342,On Leave
+343,Janka Willgoss,Compensation Analyst,Support,5/1/2023,96141.36,343,Resigned
+344,Gilberte Yurenin,Food Chemist,Business Development,1/31/2023,126363.53,344,On Leave
+345,Philly Lerway,Senior Developer,Legal,3/5/2023,84761.38,345,Terminated
+346,Valerye Fero,VP Quality Control,Research and Development,8/20/2023,123364.6,346,Terminated
+347,Muffin Simonin,Research Nurse,Human Resources,3/19/2023,46235.4,347,Resigned
+348,Euphemia Coneley,Recruiting Manager,Training,1/12/2023,122009.76,348,On Leave
+349,Sutherland Fluit,Computer Systems Analyst III,Engineering,1/23/2023,108002.67,349,Terminated
+350,Fonzie Penzer,Administrative Officer,Product Management,2/22/2023,75829.66,350,On Leave
+351,Anabel Greader,Research Nurse,Legal,7/6/2023,109100.23,351,On Leave
+352,Arvy Burnhard,Actuary,Accounting,12/6/2023,146688.34,352,On Leave
+353,Isidora Apted,VP Product Management,Marketing,1/5/2023,124746.93,353,On Leave
+354,Tirrell Bowman,Office Assistant IV,Human Resources,1/21/2024,31130.93,354,Resigned
+355,Almeta Weald,Automation Specialist I,Sales,4/24/2023,135187.69,355,On Leave
+356,Obediah Joinsey,Actuary,Services,4/18/2023,96206.02,356,Active
+357,Pepillo Sedgemore,Help Desk Technician,Human Resources,1/11/2024,33970.44,357,Terminated
+358,Erhard Wollaston,Dental Hygienist,Training,1/1/2023,34742.35,358,Active
+359,Linc Raulin,Systems Administrator III,Research and Development,10/23/2023,143689.41,359,On Leave
+360,Zsa zsa Patterson,Nurse,Support,2/27/2024,65129.93,360,Resigned
+361,Nikolos Goody,Recruiter,Legal,5/17/2023,71538.08,361,Terminated
+362,Yorgos Clyde,Systems Administrator IV,Support,7/27/2023,77739.49,362,Terminated
+363,Frans De'Ath,Web Designer I,Business Development,10/23/2023,76890.49,363,On Leave
+364,Tammie Acarson,Associate Professor,Sales,3/8/2023,94579.91,364,Active
+365,Colette Attfield,Chief Design Engineer,Legal,1/2/2023,72655.81,365,Resigned
+366,Stephine Woofenden,Senior Developer,Accounting,3/9/2023,125634.22,366,On Leave
+367,Jennie Plessing,Paralegal,Marketing,2/14/2023,70202.49,367,Terminated
+368,Tawsha O'Hanley,Senior Developer,Engineering,4/11/2023,52897.66,368,Active
+369,Quintin Garms,Senior Cost Accountant,Services,3/10/2024,66197.51,369,Resigned
+370,Natty Boriston,Business Systems Development Analyst,Accounting,2/5/2024,129940.7,370,Resigned
+371,Jessamine Veck,Assistant Professor,Product Management,2/24/2024,105915.24,371,On Leave
+372,Gerald Houlison,Software Test Engineer IV,Business Development,12/26/2023,57665.17,372,On Leave
+373,Celinda Morsey,Speech Pathologist,Human Resources,12/20/2023,116656.49,373,Terminated
+374,Gaelan Colgrave,Physical Therapy Assistant,Training,11/22/2023,104473.78,374,Resigned
+375,Maribelle Ackrill,Director of Sales,Research and Development,5/24/2023,107421.11,375,Resigned
+376,Waldemar Joiner,Payment Adjustment Coordinator,Engineering,11/28/2023,54081.22,376,Active
+377,Toddy Terran,Computer Systems Analyst II,Product Management,4/24/2023,48087.3,377,On Leave
+378,Marika Jammes,Account Executive,Business Development,1/16/2024,91535.64,378,Resigned
+379,Izak Dicky,Cost Accountant,Legal,9/12/2023,135969.91,379,Terminated
+380,Frankie Lyenyng,Business Systems Development Analyst,Training,10/3/2023,33495.71,380,Active
+381,Noach Satchel,Librarian,Support,2/25/2024,115638.21,381,Active
+382,Taffy Murch,Media Manager III,Sales,4/21/2023,38771.27,382,On Leave
+383,Klement Noblett,Programmer Analyst I,Marketing,2/17/2024,81259.43,383,Resigned
+384,Paxon Roll,Geological Engineer,Services,11/7/2023,73244.95,384,Active
+385,Lorena Rolfini,Payment Adjustment Coordinator,Services,10/11/2023,68446.36,385,Terminated
+386,Magda Tureville,Data Coordinator,Training,5/4/2023,61362.35,386,On Leave
+387,Sadie Pouck,Quality Control Specialist,Research and Development,1/10/2024,48509.97,387,Active
+388,Gwendolen Caldecutt,Actuary,Marketing,12/7/2023,86763.82,388,On Leave
+389,Avery Shackelton,Research Assistant I,Training,3/11/2024,33152.82,389,Resigned
+390,Cathe Berryman,Software Engineer I,Human Resources,3/13/2024,40333.85,390,Terminated
+391,Wadsworth Daye,Financial Analyst,Research and Development,8/16/2023,94306.91,391,Active
+392,Saundra Blowing,Chemical Engineer,Human Resources,3/6/2023,146663.56,392,On Leave
+393,Wake Casson,Tax Accountant,Legal,7/12/2023,81604.22,393,Resigned
+394,Gustaf Skeath,Speech Pathologist,Services,3/30/2023,66345.42,394,On Leave
+395,Del Imos,Recruiter,Training,10/3/2023,70993.96,395,Resigned
+396,Joellyn Crathorne,VP Sales,Training,11/29/2023,120810.34,396,Active
+397,Gasparo Scully,Teacher,Research and Development,8/7/2023,64220.74,397,Terminated
+398,Ashton Adamowitz,Administrative Officer,Services,6/10/2023,130380.96,398,Resigned
+399,Trisha Cadding,Structural Engineer,Legal,1/5/2023,110995.94,399,Terminated
+400,Felicity Matchell,Web Designer III,Human Resources,7/21/2023,100891.62,400,Terminated
+401,Cyndi Owtram,Nurse Practicioner,Engineering,2/18/2024,69688.94,401,On Leave
+402,Stirling Damant,Assistant Manager,Human Resources,7/3/2023,109798.59,402,On Leave
+403,Fifi Clemendot,Electrical Engineer,Research and Development,12/26/2023,78248.94,403,Terminated
+404,Michal Evett,Editor,Support,4/9/2023,88612.53,404,Terminated
+405,Arleen Roelofsen,Staff Scientist,Accounting,1/13/2023,47442.55,405,Resigned
+406,Idette Seear,Help Desk Operator,Engineering,6/13/2023,132386.68,406,Resigned
+407,Liva Tripon,VP Marketing,Support,9/17/2023,122165.45,407,Terminated
+408,Nita McGuff,Database Administrator IV,Human Resources,10/26/2023,41533.75,408,On Leave
+409,Rivkah Griswaite,VP Sales,Human Resources,11/30/2023,34452.5,409,Terminated
+410,Amaleta Yezafovich,Professor,Research and Development,8/1/2023,42256.99,410,On Leave
+411,Adeline Ridewood,Software Test Engineer III,Business Development,3/16/2023,115273.1,411,Resigned
+412,Tersina Chmarny,Structural Engineer,Engineering,1/23/2023,103072.84,412,Resigned
+413,Kit Farryn,Operator,Human Resources,1/5/2023,138350.98,413,Active
+414,Frayda Crilley,Nuclear Power Engineer,Services,12/1/2023,136600.79,414,On Leave
+415,Aldridge Vanin,Business Systems Development Analyst,Training,10/26/2023,133014.29,415,Resigned
+416,Bald Simeonov,Registered Nurse,Services,2/7/2024,83488.4,416,Active
+417,Kevon Carryer,Associate Professor,Support,2/13/2023,92310.52,417,Terminated
+418,Max Ellesworth,Graphic Designer,Accounting,1/23/2024,125587.73,418,Active
+419,Alma Benjamin,Electrical Engineer,Human Resources,8/21/2023,72868.34,419,On Leave
+420,Lyndsey Rainford,Nurse Practicioner,Human Resources,10/23/2023,125711.78,420,Terminated
+421,Valaree Coopman,Account Executive,Sales,9/1/2023,95458.53,421,Terminated
+422,Hamil Lightbourne,Systems Administrator II,Training,11/1/2023,70415.56,422,Resigned
+423,Malena Assur,Project Manager,Research and Development,12/31/2023,45675.1,423,Resigned
+424,Virge Reims,Structural Engineer,Sales,10/23/2023,80164.7,424,Resigned
+425,Randene Budnik,VP Product Management,Services,3/17/2023,35568.8,425,Terminated
+426,Linell Lancetter,Quality Control Specialist,Legal,7/13/2023,134759.66,426,Active
+427,Inger Fairlamb,Structural Analysis Engineer,Legal,7/9/2023,31260.71,427,Active
+428,Marnie Buckham,Database Administrator III,Engineering,8/11/2023,115691.29,428,Terminated
+429,Vannie Slipper,Junior Executive,Business Development,5/15/2023,70734.04,429,Resigned
+430,Sherye McWhirter,Budget/Accounting Analyst II,Research and Development,4/26/2023,80526.49,430,Resigned
+431,Obadias Heart,Accounting Assistant I,Product Management,3/4/2024,61368.04,431,Terminated
+432,Mamie Neasam,Senior Sales Associate,Business Development,4/25/2023,48495.51,432,Resigned
+433,Haley Ram,Software Engineer IV,Sales,9/1/2023,83461.25,433,Active
+434,Kacey Danihelka,Senior Developer,Support,6/24/2023,33338.25,434,Resigned
+435,Gregorio Goodbur,Administrative Officer,Services,7/25/2023,99138.26,435,Terminated
+436,Fannie McAlinion,Engineer III,Support,8/11/2023,78845.85,436,Active
+437,Christoper Sigfrid,VP Accounting,Product Management,10/16/2023,70569.96,437,Active
+438,Lockwood Rogan,Paralegal,Research and Development,7/2/2023,35283.88,438,Active
+439,Torrey Wonham,Administrative Officer,Training,2/8/2023,73143.43,439,Active
+440,Rhys Howlin,Chief Design Engineer,Training,1/8/2024,80486.17,440,On Leave
+441,Roana McDermid,Cost Accountant,Training,5/14/2023,67208.46,441,Terminated
+442,Joli Boss,GIS Technical Architect,Business Development,8/7/2023,76733.07,442,Resigned
+443,Portie Cunrado,Tax Accountant,Legal,3/14/2024,84557.67,443,Active
+444,Constancia Moralas,Recruiting Manager,Support,7/22/2023,83333.4,444,Resigned
+445,Iosep Rameaux,Administrative Assistant III,Sales,4/24/2023,103368.09,445,On Leave
+446,Moria Scarlon,Clinical Specialist,Sales,10/4/2023,73600.7,446,Terminated
+447,Ninette Ramsdale,Director of Sales,Sales,1/5/2023,31250.01,447,On Leave
+448,Hill Smeal,VP Accounting,Engineering,3/17/2023,126440.85,448,On Leave
+449,Karyn Cocker,Statistician IV,Sales,9/4/2023,53470.27,449,Terminated
+450,Mariele Simacek,Senior Cost Accountant,Business Development,12/23/2023,86123.06,450,Resigned
+451,Gaynor Kalvin,Administrative Assistant I,Business Development,12/28/2023,78665.79,451,Terminated
+452,Cal Hardi,Software Consultant,Human Resources,3/6/2024,96503.77,452,On Leave
+453,Pete Slayford,Accounting Assistant IV,Research and Development,9/28/2023,107343.0,453,Active
+454,Rahal Churchward,Accounting Assistant I,Product Management,11/12/2023,74229.21,454,Resigned
+455,Iago Phizacklea,Research Assistant IV,Business Development,8/28/2023,120992.95,455,Resigned
+456,Kiersten Joynt,Administrative Assistant II,Sales,8/15/2023,40524.51,456,Terminated
+457,Salomo Filipczynski,Web Designer III,Sales,6/1/2023,125694.23,457,On Leave
+458,Kristy Kamenar,VP Product Management,Product Management,5/8/2023,99424.37,458,Resigned
+459,Barr Zanutti,Civil Engineer,Accounting,1/1/2023,138154.88,459,Resigned
+460,Morganica Benko,Financial Advisor,Accounting,6/18/2023,75673.74,460,Resigned
+461,Mord Blaxland,Mechanical Systems Engineer,Research and Development,7/10/2023,73988.31,461,On Leave
+462,Mohammed Stilwell,Sales Associate,Business Development,9/25/2023,60342.23,462,Active
+463,Bambie Danshin,Software Test Engineer IV,Sales,6/17/2023,148685.4,463,On Leave
+464,Daniel Chard,Dental Hygienist,Engineering,9/2/2023,34012.63,464,Terminated
+465,Nat Cawte,Software Engineer I,Engineering,1/5/2024,86560.16,465,Resigned
+466,Bonny Birchill,Statistician I,Human Resources,3/13/2024,128025.83,466,Resigned
+467,Zolly Grimble,Internal Auditor,Legal,2/11/2023,97110.3,467,Resigned
+468,Antonetta Quan,Junior Executive,Business Development,2/14/2023,123221.81,468,On Leave
+469,Milly Dadd,Clinical Specialist,Research and Development,1/15/2023,69175.95,469,Terminated
+470,Modesty Simnel,Web Designer III,Services,7/9/2023,32698.82,470,Active
+471,Marwin Urey,Recruiting Manager,Legal,8/24/2023,128028.86,471,Resigned
+472,Brandi Estcot,Registered Nurse,Accounting,7/7/2023,111185.66,472,Terminated
+473,Terra Mathie,Account Representative IV,Research and Development,2/12/2024,59121.38,473,Terminated
+474,Brena Blancowe,Recruiting Manager,Sales,1/2/2023,66026.22,474,Resigned
+475,Brockie Catteroll,Project Manager,Engineering,1/4/2023,64219.64,475,Terminated
+476,Zachery Morphet,Legal Assistant,Engineering,4/2/2023,124159.45,476,On Leave
+477,Hermon Gayton,VP Accounting,Services,2/23/2024,70479.18,477,Active
+478,Sonia MacNeil,Web Developer II,Research and Development,6/14/2023,58083.5,478,Active
+479,Oralia Kernell,Structural Analysis Engineer,Sales,10/7/2023,58137.81,479,Active
+480,Josephine Zmitrichenko,VP Quality Control,Legal,7/10/2023,43502.67,480,On Leave
+481,Leda Hillitt,Operator,Marketing,3/13/2023,146477.61,481,On Leave
+482,Min Buist,Account Executive,Marketing,7/2/2023,40712.2,482,On Leave
+483,Torey Beat,Marketing Manager,Support,5/29/2023,129345.22,483,Terminated
+484,Garwin Guwer,Mechanical Systems Engineer,Legal,12/18/2023,125998.54,484,Resigned
+485,Kenon Boutton,Recruiter,Engineering,9/11/2023,74899.9,485,Active
+486,Netti Edgett,Nurse,Human Resources,8/22/2023,142277.13,486,Terminated
+487,Brear Sherebrook,Executive Secretary,Services,5/19/2023,34736.62,487,On Leave
+488,Katalin Croxon,Teacher,Training,10/10/2023,148393.18,488,Resigned
+489,Mirella Kaspar,Cost Accountant,Business Development,12/5/2023,139512.16,489,Resigned
+490,Raoul Duncanson,Senior Cost Accountant,Support,3/10/2023,42463.0,490,Active
+491,Valera Romagosa,Senior Sales Associate,Services,4/22/2023,40110.53,491,Active
+492,Timothea Raeside,GIS Technical Architect,Human Resources,2/28/2024,146004.84,492,Resigned
+493,Tedd Stebles,Recruiting Manager,Support,5/25/2023,137784.11,493,Terminated
+494,Bradan Hawford,Biostatistician I,Training,2/12/2023,98583.49,494,Active
+495,Eugen Swett,Quality Engineer,Engineering,5/26/2023,126506.71,495,Active
+496,Nil Dormand,Geological Engineer,Accounting,2/26/2024,122400.56,496,Terminated
+497,Arielle Landre,Speech Pathologist,Human Resources,2/4/2023,41456.87,497,Active
+498,Monte Ould,Sales Representative,Engineering,3/6/2024,129278.0,498,On Leave
+499,Heath Willers,Registered Nurse,Engineering,2/5/2024,119922.65,499,On Leave
+500,Shannah Seyers,Director of Sales,Legal,6/16/2023,131729.25,500,Resigned
+501,Gabe Titchener,Nurse,Legal,6/23/2023,142083.1,501,On Leave
+502,Wallis Prys,Electrical Engineer,Business Development,1/9/2023,99455.56,502,Active
+503,Emmy Ginity,Sales Representative,Training,9/29/2023,137021.85,503,On Leave
+504,Enrique Oen,Recruiting Manager,Support,11/2/2023,52659.86,504,On Leave
+505,Dominique Nurcombe,VP Quality Control,Accounting,2/15/2023,140836.2,505,Resigned
+506,Cart Harvey,Legal Assistant,Support,10/16/2023,133542.86,506,On Leave
+507,Page Dewsbury,Nuclear Power Engineer,Support,2/7/2023,137362.0,507,Resigned
+508,Hana Rennebeck,Administrative Officer,Research and Development,4/5/2023,96673.09,508,Active
+509,Yvor O'Corrigane,Business Systems Development Analyst,Support,12/6/2023,100705.03,509,Terminated
+510,Regen Goodee,Software Engineer I,Services,1/18/2024,33611.66,510,On Leave
+511,Christoforo Hanbury-Brown,Software Consultant,Legal,5/27/2023,72535.16,511,On Leave
+512,Joannes Kurth,GIS Technical Architect,Sales,12/6/2023,83612.86,512,On Leave
+513,Darbie Morfett,Social Worker,Services,8/23/2023,147615.98,513,Terminated
+514,Vivien Ropkes,Legal Assistant,Accounting,1/27/2023,48680.23,514,Active
+515,Emmie Fruin,Chemical Engineer,Engineering,2/3/2024,142897.07,515,Active
+516,Herrick Petris,Computer Systems Analyst I,Legal,10/19/2023,92787.84,516,Resigned
+517,Florenza Roder,Safety Technician III,Human Resources,3/18/2023,52045.26,517,On Leave
+518,Hoyt Taggert,Dental Hygienist,Services,11/7/2023,56364.61,518,Resigned
+519,Jdavie Gayle,Civil Engineer,Accounting,12/21/2023,60801.68,519,Resigned
+520,Piper Stubbs,Analog Circuit Design manager,Engineering,2/14/2023,132526.23,520,Active
+521,Rudolfo Lukacs,Recruiting Manager,Accounting,5/27/2023,99492.61,521,Terminated
+522,Daffi Maric,Automation Specialist II,Accounting,1/27/2024,124237.07,522,Resigned
+523,Vanna Edghinn,Software Consultant,Support,12/12/2023,70050.64,523,Active
+524,Tam Hoy,Editor,Support,11/16/2023,65048.02,524,Active
+525,Eustacia Trillo,Quality Control Specialist,Product Management,7/14/2023,118564.47,525,Resigned
+526,Dar De Mitri,Research Nurse,Marketing,12/9/2023,69026.95,526,Terminated
+527,Mignonne Greenmon,Computer Systems Analyst IV,Marketing,7/6/2023,59420.08,527,Active
+528,Tommy Leopard,Teacher,Training,4/1/2023,118329.29,528,Resigned
+529,Monica Pleming,Web Designer IV,Business Development,5/18/2023,120245.99,529,Terminated
+530,Pearl Graffham,Paralegal,Services,3/1/2023,122281.07,530,On Leave
+531,Horst Larne,Engineer IV,Human Resources,5/10/2023,31061.25,531,On Leave
+532,Cash Keenan,Senior Cost Accountant,Human Resources,11/12/2023,119582.36,532,Terminated
+533,Marilyn Boskell,Help Desk Operator,Accounting,11/16/2023,117932.72,533,Resigned
+534,Gallard Nealey,Clinical Specialist,Product Management,8/23/2023,103903.87,534,On Leave
+535,Pavel Presland,Registered Nurse,Accounting,5/6/2023,110899.87,535,Terminated
+536,Claudina Larrett,Dental Hygienist,Research and Development,2/2/2024,109833.81,536,Active
+537,Eugenio Stilly,Accounting Assistant I,Accounting,2/9/2024,102665.76,537,On Leave
+538,Corbin Trattles,Project Manager,Legal,6/3/2023,64966.86,538,Resigned
+539,Cobbie Antonchik,Web Developer IV,Research and Development,3/10/2024,90697.37,539,Terminated
+540,Malachi Taig,Information Systems Manager,Accounting,5/7/2023,142364.01,540,Active
+541,Marika Natwick,Registered Nurse,Business Development,12/11/2023,148321.56,541,Active
+542,Adelheid Spindler,Product Engineer,Business Development,7/26/2023,124876.55,542,On Leave
+543,Marrilee Cherrison,Nurse,Training,2/28/2023,114268.82,543,On Leave
+544,Essy Mattiello,Occupational Therapist,Services,1/18/2023,147412.66,544,Terminated
+545,Paulina Basant,Research Associate,Human Resources,5/29/2023,57165.88,545,Active
+546,Idette Faircloth,Quality Engineer,Product Management,8/12/2023,142028.65,546,Terminated
+547,Wilfred Mulhall,Assistant Manager,Business Development,3/12/2024,66627.23,547,Terminated
+548,Juditha Andreucci,Project Manager,Support,10/15/2023,129865.62,548,Terminated
+549,Binky Larose,Data Coordinator,Engineering,12/5/2023,65980.17,549,Terminated
+550,Ricky Moxham,Research Associate,Sales,2/10/2023,72066.59,550,On Leave
+551,Pet Kennifick,Desktop Support Technician,Sales,3/7/2023,82258.2,551,Active
+552,Kathlin Moxson,Accounting Assistant I,Services,3/22/2023,125228.21,552,Active
+553,Brigid Colleran,Environmental Specialist,Sales,7/15/2023,88151.14,553,Resigned
+554,Malanie Ollenbuttel,Compensation Analyst,Legal,10/2/2023,59549.42,554,On Leave
+555,Chane Bentje,Senior Developer,Sales,7/12/2023,66996.83,555,On Leave
+556,Roby Giamuzzo,Computer Systems Analyst III,Research and Development,6/5/2023,32814.03,556,Terminated
+557,Perri Speechly,GIS Technical Architect,Legal,2/7/2023,34688.54,557,Terminated
+558,Tedmund Houchin,Accounting Assistant III,Legal,5/1/2023,31529.38,558,On Leave
+559,Heinrik Mapledoore,Senior Cost Accountant,Legal,3/24/2023,107016.3,559,Terminated
+560,Tasha Ponder,Dental Hygienist,Accounting,7/24/2023,86800.36,560,Active
+561,Randa Zanioletti,Product Engineer,Marketing,7/3/2023,73982.64,561,Active
+562,Court Humerstone,Statistician I,Training,10/17/2023,139852.29,562,Active
+563,Timothea Astles,Systems Administrator III,Research and Development,7/4/2023,142676.47,563,Active
+564,Daisi Menchenton,Payment Adjustment Coordinator,Accounting,12/6/2023,63327.08,564,Resigned
+565,Hodge Riguard,Tax Accountant,Legal,11/5/2023,128049.63,565,Active
+566,Melisenda Lebel,Nurse Practicioner,Training,1/19/2024,54502.07,566,Terminated
+567,Cary Pimme,Research Nurse,Sales,11/24/2023,108146.57,567,Terminated
+568,Adelle Caplen,Data Coordinator,Training,8/26/2023,42834.63,568,Terminated
+569,Neall Downes,Civil Engineer,Training,11/27/2023,120048.19,569,Terminated
+570,Evangeline Brosi,Quality Engineer,Engineering,6/14/2023,61351.57,570,On Leave
+571,Rickert Frankis,Operator,Business Development,1/30/2023,47084.59,571,Resigned
+572,Delbert Slaten,Senior Quality Engineer,Sales,3/23/2023,60400.43,572,On Leave
+573,Wallis Becraft,Staff Scientist,Business Development,10/14/2023,125435.86,573,Resigned
+574,Kayla Pirri,Systems Administrator III,Services,5/1/2023,144378.1,574,Terminated
+575,Karl Batistelli,Account Representative IV,Research and Development,2/11/2023,138828.73,575,Resigned
+576,Robinetta Stille,Senior Developer,Legal,5/24/2023,38650.91,576,Terminated
+577,Eachelle Levicount,Assistant Media Planner,Human Resources,6/5/2023,46673.0,577,Active
+578,Thaddus Seaward,Nurse Practicioner,Research and Development,5/14/2023,104073.7,578,Resigned
+579,Wyatt Melley,Environmental Tech,Human Resources,3/25/2023,146286.98,579,Resigned
+580,Chip Phelips,Senior Editor,Legal,11/16/2023,52768.21,580,Resigned
+581,Rog Haskayne,Marketing Manager,Services,12/12/2023,52666.1,581,Resigned
+582,Myrta Gauvain,Associate Professor,Legal,7/28/2023,45668.68,582,Active
+583,Conny Caslett,Information Systems Manager,Sales,4/11/2023,57121.48,583,Resigned
+584,Thomasin Pedrick,Data Coordinator,Services,11/12/2023,59087.46,584,On Leave
+585,Torrance Judd,Civil Engineer,Legal,2/15/2023,146413.96,585,Active
+586,Anatole Gutridge,Product Engineer,Services,7/20/2023,64701.29,586,Active
+587,Zelda Ivanishev,Research Associate,Product Management,7/11/2023,68818.35,587,On Leave
+588,Stacy Files,General Manager,Engineering,3/27/2023,46095.99,588,On Leave
+589,Maighdiln May,Clinical Specialist,Marketing,3/31/2023,94389.1,589,On Leave
+590,Page McClelland,Nuclear Power Engineer,Sales,3/8/2024,101496.65,590,On Leave
+591,Modestia Petrichat,Database Administrator II,Accounting,11/9/2023,130530.94,591,On Leave
+592,Friedrich Freezor,Desktop Support Technician,Support,6/29/2023,115884.04,592,Active
+593,Heinrick Ritmeyer,Nuclear Power Engineer,Business Development,10/9/2023,74065.2,593,Active
+594,Alley Keslake,Junior Executive,Research and Development,11/10/2023,132102.2,594,On Leave
+595,Johann Ferretti,Accounting Assistant I,Services,2/23/2024,143144.64,595,Resigned
+596,Pansy Budd,Civil Engineer,Legal,11/19/2023,118133.52,596,Resigned
+597,Jobie O'Shavlan,General Manager,Business Development,2/26/2023,64187.45,597,Resigned
+598,Ardith McKeaney,Research Nurse,Training,1/5/2023,51156.3,598,On Leave
+599,Ardelis Turgoose,Senior Financial Analyst,Sales,12/8/2023,149215.88,599,Active
+600,Linea Liversley,Cost Accountant,Sales,3/5/2023,137924.35,600,Active
+601,Shandra Cornejo,Desktop Support Technician,Services,7/7/2023,98896.72,601,Terminated
+602,Hussein Skillington,Registered Nurse,Engineering,10/27/2023,84753.33,602,Terminated
+603,Glynnis Ker,Actuary,Product Management,3/21/2023,95966.95,603,Resigned
+604,Anneliese Armitt,Environmental Specialist,Engineering,5/4/2023,53416.45,604,On Leave
+605,Sonja Habbes,VP Marketing,Engineering,2/1/2023,43017.48,605,On Leave
+606,Tine Brandom,Human Resources Manager,Product Management,1/12/2024,58341.86,606,Active
+607,Austen Yemm,Legal Assistant,Sales,3/19/2023,74171.63,607,Terminated
+608,Emlyn Allans,Food Chemist,Product Management,6/7/2023,35597.56,608,Resigned
+609,Vittoria Sutherden,Executive Secretary,Sales,3/5/2023,126093.64,609,Active
+610,Edd Wheelband,Professor,Marketing,5/21/2023,101135.89,610,On Leave
+611,Ara Snedker,Accountant IV,Legal,9/5/2023,99353.66,611,Terminated
+612,Wolfie Samet,Occupational Therapist,Legal,7/8/2023,71421.61,612,Active
+613,Joshuah Stirton,Pharmacist,Accounting,2/13/2024,136960.73,613,On Leave
+614,Ker Halfhead,Teacher,Training,3/18/2023,108288.81,614,On Leave
+615,Amalle Jordin,Food Chemist,Support,2/1/2024,53378.25,615,On Leave
+616,Thane MacLise,Editor,Support,11/27/2023,110089.96,616,Resigned
+617,Emmanuel Wetter,Staff Accountant IV,Sales,10/17/2023,132745.64,617,Terminated
+618,Jo-ann Redpath,Data Coordinator,Engineering,7/3/2023,149922.55,618,Active
+619,Alta Littell,Product Engineer,Engineering,6/3/2023,103062.62,619,On Leave
+620,Broderic Ondrus,Sales Associate,Services,7/7/2023,61963.12,620,Resigned
+621,Michaeline Rawcliff,Help Desk Technician,Accounting,3/11/2024,146820.97,621,On Leave
+622,Trude Kobelt,Senior Quality Engineer,Legal,3/6/2023,129870.89,622,Terminated
+623,Barret Cuseck,Senior Cost Accountant,Support,8/20/2023,66364.09,623,On Leave
+624,Tobin Van,VP Accounting,Accounting,9/9/2023,45701.83,624,Terminated
+625,Genvieve Seignior,Human Resources Manager,Engineering,12/12/2023,110175.52,625,Active
+626,Darlene Monckman,Senior Quality Engineer,Marketing,9/20/2023,46364.42,626,Resigned
+627,Blanche Byng,Software Test Engineer II,Services,6/1/2023,92880.37,627,On Leave
+628,Maribelle Littefair,Health Coach III,Human Resources,11/18/2023,115506.85,628,On Leave
+629,Tabbie Connors,Technical Writer,Research and Development,9/11/2023,127671.33,629,Resigned
+630,Corene Gillise,Mechanical Systems Engineer,Product Management,7/16/2023,118992.84,630,Resigned
+631,Teresina Lake,Senior Cost Accountant,Services,5/4/2023,129837.66,631,On Leave
+632,Alvina Whether,Pharmacist,Accounting,1/9/2023,133791.62,632,Resigned
+633,Tina Kytter,Product Engineer,Training,1/2/2024,123370.61,633,Active
+634,Penelopa Kellet,Administrative Assistant III,Support,3/20/2023,97621.88,634,On Leave
+635,Quentin Rosenzveig,Quality Control Specialist,Engineering,7/24/2023,135997.66,635,On Leave
+636,Dominick Riddeough,Research Associate,Marketing,12/17/2023,56772.86,636,Active
+637,Amy Laydon,Web Developer III,Services,9/6/2023,53195.04,637,Active
+638,Guglielma Lenoir,Graphic Designer,Human Resources,10/11/2023,79422.34,638,On Leave
+639,Arleen Clegg,Operator,Business Development,12/19/2023,115829.36,639,Resigned
+640,Gail Martynov,Marketing Manager,Engineering,2/1/2023,60995.13,640,Terminated
+641,Philomena Coppock.,Account Executive,Services,9/6/2023,102597.82,641,Active
+642,Erena Ahlf,Sales Associate,Human Resources,5/12/2023,99836.13,642,On Leave
+643,Thoma Culshew,Administrative Assistant IV,Human Resources,8/24/2023,65819.11,643,On Leave
+644,Karine Cellier,Teacher,Sales,7/1/2023,124455.15,644,Resigned
+645,Zachariah Chaudron,Teacher,Accounting,7/31/2023,71830.2,645,Active
+646,Nicolette Larcier,VP Marketing,Business Development,10/4/2023,39398.93,646,Active
+647,Cherry Le feuvre,Human Resources Assistant I,Legal,4/11/2023,139073.9,647,Active
+648,Vail Venables,Teacher,Business Development,9/2/2023,47913.31,648,Terminated
+649,Norma Le Jean,Project Manager,Business Development,9/1/2023,49688.72,649,Resigned
+650,Philis Pavek,Speech Pathologist,Support,3/28/2023,52314.7,650,Resigned
+651,Carter Malarkey,Administrative Assistant III,Legal,2/28/2023,120648.01,651,On Leave
+652,Torrin Wieprecht,Speech Pathologist,Human Resources,5/25/2023,105703.02,652,Resigned
+653,Marillin Harfleet,Database Administrator I,Support,2/29/2024,92758.51,653,Active
+654,Gerek Cardwell,Financial Advisor,Training,10/10/2023,102338.9,654,Active
+655,Mathias Jakobsson,Teacher,Services,3/10/2024,134764.37,655,Terminated
+656,Bobbe Blaydon,Senior Financial Analyst,Sales,7/14/2023,114880.83,656,Resigned
+657,Laureen Grishukov,Office Assistant IV,Marketing,3/25/2023,75893.26,657,On Leave
+658,Ame Saltrese,Programmer II,Support,6/14/2023,64149.46,658,Terminated
+659,Barnaby King,Sales Associate,Legal,7/21/2023,107070.17,659,Terminated
+660,Adolf Halms,Administrative Assistant II,Human Resources,1/16/2023,71266.73,660,Active
+661,Ardyth Chaytor,Analyst Programmer,Services,10/14/2023,105285.14,661,On Leave
+662,Lizette O' Mara,VP Marketing,Engineering,9/24/2023,51828.08,662,On Leave
+663,Livvyy Scorey,Research Nurse,Training,8/23/2023,67224.88,663,Terminated
+664,Ole Rafferty,Software Test Engineer IV,Sales,10/1/2023,93072.4,664,Active
+665,Rebecka Dawton,Clinical Specialist,Training,5/29/2023,125705.35,665,Terminated
+666,Ardra Waterstone,Office Assistant I,Human Resources,5/15/2023,64284.61,666,Active
+667,Doreen Sircomb,Actuary,Marketing,10/18/2023,124750.81,667,Resigned
+668,Rocky Olechnowicz,Human Resources Assistant IV,Training,2/4/2023,114938.94,668,Resigned
+669,Chickie Whitticks,Accountant II,Services,7/10/2023,83902.59,669,On Leave
+670,Andrus Gauge,Tax Accountant,Accounting,10/22/2023,57653.78,670,Active
+671,Viviana Millin,VP Accounting,Business Development,6/2/2023,72128.23,671,Active
+672,Gregoor Rodwell,Analyst Programmer,Support,9/13/2023,133342.77,672,Resigned
+673,Conny Meriguet,Web Developer II,Training,11/9/2023,57356.85,673,Active
+674,Ermina Cordoba,Web Developer II,Support,1/21/2023,87399.19,674,Active
+675,Brannon Cours,Environmental Specialist,Marketing,10/4/2023,98116.06,675,Active
+676,Morna Barracks,Accounting Assistant II,Services,11/6/2023,142749.26,676,Active
+677,Hyacinthe Tootin,Computer Systems Analyst III,Support,10/10/2023,125332.37,677,On Leave
+678,Leeann Stiven,Occupational Therapist,Legal,1/21/2024,68036.54,678,Terminated
+679,Anna-diane Bannard,Actuary,Legal,11/23/2023,108240.44,679,On Leave
+680,Dame Biasini,Paralegal,Training,3/23/2023,87845.98,680,Resigned
+681,Roseann Devine,Librarian,Support,5/25/2023,31683.54,681,On Leave
+682,Jayme Farthin,Community Outreach Specialist,Accounting,5/19/2023,79535.22,682,Terminated
+683,Liane Ragless,Compensation Analyst,Training,2/18/2023,95465.17,683,Terminated
+684,Flossi Dibbs,Human Resources Manager,Product Management,7/11/2023,52339.72,684,On Leave
+685,Pat Tyler,Developer III,Accounting,6/29/2023,64584.19,685,Resigned
+686,Ricki Derks,Recruiting Manager,Training,8/31/2023,97211.82,686,Resigned
+687,Dev Silbermann,Social Worker,Services,9/19/2023,33786.38,687,Active
+688,Petr Guiet,Chief Design Engineer,Sales,6/5/2023,141127.95,688,On Leave
+689,Rebecca Rutherfoord,Account Executive,Research and Development,12/1/2023,118461.88,689,Terminated
+690,Udale McFaul,Automation Specialist III,Human Resources,5/14/2023,104709.15,690,Terminated
+691,Purcell Davenhall,Product Engineer,Training,6/19/2023,81179.96,691,On Leave
+692,Tamar Barneveld,Senior Developer,Human Resources,8/9/2023,93452.24,692,Terminated
+693,Sasha Brampton,Payment Adjustment Coordinator,Training,1/7/2023,68549.24,693,Resigned
+694,Devy Purdon,Junior Executive,Accounting,9/10/2023,105372.66,694,On Leave
+695,Rowland Tarrier,Internal Auditor,Accounting,10/18/2023,42575.93,695,Resigned
+696,Archer Kadar,Marketing Manager,Human Resources,1/21/2024,144408.66,696,Resigned
+697,Gregorio Pattisson,Human Resources Manager,Product Management,1/30/2023,123930.78,697,Terminated
+698,Melissa Scibsey,Editor,Support,6/2/2023,120197.47,698,Terminated
+699,Elsworth Matyja,Food Chemist,Legal,4/21/2023,101997.91,699,Active
+700,Hubert Cork,Web Developer II,Accounting,11/28/2023,149774.93,700,Resigned
+701,Rocky Petett,Engineer I,Services,3/2/2023,74027.76,701,Resigned
+702,Sunny Andreoletti,Registered Nurse,Support,9/8/2023,69792.44,702,Terminated
+703,Lilian O'Loughnan,Structural Analysis Engineer,Engineering,2/19/2023,107563.36,703,On Leave
+704,Ford Bickerstaff,Actuary,Services,1/30/2024,108001.11,704,On Leave
+705,Wilfred Cherrington,Director of Sales,Training,1/29/2024,141078.14,705,Active
+706,Tyrus Sargeant,Health Coach III,Product Management,10/26/2023,60119.58,706,Resigned
+707,Carree Elsby,Media Manager II,Human Resources,2/26/2023,89505.16,707,On Leave
+708,Juliette Vaneev,Pharmacist,Human Resources,6/8/2023,72810.16,708,Resigned
+709,Kylie O'Concannon,Librarian,Marketing,5/7/2023,44889.04,709,Active
+710,Darbee Scholard,Automation Specialist III,Services,5/30/2023,129497.49,710,Active
+711,Amelie Opdenorth,Teacher,Accounting,3/19/2023,73017.92,711,Resigned
+712,Magnum Cornish,Environmental Specialist,Business Development,8/24/2023,109152.46,712,On Leave
+713,Mariann Kinsell,Tax Accountant,Research and Development,7/21/2023,80706.72,713,Active
+714,Tiffanie Antrobus,Sales Representative,Legal,3/31/2023,37244.52,714,Terminated
+715,Eberto Friel,Compensation Analyst,Training,8/3/2023,116443.66,715,Resigned
+716,Rebekah Conneely,Research Nurse,Legal,6/5/2023,32336.5,716,Terminated
+717,Aguistin Westmarland,Sales Representative,Product Management,3/15/2023,31631.19,717,On Leave
+718,Maurene Whelpton,Editor,Services,4/28/2023,48475.98,718,Resigned
+719,Darda Marte,Computer Systems Analyst I,Research and Development,1/14/2023,115959.75,719,Terminated
+720,Garnet Haste,Graphic Designer,Support,7/22/2023,31303.2,720,Resigned
+721,Sammie Gligoraci,Cost Accountant,Sales,2/12/2024,89121.75,721,Active
+722,Cloe Bentjens,Technical Writer,Product Management,5/28/2023,149458.05,722,Active
+723,Arda Center,Sales Associate,Sales,12/12/2023,112541.52,723,On Leave
+724,Mead Barmby,Graphic Designer,Engineering,7/6/2023,65019.46,724,Terminated
+725,Corliss Stickels,Staff Accountant IV,Accounting,2/24/2023,141021.18,725,Terminated
+726,Nerty Bucknell,Speech Pathologist,Training,10/14/2023,52460.95,726,On Leave
+727,Stanton Coat,Information Systems Manager,Accounting,4/24/2023,84642.17,727,Active
+728,Stephi Lammas,Professor,Services,10/10/2023,30722.61,728,On Leave
+729,Marwin Izhak,Teacher,Marketing,6/28/2023,149561.08,729,On Leave
+730,Jackie Maghull,Financial Analyst,Human Resources,8/25/2023,51709.75,730,Active
+731,Darsey Camier,Financial Analyst,Accounting,12/22/2023,125786.5,731,Terminated
+732,Laurice Mancer,Environmental Tech,Business Development,7/26/2023,124984.0,732,Active
+733,Ediva Axton,General Manager,Human Resources,1/30/2023,50954.26,733,Terminated
+734,Bruno Greenalf,Engineer II,Human Resources,9/28/2023,139394.58,734,Terminated
+735,Viviyan Brandone,Web Developer I,Services,6/1/2023,145916.72,735,Terminated
+736,Pauletta Seawright,Analyst Programmer,Legal,2/25/2024,138960.03,736,Active
+737,Halie Sagar,Structural Engineer,Research and Development,3/21/2023,141704.44,737,Resigned
+738,Odetta Peacher,Administrative Officer,Accounting,6/20/2023,118258.84,738,Terminated
+739,Jacinthe Wardlow,Software Engineer I,Training,5/27/2023,109528.62,739,Terminated
+740,Tonie Baitey,Sales Representative,Accounting,8/22/2023,103577.85,740,Resigned
+741,Natalina Lethardy,Financial Analyst,Research and Development,11/5/2023,31601.57,741,On Leave
+742,Correy Grendon,Librarian,Marketing,7/25/2023,139316.06,742,Resigned
+743,Mariette Potteridge,Social Worker,Engineering,9/13/2023,31535.37,743,Active
+744,Doris Dugget,Actuary,Product Management,8/8/2023,81167.93,744,Resigned
+745,Christoper Ible,Sales Associate,Human Resources,4/1/2023,34655.43,745,Active
+746,Marge Louche,Help Desk Technician,Engineering,7/21/2023,125617.75,746,Active
+747,Charles Bentley,Social Worker,Research and Development,5/8/2023,46529.14,747,Active
+748,Kort Parfett,Nuclear Power Engineer,Human Resources,5/2/2023,123699.42,748,Active
+749,Jaquelin Tuer,Senior Developer,Business Development,11/25/2023,63412.94,749,Resigned
+750,Addia Gilhouley,Actuary,Training,12/14/2023,53988.4,750,Active
+751,Auria Humbey,Civil Engineer,Legal,2/26/2024,144002.95,751,On Leave
+752,Jud Stigers,Programmer Analyst I,Marketing,2/2/2024,119895.57,752,Active
+753,Andy Shea,Research Associate,Legal,9/4/2023,106570.64,753,Resigned
+754,Justino Peers,Engineer II,Engineering,4/27/2023,56477.59,754,Resigned
+755,Millicent Cantillon,Budget/Accounting Analyst I,Engineering,5/4/2023,60804.4,755,Active
+756,Giles Roads,Chemical Engineer,Legal,2/2/2023,54004.62,756,On Leave
+757,Ginni Niesel,Programmer IV,Human Resources,3/20/2023,99717.62,757,On Leave
+758,Yves Dallewater,VP Accounting,Marketing,9/15/2023,66217.04,758,Resigned
+759,Vivie Hodge,Operator,Services,3/7/2024,77031.62,759,Resigned
+760,Spence Antonov,Graphic Designer,Research and Development,10/24/2023,48727.85,760,Terminated
+761,Kimberly Dedmam,Media Manager I,Marketing,9/5/2023,129915.46,761,On Leave
+762,Orelee Petrecz,Budget/Accounting Analyst III,Research and Development,2/8/2023,70539.09,762,On Leave
+763,Ruthie Snel,Account Coordinator,Support,6/17/2023,77825.96,763,On Leave
+764,Estel Drogan,Account Representative II,Support,2/7/2024,148088.81,764,Active
+765,Harri Boyles,Financial Analyst,Product Management,1/23/2024,45347.33,765,On Leave
+766,Adrea Zienkiewicz,GIS Technical Architect,Services,9/7/2023,83272.83,766,On Leave
+767,Granger Holehouse,Data Coordinator,Marketing,10/31/2023,135498.34,767,Active
+768,Catherina De Goey,Operator,Services,9/24/2023,37195.57,768,Resigned
+769,Grethel Beggan,Accountant IV,Research and Development,9/6/2023,67535.53,769,Terminated
+770,Burt Buxsey,Programmer Analyst IV,Legal,7/15/2023,97890.5,770,Active
+771,Elfie Gallahar,Cost Accountant,Accounting,5/14/2023,80110.52,771,Terminated
+772,Jacinta Segges,Editor,Business Development,12/5/2023,127100.52,772,Resigned
+773,Aidan Pattullo,Administrative Assistant IV,Services,6/26/2023,89014.65,773,Active
+774,Archibold Alywin,Staff Accountant II,Business Development,1/22/2023,58402.65,774,Resigned
+775,Pru Norres,Programmer Analyst II,Support,4/16/2023,37343.84,775,On Leave
+776,Thomasine McReidy,Senior Cost Accountant,Services,4/19/2023,119186.28,776,On Leave
+777,Hinda Keyzman,Professor,Sales,12/17/2023,40306.0,777,On Leave
+778,Augustina McDonough,VP Accounting,Product Management,1/14/2024,115668.16,778,Resigned
+779,Dolorita Mechi,Project Manager,Product Management,8/30/2023,77081.37,779,On Leave
+780,Arron Grichukhin,Software Engineer I,Human Resources,3/19/2023,62195.52,780,Active
+781,Stacee Pendrey,Web Developer IV,Legal,2/4/2023,78024.29,781,Active
+782,Brunhilde Celler,General Manager,Research and Development,4/9/2023,48237.08,782,Resigned
+783,Roxine Weyman,Information Systems Manager,Engineering,2/16/2024,89841.79,783,Active
+784,Ethan Bellord,Electrical Engineer,Accounting,10/18/2023,108399.57,784,Terminated
+785,Abey Farrant,Media Manager IV,Legal,8/21/2023,145620.38,785,Terminated
+786,Blisse Orris,Associate Professor,Sales,5/25/2023,50100.53,786,Terminated
+787,Jose Paulig,Automation Specialist III,Training,11/25/2023,53939.83,787,Active
+788,Laurence Creggan,Recruiting Manager,Sales,8/23/2023,44976.48,788,Terminated
+789,Ervin Kennifeck,Associate Professor,Legal,8/1/2023,67397.83,789,Active
+790,Des Sawood,Nurse Practicioner,Legal,9/30/2023,113503.85,790,Resigned
+791,Dylan Starkie,Account Representative III,Marketing,5/6/2023,32593.33,791,Active
+792,Drucy Epgrave,Office Assistant I,Marketing,10/3/2023,86210.33,792,Terminated
+793,Terencio Andreutti,Staff Accountant III,Product Management,2/6/2024,52517.66,793,Resigned
+794,Dulcea Windrum,Safety Technician I,Support,1/9/2024,118491.86,794,Terminated
+795,Royce Paik,Nurse,Sales,12/3/2023,63341.62,795,Resigned
+796,Garrik Ridler,Account Executive,Engineering,9/9/2023,44466.84,796,On Leave
+797,Charmain Devonport,Account Coordinator,Research and Development,2/3/2023,88990.06,797,Resigned
+798,Ardenia Spooner,Recruiter,Accounting,2/22/2024,135036.28,798,On Leave
+799,Lexis Maffei,Research Nurse,Sales,1/3/2023,110158.18,799,Resigned
+800,Linell Gronno,Environmental Tech,Business Development,1/1/2024,94599.45,800,Terminated
+801,Jeffrey Djekic,Engineer IV,Training,6/6/2023,88102.18,801,Terminated
+802,Delinda Edelmann,Occupational Therapist,Engineering,1/20/2023,89899.21,802,On Leave
+803,Jilly Sheals,Research Associate,Services,3/4/2023,36438.87,803,Active
+804,Celestine Giovanazzi,Desktop Support Technician,Marketing,3/3/2023,38633.83,804,Active
+805,Hilarius Lewendon,Actuary,Product Management,3/8/2024,78882.07,805,Resigned
+806,Gram Byham,VP Product Management,Services,7/23/2023,87712.41,806,Resigned
+807,Octavius Stuehmeier,Automation Specialist III,Services,1/15/2023,91382.73,807,On Leave
+808,Dorie Keeting,Software Consultant,Training,3/2/2023,75455.68,808,Active
+809,Alfreda Harrinson,Database Administrator III,Support,2/20/2024,106090.86,809,On Leave
+810,Gussi Piatek,Environmental Tech,Services,9/21/2023,73935.86,810,On Leave
+811,Natty Cockerton,Nuclear Power Engineer,Research and Development,4/7/2023,88496.1,811,Resigned
+812,Jamil covino,Graphic Designer,Training,6/24/2023,72411.96,812,On Leave
+813,Mattie Dolby,Paralegal,Training,11/12/2023,123919.1,813,Resigned
+814,Tristam Last,Help Desk Technician,Human Resources,10/4/2023,49481.46,814,Resigned
+815,Derk Udden,Project Manager,Services,7/28/2023,43393.54,815,Resigned
+816,Zachery Antoniou,Compensation Analyst,Legal,1/7/2023,88906.44,816,Active
+817,Annabela Braine,Teacher,Product Management,2/6/2024,79133.26,817,On Leave
+818,Storm Bolsover,Professor,Research and Development,6/4/2023,101972.29,818,Active
+819,Otis Scotchmur,Assistant Media Planner,Business Development,3/13/2024,60917.85,819,On Leave
+820,Susanne Dancey,VP Product Management,Research and Development,2/12/2023,124508.56,820,On Leave
+821,Vally Frewer,Desktop Support Technician,Training,9/5/2023,130772.01,821,Terminated
+822,Rafe Genery,Pharmacist,Sales,12/5/2023,72236.48,822,Resigned
+823,Pierce Griffitts,Research Associate,Sales,9/5/2023,103407.61,823,Terminated
+824,Arnie Duck,Administrative Officer,Support,2/19/2024,33763.86,824,Resigned
+825,Emlynne Tomasi,Staff Scientist,Sales,7/31/2023,37823.49,825,Active
+826,Gonzalo Wyer,Accounting Assistant III,Accounting,10/28/2023,79247.69,826,Terminated
+827,Libby Grewe,General Manager,Services,5/28/2023,90213.51,827,Resigned
+828,Guillaume Loweth,Analog Circuit Design manager,Legal,1/12/2023,54983.29,828,Terminated
+829,Nevile Brastead,Financial Advisor,Research and Development,10/23/2023,114540.77,829,On Leave
+830,Hildegaard Sign,Computer Systems Analyst III,Marketing,2/10/2023,113729.99,830,Terminated
+831,Lydon Jamieson,Assistant Media Planner,Accounting,8/2/2023,56969.29,831,Resigned
+832,Nealson Roston,Registered Nurse,Accounting,3/4/2023,43545.6,832,Terminated
+833,Patrica Domleo,Human Resources Manager,Legal,5/19/2023,144541.08,833,Active
+834,Fairleigh Jacobssen,Physical Therapy Assistant,Legal,2/14/2023,45700.83,834,On Leave
+835,Erhart Kacheller,Chemical Engineer,Legal,5/2/2023,64378.01,835,Resigned
+836,Feliza Pauley,Senior Developer,Research and Development,7/4/2023,127680.27,836,Resigned
+837,Korella Dyet,Sales Associate,Accounting,2/3/2024,56041.01,837,On Leave
+838,Corette Heskin,Social Worker,Accounting,3/3/2024,66765.89,838,On Leave
+839,Jerrome Foot,Senior Quality Engineer,Legal,1/22/2023,56260.64,839,Resigned
+840,Elliott Orrell,Software Engineer II,Training,2/25/2023,63713.55,840,Terminated
+841,Hale Danilovitch,Senior Quality Engineer,Training,7/17/2023,90662.25,841,Resigned
+842,Mada Weare,Quality Control Specialist,Training,6/7/2023,66023.63,842,On Leave
+843,Siegfried Garr,Statistician I,Product Management,11/17/2023,145969.38,843,Terminated
+844,Morris Jantzen,Human Resources Assistant IV,Marketing,9/22/2023,59264.32,844,Active
+845,Verge Dickerson,Payment Adjustment Coordinator,Accounting,6/19/2023,119670.47,845,Active
+846,Elfrieda Tunkin,Senior Financial Analyst,Training,9/12/2023,148720.35,846,On Leave
+847,Sibella Castillo,Social Worker,Support,9/22/2023,90863.64,847,Active
+848,Marsha Glazebrook,Recruiter,Services,5/6/2023,124114.5,848,Resigned
+849,Cilka Moogan,Associate Professor,Accounting,3/5/2024,149664.37,849,Terminated
+850,Nicola Pasque,Sales Representative,Sales,2/25/2023,37832.38,850,Terminated
+851,Holmes Tregidgo,Community Outreach Specialist,Accounting,2/17/2023,64629.31,851,On Leave
+852,Ellene Quartly,Analyst Programmer,Marketing,1/27/2024,46372.96,852,Resigned
+853,Doralin MacTrustram,Account Executive,Marketing,11/22/2023,55211.15,853,Resigned
+854,Zelma Moatt,Occupational Therapist,Sales,3/10/2024,140375.85,854,Active
+855,Alaric Cocker,General Manager,Accounting,6/9/2023,54861.02,855,On Leave
+856,Jewel Ferenczy,Marketing Assistant,Research and Development,2/2/2024,120032.12,856,Resigned
+857,Rube Duesberry,Director of Sales,Engineering,10/20/2023,146595.93,857,Terminated
+858,Chantalle Caldaro,Assistant Media Planner,Engineering,1/28/2023,126574.29,858,Active
+859,Anjela Hambelton,Web Designer I,Marketing,2/23/2024,126001.78,859,Resigned
+860,Fairlie Fairham,Junior Executive,Business Development,8/27/2023,95353.57,860,Resigned
+861,Tommi Gianneschi,Nurse,Marketing,9/3/2023,42829.3,861,On Leave
+862,Nealy Deelay,Structural Engineer,Services,9/19/2023,46059.08,862,On Leave
+863,Spike Quarrell,Human Resources Manager,Sales,1/15/2023,87929.76,863,Terminated
+864,Malynda Piell,Accounting Assistant IV,Support,12/29/2023,107427.18,864,Terminated
+865,Helenelizabeth Shipsey,Dental Hygienist,Product Management,1/27/2023,110826.3,865,On Leave
+866,Ailey Murkitt,Geologist II,Sales,4/29/2023,116158.33,866,Active
+867,Genny Szwarc,Financial Analyst,Business Development,8/3/2023,132685.01,867,Terminated
+868,Susann Sidney,Programmer Analyst IV,Product Management,2/16/2023,71172.88,868,Terminated
+869,Christabella Baack,Actuary,Support,3/31/2023,143710.14,869,Active
+870,Edmund Dobrovsky,Geologist II,Services,4/14/2023,92181.95,870,Active
+871,Troy Waldron,Sales Associate,Business Development,1/1/2023,85494.58,871,Active
+872,Orelee Ovett,Help Desk Technician,Services,6/11/2023,61268.25,872,Terminated
+873,Nada Dagleas,Operator,Support,5/9/2023,99516.94,873,Resigned
+874,Lainey Isacoff,Graphic Designer,Research and Development,7/13/2023,51197.56,874,On Leave
+875,Demetri Rollinshaw,Sales Representative,Accounting,7/12/2023,53875.59,875,Terminated
+876,Maria Point,Desktop Support Technician,Training,11/21/2023,89422.69,876,Terminated
+877,Hersh Antognelli,Geological Engineer,Services,4/22/2023,121848.0,877,Resigned
+878,Nataniel Lanceley,Nuclear Power Engineer,Engineering,11/2/2023,83800.16,878,Resigned
+879,Donal Nilges,Food Chemist,Engineering,1/21/2024,132923.69,879,Active
+880,Neysa Shervington,Senior Quality Engineer,Accounting,10/27/2023,109198.84,880,Resigned
+881,Scottie Rubi,VP Quality Control,Human Resources,8/11/2023,100502.95,881,Resigned
+882,Minne Harriskine,Analyst Programmer,Marketing,4/8/2023,136334.84,882,Active
+883,Reyna Southcoat,Administrative Assistant III,Product Management,6/23/2023,36622.27,883,Resigned
+884,Aloysius Callaway,Clinical Specialist,Legal,2/7/2024,102549.64,884,Resigned
+885,Alex Provest,VP Sales,Marketing,3/16/2023,30808.72,885,Terminated
+886,Helsa Simonetti,Software Test Engineer III,Services,2/15/2024,136353.75,886,Resigned
+887,Mile Waples,Electrical Engineer,Product Management,9/17/2023,124976.86,887,Terminated
+888,Eugenius Petrolli,Environmental Tech,Support,2/19/2023,149097.05,888,On Leave
+889,Adair Ales,Junior Executive,Engineering,5/8/2023,113343.03,889,Resigned
+890,Carine Blakeden,Human Resources Assistant III,Business Development,7/1/2023,129803.72,890,Resigned
+891,Bessie Dykes,VP Product Management,Services,12/16/2023,93709.09,891,Terminated
+892,Boot Cordet,Payment Adjustment Coordinator,Human Resources,6/9/2023,106233.14,892,Terminated
+893,Kain Woodrough,Statistician IV,Services,10/6/2023,46072.53,893,Terminated
+894,Claus Joseff,Internal Auditor,Accounting,10/7/2023,88089.77,894,Resigned
+895,Wolfgang Wheelhouse,Assistant Professor,Engineering,11/5/2023,40583.89,895,Active
+896,Eddie Obern,Junior Executive,Support,3/12/2024,59906.4,896,Resigned
+897,Aile Wagnerin,VP Product Management,Engineering,5/25/2023,48080.97,897,On Leave
+898,Terra Eggleston,Statistician III,Human Resources,8/22/2023,30385.18,898,Active
+899,Miof mela Petegree,Structural Engineer,Engineering,10/17/2023,70400.4,899,On Leave
+900,Lucilia Garrud,Staff Scientist,Research and Development,2/19/2024,59168.46,900,Resigned
+901,Almeda Papaminas,Food Chemist,Legal,1/1/2024,145274.77,901,Terminated
+902,Julius Wanless,Tax Accountant,Research and Development,1/2/2023,89296.72,902,Terminated
+903,Margret Allmann,Systems Administrator I,Engineering,6/10/2023,37530.35,903,Resigned
+904,Ansel Coltherd,Chemical Engineer,Business Development,1/3/2024,76371.54,904,On Leave
+905,Danna Atty,Graphic Designer,Product Management,7/27/2023,79128.26,905,Active
+906,Letty Edghinn,Web Developer I,Engineering,8/13/2023,137232.49,906,Active
+907,Rupert Braim,Financial Advisor,Training,5/25/2023,41334.74,907,Active
+908,Jourdain Punton,Programmer IV,Marketing,3/20/2023,44168.42,908,On Leave
+909,Lauraine Schule,GIS Technical Architect,Support,9/21/2023,34885.68,909,Resigned
+910,Carol-jean Wallenger,VP Quality Control,Engineering,2/2/2023,74046.57,910,On Leave
+911,Gabriela Bucknall,Civil Engineer,Accounting,8/12/2023,90789.37,911,On Leave
+912,Monika Polglaze,Marketing Manager,Training,1/23/2023,31023.11,912,Resigned
+913,Paloma Preist,Graphic Designer,Training,8/14/2023,141558.17,913,On Leave
+914,Lilyan O'Caine,Business Systems Development Analyst,Accounting,8/15/2023,139833.45,914,On Leave
+915,Jaclyn MacEvilly,Professor,Legal,11/22/2023,62389.75,915,Terminated
+916,Roley Cowpland,Clinical Specialist,Services,3/3/2023,53682.21,916,Resigned
+917,Kirsten D'Aulby,Desktop Support Technician,Services,4/8/2023,78771.2,917,Terminated
+918,Lukas Maith,Cost Accountant,Training,12/24/2023,100310.88,918,Active
+919,Gail Rosini,Quality Control Specialist,Accounting,7/19/2023,97393.04,919,Active
+920,Hillary Radeliffe,Marketing Assistant,Training,11/30/2023,31125.24,920,Resigned
+921,Alvin Tudge,Help Desk Operator,Services,3/30/2023,127653.04,921,On Leave
+922,Marigold Maunders,GIS Technical Architect,Accounting,4/27/2023,146975.97,922,Active
+923,Wiatt Lumby,Research Nurse,Training,2/3/2024,140957.51,923,Resigned
+924,Issy Caldicot,Associate Professor,Human Resources,6/12/2023,136165.03,924,Resigned
+925,Katie Adamkiewicz,Senior Sales Associate,Marketing,9/17/2023,71747.54,925,Terminated
+926,Dannel Kwietak,Chemical Engineer,Support,5/6/2023,101522.61,926,On Leave
+927,Ermengarde Carletti,Director of Sales,Training,11/11/2023,61412.11,927,On Leave
+928,Elinor Buessen,Senior Cost Accountant,Services,3/24/2023,141541.3,928,Resigned
+929,Candie Smithson,Database Administrator II,Research and Development,6/28/2023,139417.99,929,Terminated
+930,Alysa Febvre,Accountant I,Training,7/25/2023,72332.85,930,Resigned
+931,Corbet Messiter,Legal Assistant,Training,2/27/2024,130051.22,931,Active
+932,Jerrine Airds,VP Accounting,Training,6/7/2023,97880.83,932,Active
+933,Jeremie Antonnikov,Senior Developer,Engineering,3/12/2023,62788.45,933,On Leave
+934,Johan Gooderridge,Structural Engineer,Engineering,3/20/2023,88773.82,934,Terminated
+935,Janella Pountain,Community Outreach Specialist,Product Management,6/3/2023,91748.61,935,Terminated
+936,Brice Blaxeland,Junior Executive,Business Development,1/25/2023,74402.81,936,Active
+937,Aluin Wren,Software Engineer IV,Services,12/13/2023,49403.78,937,Active
+938,Walton McKeeman,Account Representative III,Human Resources,9/9/2023,57662.26,938,Terminated
+939,Jackie Lease,Programmer I,Research and Development,5/1/2023,38070.38,939,Terminated
+940,Nicol Ference,Quality Engineer,Sales,6/12/2023,148608.53,940,On Leave
+941,Elita Kuller,Analyst Programmer,Training,3/20/2023,144020.23,941,Terminated
+942,Grannie Floris,Health Coach IV,Engineering,10/25/2023,110998.34,942,Resigned
+943,Ogdon Spracklin,Environmental Tech,Research and Development,5/2/2023,112044.42,943,Active
+944,Myrta Prendergrass,Librarian,Engineering,12/18/2023,127865.25,944,Active
+945,Tansy Bridge,Design Engineer,Legal,3/20/2023,84039.66,945,Active
+946,Danya Cisec,Staff Accountant II,Support,12/5/2023,140920.81,946,Resigned
+947,Antonius Crust,Senior Editor,Product Management,3/14/2024,143740.62,947,Resigned
+948,Juliana Penner,Social Worker,Sales,1/3/2023,61890.92,948,On Leave
+949,Celesta Espino,Recruiting Manager,Human Resources,12/3/2023,46494.33,949,On Leave
+950,Johnnie Barneville,Research Associate,Engineering,1/7/2023,117754.5,950,On Leave
+951,Saudra Lannin,Senior Quality Engineer,Human Resources,3/13/2023,128834.23,951,Terminated
+952,Sharleen Penkman,Office Assistant IV,Support,6/16/2023,126028.98,952,Terminated
+953,Humfrid Lambswood,Engineer IV,Accounting,12/21/2023,90018.68,953,Active
+954,Sydney Bordessa,Tax Accountant,Accounting,1/30/2024,50616.27,954,Resigned
+955,Flem Skellern,VP Accounting,Training,2/6/2024,72782.88,955,Active
+956,Craggie Ferrand,Web Designer III,Accounting,8/11/2023,86949.72,956,On Leave
+957,Sile Pattington,Environmental Tech,Support,9/8/2023,61560.9,957,Resigned
+958,Oriana Eitter,Information Systems Manager,Marketing,2/4/2023,130204.57,958,Resigned
+959,Ralina Bodechon,Librarian,Accounting,8/21/2023,85087.55,959,Resigned
+960,Dalston Cogzell,Engineer I,Engineering,4/11/2023,62057.04,960,On Leave
+961,Hobard McCalum,Paralegal,Training,4/1/2023,138047.87,961,Resigned
+962,Queenie Whorlton,Senior Developer,Business Development,11/21/2023,42580.64,962,Resigned
+963,Bondon Dark,Payment Adjustment Coordinator,Product Management,7/16/2023,101909.68,963,On Leave
+964,Janella Lunn,Payment Adjustment Coordinator,Support,3/2/2024,60512.17,964,Terminated
+965,Ted Godley,Analyst Programmer,Accounting,9/1/2023,63403.33,965,Resigned
+966,Elfreda Fryman,Accounting Assistant II,Product Management,3/10/2023,56606.35,966,Active
+967,Bryon Aizlewood,Administrative Officer,Services,9/12/2023,121268.45,967,Resigned
+968,Yehudit Dickenson,Assistant Media Planner,Marketing,9/9/2023,75463.45,968,Resigned
+969,Josiah Schout,Compensation Analyst,Marketing,1/18/2023,46211.33,969,Terminated
+970,Pepi Condliffe,Nurse Practicioner,Sales,3/15/2023,107801.55,970,On Leave
+971,Doll Stabler,Help Desk Technician,Accounting,1/24/2024,92375.48,971,Resigned
+972,Ralf Woodfin,Web Designer IV,Sales,11/10/2023,108059.74,972,On Leave
+973,Sharona Aysh,VP Quality Control,Accounting,6/19/2023,82462.22,973,Resigned
+974,Arleen Spiers,Media Manager II,Research and Development,9/18/2023,73443.38,974,Terminated
+975,Kimmy Worthington,VP Marketing,Engineering,8/28/2023,106163.23,975,Active
+976,Morris Westover,Research Assistant I,Accounting,1/3/2024,141341.02,976,Active
+977,Cammie Goalby,Assistant Professor,Business Development,1/6/2023,145906.75,977,On Leave
+978,Duffie Harses,Geologist I,Engineering,2/9/2024,73021.04,978,Active
+979,Salomon Hammand,Operator,Engineering,2/8/2023,39760.71,979,Active
+980,Rikki Van den Velde,Librarian,Legal,3/9/2023,73793.6,980,Resigned
+981,Donal Whittick,Developer II,Research and Development,3/13/2023,134267.84,981,Terminated
+982,Desiri Scarman,Senior Sales Associate,Engineering,5/29/2023,75198.06,982,Active
+983,Lucky Livingston,Account Representative III,Business Development,5/11/2023,60259.62,983,Resigned
+984,Prent Anetts,Sales Representative,Accounting,11/6/2023,124382.31,984,Terminated
+985,Greta Klimuk,Librarian,Support,7/25/2023,101636.91,985,On Leave
+986,Brandie Batcheldor,VP Accounting,Sales,1/19/2024,74380.94,986,Terminated
+987,Bethena Wodeland,Financial Analyst,Engineering,10/19/2023,62396.09,987,Terminated
+988,Rosabella Imorts,Administrative Officer,Research and Development,3/15/2023,72855.95,988,On Leave
+989,Alexandro Dearle,Payment Adjustment Coordinator,Training,4/28/2023,32605.59,989,Terminated
+990,Westley Rolfini,Nuclear Power Engineer,Support,4/9/2023,126432.13,990,Active
+991,Harlie Weerdenburg,VP Product Management,Training,4/30/2023,136558.53,991,On Leave
+992,Roseline FitzGibbon,Recruiter,Marketing,9/7/2023,128030.36,992,Terminated
+993,Malinda Davidofski,Chemical Engineer,Product Management,12/6/2023,51079.58,993,Active
+994,Randolph Greenman,Actuary,Support,2/13/2023,89523.57,994,On Leave
+995,Bonnibelle Wagner,Mechanical Systems Engineer,Business Development,3/6/2024,45889.35,995,On Leave
+996,Debera Plumb,Safety Technician I,Accounting,1/4/2024,131369.47,996,Terminated
+997,Willem Jeannel,VP Quality Control,Legal,10/5/2023,102313.46,997,Resigned
+998,Augusta Vinten,Social Worker,Support,5/27/2023,93365.41,998,Terminated
+999,Orton Yosselevitch,Senior Financial Analyst,Business Development,3/16/2023,143908.2,999,Resigned
+1000,Solly Winckworth,Marketing Assistant,Engineering,10/12/2023,84469.51,1000,Terminated

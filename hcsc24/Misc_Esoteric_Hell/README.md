@@ -6,6 +6,8 @@ Csak a zip file letöltése szükséges!
 
 A flag formátuma: HCSC24{...}
 
+Files: [esoteric_hell.zip](files/esoteric_hell.zip)
+
 <details>
   <summary>Hints (last day)</summary> 
   

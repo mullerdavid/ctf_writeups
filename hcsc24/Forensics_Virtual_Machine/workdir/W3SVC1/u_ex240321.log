@@ -1,0 +1,26 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2024-03-21 23:07:47
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2024-03-21 23:07:47 192.168.238.129 GET /certsrv/Internal - 80 - 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 - 401 2 5 249
+2024-03-21 23:08:10 192.168.238.129 GET /certsrv/Internal - 80 - 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 - 401 1 3221225581 15
+2024-03-21 23:09:31 192.168.238.129 GET /certsrv/Internal - 80 HCSC\jachan 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 - 404 0 2 46
+2024-03-21 23:09:31 192.168.238.129 GET /favicon.ico - 80 - 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 http://192.168.238.129/certsrv/Internal 404 0 2 0
+2024-03-21 23:10:00 192.168.238.129 GET /certsrv/Internal/ - 80 - 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 - 401 2 5 0
+2024-03-21 23:10:00 192.168.238.129 GET /certsrv/Internal/ - 80 HCSC\jachan 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 - 404 0 2 47
+2024-03-21 23:11:05 192.168.238.129 GET /certsrv/internal/ - 80 HCSC\jachan 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 - 404 0 2 0
+2024-03-21 23:11:27 192.168.238.129 GET /certsrv/ - 80 HCSC\jachan 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 - 200 0 0 11750
+2024-03-21 23:11:27 192.168.238.129 GET /certsrv/certspc.gif - 80 HCSC\jachan 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 http://192.168.238.129/certsrv/ 200 0 0 0
+2024-03-21 23:12:20 192.168.238.129 GET /certsrv/ - 80 - 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 - 401 2 5 0
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2024-03-21 23:30:14
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2024-03-21 23:30:14 ::1 GET /certsrv/ - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - 401 2 5 15
+2024-03-21 23:30:19 ::1 GET /certsrv/ - 80 HCSC\Administrator ::1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - 200 0 0 5203
+2024-03-21 23:30:19 ::1 GET /certsrv/certspc.gif - 80 HCSC\Administrator ::1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://localhost/certsrv/ 200 0 0 0
+2024-03-21 23:30:19 ::1 GET /favicon.ico - 80 - ::1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+Trident/7.0;+rv:11.0)+like+Gecko - 404 0 2 0
+2024-03-21 23:30:31 ::1 GET /certsrv/Internal - 80 HCSC\Administrator ::1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - 404 0 2 0
+2024-03-21 23:53:17 192.168.238.129 GET /certsrv/Internal - 80 - 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 - 401 2 5 15
+2024-03-21 23:53:20 192.168.238.129 GET /certsrv/Internal - 80 HCSC\jachan 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 - 404 0 2 47
+2024-03-21 23:53:34 192.168.238.129 GET /certsrv/Internal/ - 80 HCSC\jachan 192.168.238.132 Mozilla/5.0+(X11;+Linux+x86_64;+rv:102.0)+Gecko/20100101+Firefox/102.0 - 404 0 2 0

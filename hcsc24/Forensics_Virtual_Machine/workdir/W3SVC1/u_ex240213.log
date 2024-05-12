@@ -1,0 +1,9 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2024-02-13 11:03:30
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2024-02-13 11:03:30 192.168.238.129 GET /certsrv/ - 80 - 192.168.238.129 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - 401 2 5 1453
+2024-02-13 11:04:31 192.168.238.129 GET /certsrv/ - 80 HCSC\Administrator 192.168.238.129 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - 200 0 0 296
+2024-02-13 11:04:31 192.168.238.129 GET /certsrv/certspc.gif - 80 HCSC\Administrator 192.168.238.129 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://hcsc.local/certsrv/ 200 0 0 0
+2024-02-13 11:04:31 192.168.238.129 GET /favicon.ico - 80 - 192.168.238.129 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+Trident/7.0;+rv:11.0)+like+Gecko - 404 0 2 0
+2024-02-13 11:07:20 192.168.238.129 GET /ADPolicyProvider_CEP_Kerberos/service.svc - 80 - 192.168.238.129 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - 404 0 2 0

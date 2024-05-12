@@ -1,0 +1,16 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2024-04-27 17:19:02
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2024-04-27 17:19:02 fe80::59a4:d0de:6be6:97b%14 GET /certsrv/ - 80 - fe80::59a4:d0de:6be6:97b%14 - - 401 2 5 265
+2024-04-27 17:19:05 fe80::59a4:d0de:6be6:97b%14 GET /hcsc-WIN-5T67MMTJTVE-CA_CES_Kerberos/service.svc - 80 - fe80::59a4:d0de:6be6:97b%14 - - 404 0 2 0
+2024-04-27 17:19:05 fe80::59a4:d0de:6be6:97b%14 GET /ADPolicyProvider_CEP_Kerberos/service.svc - 80 - fe80::59a4:d0de:6be6:97b%14 - - 404 0 2 0
+2024-04-27 17:19:05 fe80::59a4:d0de:6be6:97b%14 GET /certsrv/mscep/ - 80 - fe80::59a4:d0de:6be6:97b%14 - - 401 2 5 0
+2024-04-27 17:19:05 fe80::59a4:d0de:6be6:97b%14 GET /certsrv/mscep/ - 80 HCSC\player fe80::59a4:d0de:6be6:97b%14 - - 404 0 2 0
+2024-04-27 17:19:05 fe80::59a4:d0de:6be6:97b%14 GET /certsrv/ - 443 - fe80::59a4:d0de:6be6:97b%14 - - 401 2 5 0
+2024-04-27 17:19:08 fe80::59a4:d0de:6be6:97b%14 GET /hcsc-WIN-5T67MMTJTVE-CA_CES_Kerberos/service.svc - 443 - fe80::59a4:d0de:6be6:97b%14 - - 404 0 2 0
+2024-04-27 17:19:08 fe80::59a4:d0de:6be6:97b%14 GET /ADPolicyProvider_CEP_Kerberos/service.svc - 443 - fe80::59a4:d0de:6be6:97b%14 - - 404 0 2 0
+2024-04-27 17:19:08 fe80::59a4:d0de:6be6:97b%14 GET /certsrv/mscep/ - 443 - fe80::59a4:d0de:6be6:97b%14 - - 401 2 5 0
+2024-04-27 17:19:08 fe80::59a4:d0de:6be6:97b%14 GET /certsrv/mscep/ - 443 HCSC\player fe80::59a4:d0de:6be6:97b%14 - - 404 0 2 0
+2024-04-27 17:19:13 fe80::59a4:d0de:6be6:97b%14 GET /certsrv/ - 80 HCSC\player fe80::59a4:d0de:6be6:97b%14 - - 200 0 64 11046
+2024-04-27 17:19:13 fe80::59a4:d0de:6be6:97b%14 GET /certsrv/ - 443 HCSC\player fe80::59a4:d0de:6be6:97b%14 - - 200 0 64 8218

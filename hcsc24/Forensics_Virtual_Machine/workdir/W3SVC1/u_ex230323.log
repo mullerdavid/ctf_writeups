@@ -1,0 +1,31 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2023-03-23 12:28:33
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2023-03-23 12:28:33 192.168.238.129 GET /certsrv - 80 - 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - 401 2 5 847
+2023-03-23 12:28:57 192.168.238.129 GET /certsrv - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - 301 0 0 128
+2023-03-23 12:28:57 192.168.238.129 GET /certsrv/ - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - 200 0 0 792
+2023-03-23 12:28:57 192.168.238.129 GET /certsrv/certspc.gif - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/ 200 0 0 2
+2023-03-23 12:28:59 192.168.238.129 GET /favicon.ico - 80 - 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+Trident/7.0;+rv:11.0)+like+Gecko - 404 0 2 5
+2023-03-23 12:29:25 192.168.238.129 GET /certsrv/certcarc.asp - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/ 200 0 0 72
+2023-03-23 12:29:25 192.168.238.129 GET /favicon.ico - 80 - 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+Trident/7.0;+rv:11.0)+like+Gecko - 404 0 2 2
+2023-03-23 12:29:54 192.168.238.129 GET /certsrv/certnew.cer ReqID=CACert&Renewal=0&Enc=b64 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/certcarc.asp 200 0 0 18
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2023-03-23 15:45:03
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2023-03-23 15:45:03 192.168.238.129 GET /certsrv/ - 80 - 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - 401 2 5 578
+2023-03-23 15:45:20 192.168.238.129 GET /certsrv/ - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - 200 0 0 765
+2023-03-23 15:45:26 192.168.238.129 GET /certsrv/certrqus.asp - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/ 200 0 0 15
+2023-03-23 15:45:31 192.168.238.129 GET /certsrv/certrqad.asp - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/certrqus.asp 200 0 0 0
+2023-03-23 15:45:50 192.168.238.129 GET /certsrv/certrqma.asp - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/certrqad.asp 200 0 0 1094
+2023-03-23 15:46:08 192.168.238.129 GET /certsrv/certrqma.asp - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/certrqad.asp 200 0 0 314
+2023-03-23 15:46:55 192.168.238.129 GET /certsrv/certrqus.asp - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/ 200 0 0 16
+2023-03-23 15:46:57 192.168.238.129 GET /certsrv/certrqbi.asp type=0 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/certrqus.asp 200 0 0 15
+2023-03-23 15:47:21 192.168.238.129 GET /certsrv/certrqma.asp - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/certrqbi.asp?type=0 200 0 0 282
+2023-03-23 15:50:41 192.168.238.129 GET /certsrv/certrqus.asp - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/ 200 0 0 15
+2023-03-23 15:50:43 192.168.238.129 GET /certsrv/certrqad.asp - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/certrqus.asp 200 0 0 0
+2023-03-23 15:50:45 192.168.238.129 GET /certsrv/certrqxt.asp - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/certrqad.asp 200 0 0 265
+2023-03-23 15:51:28 192.168.238.129 POST /certsrv/certfnsh.asp - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/certrqxt.asp 200 0 0 390
+2023-03-23 15:51:28 192.168.238.129 GET /certsrv/certcert.gif - 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/certfnsh.asp 200 0 0 0
+2023-03-23 15:51:51 192.168.238.129 GET /certsrv/certnew.cer ReqID=6&Enc=bin 80 HCSC\Administrator 192.168.238.150 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://192.168.238.129/certsrv/certfnsh.asp 200 0 0 15
