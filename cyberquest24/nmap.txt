@@ -1,0 +1,137 @@
+nmap -T4 -sV -p 1-65535 10.10.2.10-12
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-10-16 20:11 CEST
+Nmap scan report for 10.10.2.10
+Host is up (0.0026s latency).
+Not shown: 65528 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE    VERSION
+22/tcp    filtered ssh
+1337/tcp  open     http       Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+5081/tcp  open     http       nginx 1.25.2
+20662/tcp open     http       Apache httpd
+25565/tcp open     minecraft?
+65000/tcp filtered unknown
+65001/tcp filtered unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port25565-TCP:V=7.94%I=7%D=10/16%Time=652D7CFA%P=x86_64-pc-linux-gnu%r(
+SF:NULL,2A8,"\n====\x20Costumery\x20Shop\x20Main\x20Menu\x20====\n\nAvaila
+SF:ble\x20Costumes\x20to\x20Buy:\nNo\.\x20\x20Costume\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20Price\x20\x20\x20\x20\x20\n1\x20\x20\x20\x20Hacktoplasma\x20Jacket\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\$\x20\x20199\.50\n2\x20
+SF:\x20\x20\x20High\x20heels\x20for\x20skeletons\x20\x20\x20\x20\x20\x20\x
+SF:20\$\x20\x20252\.00\n3\x20\x20\x20\x20Zombie\x20Tuxedo\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\$\x20\x20136\.5
+SF:0\n4\x20\x20\x20\x20Witch's\x20Hat\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\$\x20\x20115\.50\n5\x20\x20
+SF:\x20\x20Pirate\x20Costume\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\$\x20\x20147\.00\n6\x20\x20\x20\x20Vampire\x20Ca
+SF:pe\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\$\x20\x20126\.00\n7\x20\x20\x20\x20Ghost\x20Sheet\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\$\x2
+SF:0\x20115\.50\n8\x20\x20\x20\x20Frankenstein's\x20Monster\x20Outfit\x20\
+SF:x20\$\x20\x20304\.50\n9\x20\x20\x20\x20Mummy\x20Wrappings\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\$\x20\x20157\.50\n10
+SF:\x20\x20\x20Werewolf\x20Costume\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\$\x20\x20168\.00\n\nActions:\n1\.\x20Buy\x20Costum
+SF:e\n2\.\x20View\x20Basket\n3\.\x20Exit\n================================
+SF:===\nEnter\x20your\x20choice\x20\(1-3\):\x20")%r(minecraft-ping,2A8,"\n
+SF:====\x20Costumery\x20Shop\x20Main\x20Menu\x20====\n\nAvailable\x20Costu
+SF:mes\x20to\x20Buy:\nNo\.\x20\x20Costume\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Price\x2
+SF:0\x20\x20\x20\x20\n1\x20\x20\x20\x20Hacktoplasma\x20Jacket\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\$\x20\x20199\.50\n2\x20\x20\x20\x20
+SF:High\x20heels\x20for\x20skeletons\x20\x20\x20\x20\x20\x20\x20\$\x20\x20
+SF:252\.00\n3\x20\x20\x20\x20Zombie\x20Tuxedo\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\$\x20\x20136\.50\n4\x20\x20
+SF:\x20\x20Witch's\x20Hat\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\$\x20\x20115\.50\n5\x20\x20\x20\x20Pira
+SF:te\x20Costume\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\$\x20\x20147\.00\n6\x20\x20\x20\x20Vampire\x20Cape\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\$\x2
+SF:0\x20126\.00\n7\x20\x20\x20\x20Ghost\x20Sheet\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\$\x20\x20115\.50
+SF:\n8\x20\x20\x20\x20Frankenstein's\x20Monster\x20Outfit\x20\x20\$\x20\x2
+SF:0304\.50\n9\x20\x20\x20\x20Mummy\x20Wrappings\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\$\x20\x20157\.50\n10\x20\x20\x20
+SF:Werewolf\x20Costume\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\$\x20\x20168\.00\n\nActions:\n1\.\x20Buy\x20Costume\n2\.\x20Vi
+SF:ew\x20Basket\n3\.\x20Exit\n===================================\nEnter\x
+SF:20your\x20choice\x20\(1-3\):\x20");
+
+Nmap scan report for 10.10.2.11
+Host is up (0.0030s latency).
+Not shown: 65527 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE   VERSION
+22/tcp    filtered ssh
+667/tcp   open     disclose?
+8080/tcp  open     http      nginx 1.17.7
+15654/tcp open     unknown
+20022/tcp open     ssh       OpenSSH 6.0p1 Debian 4+deb7u2 (protocol 2.0)
+48490/tcp open     ssl/http  Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+65000/tcp filtered unknown
+65001/tcp filtered unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port667-TCP:V=7.94%I=7%D=10/16%Time=652D7CFA%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,7,"login:\x20")%r(GenericLines,2C,"login:\x20\xff\xfb\x01Password:\x
+SF:20\nLogin\x20incorrect\nlogin:\x20")%r(GetRequest,2C,"login:\x20\xff\xf
+SF:b\x01Password:\x20\nLogin\x20incorrect\nlogin:\x20")%r(HTTPOptions,2C,"
+SF:login:\x20\xff\xfb\x01Password:\x20\nLogin\x20incorrect\nlogin:\x20")%r
+SF:(RTSPRequest,2C,"login:\x20\xff\xfb\x01Password:\x20\nLogin\x20incorrec
+SF:t\nlogin:\x20")%r(RPCCheck,7,"login:\x20")%r(DNSVersionBindReqTCP,7,"lo
+SF:gin:\x20")%r(DNSStatusRequestTCP,7,"login:\x20")%r(Help,14,"login:\x20\
+SF:xff\xfb\x01Password:\x20")%r(SSLSessionReq,14,"login:\x20\xff\xfb\x01Pa
+SF:ssword:\x20")%r(TerminalServerCookie,14,"login:\x20\xff\xfb\x01Password
+SF::\x20")%r(TLSSessionReq,7,"login:\x20")%r(Kerberos,14,"login:\x20\xff\x
+SF:fb\x01Password:\x20")%r(X11Probe,7,"login:\x20")%r(FourOhFourRequest,2C
+SF:,"login:\x20\xff\xfb\x01Password:\x20\nLogin\x20incorrect\nlogin:\x20")
+SF:%r(LPDString,14,"login:\x20\xff\xfb\x01Password:\x20")%r(LDAPSearchReq,
+SF:2C,"login:\x20\xff\xfb\x01Password:\x20\nLogin\x20incorrect\nlogin:\x20
+SF:")%r(LDAPBindReq,7,"login:\x20")%r(SIPOptions,BE,"login:\x20\xff\xfb\x0
+SF:1Password:\x20\nLogin\x20incorrect\nlogin:\x20Password:\x20\nLogin\x20i
+SF:ncorrect\nlogin:\x20Password:\x20\nLogin\x20incorrect\nlogin:\x20Passwo
+SF:rd:\x20\nLogin\x20incorrect\nlogin:\x20Password:\x20\nLogin\x20incorrec
+SF:t\nlogin:\x20Password:\x20")%r(LANDesk-RC,7,"login:\x20")%r(TerminalSer
+SF:ver,7,"login:\x20")%r(NotesRPC,7,"login:\x20")%r(JavaRMI,7,"login:\x20"
+SF:)%r(WMSRequest,7,"login:\x20")%r(afp,7,"login:\x20")%r(giop,7,"login:\x
+SF:20");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port15654-TCP:V=7.94%I=7%D=10/16%Time=652D7CFA%P=x86_64-pc-linux-gnu%r(
+SF:NULL,14,"Who\x20you\x20gonna\x20call\?\n")%r(GenericLines,14,"Who\x20yo
+SF:u\x20gonna\x20call\?\n")%r(GetRequest,14,"Who\x20you\x20gonna\x20call\?
+SF:\n")%r(HTTPOptions,14,"Who\x20you\x20gonna\x20call\?\n")%r(RTSPRequest,
+SF:14,"Who\x20you\x20gonna\x20call\?\n")%r(RPCCheck,14,"Who\x20you\x20gonn
+SF:a\x20call\?\n")%r(DNSVersionBindReqTCP,14,"Who\x20you\x20gonna\x20call\
+SF:?\n")%r(DNSStatusRequestTCP,14,"Who\x20you\x20gonna\x20call\?\n")%r(Hel
+SF:p,14,"Who\x20you\x20gonna\x20call\?\n")%r(SSLSessionReq,14,"Who\x20you\
+SF:x20gonna\x20call\?\n")%r(TerminalServerCookie,14,"Who\x20you\x20gonna\x
+SF:20call\?\n")%r(TLSSessionReq,14,"Who\x20you\x20gonna\x20call\?\n")%r(Ke
+SF:rberos,14,"Who\x20you\x20gonna\x20call\?\n")%r(SMBProgNeg,27,"Who\x20yo
+SF:u\x20gonna\x20call\?\nSegmentation\x20fault\n")%r(X11Probe,14,"Who\x20y
+SF:ou\x20gonna\x20call\?\n")%r(FourOhFourRequest,14,"Who\x20you\x20gonna\x
+SF:20call\?\n")%r(LPDString,14,"Who\x20you\x20gonna\x20call\?\n")%r(LDAPSe
+SF:archReq,14,"Who\x20you\x20gonna\x20call\?\n")%r(LDAPBindReq,14,"Who\x20
+SF:you\x20gonna\x20call\?\n")%r(SIPOptions,27,"Who\x20you\x20gonna\x20call
+SF:\?\nSegmentation\x20fault\n")%r(LANDesk-RC,14,"Who\x20you\x20gonna\x20c
+SF:all\?\n")%r(TerminalServer,14,"Who\x20you\x20gonna\x20call\?\n")%r(NCP,
+SF:14,"Who\x20you\x20gonna\x20call\?\n")%r(NotesRPC,14,"Who\x20you\x20gonn
+SF:a\x20call\?\n")%r(JavaRMI,14,"Who\x20you\x20gonna\x20call\?\n")%r(WMSRe
+SF:quest,27,"Who\x20you\x20gonna\x20call\?\nSegmentation\x20fault\n")%r(or
+SF:acle-tns,14,"Who\x20you\x20gonna\x20call\?\n")%r(ms-sql-s,14,"Who\x20yo
+SF:u\x20gonna\x20call\?\n")%r(afp,14,"Who\x20you\x20gonna\x20call\?\n")%r(
+SF:giop,14,"Who\x20you\x20gonna\x20call\?\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.2.12
+Host is up (0.0024s latency).
+Not shown: 65529 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE  VERSION
+22/tcp    filtered ssh
+5080/tcp  open     http     nginx 1.25.2
+10333/tcp open     teamtalk BearWare TeamTalk 5.13.1.5115 (protocol: 5.11; servername: cyberquest2023; no authentication required)
+10334/tcp open     ssh      OpenSSH 9.3 (protocol 2.0)
+65000/tcp filtered unknown
+65001/tcp filtered unknown
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 3 IP addresses (3 hosts up) scanned in 176.30 seconds
