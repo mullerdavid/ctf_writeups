@@ -4,7 +4,7 @@ Checking the port with netcat, it has an adventure game.
 
 ![](screenshots/1.png)
 
-A specific path needs to be followed. At every step there are 3 options where to go and only 1 is correct.
+A specific path needs to be followed. At every step there are 3 options where to go and only 1 is correct. The server disconnects on game over.
 
 # Automation
 
