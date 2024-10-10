@@ -266,7 +266,7 @@ freq(k4.upper())
 {"'": 19.662, '^': 10.906, '{': 8.141, 'O': 5.376, 'Y': 5.222, 'Z': 5.222, 'U': 5.222, 'B': 5.069, 'K': 3.84, 'L': 3.84, 'H': 3.533, 'S': 3.225, 'P': 2.611, '`': 2.611, '\\': 2.15, 'N': 1.996, 'M': 1.689, 'I': 1.536, 'W': 1.382, 'F': 1.228, 'R': 0.921, ';': 0.768, ' ': 0.614, 'D': 0.614, '}': 0.46, '<': 0.307, ',': 0.307, '[': 0.307, ':': 0.153, 'T': 0.153, 'J': 0.153, '9': 0.153, '*': 0.153, '>': 0.153, 'V': 0.153, 'Q': 0.153}
 ```
 
-Using substitutions on the reverse of the cyphertext. Using reverse, `^o{` is repeated multiple times, and might match `the`, but based on the frequencies, it would be `eht`, in reverse. Thanks DRAL3N for the solution for this part.
+Using substitutions on the reverse of the cyphertext. Using reverse, `^o{` is repeated multiple times, and might match `the`, but based on the frequencies, it would be `eht`, in reverse. Thanks `DRAL3N` for the solution for this part.
 
 The `'` character has an excessively large frequency, so it is probably a space, not a letter.
 
@@ -277,6 +277,19 @@ After an initial attempt, there are a few things to fix.
 1. The letter `[` and `:` is also substituted with based on the nearby characters.
 
 ```python
+k4 = """
+p{b'k^}shl'kZo'^o'lrZk''''p`ubs^ny`'hp{'y^{m:'^ubsZu^ykZ'mh'^`yn
+l'Z'o{bp'k^ bf'uhb{lnZo ^'uby`'{ni'ws^o'{uksnh\\'b{hI''''pv;*<,O{
+U;o[y,{y;fLN>y;t;9J<'ms^l{b'k^sZ^}^y'`Zsm'^o{''''plZ'k^kunhw'{yZ
+^o'lbO'y^{{^s'ri'y^{{^s'u^^y\\l'lbo'uh'rsphsl'^`y^f^'h{'uZ`^i'{ ^
+{'k^{wry\\^k'^o[''''p^fb{'o{k^ykuno'^o{'^dbs'{s^m'{Zop'yhm'{wby\\l
+'uhb{wry\\^k'^o{'uZy'kuZ'ubZ`Z'^kh\\'lbo'k^dZ^p{''''p^O'{ ^{y^owb\\
+'^o{'^`uZyyZ^y'h{'o`nhu^'{lnq'{mbol'u^kkbo'Z'uhwn'k^sifn{l'^O'^`
+u^ssZo\\''''p^o{'mh'ssbyo{'^o{'kuZ'^fb{'mh'^ynll^yw'^o{'^\\uZsZi'h
+{'`ubry{'`ub\\Zy'lZp'ubZyi'lbO'l{Zfyhm''''pu^^p{^i'o{yhm'kuZ'd\\Zi
+'f^o{'`ub{y^}uh\\'l^\\^bw'kuZ'l{bi'`ubu`bsZ'^kh\\'lbo'`ubdZ^p{'k^{y
+Z{l'^O''''p
+""".replace("\n","")
 sub = {
 	"'": " ",
 	'^': "e",
