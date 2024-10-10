@@ -22,7 +22,7 @@ The [FactorDB]() had no results during the competition, I added the factors afte
 
 # Incorrect usage
 
-Some options where the encryption can go wrong was considered, like to decrypt with `N`, in case the message was encrpyted with the wrong key accidently. No result with this approach either.
+Some options where the encryption can go wrong was considered, like to decrypt with `N`, in case the message was encrypted with the wrong key accidentally. No result with this approach either.
 
 # Factorizing
 
