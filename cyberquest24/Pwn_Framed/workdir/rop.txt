@@ -1,0 +1,45 @@
+
+
+
+Gadgets
+=======
+
+
+0x000000000004206f: add byte ptr [rax - 0x77], cl; out 0x48, al; sub esi, 0xc; mov rdx, 0x539; syscall; 
+0x000000000004206f: add byte ptr [rax - 0x77], cl; out 0x48, al; sub esi, 0xc; mov rdx, 0x539; syscall; ret; 
+0x000000000004206d: add byte ptr [rax], al; add byte ptr [rax - 0x77], cl; out 0x48, al; sub esi, 0xc; mov rdx, 0x539; syscall; 
+0x000000000004206c: add byte ptr [rax], al; add byte ptr [rax], al; mov rsi, rsp; sub rsi, 0xc; mov rdx, 0x539; syscall; 
+0x000000000004206e: add byte ptr [rax], al; mov rsi, rsp; sub rsi, 0xc; mov rdx, 0x539; syscall; 
+0x000000000004206e: add byte ptr [rax], al; mov rsi, rsp; sub rsi, 0xc; mov rdx, 0x539; syscall; ret; 
+0x000000000004207c: add byte ptr [rax], al; syscall; 
+0x000000000004207c: add byte ptr [rax], al; syscall; ret; 
+0x000000000004207b: add eax, 0x50f0000; ret; 
+0x000000000004207a: cmp dword ptr [rip + 0x50f0000], eax; ret; 
+0x000000000004206b: mov dword ptr [rax], 0x48000000; mov esi, esp; sub rsi, 0xc; mov rdx, 0x539; syscall; 
+0x000000000004206a: mov edi, 0; mov rsi, rsp; sub rsi, 0xc; mov rdx, 0x539; syscall; 
+0x0000000000042078: mov edx, 0x539; syscall; 
+0x0000000000042078: mov edx, 0x539; syscall; ret; 
+0x0000000000042071: mov esi, esp; sub rsi, 0xc; mov rdx, 0x539; syscall; 
+0x0000000000042071: mov esi, esp; sub rsi, 0xc; mov rdx, 0x539; syscall; ret; 
+0x0000000000042069: mov rdi, 0; mov rsi, rsp; sub rsi, 0xc; mov rdx, 0x539; syscall; 
+0x0000000000042077: mov rdx, 0x539; syscall; 
+0x0000000000042077: mov rdx, 0x539; syscall; ret; 
+0x0000000000042070: mov rsi, rsp; sub rsi, 0xc; mov rdx, 0x539; syscall; 
+0x0000000000042070: mov rsi, rsp; sub rsi, 0xc; mov rdx, 0x539; syscall; ret; 
+0x0000000000042076: or al, 0x48; mov edx, 0x539; syscall; 
+0x0000000000042076: or al, 0x48; mov edx, 0x539; syscall; ret; 
+0x0000000000042072: out 0x48, al; sub esi, 0xc; mov rdx, 0x539; syscall; 
+0x0000000000042072: out 0x48, al; sub esi, 0xc; mov rdx, 0x539; syscall; ret; 
+0x0000000000042075: out dx, al; or al, 0x48; mov edx, 0x539; syscall; 
+0x0000000000042075: out dx, al; or al, 0x48; mov edx, 0x539; syscall; ret; 
+0x0000000000042081: pop rax; ret; 
+0x0000000000042079: ret 0x539; 
+0x0000000000042080: ret; 
+0x0000000000042074: sub esi, 0xc; mov rdx, 0x539; syscall; 
+0x0000000000042074: sub esi, 0xc; mov rdx, 0x539; syscall; ret; 
+0x0000000000042073: sub rsi, 0xc; mov rdx, 0x539; syscall; 
+0x0000000000042073: sub rsi, 0xc; mov rdx, 0x539; syscall; ret; 
+0x000000000004207e: syscall; 
+0x000000000004207e: syscall; ret; 
+
+36 gadgets found
