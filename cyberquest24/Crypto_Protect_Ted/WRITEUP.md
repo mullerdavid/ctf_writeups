@@ -39,4 +39,4 @@ echo "48F6F885882F04A46F2E648CA21E8BBC" | nc 10.10.1.12 63514
 
 
 # Flag
-CQ24{N0t_3v3N_Wh1t3B0x3s_are_Str0ng_3n0ugh_t0_St0p_U}
+`CQ24{N0t_3v3N_Wh1t3B0x3s_are_Str0ng_3n0ugh_t0_St0p_U}`

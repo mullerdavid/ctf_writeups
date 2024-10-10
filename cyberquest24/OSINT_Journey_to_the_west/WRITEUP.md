@@ -16,4 +16,4 @@ And the description with the city name (in german), `Kaiser-Wilhelm-Brücke in W
 
 # Flag
 
-CQ24{Wilhelmshaven}
+`CQ24{Wilhelmshaven}`

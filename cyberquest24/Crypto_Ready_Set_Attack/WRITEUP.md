@@ -64,4 +64,4 @@ Based on the actual factors, there seems to be no other option. Not an environme
 
 # Flag
 
-CQ24{I_don't_even_like_crypto_lol}
+`CQ24{I_don't_even_like_crypto_lol}`

@@ -57,7 +57,7 @@ ugAAAAC+AAAAAEi7L2Jpbi9zaABIiRwkSInnsDsPBQ==
 
 # Flag
 
-CQ24{Th3_l1F3's_f0aMy_5id3}
+`CQ24{Th3_l1F3's_f0aMy_5id3}`
 
 # Exploit without syscall
 

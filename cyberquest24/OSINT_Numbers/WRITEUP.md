@@ -44,4 +44,4 @@ This marks a place in Cuba.
 
 # Flag
 
-CQ24{Cuba}
+`CQ24{Cuba}`

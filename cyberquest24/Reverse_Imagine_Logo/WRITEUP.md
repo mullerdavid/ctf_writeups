@@ -34,4 +34,4 @@ Reveals the flag.
 
 # Flag
 
-CQ24{y_U_hAk_m3}
+`CQ24{y_U_hAk_m3}`

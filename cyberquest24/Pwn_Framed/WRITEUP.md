@@ -48,7 +48,7 @@ The implementation is inside [exploit.py](workdir/exploit.py).
 
 # Flag
 
-CQ24{wh0_would4_tHouGHt;including_b1nary_strings_in_readline_is_a_b@d_1D34?}
+`CQ24{wh0_would4_tHouGHt;including_b1nary_strings_in_readline_is_a_b@d_1D34?}`
 
 # Exploit RCE
 

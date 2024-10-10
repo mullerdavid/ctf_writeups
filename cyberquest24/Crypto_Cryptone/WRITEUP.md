@@ -6,4 +6,4 @@ Just use [ROT13](https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,
 
 # Flag
 
-CQ24{EtTumMiFiliBrute}
+`CQ24{EtTumMiFiliBrute}`

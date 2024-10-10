@@ -28,4 +28,4 @@ Seems like the key might be 5 long as no repetition. [Decrypting with this key](
 
 # Flag
 
-CQ24{Do_you_even_XOR_bro}
+`CQ24{Do_you_even_XOR_bro}`

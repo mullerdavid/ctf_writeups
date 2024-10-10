@@ -93,7 +93,7 @@ Megapixels                      : 0.201
 
 # Flag
 
-CQ24{Th1sR3s1d3nt1snt3v1L}
+`CQ24{Th1sR3s1d3nt1snt3v1L}`
 
 # Source
 

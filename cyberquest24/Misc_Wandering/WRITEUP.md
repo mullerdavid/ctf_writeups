@@ -16,4 +16,4 @@ Implemented in [wander.py](workdir/wander.py).
 
 # Flag
 
-CQ24{4l1c3_In_W4nd3rl4nd}
+`CQ24{4l1c3_In_W4nd3rl4nd}`

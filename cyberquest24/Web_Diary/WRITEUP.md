@@ -65,4 +65,4 @@ The exploit is not working on the other port, this is how you could differentiat
 
 # Flag
 
-CQ24{4nd_Th3rE_1_Th0ughT_r3gEx3s_4r3_s@f3}
+`CQ24{4nd_Th3rE_1_Th0ughT_r3gEx3s_4r3_s@f3}`

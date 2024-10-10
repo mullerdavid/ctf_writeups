@@ -25,4 +25,4 @@ There is a `revtext.txt` standing out in `/bin` that is not an actual executable
 
 # Flag
 
-CQ24{H0W-M1NY-EASTER-EGGS-IN-509NUX}
+`CQ24{H0W-M1NY-EASTER-EGGS-IN-509NUX}`

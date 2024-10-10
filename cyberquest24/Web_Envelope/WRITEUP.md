@@ -63,4 +63,4 @@ Removing all the non-text nodes makes it visible in the modified [Envelope.svg](
 
 # Flag
 
-CQ24{sVg_f0r_V3cT00r}
+`CQ24{sVg_f0r_V3cT00r}`

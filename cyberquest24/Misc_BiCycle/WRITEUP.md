@@ -68,4 +68,4 @@ cat *.png.out
 ```
 
 # Flag
-CQ24{Rep3aΓ_ΠntiL_tHe_coИdit!0n_1s_tЯuЭ!}
+`CQ24{Rep3aΓ_ΠntiL_tHe_coИdit!0n_1s_tЯuЭ!}`

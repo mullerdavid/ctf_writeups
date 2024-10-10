@@ -61,7 +61,7 @@ With access to the flag.
 
 # Flag
 
-CQ24{4r3_They_ReallY_SaFe_d0E?}
+`CQ24{4r3_They_ReallY_SaFe_d0E?}`
 
 # Regex
 

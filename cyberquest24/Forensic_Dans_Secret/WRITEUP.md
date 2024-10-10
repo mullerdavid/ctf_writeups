@@ -100,4 +100,4 @@ While the description said it had all the underscores present, there is a missin
 
 # Flag
 
-CQ24{d1d_D4n_l34k_8688_1D4_fr0m_7h3iR_1344_BuIlD_5Erv3r_t0o?_4430}
+`CQ24{d1d_D4n_l34k_8688_1D4_fr0m_7h3iR_1344_BuIlD_5Erv3r_t0o?_4430}`

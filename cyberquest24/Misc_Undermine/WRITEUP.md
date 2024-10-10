@@ -92,7 +92,7 @@ Just generate the source fixing the randomized parts and compile in the same env
 
 # Flag
 
-CQ24{And_Th3y_Said_C0mp1l3r5_ArE_D37Ermin15T1c}
+`CQ24{And_Th3y_Said_C0mp1l3r5_ArE_D37Ermin15T1c}`
 
 # DOS
 
