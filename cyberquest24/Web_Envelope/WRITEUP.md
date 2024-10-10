@@ -1,6 +1,8 @@
 # Checking the site
 
-There is no website or webserver here, this should not be in the web category.
+There is no website or webserver here. 
+
+This challenge should not be in the web category.
 
 # SVG
 
