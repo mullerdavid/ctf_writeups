@@ -4,7 +4,7 @@ The [challenge.py](workdir/challenge.py) has a whitebox AES implementation. It i
 
 The tables are stored inside the `wb` variable.
 
-Checking the backend side, it's a simple AES CBC.
+Checking the backend side, it's a simple AES ECB.
 
 # Papers
 
