@@ -4,5 +4,8 @@
 
 https://cyberquest.honeylab.hu/
 
+# Scoreboard (finals)
+![](scoreboard_finals.png)
+
 # Scoreboard (online round)
 ![](scoreboard_online.png)
