@@ -1,0 +1,46 @@
+reading partition table...
+entry 0:
+  label      : nvs
+  offset     : 0x9000
+  length     : 20480
+  type       : 1 [DATA]
+  sub type   : 2 [WIFI]
+
+entry 1:
+  label      : otadata
+  offset     : 0xe000
+  length     : 8192
+  type       : 1 [DATA]
+  sub type   : 0 [OTA]
+
+entry 2:
+  label      : app0
+  offset     : 0x10000
+  length     : 1310720
+  type       : 0 [APP]
+  sub type   : 16 [ota_0]
+
+entry 3:
+  label      : app1
+  offset     : 0x150000
+  length     : 1310720
+  type       : 0 [APP]
+  sub type   : 17 [ota_1]
+
+entry 4:
+  label      : spiffs
+  offset     : 0x290000
+  length     : 1441792
+  type       : 1 [DATA]
+  sub type   : 130 [unknown]
+
+entry 5:
+  label      : coredump
+  offset     : 0x3f0000
+  length     : 65536
+  type       : 1 [DATA]
+  sub type   : 3 [unknown]
+
+MD5sum: 
+972dae2ff872a0142d60bad124c0666b
+Done
