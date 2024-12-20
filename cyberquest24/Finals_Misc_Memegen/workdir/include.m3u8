@@ -1,0 +1,5 @@
+#EXTM3U
+#EXT-X-TARGETDURATION:2
+#EXTINF:2,
+file:///flag.png
+#EXT-X-ENDLIST

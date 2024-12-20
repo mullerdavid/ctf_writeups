@@ -1,0 +1,51 @@
+diff --git a/libavformat/file.c b/libavformat/file.c
+index 1f853e0e17..97734b4a56 100644
+--- a/libavformat/file.c
++++ b/libavformat/file.c
+@@ -425,7 +425,7 @@ const URLProtocol ff_file_protocol = {
+     .url_open_dir        = file_open_dir,
+     .url_read_dir        = file_read_dir,
+     .url_close_dir       = file_close_dir,
+-    .default_whitelist   = "file,crypto,data"
++    .default_whitelist   = "file,pipe,crypto,data"
+ };
+ 
+ #endif /* CONFIG_FILE_PROTOCOL */
+@@ -469,7 +469,7 @@ const URLProtocol ff_pipe_protocol = {
+     .url_check           = file_check,
+     .priv_data_size      = sizeof(FileContext),
+     .priv_data_class     = &pipe_class,
+-    .default_whitelist   = "crypto,data"
++    .default_whitelist   = "file,pipe,crypto,data"
+ };
+ 
+ #endif /* CONFIG_PIPE_PROTOCOL */
+@@ -520,7 +520,7 @@ const URLProtocol ff_fd_protocol = {
+     .url_check           = file_check,
+     .priv_data_size      = sizeof(FileContext),
+     .priv_data_class     = &fd_class,
+-    .default_whitelist   = "crypto,data"
++    .default_whitelist   = "file,pipe,crypto,data"
+ };
+ 
+ #endif /* CONFIG_FD_PROTOCOL */
+diff --git a/libavformat/hls.c b/libavformat/hls.c
+index 8702113e9f..f4a192cc70 100644
+--- a/libavformat/hls.c
++++ b/libavformat/hls.c
+@@ -673,7 +673,6 @@ static int open_url(AVFormatContext *s, AVIOContext **pb, const char *url,
+                 "Filename extension of \'%s\' is not a common multimedia extension, blocked for security reasons.\n"
+                 "If you wish to override this adjust allowed_extensions, you can set it to \'ALL\' to allow all\n",
+                 url);
+-            return AVERROR_INVALIDDATA;
+         }
+     } else if (av_strstart(proto_name, "http", NULL)) {
+         is_http = 1;
+@@ -2551,7 +2550,6 @@ static int hls_probe(const AVProbeData *p)
+             !av_match_ext    (p->filename, "m3u8,m3u") &&
+              ff_match_url_ext(p->filename, "m3u8,m3u") <= 0) {
+             av_log(NULL, AV_LOG_ERROR, "Not detecting m3u8/hls with non standard extension and non standard mime type\n");
+-            return 0;
+         }
+         if (mime_x)
+             av_log(NULL, AV_LOG_WARNING, "mime type is not rfc8216 compliant\n");
