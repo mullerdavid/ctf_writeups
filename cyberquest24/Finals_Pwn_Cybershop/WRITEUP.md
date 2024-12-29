@@ -24,7 +24,7 @@ There is a function `marys_secret_function` that prints the flag.
 
 # Buffer Overflow
 
-There is a buffer overflow in the name parameter, as the content length is not updated properly.
+There is a buffer overflow in the name parameter, as the target buffer is fixed size, and the size check was done on the webserver size.
 
 Developing the [exploit](workdir/exploit.py) locally can be done by emulating the CGI interface. Setting the `REQUEST_METHOD` and `CONTENT_LENGTH` env variables.
 
