@@ -8,7 +8,9 @@ It is also doing some size filtering (max 36+32 chars) and compression handling 
 
 The filter can be bypassed using deflate or gzip, it is only present on the default case.
 
-# Binary
+# Reverse
+
+## Binary
 
 The binary is processing the input through the CGI spec. Checking the `REQUEST_METHOD` and `CONTENT_LENGTH` environment variables.
 
@@ -18,6 +20,8 @@ On form submit, it is using the header for the length and `read` to read the nam
 
 ![](screenshots/3.png)
 
+## Secret function
+
 There is a function `marys_secret_function` that prints the flag.
 
 ![](screenshots/4.png)
@@ -26,7 +30,7 @@ There is a function `marys_secret_function` that prints the flag.
 
 There is a buffer overflow in the name parameter, as the target buffer is fixed size, and the size check was done on the webserver size.
 
-Developing the [exploit](workdir/exploit.py) locally can be done by emulating the CGI interface. Setting the `REQUEST_METHOD` and `CONTENT_LENGTH` env variables.
+Developing the [exploit](workdir/exploit.py) locally can be done by emulating the CGI interface. Setting the `REQUEST_METHOD` and `CONTENT_LENGTH` env variables. Simply returning to the secret function for the flag.
 
 ![](screenshots/1.png)
 
