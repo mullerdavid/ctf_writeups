@@ -87,7 +87,7 @@ Then calling `Encryptor.Encrypt` recursively for each file.
 
 This function generates a random key per file. Then encrypting the file (full blocks only) in place with AES with this random key. 
 
-The [encrypted](#key-encryption) random key is saved into some metadata that is appended to the end of the file.
+The [encrypted](#key-encryption) random key is saved into some metadata that is appended to the end of the file, marked with `RansomWareMetaData`.
 
 ## Key Encryption
 The random key is encrypted with the available `GetPerMachineKey` and `GlobalKey` with `Encryptor.EncryptKey256`. The latter was empty and skipped.
