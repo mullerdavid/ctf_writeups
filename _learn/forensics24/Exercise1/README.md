@@ -1,4 +1,4 @@
-# Excercise 1
+# Exercise 1
 
 This is the first part of a simulated forensics analysis.
 
@@ -7,7 +7,7 @@ There are some restrictions to make it more fun. The time is limited, and you sh
 
 ## Task 1
 
-Use `Excercise1.ova` virtual machine. It is hosted here: [SharedFiles](/SharedFiles.md) in the `_learn > forensics24` subfolder.
+Use `Exercise1.ova` virtual machine. It is hosted here: [SharedFiles](/SharedFiles.md) in the `_learn > forensics24` subfolder.
 
 <details>
   <summary>Import VM</summary> 
@@ -19,11 +19,11 @@ The image was made with VMWare. If you have trouble importing or starting it, yo
 
 After starting the machine, you have 30 minutes to find the traces of the malware. Use the user `James` and password `James` (also in pw hint).
 
-You can install tools if you want, but avoid using automated tools. Don't use/update windows defender or antivirus softwares either.
+You can install tools if you want, but avoid using automated tools. Don't use/update windows defender or antivirus software either.
 
 ## Task 2
 
-You should complete the previous task to avoid spoiler. If you finshed that, you can open this.
+You should complete the previous task to avoid spoiler. If you finished that, you can open this.
 
 <details>
   <summary>Spoiler</summary> 
@@ -32,7 +32,7 @@ The malware automatically triggered after 20 mins. Ohh nooooo. (Open the `In cas
 
 *Feel free to restart the machine anytime, it was just to trigger the malware properly.*
 
-If you found and prevented the malware, good job. If not, don't worry, it is part of the excercise.
+If you found and prevented the malware, good job. If not, don't worry, it is part of the exercise.
 
 The task is now to find the malware and reverse the damage it caused. Use the following files instead of the ones on your desktop, as the VM had no flag.
 

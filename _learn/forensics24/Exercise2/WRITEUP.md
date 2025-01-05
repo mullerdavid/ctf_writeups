@@ -14,12 +14,12 @@ The `TotallyNotRansomWare.exe` is the ransomware. See [RansomWareAsymm.zip](work
 
 # Reverse malware
 
-The malware is almost identical to the first part, see [Excercise 1](../Excercise1/WRITEUP.md#reverse-malware) for more details.
+The malware is almost identical to the first part, see [Exercise 1](../Exercise1/WRITEUP.md#reverse-malware) for more details.
 
 ## Key Encryption
 The random key is encrypted with the available `GetPerMachineKey` and `GlobalKey` with `Encryptor.EncryptKey256`.
 
-The difference is here. The ransomware is using asymmetric encryption now, encrypting with the public RSA key(s). The attacker can decrypt fiels with any of the global hardcoded key (works even without internet) or the generated per machine dns query based key.
+The difference is here. The ransomware is using asymmetric encryption now, encrypting with the public RSA key(s). The attacker can decrypt files with any of the global hardcoded key (works even without internet) or the generated per machine dns query based key.
 
 ![](screenshots/3.png)
 
@@ -28,7 +28,7 @@ The difference is here. The ransomware is using asymmetric encryption now, encry
 Luckily we have both memory dump and pcaps.
 
 ```bash
-vol.py -f Excercise2-3ffa4eee.dmp --profile Win10x64_19041 pslist
+vol.py -f Exercise2-3ffa4eee.dmp --profile Win10x64_19041 pslist
 ```
 
 Or not. Those are both rabbit holes. The pcap only has the public key, and the memory dump has no per file keys unfortunately.

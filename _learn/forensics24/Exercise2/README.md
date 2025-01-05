@@ -1,8 +1,8 @@
-# Excercise 2
+# Exercise 2
 
 This is the second part of a simulated forensics analysis.
 
-Use `Excercise2.ova` virtual machine. It is hosted here: [SharedFiles](/SharedFiles.md) in the `_learn > forensics24` subfolder.
+Use `Exercise2.ova` virtual machine. It is hosted here: [SharedFiles](/SharedFiles.md) in the `_learn > forensics24` subfolder.
 
 <details>
   <summary>Import VM</summary> 
@@ -14,7 +14,7 @@ The image was made with VMWare. If you have trouble importing or starting it, yo
 
 Use the user `James` and password `James` (also in pw hint).
 
-You should complete the previous [excercise](../Excercise1/README.md) to avoid spoiler. You can open the task here if you finished that.
+You should complete the previous [exercise](../Exercise1/README.md) to avoid spoiler. You can open the task here if you finished that.
 
 ## Task
 
@@ -23,7 +23,7 @@ You should complete the previous [excercise](../Excercise1/README.md) to avoid s
   
 The company machine executed some ransomware and some files are encrypted. The response team made a memory dump and the packets were captured by the firewall.
 
-Use `Excercise2-3ffa4eee` memory dump. It is hosted here: [SharedFiles](/SharedFiles.md) in the `_learn > forensics24` subfolder.
+Use `Exercise2-3ffa4eee` memory dump. It is hosted here: [SharedFiles](/SharedFiles.md) in the `_learn > forensics24` subfolder.
 
 [capture.zip](files/capture.zip)
 
