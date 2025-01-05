@@ -10,7 +10,7 @@ There is an SQL injection on the login page. Using the standard `' OR 1=1 --` in
 
 ![](screenshots/2.png)
 
-The error messages are also verbose if the bypass is not achived instantly.
+The error messages are also verbose if the bypass is not achieved instantly.
 
 ![](screenshots/3.png)
 
@@ -18,9 +18,9 @@ After logging in, there is a case upload and gallery functionality.
 
 # Gallery
 
-Trying to open anythin in the gallery results in an error message, but the `file` parameter is visible.
+Trying to open anything in the gallery results in an error message, but the `file` parameter is visible.
 
-The paramemter is vulnerable to directory traversal, and any file can be viewed with it, like `/etc/passwd` or the `index.php` (path from SQL error message as well).
+The parameter is vulnerable to directory traversal, and any file can be viewed with it, like `/etc/passwd` or the `index.php` (path from SQL error message as well).
 
 ```
 http://10.10.1.11:65304/pages/gallery.php?file=../../../../../etc/passwd
@@ -33,7 +33,7 @@ It is visible that the file is not read and printed, but included, as the php is
 
 # Cases
 
-This is a file upload functuonality. You can upload a file, usually without restriction.
+This is a file upload functionality. You can upload a file, usually without restriction.
 
 The [shell.txt](workdir/shell.txt) webshell was uploaded to an unknown location.
 

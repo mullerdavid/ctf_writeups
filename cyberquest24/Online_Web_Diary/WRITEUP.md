@@ -23,7 +23,7 @@ The flag is stored in the `admin` user's note.
 
 The backend is written in go and handling the accounts and notes. The pdf is generated with a markdown to html and html to pdf all inside the go program.
 
-Both the html and pdf generation libraries are quite basic. After chefcking the source code, there seems to be no parsing error or injection vector that could help there. 
+Both the html and pdf generation libraries are quite basic. After checking the source code, there seems to be no parsing error or injection vector that could help there. 
 
 # SQL injection
 

@@ -33,7 +33,7 @@ Attempting to send just `Hot-water` as ingredient doesn't solve the problem.
 curl -v -H 'Ingredients: Hot-water' http://10.10.1.11:22517/tea
 ```
 
-Fortunatelly it leaks the ingredients on bad requests in the `Ingredients` headers.  
+Fortunately it leaks the ingredients on bad requests in the `Ingredients` headers.  
 
 ![](screenshots/2.png)
 

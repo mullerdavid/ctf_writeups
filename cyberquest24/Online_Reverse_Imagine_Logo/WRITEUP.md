@@ -12,7 +12,7 @@ Opening the binary in a disassembler or debugger results nothing useful.
 
 It is full of `vfmaddsub132ps` instructions. 
 
-Googling `vfmaddsub132ps reverse engineering` reveals the whitepaper [REpsych](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEF%20CON%2023%20-%20Chris-Domas-REpsych.pdf) fro Defcon 2023. 
+Googling `vfmaddsub132ps reverse engineering` reveals the whitepaper [REpsych](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEF%20CON%2023%20-%20Chris-Domas-REpsych.pdf) from Defcon 2023. 
 
 It is basically just mocking the reverser, making an image in IDA graph view with these instructions.
 

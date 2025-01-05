@@ -4,7 +4,7 @@ Kryptos is a sculpture with some encrypted messages inside, in 4 blocks, similar
 
 <https://en.wikipedia.org/wiki/Kryptos>
 
-How to decypher the knwon parts of the original.
+How to decipher the known parts of the original.
 
 <https://isaaclyman.com/blog/posts/kryptos-1/>
 <https://isaaclyman.com/blog/posts/kryptos-2/>
@@ -23,7 +23,7 @@ The [Boxentriq Cryptogram Solver](https://www.boxentriq.com/code-breaking/crypto
 
 ![](screenshots/1.png)
 
-Chatgpt or another LLM can be used to beautify the plaintexts by inserting whitespace and punctuation, fixing small errors/typos.
+ChatGPT or another LLM can be used to beautify the plaintexts by inserting whitespace and punctuation, fixing small errors/typos.
 
 # K1
 
@@ -43,7 +43,7 @@ Only a few uppercase letter, probably same case in plain and cyphertext, no numb
 3 consecutive uppercase letters `TRU`.
 
 
-`qzkcjtguw` is repeaed twice (117=3^2*13 distance), once right after `TRU`
+`qzkcjtguw` is repealed twice (117=3^2*13 distance), once right after `TRU`
 
 ```
 sorted(freq(k1).keys())
@@ -59,7 +59,7 @@ freq(k1.upper())
 {'T': 5.973, 'S': 5.752, 'K': 5.309, 'H': 4.867, 'W': 4.867, 'C': 4.867, 'A': 4.646, 'R': 4.424, 'L': 4.424, 'F': 4.203, 'G': 4.203, 'D': 4.203, 'Z': 3.761, 'X': 3.539, 'I': 3.318, 'M': 3.318, 'B': 3.318, 'U': 3.097, 'V': 3.097, 'E': 3.097, 'O': 3.097, 'Y': 2.876, 'J': 2.654, 'P': 2.433, 'Q': 2.433, 'N': 2.212}
 ```
 
-From the frequencies, it is probably not a simple substition cypher, might be Viginere. 
+From the frequencies, it is probably not a simple substitution cypher, might be Vigenère. 
 
 
 It turned out that the this part was broken, see Details below.
@@ -95,7 +95,7 @@ numbers No clues no hints just frustration
 '''[:-1]
 ```
 
-The algorithm was indeed Viginere.
+The algorithm was indeed Vigenère.
 
 After some tinkering, the key looked like this: `oskrptokryptosryptskrptoskrptokryposkrptokryptokryptoskrytokrytoskrptosrytososkrptokryposkrytosryptosryposkryptosr...`
 

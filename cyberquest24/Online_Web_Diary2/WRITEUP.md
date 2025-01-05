@@ -8,7 +8,7 @@ For more info, see [Diary](../Web_Diary/WRITEUP.md).
 
 # Timeout
 
-The user validation is not handling timouts very well. On timeout it still returns the userID, which would generate a valid token for the admin user.
+The user validation is not handling timeouts very well. On timeout it still returns the userID, which would generate a valid token for the admin user.
 
 
 ```go

@@ -32,7 +32,7 @@ Using crafted queries, the data printed can be controlled.
 
 ![](screenshots/3.png)
 
-The underelying xml structure and content can be slowly recovered with various queries or tools like `xcat`.
+The underlying xml structure and content can be slowly recovered with various queries or tools like `xcat`.
 
 A more simpler method is just query for the flag format.
 

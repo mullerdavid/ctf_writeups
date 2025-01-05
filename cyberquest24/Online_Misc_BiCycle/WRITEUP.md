@@ -16,7 +16,7 @@ exiftool -b -ThumbnailImage BiCycle_EN/.config/reminder.jpg > reminder_thumb.jpg
 
 Missing the text part on the actual image. The resolution is too small to make anything out of it. It seems that the height of the image was edited/corrupted. Using the thumbnail aspect ratio, the original image should be `920/139*160 = 1059 = 0x0423` tall instead of the `850 = 0x0352` that is currently.
 
-Using ImHex (or any hexeditor), the image can be fixed at the correct part, inside the SOF [marker](https://web.archive.org/web/20220314032823/http://lad.dsc.ufcg.edu.br/multimidia/jpegmarker.pdf ).
+Using `ImHex` (or any hexeditor), the image can be fixed at the correct part, inside the SOF [marker](https://web.archive.org/web/20220314032823/http://lad.dsc.ufcg.edu.br/multimidia/jpegmarker.pdf ).
 
 
 ![](screenshots/1.png)
@@ -48,7 +48,7 @@ find BiCycle_EN -name '*.png' -exec zsteg {} \;
 find . -name '*.jpg' -exec stegseek --crack {} wordlist.txt \;
 ```
 
-This had no result. After closer look of the zsteg output, there was a png file which was actually not a png. Running stegseek on the png files as well will mostly result in errors, but on the renamed fiile it was able to extract the flag.
+This had no result. After closer look of the `zsteg` output, there was a png file which was actually not a png. Running `stegseek` on the png files as well will mostly result in errors, but on the renamed file it was able to extract the flag.
 
 ```bash
 find BiCycle_EN/badfiles -name '*.png' -exec stegseek --crack {} wordlist.txt \;

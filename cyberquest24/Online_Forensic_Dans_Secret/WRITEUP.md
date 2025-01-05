@@ -6,7 +6,7 @@ Visiting the site suggests we should look elsewhere.
 
 # Dirbuster
 
-Guesisng `.DS_Store` from the challenge name or using a web scanner with a proper wordlist would result in <http://10.10.1.11:27521/.DS_Store>. It is a file used by MacOS to store folder metadata, like icon locations, etc.
+Guessing `.DS_Store` from the challenge name or using a web scanner with a proper wordlist would result in <http://10.10.1.11:27521/.DS_Store>. It is a file used by MacOS to store folder metadata, like icon locations, etc.
 
 The file is saved as [.DS_Store](workdir/.DS_Store).
 
@@ -31,11 +31,11 @@ Downloading the [flag_first_part_e000107637abb05d823cbb918acd7d13.txt](workdir/f
 
 # Flag part 2
 
-The hint `(219, 29)` at first flag might suggest the Iloc (Icon Location). There are a lot of random filenames, but nothing has that location.
+The hint `(219, 29)` at first flag might suggest the `Iloc` (Icon Location). There are a lot of random filenames, but nothing has that location.
 
 After checking the file more in depth, even with hex editor, there is nothing else in the file apart from the already parsed data, nothing in the free chunks.
 
-[Visualizing](workdir/visualize.py) the Iloc reveals the second part of the flag: `_1D4_fr0m_7h3iR_1344`.
+[Visualizing](workdir/visualize.py) the `Iloc` reveals the second part of the flag: `_1D4_fr0m_7h3iR_1344`.
 
 ![](workdir/sample-out.jpg)
 
@@ -83,7 +83,7 @@ flag_third_part                                      bwsp {
 }
 ```
 
-The third flag is some plist metadata, suggesting reversing it. 
+The third flag is some `plist` metadata, suggesting reversing it. 
 
 ```python
 from base64 import b64decode

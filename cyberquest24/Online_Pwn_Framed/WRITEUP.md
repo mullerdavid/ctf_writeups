@@ -15,7 +15,7 @@ There is no protection on the binary.
 
 ![](screenshots/3.png)
 
-While the stack is executable, ASLR is randomising it's address.
+While the stack is executable, ASLR is randomizing it's address.
 
 # ROP
 

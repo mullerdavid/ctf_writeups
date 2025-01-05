@@ -2,7 +2,7 @@
 
 The wav file is about some numbers.
 
-The speech can be trascribed with the [openai-whisper](https://pypi.org/project/openai-whisper/) module.
+The speech can be transcribed with the [openai-whisper](https://pypi.org/project/openai-whisper/) module.
 
 ```bash
 whisper notes.wav --model medium

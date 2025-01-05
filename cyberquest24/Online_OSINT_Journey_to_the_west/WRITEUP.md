@@ -4,7 +4,7 @@
 
 # Reverse image search
 
-Using <images.google.com> to look for similar or same images immediatly finds the location.
+Using <images.google.com> to look for similar or same images immediately finds the location.
 
 ![](screenshots/1.png)
 

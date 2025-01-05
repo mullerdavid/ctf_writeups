@@ -48,7 +48,7 @@ The differences above can be fixed.
 * The build-id. Calculated after the other parts are fixed, see [Build-id](#build-id).
 * The line number is changing based on the random number of new lines. 1-10, so it is bruteforcable.
 * The temporary filename is leaked on the communication automatically.
-* Time and date has precision of seconds. It can be predicted, and a few seconds differene bruteforced.
+* Time and date has precision of seconds. It can be predicted, and a few seconds difference bruteforced.
 * Crypto random 16 bytes string as hex. Too big to bruteforce.
 
 The binary can be checked before sending to server based on the md5 provided, generating until it matches.
@@ -104,4 +104,4 @@ Fail if:
  * numBytes < 0
  * maxReadSize < numBytes
 
-Giving something like position `9223372036854775807` and numBytes `40` satisfies all the above by overflowing on the addition and makes the main binary panick.
+Giving something like position `9223372036854775807` and numBytes `40` satisfies all the above by overflowing on the addition and makes the main binary panic.

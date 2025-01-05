@@ -8,7 +8,7 @@ A specific path needs to be followed. At every step there are 3 options where to
 
 # Automation
 
-Fortunatelly the path and options are always the same. It can be automated to automatically track the correct steps and redo them on failure.
+Fortunately the path and options are always the same. It can be automated to automatically track the correct steps and redo them on failure.
 
 Implemented in [wander.py](workdir/wander.py).
 

@@ -12,7 +12,7 @@ ssh moo@10.10.9.12 -p 21999
 
 # Flag location
 
-Running all kind of commands to look for suspicious setuid binaries, cron jobs, even running the linpeas script results nothing.
+Running all kind of commands to look for suspicious setuid binaries, cron jobs, even running the `linpeas` script results nothing.
 
 Going through all the executable files.
 
