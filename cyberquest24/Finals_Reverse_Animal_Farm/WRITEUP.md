@@ -4,7 +4,7 @@ Running the simulator has a Carrots, Rabbits, Wolves.
 
 ![](screenshots/1.png)
 
-Something is broken with the timer, glitching out on certain key/mouse presses, or just on it's own. Alsow has issues when the timer would reach a minute.
+Something is broken with the timer, glitching out on certain key/mouse presses, or just on it's own. Also has issues when the timer would reach a minute.
 
 ![](screenshots/2.png)
 

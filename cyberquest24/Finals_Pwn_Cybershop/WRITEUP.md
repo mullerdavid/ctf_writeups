@@ -1,6 +1,6 @@
 # CGI
 
-The backend is a small go cgi server running the [cybershop](workdir/src/cybershop) executable.
+The backend is a small go `cgi` server running the [cybershop](workdir/src/cybershop) executable.
 
 It is basically setting the important environment variables and passing the stdio between the http stream and the binary. 
 

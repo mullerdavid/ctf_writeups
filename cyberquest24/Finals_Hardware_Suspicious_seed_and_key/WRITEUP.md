@@ -4,7 +4,7 @@ The title suggests some issue with the random generator, but as the hardware had
 
 # Replay
 
-The challenge is practically identical to the first BLE challenge ([writeup](../Finals_Hardware_It_will_Just_Work/WRITEUP.md)), replaying the write command(s) unlocks the challnge.
+The challenge is practically identical to the first BLE challenge ([writeup](../Finals_Hardware_It_will_Just_Work/WRITEUP.md)), replaying the write command(s) unlocks the challenge.
 
 ```
 No.	Time	Source	Destination	Protocol	Length	Info
