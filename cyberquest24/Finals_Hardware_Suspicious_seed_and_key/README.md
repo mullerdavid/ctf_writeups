@@ -18,7 +18,7 @@ Use `gatttool`, `bluetoothctl`, an ESP32-C3 board (on the table), a bluetooth do
 
 The dumped firmware from the challenge devices can be found in [flash_contents.zip](../Finals_Hardware_It_will_Just_Work/workdir/flash_contents.zip).
 
-This can be installed on compatible boards. Such board is a Tenstar ESP32-C3 Zero, with 4 MB of flash. The led might not work, but the chellenge itself does.
+This can be installed on compatible boards. Such board is a Tenstar ESP32-C3 Zero, with 4 MB of flash. The led might not work, but the challenge itself does.
 
 ![](../Finals_Hardware_It_will_Just_Work/screenshots/1.png)
 
