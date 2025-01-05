@@ -1,5 +1,5 @@
 # Looking around
-After login, it is just a simple Windows machine. Nothing susupicious on the desktop.
+After login, it is just a simple Windows machine. Nothing suspicious on the desktop.
 
 ![](screenshots/1.png)
 
@@ -53,7 +53,7 @@ Another good tip for forensic analysis is snapshots. It is very easy to use a VM
 
 The binary is a 32bit `.NET` binary. A mix of static and dynamic analysis can be used.
 
-I recommend using the [dnSpyEx](https://github.com/dnSpyEx/dnSpy/), that is a still mainteined fork of `dnSpy`. There are similar tools as well, but `dnSpy` can run and modify/recompile parts of the code on the fly if you want to make some changes. Use the 32bit variant for this malware.
+I recommend using the [dnSpyEx](https://github.com/dnSpyEx/dnSpy/), that is a still maintained fork of `dnSpy`. There are similar tools as well, but `dnSpy` can run and modify/recompile parts of the code on the fly if you want to make some changes. Use the 32bit variant for this malware.
 
 The classes and functions are perfectly readable.
 
