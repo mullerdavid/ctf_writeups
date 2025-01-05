@@ -16,7 +16,7 @@ Checking the [hcsc-main-1](workdir/main-1.txt) config doesn't show anything usef
 
 # Passive Scanning
 
-Scanning from the perimeter router is possible with a few builtin tools (20561 is used by the mac-telnet, see later).
+Scanning from the perimeter router is possible with a few built-in tools (20561 is used by the mac-telnet, see later).
 
 ```
 /tool/ip-scan
@@ -49,7 +49,7 @@ Checking the [hcsc-internal-main](workdir/internal-main.txt) [hcsc-internal-clie
 
 ## Host discovery
 
-We know the internal DHCP address range. The shell has scripting capabilities with ping can be utlized to scan for even more hosts.
+We know the internal DHCP address range. The shell has scripting capabilities with ping can be utilized to scan for even more hosts.
 
 ```
 :for i from=1 to=256 do={ /ping "192.168.1.$i" count=1 }
@@ -62,7 +62,7 @@ Running it on all hosts reveals an extra host reachable from the internal machin
 
 ## Port scanning
 
-The scripting and the fetch tool can be used to scan for ports (http). Fortunatelly there is a reply on closed ports, so waiting for timeout is not required and the scan goes relatively fast.
+The scripting and the fetch tool can be used to scan for ports (http). Fortunately there is a reply on closed ports, so waiting for timeout is not required and the scan goes relatively fast.
 
 ```
 :for i from=1 to=65535 do={ :do { /tool/fetch output=user http-method=get url="http://192.168.1.42:$i/" } on-error={ :put $i } }
@@ -91,4 +91,4 @@ Extracting the flag with the fetch tool is trivial afterwards.
 
 # Alternative solution
 
-Using the SSH port forwarding functionality and proxy chains can be utlised to find the flag as well.
+Using the SSH port forwarding functionality and proxy chains can be utilized to find the flag as well.

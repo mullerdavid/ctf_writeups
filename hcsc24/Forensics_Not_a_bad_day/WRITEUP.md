@@ -15,7 +15,7 @@ sudo nbd-client 10.10.3.10 61370 /dev/nbd0
 ![](screenshots/1.png)
 
 
-It contains a single ext4 partition (no partition table). Mounting it as read only is possible (rw fails).
+It contains a single `ext4` partition (no partition table). Mounting it as read only is possible (rw fails).
 
 ```bash
 file /dev/nbd0
@@ -55,7 +55,7 @@ The recovered files are in [recovered.zip](workdir/recovered.zip)
 
 # Files
 
-Checking the files, they are all linux ELF binaries. Running them each prints a fifferent index and a character.
+Checking the files, they are all linux ELF binaries. Running them each prints a different index and a character.
 
 ```bash
 recovered/MAGIC-2/application/x-sharedlib\\012-/I_0000012949.unknown

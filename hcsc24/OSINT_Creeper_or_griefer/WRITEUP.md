@@ -1,6 +1,6 @@
 # Discord
 
-There are discord communities with bots that has historical databases for minecraft servers. One such server can be found with the hint youtube video: [The Land of Pies](https://discord.com/invite/uUnXV8X2jw).
+There are discord communities with bots that has historical databases for Minecraft servers. One such server can be found with the hint youtube video: [The Land of Pies](https://discord.com/invite/uUnXV8X2jw).
 
 # Minecraft server database
 

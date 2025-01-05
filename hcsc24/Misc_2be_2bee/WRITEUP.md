@@ -14,7 +14,7 @@ A bunch of images were dumped with [dump.py](workdir/dump.py) for offline usage.
 
 There are already classifier for the problem, for example <https://github.com/PratikUpadhyay2408/BeeRecognition> with Tensorflow.
 
-After minor modifications (version updates and removing unnecessery things) a model was trained to classify bees. The modded version and the model can be found in [BeeRecognition.zip](workdir/BeeRecognition.zip)
+After minor modifications (version updates and removing unnecessary things) a model was trained to classify bees. The modded version and the model can be found in [BeeRecognition.zip](workdir/BeeRecognition.zip)
 
 ![](workdir/model_accuracy.png)
 
@@ -26,7 +26,7 @@ The classifier is using a dataset from kaggle, [The BeeImage Dataset: Annotated 
 
 Checking the dumped images, they are exactly the same as this dataset. Using the md5 or any hash for the files can classify them with 100% accuracy. An implementation of this is in [solve.py](workdir/solve.py)
 
-This prints the flag on sucess
+This prints the flag on success
 
 ![](screenshots/2.png)
 

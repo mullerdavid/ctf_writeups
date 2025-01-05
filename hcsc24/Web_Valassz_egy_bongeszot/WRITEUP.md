@@ -46,7 +46,7 @@ This reveals that there are probably 6 substrings checked in a loop or similar m
 
 ## Frankenstein
 
-Snitching multiple useragents together can pass the checks. 
+Snitching multiple user agents together can pass the checks. 
 
 The most important part is to include all the popular browsers, both on desktop and mobile as well. 
 
@@ -59,7 +59,7 @@ echo python-requests/2.2.1 CPython/2.7.6 Linux/3.13.0-57-generic >> ua.txt
 echo curl/8.5.0 >> ua.txt
 ```
 
-Using the `ua.txt` list, a longer useragent can be built. The platform part is only kept for the first, cut off for the rest. The specific parts are sorted and only appended once. This is to fit into 1024 characters.
+Using the `ua.txt` list, a longer user agent can be built. The platform part is only kept for the first, cut off for the rest. The specific parts are sorted and only appended once. This is to fit into 1024 characters.
 
 ```bash
 curl -v -A "$( (head -n 1 ua.txt; cat ua.txt | grep -oP '[^\)]*$' | tr ' ' '\n' | grep "\S" | sort -u ) | tr '\n' ' ')" http://10.10.2.11:5028/
@@ -76,7 +76,7 @@ Using this monster user agent reveals the flag.
 
 # Alternative solution
 
-As the hint with sweeth tooth suggests the cookie, fixing the session cookie and running the same `ua.txt` list also unlocks the flag.
+As the hint with sweet tooth suggests the cookie, fixing the session cookie and running the same `ua.txt` list also unlocks the flag.
 
 ```bash
 while IFS= read -r line; do curl -s -b PHPSESSID=e7298559bae28612b776c1098d24e23b -A "$line" http://10.10.2.11:5028/; done < ua.txt

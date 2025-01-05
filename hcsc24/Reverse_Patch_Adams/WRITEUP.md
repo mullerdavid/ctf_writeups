@@ -1,6 +1,6 @@
 # Start Your Instance
 
-After starting the docker instance, there is a webserver listening in the given address. It accepts 2 commands with arguments for radare.
+After starting the docker instance, there is a webserver listening in the given address. It accepts 2 commands with arguments for `radare`.
 
 ![](screenshots/2.png)
 
@@ -18,7 +18,7 @@ r2Commands := []string{
 		}
 ```
 
-Unfortunatelly, all the parameters are heavily filtered. Commands are maximum 4 characters and only alphanumeric. There are also blacklisted commands as well. The arguments are also limited, 16 characters max, alphanumeric plus space. 
+Unfortunately, all the parameters are heavily filtered. Commands are maximum 4 characters and only alphanumeric. There are also blacklisted commands as well. The arguments are also limited, 16 characters max, alphanumeric plus space. 
 
 
 # HTTP
@@ -63,7 +63,7 @@ Tracing back from the `Unauthorized` string, there is a function `FUN_0010142d` 
 
 # Patching
 
-Seeking to some crucial point and overwriting the instructions can run the desired funcionality.
+Seeking to some crucial point and overwriting the instructions can run the desired functionality.
 
 Patching the authorization check would just print a quote.
 

@@ -2,7 +2,7 @@
 
 [Scanning](../Scans/WRITEUP.md) the 10.10.x.12 machines reveals a TCP service at port 49428 with some math question.
 
-Using netcat is enough to access the service.
+Using a is enough to access the service.
 
 ```bash
 nc -v 10.10.1.12 49428
@@ -14,7 +14,7 @@ nc -v 10.10.1.12 49428
 
 We need positive integers `x`, `y`, `z` to satisfy the `x/(y+z) + y/(x+z) + z/(x+y) = 10` equation.
 
-Notice that multiplying all the numbers with the same number (eg 10) doesn't change the left side.
+Notice that multiplying all the numbers with the same number (e.g. 10) doesn't change the left side.
 
 # Source
 

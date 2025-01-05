@@ -1,6 +1,6 @@
 # Archive
 
-Using the [Waback Machine](https://web.archive.org/) reveals multiple snapshots.
+Using the [Wayback Machine](https://web.archive.org/) reveals multiple snapshots.
 
 ![](screenshots/5.png)
 

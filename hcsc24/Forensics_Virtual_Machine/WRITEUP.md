@@ -27,7 +27,7 @@ The archive contains an exe file and a pfx certificate.
 
 ![](screenshots/1.png)
 
-The pfx has a file modification date in the 7zip metadata, just in a different timezone. The correct one is `2024.03.09 23:37:23`.
+The pfx has a file modification date in the 7zip metadata, just in a different time zone. The correct one is `2024.03.09 23:37:23`.
 
 Checking the exe file, the original filename is `Certify.exe`. 
 
@@ -39,7 +39,7 @@ Checking the exe file, the original filename is `Certify.exe`.
 
 # Sysmon logs
 
-The administor also had the sysmon executables on the desktop. Checking the event logs confirms a running sysmon.
+The administrator also had the sysmon executables on the desktop. Checking the event logs confirms a running sysmon.
 
 # Vulnerable certificate template
 
@@ -65,7 +65,7 @@ The list of issued certificates can be checked with the `Certificate Authority` 
 
 ![](screenshots/4.png)
 
-The thumbrint of the certificate is `99 a1 1a 8a ba 44 ec a8 5d 75 b1 bc 8e 2e 32 fd 1b bf 30 36`.
+The thumbprint of the certificate is `99 a1 1a 8a ba 44 ec a8 5d 75 b1 bc 8e 2e 32 fd 1b bf 30 36`.
 
 # Flag 5
 `hcsc{99 a1 1a 8a ba 44 ec a8 5d 75 b1 bc 8e 2e 32 fd 1b bf 30 36}`

@@ -14,7 +14,7 @@ nc -v 10.10.1.10 54847
 
 Sending flag-like known plaintext reveals a lot.
 
-The `hcsc24{fake_flag}` starts with the same prefix (`440222077770222024{`) that we are looking to decypher.
+The `hcsc24{fake_flag}` starts with the same prefix (`440222077770222024{`) that we are looking to decipher.
 
 ![](screenshots/2.png)
 
