@@ -1,12 +1,12 @@
 # Description
 
-The goal is to somehow decypher the given cyphertext: `6b426e696672564b6b426e696672564b255e2f03d52a6ee76c91fd5b49844620189f51392e3e0a82224de98b50fc43c2`.
+The goal is to somehow decipher the given cyphertext: `6b426e696672564b6b426e696672564b255e2f03d52a6ee76c91fd5b49844620189f51392e3e0a82224de98b50fc43c2`.
 
 There are names in the challenge description. The initials are hints.
 
 * Alexander Edward Smith - `AES` encryption
 * Christopher Benjamin Clar - `CBC` mode
-* Paul Oliver Vaughn - `PO` - Padding Oracle, `V` is unknown and took me some rabbit holes to realise that it is not important.
+* Paul Oliver Vaughn - `PO` - Padding Oracle, `V` is unknown and took me some rabbit holes to realize that it is not important.
 
 
 # Website
@@ -22,7 +22,7 @@ curl -v -X POST http://10.10.1.12:22119/ --data "ciphertext=6b426e696672564b6b42
 
 With the [padding oracle attack](https://en.wikipedia.org/wiki/Padding_oracle_attack), we can essentially ask the server to decrypt an encrypted message byte by byte, bruteforcing only 256 chars at each step.
 
-Using the [padding-oracle](https://pypi.org/project/padding-oracle/) pip packege, it's easy to implement. The implemented script is in [po.py](workdir/po.py).
+Using the [padding-oracle](https://pypi.org/project/padding-oracle/) pip package, it's easy to implement. The implemented script is in [po.py](workdir/po.py).
 
 ![](screenshots/1.png)
 

@@ -39,6 +39,6 @@ Reimplementing the logic in python ([solve.py](workdir/solve.py)) reveals the fl
 
 # Patching
 
-As an alternative, patching the support checks ([Main_patched.swf](workdir/Main_patched.swf)) out reveals the first letter of the flag, and the subsequent ones can be also catched in the traffic.
+As an alternative, patching the support checks ([Main_patched.swf](workdir/Main_patched.swf)) out reveals the first letter of the flag, and the subsequent ones can be also caught in the traffic.
 
 ![](screenshots/4.png)

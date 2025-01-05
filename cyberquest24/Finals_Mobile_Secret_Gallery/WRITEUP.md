@@ -6,7 +6,7 @@ After extracting, the filenames and files are encrypted. They are in [files](wor
 
 # APK
 
-Opening/decompiling the APK (with jadx for example) reveals the app logic. It is not obfuscated.
+Opening/decompiling the APK (with [jadx](https://github.com/skylot/jadx) for example) reveals the app logic. It is not obfuscated.
 
 ![](screenshots/1.png)
 

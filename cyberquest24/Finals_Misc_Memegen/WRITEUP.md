@@ -60,7 +60,7 @@ git fetch foreign
 # tags like n7.0 and n7.0.1 are visible for version
 ```
 
-And searching in it. Looking for the closest changelogs backwards from 7.0.1, then the smallest differenvce without the tests and Dockerfile.build (not present in foreign, used to build it). 
+And searching in it. Looking for the closest changelogs backwards from 7.0.1, then the smallest difference without the tests and Dockerfile.build (not present in foreign, used to build it). 
 
 ```bash
 for REV in $(git rev-list --max-count=256 n7.0.1); do echo $REV $(git diff --shortstat $REV master Changelog); done
@@ -105,7 +105,7 @@ libavformat/hls.c
 -            return 0;
 ```
 
-These changes are related to the hls file format.
+These changes are related to the `hls` file format.
 
 * [https://ffmpeg.org/ffmpeg-formats.html#hls-2](https://ffmpeg.org/ffmpeg-formats.html#hls-2)
 * [https://developers.broadpeak.io/docs/foundations-hls](https://developers.broadpeak.io/docs/foundations-hls)

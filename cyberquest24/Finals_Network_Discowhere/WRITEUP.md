@@ -20,7 +20,7 @@ Checking the config doesn't show anything useful. The flag is not there.
 
 # Passive Scanning
 
-Scanning from the perimeter router is possible with a few builtin tools (20561 is used by the mac-telnet, see later).
+Scanning from the perimeter router is possible with a few built-in tools (20561 is used by the mac-telnet, see later).
 
 ```
 /tool/ip-scan
@@ -64,7 +64,7 @@ The routing information reveal some other subnets.
 
 ## Host discovery
 
-The shell has scripting capabilities with ping can be utlized to scan for even more hosts.
+The shell has scripting capabilities with ping can be utilized to scan for even more hosts.
 
 ```
 :for i from=1 to=255 do={ /ping "10.3.6.$i" count=1 }
@@ -77,7 +77,7 @@ Running it on all hosts reveals an extra host reachable from the internal machin
 
 ## Port scanning
 
-The scripting and the fetch tool can be used to scan for ports (http). Fortunatelly there is a reply on closed ports, so waiting for timeout is not required and the scan goes relatively fast.
+The scripting and the fetch tool can be used to scan for ports (http). Fortunately there is a reply on closed ports, so waiting for timeout is not required and the scan goes relatively fast.
 
 ```
 :for i from=1 to=65535 do={ :do { /tool/fetch output=user http-method=get url="http://10.3.6.50:$i/" } on-error={ :put $i } }
