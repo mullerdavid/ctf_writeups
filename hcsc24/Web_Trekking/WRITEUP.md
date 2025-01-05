@@ -6,7 +6,7 @@
 
 # Dirbuster
 
-Checking the directories reveal the `/css/` and `/images/` directories, with direcory listing.
+Checking the directories reveal the `/css/` and `/images/` directories, with directory listing.
 
 ```bash
 dirb http://10.10.3.11:5966
