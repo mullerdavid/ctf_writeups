@@ -15,7 +15,7 @@ We have 3 options.
     - we have 128 attempts to decrypt something
     - there is a catch, the key is corrupted before decryption, some bits are flipped, see [Flips](#flips).
 1. Get the flag
-    - sending the deencrypted challenge can be exchanged for the flag
+    - sending the decrypted challenge can be exchanged for the flag
 
 The `key` and `iv` are random.
 
@@ -44,7 +44,7 @@ encrypt(key, iv, pt) == encrypt(flip(key), flip(iv), flip(pt)) == ct
 decrypt(key, iv, ct) == decrypt(flip(key), flip(iv), flip(ct)) == pt
 ```
 
-We can flip bits ourselfves on known values without anything else.
+We can flip bits ourselves on known values without anything else.
 
 We can ask the server for the encrypted challenge, the `ct`.
 

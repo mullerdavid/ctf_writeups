@@ -15,7 +15,7 @@ Basically only literals and variables (where the locals/globals scope is empty) 
 
 From the length of the hash, it is md5. Checking `md5("1+1")` is exactly the used `d96e018f51ea61e5ff2f9c349c5da67d`.
 
-The md5 hash worsk with blocks (64 bytes). If we have a colliding block pair, appending the same to the both of them results in the same (new) hash.
+The md5 hash works with blocks (64 bytes). If we have a colliding block pair, appending the same to the both of them results in the same (new) hash.
 
 If we can generate a valid code and a different malicious one, we can bypass the check.
 
@@ -70,7 +70,7 @@ b' ... '+b# ... '+evil_code
 b' ... '+b' ... '+evil_code
 ```
 
-The only caveat is that it should include only valid characters for the literal and a closing quote should not be present. Luckily enough, nothing such occured.
+The only caveat is that it should include only valid characters for the literal and a closing quote should not be present. Luckily enough, nothing such occurred.
 
 ## Execution
 
