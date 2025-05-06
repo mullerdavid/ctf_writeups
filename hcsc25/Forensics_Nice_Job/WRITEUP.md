@@ -77,7 +77,7 @@ The dnSpy can also debug and patch the application.
 
 There are some VM detection. The check for `Win32_ComputerSystem` can be patched out, but I usually prefer not tampering the binary, not to trigger some anti tampering part if there is an easy solution.
 
-Creating a `.mof` file and loading with [mofcomp](https://learn.microsoft.com/en-us/intune/configmgr/develop/osd/how-to-create-a-mof-file-for-a-configuration-manager-custom-action) can override this.
+Creating a [.mof](workdir/test.mof) file and loading with [mofcomp](https://learn.microsoft.com/en-us/intune/configmgr/develop/osd/how-to-create-a-mof-file-for-a-configuration-manager-custom-action) can override this.
 
 ```
 #PRAGMA AUTORECOVER
