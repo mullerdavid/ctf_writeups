@@ -1,0 +1,14 @@
+#PRAGMA AUTORECOVER
+#pragma namespace ("\\\\.\\root\\CIMv2")
+
+class Win32_ComputerSystem
+{
+    [key]
+    string Manufacturer;
+};
+
+[DYNPROPS]
+instance of Win32_ComputerSystem
+{
+    Manufacturer = "deathbaron.org";
+};
