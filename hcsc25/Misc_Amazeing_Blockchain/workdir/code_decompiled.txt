@@ -1,0 +1,401 @@
+// Decompiled by library.dedaub.com
+// 2025.07.11 14:51 UTC
+// Compiled using the solidity compiler version 0.8.29
+
+
+// Data structures and variables inferred from the use of storage instructions
+mapping (address => struct_451) _win; // STORAGE[0x0]
+
+struct struct_451 { uint8 field0_0_0; uint8 field0_1_1; };
+
+
+function 0x12c2(uint8 varg0, uint8 varg1) private { 
+    require(varg0 - varg1 <= uint8.max, Panic(17)); // arithmetic overflow or underflow
+    return varg0 - varg1;
+}
+
+function 0x1363(uint8 varg0, uint8 varg1) private { 
+    require(varg0 + varg1 <= uint8.max, Panic(17)); // arithmetic overflow or underflow
+    return varg0 + varg1;
+}
+
+function fallback() public payable { 
+    revert();
+}
+
+function left() public payable { 
+    require(_win[msg.sender].field0_0_0 > 0, Error('Out of bounds'));
+    v0 = 0x12c2(_win[msg.sender].field0_0_0, 1);
+    v1 = v2 = uint8(v0) > 5;
+    if (uint8(v0) <= 5) {
+        v1 = _win[msg.sender].field0_1_1 > 5;
+    }
+    if (!v1) {
+        v3 = new struct(6);
+        v4 = new struct(6);
+        v4.word0 = True;
+        v4.word1 = True;
+        v4.word2 = True;
+        v4.word3 = False;
+        v4.word4 = True;
+        v4.word5 = True;
+        v3.word0 = v4;
+        v5 = new struct(6);
+        v5.word0 = False;
+        v5.word1 = False;
+        v5.word2 = True;
+        v5.word3 = True;
+        v5.word4 = False;
+        v5.word5 = True;
+        v3.word1 = v5;
+        v6 = new struct(6);
+        v6.word0 = False;
+        v6.word1 = True;
+        v6.word2 = True;
+        v6.word3 = True;
+        v6.word4 = False;
+        v6.word5 = True;
+        v3.word2 = v6;
+        v7 = new struct(6);
+        v7.word0 = True;
+        v7.word1 = True;
+        v7.word2 = False;
+        v7.word3 = False;
+        v7.word4 = True;
+        v7.word5 = True;
+        v3.word3 = v7;
+        v8 = new struct(6);
+        v8.word0 = True;
+        v8.word1 = False;
+        v8.word2 = False;
+        v8.word3 = True;
+        v8.word4 = True;
+        v8.word5 = False;
+        v3.word4 = v8;
+        v9 = new struct(6);
+        v9.word0 = True;
+        v9.word1 = True;
+        v9.word2 = True;
+        v9.word3 = True;
+        v9.word4 = False;
+        v9.word5 = False;
+        v3.word5 = v9;
+        require(_win[msg.sender].field0_1_1 < 6, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+        require(uint8(v0) < 6, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+        v10 = v11 = MEM[(uint8(v0) << 5) + MEM[(_win[msg.sender].field0_1_1 << 5) + v3]];
+    } else {
+        v10 = v12 = 0;
+    }
+    require(v10, Error('Wall!'));
+    v13 = 0x12c2(_win[msg.sender].field0_0_0, 1);
+    _win[msg.sender].field0_0_0 = v13;
+}
+
+function right() public payable { 
+    require(_win[msg.sender].field0_0_0 < 5, Error('Out of bounds'));
+    v0 = 0x1363(_win[msg.sender].field0_0_0, 1);
+    v1 = v2 = uint8(v0) > 5;
+    if (uint8(v0) <= 5) {
+        v1 = _win[msg.sender].field0_1_1 > 5;
+    }
+    if (!v1) {
+        v3 = new struct(6);
+        v4 = new struct(6);
+        v4.word0 = True;
+        v4.word1 = True;
+        v4.word2 = True;
+        v4.word3 = False;
+        v4.word4 = True;
+        v4.word5 = True;
+        v3.word0 = v4;
+        v5 = new struct(6);
+        v5.word0 = False;
+        v5.word1 = False;
+        v5.word2 = True;
+        v5.word3 = True;
+        v5.word4 = False;
+        v5.word5 = True;
+        v3.word1 = v5;
+        v6 = new struct(6);
+        v6.word0 = False;
+        v6.word1 = True;
+        v6.word2 = True;
+        v6.word3 = True;
+        v6.word4 = False;
+        v6.word5 = True;
+        v3.word2 = v6;
+        v7 = new struct(6);
+        v7.word0 = True;
+        v7.word1 = True;
+        v7.word2 = False;
+        v7.word3 = False;
+        v7.word4 = True;
+        v7.word5 = True;
+        v3.word3 = v7;
+        v8 = new struct(6);
+        v8.word0 = True;
+        v8.word1 = False;
+        v8.word2 = False;
+        v8.word3 = True;
+        v8.word4 = True;
+        v8.word5 = False;
+        v3.word4 = v8;
+        v9 = new struct(6);
+        v9.word0 = True;
+        v9.word1 = True;
+        v9.word2 = True;
+        v9.word3 = True;
+        v9.word4 = False;
+        v9.word5 = False;
+        v3.word5 = v9;
+        require(_win[msg.sender].field0_1_1 < 6, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+        require(uint8(v0) < 6, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+        v10 = v11 = MEM[(uint8(v0) << 5) + MEM[(_win[msg.sender].field0_1_1 << 5) + v3]];
+    } else {
+        v10 = v12 = 0;
+    }
+    require(v10, Error('Wall!'));
+    v13 = 0x1363(_win[msg.sender].field0_0_0, 1);
+    _win[msg.sender].field0_0_0 = v13;
+}
+
+function win() public payable { 
+    v0 = v1 = _win[msg.sender].field0_0_0 == 5;
+    if (v1) {
+        v0 = _win[msg.sender].field0_1_1 == 0;
+    }
+    return bool(v0);
+}
+
+function up() public payable { 
+    require(_win[msg.sender].field0_1_1 > 0, Error('Out of bounds'));
+    v0 = 0x12c2(_win[msg.sender].field0_1_1, 1);
+    v1 = v2 = _win[msg.sender].field0_0_0 > 5;
+    if (_win[msg.sender].field0_0_0 <= 5) {
+        v1 = uint8(v0) > 5;
+    }
+    if (!v1) {
+        v3 = new struct(6);
+        v4 = new struct(6);
+        v4.word0 = True;
+        v4.word1 = True;
+        v4.word2 = True;
+        v4.word3 = False;
+        v4.word4 = True;
+        v4.word5 = True;
+        v3.word0 = v4;
+        v5 = new struct(6);
+        v5.word0 = False;
+        v5.word1 = False;
+        v5.word2 = True;
+        v5.word3 = True;
+        v5.word4 = False;
+        v5.word5 = True;
+        v3.word1 = v5;
+        v6 = new struct(6);
+        v6.word0 = False;
+        v6.word1 = True;
+        v6.word2 = True;
+        v6.word3 = True;
+        v6.word4 = False;
+        v6.word5 = True;
+        v3.word2 = v6;
+        v7 = new struct(6);
+        v7.word0 = True;
+        v7.word1 = True;
+        v7.word2 = False;
+        v7.word3 = False;
+        v7.word4 = True;
+        v7.word5 = True;
+        v3.word3 = v7;
+        v8 = new struct(6);
+        v8.word0 = True;
+        v8.word1 = False;
+        v8.word2 = False;
+        v8.word3 = True;
+        v8.word4 = True;
+        v8.word5 = False;
+        v3.word4 = v8;
+        v9 = new struct(6);
+        v9.word0 = True;
+        v9.word1 = True;
+        v9.word2 = True;
+        v9.word3 = True;
+        v9.word4 = False;
+        v9.word5 = False;
+        v3.word5 = v9;
+        require(uint8(v0) < 6, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+        require(_win[msg.sender].field0_0_0 < 6, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+        v10 = v11 = MEM[(_win[msg.sender].field0_0_0 << 5) + MEM[(uint8(v0) << 5) + v3]];
+    } else {
+        v10 = v12 = 0;
+    }
+    require(v10, Error('Wall!'));
+    v13 = 0x12c2(_win[msg.sender].field0_1_1, 1);
+    _win[msg.sender].field0_1_1 = v13;
+}
+
+function down() public payable { 
+    require(_win[msg.sender].field0_1_1 < 5, Error('Out of bounds'));
+    v0 = 0x1363(_win[msg.sender].field0_1_1, 1);
+    v1 = v2 = _win[msg.sender].field0_0_0 > 5;
+    if (_win[msg.sender].field0_0_0 <= 5) {
+        v1 = uint8(v0) > 5;
+    }
+    if (!v1) {
+        v3 = new struct(6);
+        v4 = new struct(6);
+        v4.word0 = True;
+        v4.word1 = True;
+        v4.word2 = True;
+        v4.word3 = False;
+        v4.word4 = True;
+        v4.word5 = True;
+        v3.word0 = v4;
+        v5 = new struct(6);
+        v5.word0 = False;
+        v5.word1 = False;
+        v5.word2 = True;
+        v5.word3 = True;
+        v5.word4 = False;
+        v5.word5 = True;
+        v3.word1 = v5;
+        v6 = new struct(6);
+        v6.word0 = False;
+        v6.word1 = True;
+        v6.word2 = True;
+        v6.word3 = True;
+        v6.word4 = False;
+        v6.word5 = True;
+        v3.word2 = v6;
+        v7 = new struct(6);
+        v7.word0 = True;
+        v7.word1 = True;
+        v7.word2 = False;
+        v7.word3 = False;
+        v7.word4 = True;
+        v7.word5 = True;
+        v3.word3 = v7;
+        v8 = new struct(6);
+        v8.word0 = True;
+        v8.word1 = False;
+        v8.word2 = False;
+        v8.word3 = True;
+        v8.word4 = True;
+        v8.word5 = False;
+        v3.word4 = v8;
+        v9 = new struct(6);
+        v9.word0 = True;
+        v9.word1 = True;
+        v9.word2 = True;
+        v9.word3 = True;
+        v9.word4 = False;
+        v9.word5 = False;
+        v3.word5 = v9;
+        require(uint8(v0) < 6, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+        require(_win[msg.sender].field0_0_0 < 6, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+        v10 = v11 = MEM[(_win[msg.sender].field0_0_0 << 5) + MEM[(uint8(v0) << 5) + v3]];
+    } else {
+        v10 = v12 = 0;
+    }
+    require(v10, Error('Wall!'));
+    v13 = 0x1363(_win[msg.sender].field0_1_1, 1);
+    _win[msg.sender].field0_1_1 = v13;
+}
+
+function getFlag() public payable { 
+    v0 = v1 = _win[msg.sender].field0_0_0 == 5;
+    if (v1) {
+        v0 = v2 = _win[msg.sender].field0_1_1 == 0;
+    }
+    require(v0, Error("You're not at the goal yet!"));
+    require(26 <= uint64.max, Panic(65)); // failed memory allocation (too much memory)
+    v3 = new bytes[](26);
+    if (26) {
+        CALLDATACOPY(v3.data, msg.data.length, 26);
+    }
+    require(0 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[v3.data] = (byte(bytes1(0x4800000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(1 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[33 + v3] = (byte(bytes1(0x4300000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(2 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[34 + v3] = (byte(bytes1(0x5300000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(3 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[35 + v3] = (byte(bytes1(0x4300000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(4 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[36 + v3] = (byte(bytes1(0x7b00000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(5 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[37 + v3] = (byte(bytes1(0x7300000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(6 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[38 + v3] = (byte(bytes1(0x3000000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(7 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[39 + v3] = (byte(bytes1(0x6c00000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(8 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[40 + v3] = (byte(bytes1(0x3100000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(9 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[41 + v3] = (byte(bytes1(0x4400000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(10 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[42 + v3] = (byte(bytes1(0x5f00000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(11 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[43 + v3] = (byte(bytes1(0x6d00000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(12 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[44 + v3] = (byte(bytes1(0x6100000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(13 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[45 + v3] = (byte(bytes1(0x5a00000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(14 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[46 + v3] = (byte(bytes1(0x3300000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(15 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[47 + v3] = (byte(bytes1(0x5f00000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(16 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[48 + v3] = (byte(bytes1(0x4e00000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(17 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[49 + v3] = (byte(bytes1(0x3400000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(18 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[50 + v3] = (byte(bytes1(0x7600000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(19 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[51 + v3] = (byte(bytes1(0x3100000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(20 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[52 + v3] = (byte(bytes1(0x6700000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(21 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[53 + v3] = (byte(bytes1(0x3400000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(22 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[54 + v3] = (byte(bytes1(0x7400000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(23 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[55 + v3] = (byte(bytes1(0x3000000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(24 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[56 + v3] = (byte(bytes1(0x5200000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    require(25 < v3.length, Panic(50)); // access an out-of-bounds or negative index of bytesN array or slice
+    MEM8[57 + v3] = (byte(bytes1(0x7d00000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+    v4 = new bytes[](v3.length);
+    v5 = v6 = 0;
+    while (v5 < v3.length) {
+        v4[v5] = v3[v5];
+        v5 = v5 + 32;
+    }
+    v4[v3.length] = 0;
+    return v4;
+}
+
+// Note: The function selector is not present in the original solidity code.
+// However, we display it for the sake of completeness.
+
+function __function_selector__( function_selector) public payable { 
+    MEM[64] = 128;
+    require(!msg.value);
+    if (msg.data.length >= 4) {
+        if (0x16e64048 == function_selector >> 224) {
+            left();
+        } else if (0x1f2a63c0 == function_selector >> 224) {
+            right();
+        } else if (0x473ca96c == function_selector >> 224) {
+            win();
+        } else if (0xd5a49e01 == function_selector >> 224) {
+            up();
+        } else if (0xd8337928 == function_selector >> 224) {
+            down();
+        } else if (0xf9633930 == function_selector >> 224) {
+            getFlag();
+        }
+    }
+    fallback();
+}
