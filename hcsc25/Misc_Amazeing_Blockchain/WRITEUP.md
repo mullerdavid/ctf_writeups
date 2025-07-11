@@ -157,4 +157,17 @@ sevm cfg code.hex > code.dot
 dot -Tsvg code.dot -o code.svg
 ```
 
+# Flag generation
 
+The instructions in `getFlag` just adding the necessary bytes to the memory array 1 by 1.
+
+```
+MEM8[v3.data] = (byte(bytes1(0x4800000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+MEM8[33 + v3] = (byte(bytes1(0x4300000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+MEM8[34 + v3] = (byte(bytes1(0x5300000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+MEM8[35 + v3] = (byte(bytes1(0x4300000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+MEM8[36 + v3] = (byte(bytes1(0x7b00000000000000000000000000000000000000000000000000000000000000), 0x0)) & 0xFF;
+...
+```
+
+The `0x48, 0x43, 0x53 0x43 0x7b` corresponds to the flag format `HCSC{`. Recovering the flag this way is also viable.
