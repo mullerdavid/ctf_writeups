@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Pet Rocks Fan Club - The Official Tacky 90s Blog</title>
+<style>
+  /* 90s vibes: clashing colors, tiled backgrounds, Comic Sans, marquee, frames-ish layout */
+  html,body{height:100%;margin:0;font-family:"Comic Sans MS", "Comic Sans", cursive, Arial, sans-serif;background: #020024;}
+  /* tiled starfield-ish background using repeating-radial-gradient */
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-2;
+    background-image:repeating-radial-gradient(circle at 10% 10%, rgba(255,255,255,0.9) 0 1px, transparent 2px 10px),
+                      linear-gradient(135deg,#0f0c29 0%,#302b63 50%,#24243e 100%);
+    opacity:0.8;background-size: 20px 20px, cover;
+  }
+  .gallery-img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border:3px outset #000;
+    display:block;
+    margin:0 auto 6px auto;
+  }
+
+  /* big container that imitates frames (left nav + content) */
+  .wrap{display:flex;border:6px double #ff00ff;margin:12px;box-shadow:0 0 0 6px rgba(255,255,0,0.08);}
+  .sidebar{width:220px;background:linear-gradient(180deg,#ffcc00,#ff99cc);padding:12px;border-right:6px groove #00ffff}
+  .content{flex:1;padding:18px;background: repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0 5px, transparent 5px 10px);
+           color:#000;text-shadow:1px 1px 0 #fff}
+  h1{font-size:28px;color:#00ffea;text-align:left;margin:0 0 6px 0;text-shadow:2px 2px 0 #000}
+  h2{font-size:18px;color:#ff0077;margin:8px 0}
+  a{color:#0000ff;background:#ffff00;padding:2px 4px;text-decoration:none;border:2px outset #000}
+  .nav a{display:block;margin:6px 0;padding:6px;border:2px ridge #9900ff;background:#fff;color:#000}
+  .marquee{margin:8px 0}
+  .post{background:#ffffffcc;padding:12px;margin:12px 0;border:3px dashed #ff00ff}
+  .tag{display:inline-block;padding:4px 8px;border-radius:4px;border:2px outset #333;margin-right:6px;background:linear-gradient(#ff9,#f6f)}
+  /* blinking text (old-school) */
+  .blink{animation:blink 1s steps(1,start) infinite;color:#ff0000;font-weight:bold}
+  @keyframes blink{50%{visibility:hidden}}
+  /* animated under-construction banner (CSS replace gif) */
+  .uc{display:inline-block;padding:6px 10px;border:4px double #000;background:linear-gradient(90deg,#ff9900,#ff0033);color:#fff;font-weight:bold}
+  /* fake 3D button */
+  .btn{display:inline-block;padding:8px 12px;border:3px outset #fff;background:linear-gradient(#6ff,#0ff);cursor:pointer}
+  /* footer */
+  .footer{font-size:12px;color:#fff;margin-top:12px}
+  /* hit counter look */
+  .counter{font-family:monospace;background:#000;color:#0f0;border:4px inset #333;padding:6px;display:inline-block}
+  /* tiny gif-ish sparkle using animation */
+  .sparkle{width:36px;height:36px;display:inline-block;background:linear-gradient(45deg,#fff,#ffd700);border-radius:50%;box-shadow:0 0 12px 4px rgba(255,255,255,0.5);animation:pop 1.2s infinite}
+  @keyframes pop{0%{transform:scale(.8);opacity:.7}50%{transform:scale(1.25);opacity:1}100%{transform:scale(.8);opacity:.7}}
+  /* table-y layout for 'guestbook' */
+  table.guest{width:100%;border-collapse:collapse}
+  table.guest td, table.guest th{border:2px solid #000;padding:8px}
+  /* retro box shadow */
+  .retro-box{box-shadow:8px 8px 0 rgba(0,0,0,0.5), -6px -6px 0 rgba(255,255,255,0.05)}
+  /* marquee styling fallback */
+  .marquee div{padding:6px;background:linear-gradient(90deg,#00ff00,#00aaff);color:#000;font-weight:bold}
+  /* Tiny responsive tweaks */
+  @media(max-width:600px){.wrap{flex-direction:column}.sidebar{width:100%;order:2}.content{order:1}}
+</style>
+</head>
+<body>
+<div style="text-align:center;padding:8px 0;">
+  <h1 style="display:inline-block;padding:8px 12px;background:#111;color:#0f0;border:4px groove #ff0">NEON PET ROCKS FAN CLUB</h1>
+  <span style="margin-left:12px;vertical-align:middle" class="sparkle" title="sparkle"></span>
+</div>
+
+<div class="wrap">
+  <aside class="sidebar retro-box">
+    <div style="text-align:center;margin-bottom:10px"><strong class="uc">UNDER CONSTRUCTION</strong></div>
+    <div class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About My Rocks</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#recipes">Rock Care Recipes</a>
+      <a href="#guestbook">Guestbook</a>
+      <a href="#links">Cool Links</a>
+    </div>
+    <hr>
+    <div style="text-align:center;margin-top:6px">
+      <div style="font-size:11px;color:#000">Visitors:</div>
+      <div id="counter" class="counter">000000</div>
+    </div>
+    <hr>
+    <div style="font-size:12px;margin-top:8px">
+      <strong>Join the Club!</strong>
+      <p style="margin:6px 0"><button class="btn" onclick="alert('Thanks! We \n\nLOVE\nNEON ROCKS')">Sign the Guestbook</button></p>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="marquee"><marquee behavior="scroll" direction="left">Welcome to the Official Neon Pet Rocks Fan Club - New post every Tuesday! &nbsp; * &nbsp; Submit your rock photos!</marquee></div>
+
+    <section id="home" class="post retro-box">
+      <h2>Latest Post: The Hottest Neon Rock Styles of '95</h2>
+      <p>Hey rock lovers! Today we're ranking the hottest neon patterns to bedazzle your pet rocks. Expect glitter, sponge-painted stripes, and fluorescent duct tape accents.</p>
+      <p><span class="tag">DIY</span><span class="tag">Neon</span><span class="tag">Top 10</span></p>
+      <p style="font-size:12px;color:#333">Posted: <strong>March 13, 1995</strong> &nbsp; <span class="blink">NEW!</span></p>
+    </section>
+
+    <section id="about" class="post">
+      <h2>About the Club</h2>
+      <p>Founded in a garage with a hot glue gun and a dream. We love rocks, we paint rocks, we name rocks. Sometimes we give them tiny sunglasses.</p>
+    </section>
+
+    <section id="gallery" class="post">
+      <h2>Gallery</h2>
+      <p><em>Note:</em> Images are optimized for slow dial-up connections. (Totally kidding — but imagine!)</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <div style="width:150px;padding:6px;background:#fffa;border:3px outset #000;text-align:center"><img class="gallery-img" src="/var/www/images/neon.png" alt="sparkly rock"><br>Rock: Sparkles</div>
+        <div style="width:150px;padding:6px;background:#aaff;border:3px outset #000;text-align:center"><img class="gallery-img" src="/var/www/images/neon_striped.png" alt="neon striped rock"><br>Rock: Neon Stripes</div>
+        <div style="width:150px;padding:6px;background:#ffaaff;border:3px outset #000;text-align:center"><img class="gallery-img" src="/var/www/images/glowing.png" alt="glow in the dark rock"><br>Rock: Glow-in-the-Dark</div>
+      </div>
+    </section>
+
+    <section id="recipes" class="post">
+      <h2>Rock Care Recipes</h2>
+      <ol>
+        <li>Mix 1 part glitter with 2 parts elmer's glue.</li>
+        <li>Paint rock with two coats of neon spray under fluorescent light.</li>
+        <li>Seal with clear nail polish (recommended for indoor rocks only).</li>
+      </ol>
+    </section>
+
+    <section id="guestbook" class="post">
+      <h2>Guestbook</h2>
+      <table class="guest">
+        <tr><th>Name</th><th>Message</th></tr>
+        <tbody id="guest-rows">
+          <tr><td>Alice</td><td>LOVE the neon rock named <strong>Bubbles</strong>!</td></tr>
+          <tr><td>Tim</td><td>Sent my rock photo. <em>Hope it gets featured!</em></td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:8px">Sign the guestbook: <input id="gname" placeholder="Name" style="padding:4px"> <input id="gmsg" placeholder="Message" style="padding:4px"> <button class="btn" onclick="sign()">Sign</button></p>
+    </section>
+
+    <section id="links" class="post">
+      <h2>Totally Tubular Links</h2>
+      <ul>
+        <li><a href="#">NeonRockExchange</a> (barter your best stones!)</li>
+        <li><a href="#">Underwater Rocks</a> (subforum)</li>
+      </ul>
+    </section>
+    <p hidden>Peter you big dumb idiot if you forget your password again I'll kick your ass - peter:SuperS3cr3tP4ssw0rd</p>
+    <div class="footer">This page best viewed with Netscape Navigator 2.0 or Internet Explorer 4.0. <span style="margin-left:10px">&copy; Neon Pet Rocks Fan Club</span></div>
+  </main>
+</div>
+
+<script>
+  // Simple visitor counter stored locally to mimic a hit counter
+  (function(){
+    try{
+      var n = localStorage.getItem('neonPetRocksCounter')||0;
+      n = parseInt(n,10)+1;
+      localStorage.setItem('neonPetRocksCounter',n);
+      var s = String(n).padStart(6,'0');
+      document.getElementById('counter').textContent = s;
+    }catch(e){document.getElementById('counter').textContent='000001'}
+  })();
+
+  function sign(){
+    var n=document.getElementById('gname').value||'Anon';
+    var m=document.getElementById('gmsg').value||'Nice rocks!';
+    var tbody=document.getElementById('guest-rows');
+    var tr=document.createElement('tr');
+    var td1=document.createElement('td'); td1.textContent=n;
+    var td2=document.createElement('td'); td2.textContent=m;
+    tr.appendChild(td1); tr.appendChild(td2);
+    tbody.appendChild(tr);
+    document.getElementById('gname').value=''; document.getElementById('gmsg').value='';
+    alert('Thanks for signing the guestbook!');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+Contact: mailto:ops@glassink.example
+Acknowledgments: /logs/
+Policy: /policy.html
+Preferred-Languages: en

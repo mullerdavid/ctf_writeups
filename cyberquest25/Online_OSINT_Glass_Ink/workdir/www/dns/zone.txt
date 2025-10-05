@@ -1,0 +1,3 @@
+;; zone fragment
+palimpsest.example.  3600 IN TXT "seg=SU5fVEhF"
+palimpsest.example.  3600 IN TXT "note=join TXT segs if more than one"

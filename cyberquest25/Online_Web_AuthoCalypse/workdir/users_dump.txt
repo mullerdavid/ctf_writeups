@@ -1,0 +1,98 @@
+----- alex ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password1H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- ali ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password9H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- andrea ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password7H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- anna ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password2H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- antonio ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password5H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- carlos ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password4H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- daniel ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password6H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- david ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, '$2y$10$wzozKE16...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- jose ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password0H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- laura ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password8H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- marco ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password3H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- maria ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'H]HzRL()LPN53:1...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- sandra ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password1H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
+----- sara ----
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: password_verify(): Argument #1 ($password) must be of type string, array given in /var/www/html/login.php:18
+Stack trace:
+#0 /var/www/html/login.php(18): password_verify(Array, 'password3H]HzRL...')
+#1 {main}
+  thrown in <b>/var/www/html/login.php</b> on line <b>18</b><br />
