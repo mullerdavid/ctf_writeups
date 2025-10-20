@@ -9,5 +9,3 @@ Flag format: `CQ25{}` where flag is the following country-location (Everything i
 [conv.txt](files/conv.txt)
 
 [Writeup](WRITEUP.md)
-
-TODO: macau, suites by david backham
