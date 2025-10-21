@@ -1,0 +1,19 @@
+2025-10-17 07:18:05,298 INFO Set uid to user 0 succeeded
+2025-10-17 07:18:05,301 INFO supervisord started with pid 1
+2025-10-17 07:18:06,306 INFO spawned: 'nginx' with pid 8
+2025-10-17 07:18:06,311 INFO spawned: 'sshd' with pid 9
+2025-10-17 07:18:06,316 INFO spawned: 'vsftpd' with pid 10
+2025-10-17 07:18:06,328 INFO exited: vsftpd (exit status 2; not expected)
+2025-10-17 07:18:07,344 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-10-17 07:18:07,345 INFO success: sshd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-10-17 07:18:07,348 INFO spawned: 'vsftpd' with pid 15
+2025-10-17 07:18:07,356 INFO exited: vsftpd (exit status 2; not expected)
+2025-10-17 07:18:09,361 INFO spawned: 'vsftpd' with pid 16
+2025-10-17 07:18:09,373 INFO exited: vsftpd (exit status 2; not expected)
+2025-10-17 07:18:12,380 INFO spawned: 'vsftpd' with pid 17
+2025-10-17 07:18:12,392 INFO exited: vsftpd (exit status 2; not expected)
+2025-10-17 07:18:13,394 INFO gave up: vsftpd entered FATAL state, too many start retries too quickly
+2025-10-17 11:13:56,882 INFO reaped unknown pid 21
+2025-10-20 09:45:22,087 INFO reaped unknown pid 34
+2025-10-20 09:45:37,109 INFO reaped unknown pid 80
+2025-10-20 09:59:04,173 INFO reaped unknown pid 97

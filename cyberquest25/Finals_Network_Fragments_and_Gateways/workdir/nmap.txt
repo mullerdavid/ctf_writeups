@@ -1,0 +1,43 @@
+Scanning 10.200.0.0/24
+
+Starting Nmap 6.49BETA1 ( http://nmap.org ) at 2025-10-20 15:29 GMT
+Cannot find nmap-payloads. UDP payloads are disabled.
+Nmap scan report for 10.200.0.1
+Host is up (0.00039s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for ac1112d3c6c3 (10.200.0.2)
+Host is up (0.00047s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for router.net1 (10.200.0.254)
+Host is up (0.00042s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 2.07 seconds
+Scanning 10.201.0.0/24
+
+Starting Nmap 6.49BETA1 ( http://nmap.org ) at 2025-10-20 15:29 GMT
+Cannot find nmap-payloads. UDP payloads are disabled.
+Nmap scan report for 10.201.0.1
+Host is up (0.00037s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for 10.201.0.254
+Host is up (0.00014s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 256 IP addresses (2 hosts up) scanned in 2.04 seconds
+Scanning 10.202.0.0/24
+
+Starting Nmap 6.49BETA1 ( http://nmap.org ) at 2025-10-20 15:34 GMT
+Cannot find nmap-payloads. UDP payloads are disabled.
+Nmap scan report for 10.214.0.3
+Host is up (0.0063s latency).
+PORT   STATE  SERVICE
+22/tcp closed ssh
