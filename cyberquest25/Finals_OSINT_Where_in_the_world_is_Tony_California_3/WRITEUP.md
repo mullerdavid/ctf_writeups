@@ -3,4 +3,4 @@
 TODO: macau, suites by david backham
 
 # Flag
-`CQ25{????}`
+`CQ25{macao-thelondonermacao}`
