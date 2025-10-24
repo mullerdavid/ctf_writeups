@@ -1,0 +1,290 @@
+[1761342774.975] [107777:107777] [DL] ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_tool_kvs
+[1761342774.975] [107777:107777] [DL] ChipLinuxStorage::Init: Attempt to re-initialize with KVS config file: /tmp/chip_kvs, IGNORING.
+[1761342774.976] [107777:107777] [DL] ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_factory.ini
+[1761342774.976] [107777:107777] [DL] ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_config.ini
+[1761342774.976] [107777:107777] [DL] ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_counters.ini
+[1761342774.976] [107777:107777] [DL] Wrote settings to /tmp/chip_counters.ini
+[1761342774.976] [107777:107777] [DL] NVS set: chip-counters/reboot-count = 228 (0xE4)
+[1761342774.977] [107777:107777] [DL] Got Ethernet interface: eth0
+[1761342774.977] [107777:107777] [DL] Found the primary Ethernet interface:eth0
+[1761342774.977] [107777:107777] [DL] Got WiFi interface: wlan0
+[1761342774.977] [107777:107777] [DL] Found the primary WiFi interface:wlan0
+[1761342774.977] [107777:107777] [PAF] WiFiPAF: WiFiPAFLayer::Init()
+[1761342774.977] [107777:107777] [IN] UDP::Init bind&listen port=0
+[1761342774.977] [107777:107777] [IN] UDP::Init bound to port=39621
+[1761342774.977] [107777:107777] [IN] UDP::Init bind&listen port=0
+[1761342774.977] [107777:107777] [IN] UDP::Init bound to port=51984
+[1761342774.977] [107777:107777] [IN] BLEBase::Init - setting/overriding transport
+[1761342774.977] [107777:107777] [IN] WiFiPAFBase::Init - setting/overriding transport
+[1761342774.977] [107777:107777] [IN] TransportMgr initialized
+[1761342774.977] [107777:107777] [FP] Initializing FabricTable from persistent storage
+[1761342774.977] [107777:107777] [TS] Last Known Good Time: 2023-10-14T01:16:48
+[1761342774.977] [107777:107777] [FP] Fabric index 0x1 was retrieved from storage. Compressed FabricId 0xE0A2AA1887F9932D, FabricId 0x0000000000000001, NodeId 0x000000000001B669, VendorId 0xFFF1
+[1761342774.977] [107777:107777] [DMG] Ember attribute persistence requires setting up
+[1761342774.977] [107777:107777] [ZCL] Using ZAP configuration...
+[1761342774.978] [107777:107777] [IN] CASE Server enabling CASE session setups
+[1761342774.979] [107777:107777] [IN] SecureSession[0x55ce04afc2e0]: Allocated Type:2 LSID:702
+[1761342774.979] [107777:107777] [SC] Allocated SecureSession (0x55ce04afc2e0) - waiting for Sigma1 msg
+[1761342774.979] [107777:107777] [CTL] System State Initialized...
+[1761342774.979] [107777:107777] [CTL] Setting attestation nonce to random value
+[1761342774.979] [107777:107777] [CTL] Setting CSR nonce to random value
+[1761342774.979] [107777:107777] [IN] UDP::Init bind&listen port=5550
+[1761342774.979] [107777:107777] [IN] UDP::Init bound to port=5550
+[1761342774.979] [107777:107777] [IN] UDP::Init bind&listen port=5550
+[1761342774.979] [107777:107777] [IN] UDP::Init bound to port=5550
+[1761342774.979] [107777:107777] [IN] TransportMgr initialized
+[1761342774.979] [107777:107777] [TOO] Command: temperaturemeasurement subscribe measured-value 1 1 1 2
+[1761342774.979] [107777:107779] [DL] CHIP task running
+[1761342774.979] [107777:107779] [CTL] Setting attestation nonce to random value
+[1761342774.979] [107777:107779] [CTL] Setting CSR nonce to random value
+[1761342774.979] [107777:107779] [CTL] Generating NOC
+[1761342774.979] [107777:107779] [FP] Validating NOC chain
+[1761342774.980] [107777:107779] [FP] NOC chain validation successful
+[1761342774.980] [107777:107779] [FP] Updated fabric at index: 0x1, Node ID: 0x000000000001B669
+[1761342774.980] [107777:107779] [TS] Last Known Good Time: 2023-10-14T01:16:48
+[1761342774.980] [107777:107779] [TS] New proposed Last Known Good Time: 2021-01-01T00:00:00
+[1761342774.980] [107777:107779] [TS] Retaining current Last Known Good Time
+[1761342774.980] [107777:107779] [FP] Metadata for Fabric 0x1 persisted to storage.
+[1761342774.980] [107777:107779] [TS] Committing Last Known Good Time to storage: 2023-10-14T01:16:48
+[1761342774.980] [107777:107779] [CTL] Joined the fabric at index 1. Fabric ID is 0x0000000000000001 (Compressed Fabric ID: E0A2AA1887F9932D)
+[1761342774.980] [107777:107779] [IN] UDP::Init bind&listen port=5551
+[1761342774.980] [107777:107779] [IN] UDP::Init bound to port=5551
+[1761342774.980] [107777:107779] [IN] UDP::Init bind&listen port=5551
+[1761342774.980] [107777:107779] [IN] UDP::Init bound to port=5551
+[1761342774.980] [107777:107779] [IN] TransportMgr initialized
+[1761342774.980] [107777:107779] [DIS] Updating services using commissioning mode 0
+[1761342774.982] [107777:107779] [DIS] CHIP minimal mDNS started advertising.
+[1761342774.982] [107777:107779] [DL] Using WiFi MAC for hostname
+[1761342774.982] [107777:107779] [DIS] Advertise operational node E0A2AA1887F9932D-000000000001B669
+[1761342774.982] [107777:107779] [DIS] Responding with _matter._tcp.local
+[1761342774.982] [107777:107779] [DIS] Responding with E0A2AA1887F9932D-000000000001B669._matter._tcp.local
+[1761342774.982] [107777:107779] [DIS] Responding with E0A2AA1887F9932D-000000000001B669._matter._tcp.local
+[1761342774.982] [107777:107779] [DIS] Responding with 008740921BDF.local
+[1761342774.982] [107777:107779] [DIS] Responding with _IE0A2AA1887F9932D._sub._matter._tcp.local
+[1761342774.982] [107777:107779] [DIS] CHIP minimal mDNS configured as 'Operational device'; instance name: E0A2AA1887F9932D-000000000001B669.
+[1761342774.983] [107777:107779] [DIS] mDNS service published: _matter._tcp
+[1761342774.983] [107777:107779] [DL] Using WiFi MAC for hostname
+[1761342774.983] [107777:107779] [DIS] Advertise commission parameter vendorID=65521 productID=32769 discriminator=0000/00 cm=0 cp=0 jf=0
+[1761342774.983] [107777:107779] [DIS] Responding with _matterd._udp.local
+[1761342774.983] [107777:107779] [DIS] Responding with 1B7E84FEF36FCB96._matterd._udp.local
+[1761342774.983] [107777:107779] [DIS] Responding with 008740921BDF.local
+[1761342774.983] [107777:107779] [DIS] Responding with 008740921BDF.local
+[1761342774.983] [107777:107779] [DIS] Responding with _V65521._sub._matterd._udp.local
+[1761342774.983] [107777:107779] [DIS] Responding with 1B7E84FEF36FCB96._matterd._udp.local
+[1761342774.983] [107777:107779] [DIS] CHIP minimal mDNS configured as 'Commissioner device'; instance name: 1B7E84FEF36FCB96.
+[1761342774.983] [107777:107779] [DIS] mDNS service published: _matterd._udp
+[1761342774.984] [107777:107779] [TOO] Sending command to node 0x1
+[1761342774.984] [107777:107779] [CSM] FindOrEstablishSession: PeerId = [1:0000000000000001]
+[1761342774.984] [107777:107779] [CSM] FindOrEstablishSession: No existing OperationalSessionSetup instance found
+[1761342774.984] [107777:107779] [DIS] OperationalSessionSetup[1:0000000000000001]: State change 1 --> 2
+[1761342774.984] [107777:107779] [DIS] Lookup started for E0A2AA1887F9932D-0000000000000001
+[1761342775.020] [107777:107779] [DIS] UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540: new best score: 7 (for E0A2AA1887F9932D-0000000000000001)
+[1761342775.020] [107777:107779] [DIS] Lookup clearing interface for non LL address
+[1761342775.020] [107777:107779] [DIS] UDP:192.168.1.103%wlan0:5540: new best score: 2 (for E0A2AA1887F9932D-0000000000000001)
+[1761342775.020] [107777:107779] [DIS] Checking node lookup status for E0A2AA1887F9932D-0000000000000001 after 35 ms
+[1761342775.020] [107777:107779] [DIS] Keeping DNSSD lookup active
+[1761342775.027] [107777:107779] [DIS] UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540: score has not improved: 7 (for E0A2AA1887F9932D-0000000000000001)
+[1761342775.027] [107777:107779] [DIS] Lookup clearing interface for non LL address
+[1761342775.027] [107777:107779] [DIS] UDP:192.168.1.103%wlan0:5540: score has not improved: 2 (for E0A2AA1887F9932D-0000000000000001)
+[1761342775.027] [107777:107779] [DIS] Checking node lookup status for E0A2AA1887F9932D-0000000000000001 after 42 ms
+[1761342775.027] [107777:107779] [DIS] Keeping DNSSD lookup active
+[1761342775.185] [107777:107779] [DIS] Checking node lookup status for E0A2AA1887F9932D-0000000000000001 after 201 ms
+[1761342775.185] [107777:107779] [DIS] OperationalSessionSetup[1:0000000000000001]: Updating device address to UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540 while in state 2
+[1761342775.185] [107777:107779] [DIS] OperationalSessionSetup[1:0000000000000001]: State change 2 --> 3
+[1761342775.185] [107777:107779] [IN] SecureSession[0x7f3fd400dcb0]: Allocated Type:2 LSID:703
+[1761342775.185] [107777:107779] [SC] Initiating session on local FabricIndex 1 from 0x000000000001B669 -> 0x0000000000000001
+[1761342775.186] [107777:107779] [EM] <<< [E:16712i S:0 M:35378125] (U) Msg TX from A5FDA48EADAD8386 to 0:0000000000000000 [0000] [UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540] --- Type 0000:30 (SecureChannel:CASE_Sigma1) (B:196)
+[1761342775.186] [107777:107779] [EM] ??1 [E:16712i S:0 M:35378125] (U) Msg Retransmission to 0:0000000000000000 scheduled for 572ms from now [State:Idle II:500 AI:300 AT:4000]
+[1761342775.186] [107777:107779] [SC] Sent Sigma1 msg to <0000000000000001, 1> [II:500ms AI:300ms AT:4000ms]
+[1761342775.186] [107777:107779] [DIS] OperationalSessionSetup[1:0000000000000001]: State change 3 --> 4
+[1761342775.759] [107777:107779] [EM] <<1 [E:16712i S:0 M:35378125] (U) Msg Retransmission to 0:0000000000000000
+[1761342775.759] [107777:107779] [EM] ??2 [E:16712i S:0 M:35378125] (U) Msg Retransmission to 0:0000000000000000 scheduled for 633ms from now [State:Idle II:500 AI:300 AT:4000]
+[1761342775.841] [107777:107779] [EM] >>> [E:16712i S:0 M:43188262 (Ack:35378125)] (U) Msg RX from 0:0000000000000000 [0000] to A5FDA48EADAD8386 --- Type 0000:10 (SecureChannel:StandaloneAck) (B:26)
+[1761342775.841] [107777:107779] [EM] Found matching exchange: 16712i, Delegate: 0x7f3fd400d9e8
+[1761342775.841] [107777:107779] [EM] Rxd Ack; Removing MessageCounter:35378125 from Retrans Table on exchange 16712i
+[1761342776.460] [107777:107779] [EM] >>> [E:16712i S:0 M:43188263 (Ack:35378125)] (U) Msg RX from 0:0000000000000000 [0000] to A5FDA48EADAD8386 --- Type 0000:31 (SecureChannel:CASE_Sigma2) (B:751)
+[1761342776.460] [107777:107779] [EM] Found matching exchange: 16712i, Delegate: 0x7f3fd400d9e8
+[1761342776.460] [107777:107779] [EM] CHIP MessageCounter:35378125 not in RetransTable on exchange 16712i
+[1761342776.460] [107777:107779] [SC] Received Sigma2 msg
+[1761342776.460] [107777:107779] [SC] Found MRP parameters in the message
+[1761342776.460] [107777:107779] [SC] Peer <0000000000000001, 1> assigned session ID 37461
+[1761342776.461] [107777:107779] [SC] Sending Sigma3
+[1761342776.461] [107777:107779] [EM] <<< [E:16712i S:0 M:35378126 (Ack:43188263)] (U) Msg TX from A5FDA48EADAD8386 to 0:0000000000000000 [0000] [UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540] --- Type 0000:32 (SecureChannel:CASE_Sigma3) (B:598)
+[1761342776.461] [107777:107779] [EM] ??1 [E:16712i S:0 M:35378126] (U) Msg Retransmission to 0:0000000000000000 scheduled for 399ms from now [State:Active II:500 AI:300 AT:4000]
+[1761342776.461] [107777:107779] [SC] Sent Sigma3 msg
+[1761342776.522] [107777:107779] [EM] >>> [E:16712i S:0 M:43188264 (Ack:35378126)] (U) Msg RX from 0:0000000000000000 [0000] to A5FDA48EADAD8386 --- Type 0000:10 (SecureChannel:StandaloneAck) (B:26)
+[1761342776.522] [107777:107779] [EM] Found matching exchange: 16712i, Delegate: 0x7f3fd400d9e8
+[1761342776.522] [107777:107779] [EM] Rxd Ack; Removing MessageCounter:35378126 from Retrans Table on exchange 16712i
+[1761342777.779] [107777:107779] [EM] >>> [E:16712i S:0 M:43188265 (Ack:35378126)] (U) Msg RX from 0:0000000000000000 [0000] to A5FDA48EADAD8386 --- Type 0000:40 (SecureChannel:StatusReport) (B:34)
+[1761342777.779] [107777:107779] [EM] Found matching exchange: 16712i, Delegate: 0x7f3fd400d9e8
+[1761342777.779] [107777:107779] [EM] CHIP MessageCounter:35378126 not in RetransTable on exchange 16712i
+[1761342777.779] [107777:107779] [SC] Success status report received. Session was established
+[1761342777.779] [107777:107779] [SC] SecureSession[0x7f3fd400dcb0, LSID:703]: State change 'kEstablishing' --> 'kActive'
+[1761342777.779] [107777:107779] [IN] SecureSession[0x7f3fd400dcb0]: Activated - Type:2 LSID:703
+[1761342777.779] [107777:107779] [IN] New secure session activated for device <0000000000000001, 1>, LSID:703 PSID:37461!
+[1761342777.779] [107777:107779] [DIS] OperationalSessionSetup[1:0000000000000001]: State change 4 --> 5
+[1761342777.779] [107777:107779] [TOO] Sending SubscribeAttribute to:
+[1761342777.779] [107777:107779] [TOO]  cluster 0x0000_0402, attribute: 0x0000_0000, endpoint 2
+[1761342777.779] [107777:107779] [DMG] 0 data version filters provided, 0 not relevant, 0 encoded, 0 skipped due to lack of space
+[1761342777.779] [107777:107779] [EM] <<< [E:16713i S:703 M:108345157] (S) Msg TX from 000000000001B669 to 1:0000000000000001 [932D] [UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540] --- Type 0001:03 (IM:SubscribeRequest) (B:60)
+[1761342777.779] [107777:107779] [EM] ??1 [E:16713i S:703 M:108345157] (S) Msg Retransmission to 1:0000000000000001 scheduled for 351ms from now [State:Active II:500 AI:300 AT:4000]
+[1761342777.779] [107777:107779] [DMG] MoveToState ReadClient[0x7f3fd4019bb0]: Moving to [AwaitingIn]
+[1761342777.779] [107777:107779] [EM] <<< [E:16712i S:0 M:35378127 (Ack:43188265)] (U) Msg TX from A5FDA48EADAD8386 to 0:0000000000000000 [0000] [UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:26)
+[1761342777.779] [107777:107779] [EM] Flushed pending ack for MessageCounter:43188265 on exchange 16712i
+[1761342777.968] [107777:107779] [EM] >>> [E:16713i S:703 M:128294405 (Ack:108345157)] (S) Msg RX from 1:0000000000000001 [932D] to 000000000001B669 --- Type 0001:05 (IM:ReportData) (B:76)
+[1761342777.968] [107777:107779] [EM] Found matching exchange: 16713i, Delegate: 0x7f3fd4019bc0
+[1761342777.968] [107777:107779] [EM] Rxd Ack; Removing MessageCounter:108345157 from Retrans Table on exchange 16713i
+[1761342777.968] [107777:107779] [DMG] ReportDataMessage =
+[1761342777.968] [107777:107779] [DMG] {
+[1761342777.968] [107777:107779] [DMG]  SubscriptionId = 0x1a8413c8,
+[1761342777.968] [107777:107779] [DMG]  AttributeReportIBs =
+[1761342777.968] [107777:107779] [DMG]  [
+[1761342777.968] [107777:107779] [DMG]          AttributeReportIB =
+[1761342777.968] [107777:107779] [DMG]          {
+[1761342777.968] [107777:107779] [DMG]                  AttributeDataIB =
+[1761342777.968] [107777:107779] [DMG]                  {
+[1761342777.968] [107777:107779] [DMG]                          DataVersion = 0x889e67e5,
+[1761342777.968] [107777:107779] [DMG]                          AttributePathIB =
+[1761342777.968] [107777:107779] [DMG]                          {
+[1761342777.968] [107777:107779] [DMG]                                  Endpoint = 0x2,
+[1761342777.968] [107777:107779] [DMG]                                  Cluster = 0x402,
+[1761342777.968] [107777:107779] [DMG]                                  Attribute = 0x0000_0000,
+[1761342777.968] [107777:107779] [DMG]                          }
+[1761342777.968] [107777:107779] [DMG]
+[1761342777.968] [107777:107779] [DMG]                          Data = 11700 (signed),
+[1761342777.968] [107777:107779] [DMG]                  },
+[1761342777.968] [107777:107779] [DMG]
+[1761342777.968] [107777:107779] [DMG]          },
+[1761342777.968] [107777:107779] [DMG]
+[1761342777.968] [107777:107779] [DMG]  ],
+[1761342777.968] [107777:107779] [DMG]
+[1761342777.968] [107777:107779] [DMG]  InteractionModelRevision = 12
+[1761342777.968] [107777:107779] [DMG] }
+[1761342777.968] [107777:107779] [TOO] Endpoint: 2 Cluster: 0x0000_0402 Attribute 0x0000_0000 DataVersion: 2292082661
+[1761342777.968] [107777:107779] [TOO]   MeasuredValue: 11700
+[1761342777.968] [107777:107779] [DMG] MoveToState ReadClient[0x7f3fd4019bb0]: Moving to [AwaitingSu]
+[1761342777.969] [107777:107779] [EM] <<< [E:16713i S:703 M:108345158 (Ack:128294405)] (S) Msg TX from 000000000001B669 to 1:0000000000000001 [932D] [UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540] --- Type 0001:01 (IM:StatusResponse) (B:42)
+[1761342777.969] [107777:107779] [EM] ??1 [E:16713i S:703 M:108345158] (S) Msg Retransmission to 1:0000000000000001 scheduled for 339ms from now [State:Active II:500 AI:300 AT:4000]
+[1761342778.022] [107777:107779] [EM] >>> [E:16713i S:703 M:128294406 (Ack:108345158)] (S) Msg RX from 1:0000000000000001 [932D] to 000000000001B669 --- Type 0001:04 (IM:SubscribeResponse) (B:48)
+[1761342778.022] [107777:107779] [EM] Found matching exchange: 16713i, Delegate: 0x7f3fd4019bc0
+[1761342778.022] [107777:107779] [EM] Rxd Ack; Removing MessageCounter:108345158 from Retrans Table on exchange 16713i
+[1761342778.022] [107777:107779] [DMG] SubscribeResponse is received
+[1761342778.022] [107777:107779] [DMG] SubscribeResponseMessage =
+[1761342778.022] [107777:107779] [DMG] {
+[1761342778.022] [107777:107779] [DMG]  SubscriptionId = 0x1a8413c8,
+[1761342778.022] [107777:107779] [DMG]  MaxInterval = 0x1,
+[1761342778.022] [107777:107779] [DMG]  InteractionModelRevision = 12
+[1761342778.022] [107777:107779] [DMG] }
+[1761342778.022] [107777:107779] [DMG] Subscription established in 244ms with SubscriptionID = 0x1a8413c8 MinInterval = 1s MaxInterval = 1s Peer = 01:0000000000000001
+[1761342778.022] [107777:107779] [DMG] MoveToState ReadClient[0x7f3fd4019bb0]: Moving to [Subscripti]
+[1761342778.022] [107777:107779] [DMG] Refresh LivenessCheckTime for 14265 milliseconds with SubscriptionId = 0x1a8413c8 Peer = 01:0000000000000001
+[1761342778.022] [107777:107779] [EM] <<< [E:16713i S:703 M:108345159 (Ack:128294406)] (S) Msg TX from 000000000001B669 to 1:0000000000000001 [932D] [UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+[1761342778.022] [107777:107779] [EM] Flushed pending ack for MessageCounter:128294406 on exchange 16713i
+[1761342779.052] [107777:107779] [EM] >>> [E:2401r S:703 M:128294407] (S) Msg RX from 1:0000000000000001 [932D] to 000000000001B669 --- Type 0001:05 (IM:ReportData) (B:72)
+[1761342779.052] [107777:107779] [EM] Handling via exchange: 2401r, Delegate: 0x55cdff84a8e8
+[1761342779.052] [107777:107779] [DMG] ReportDataMessage =
+[1761342779.052] [107777:107779] [DMG] {
+[1761342779.052] [107777:107779] [DMG]  SubscriptionId = 0x1a8413c8,
+[1761342779.052] [107777:107779] [DMG]  AttributeReportIBs =
+[1761342779.052] [107777:107779] [DMG]  [
+[1761342779.053] [107777:107779] [DMG]          AttributeReportIB =
+[1761342779.053] [107777:107779] [DMG]          {
+[1761342779.053] [107777:107779] [DMG]                  AttributeDataIB =
+[1761342779.053] [107777:107779] [DMG]                  {
+[1761342779.053] [107777:107779] [DMG]                          DataVersion = 0x889e67e6,
+[1761342779.053] [107777:107779] [DMG]                          AttributePathIB =
+[1761342779.053] [107777:107779] [DMG]                          {
+[1761342779.053] [107777:107779] [DMG]                                  Endpoint = 0x2,
+[1761342779.053] [107777:107779] [DMG]                                  Cluster = 0x402,
+[1761342779.053] [107777:107779] [DMG]                                  Attribute = 0x0000_0000,
+[1761342779.053] [107777:107779] [DMG]                          }
+[1761342779.053] [107777:107779] [DMG]
+[1761342779.053] [107777:107779] [DMG]                          Data = 11400 (signed),
+[1761342779.053] [107777:107779] [DMG]                  },
+[1761342779.053] [107777:107779] [DMG]
+[1761342779.053] [107777:107779] [DMG]          },
+[1761342779.053] [107777:107779] [DMG]
+[1761342779.053] [107777:107779] [DMG]  ],
+[1761342779.053] [107777:107779] [DMG]
+[1761342779.053] [107777:107779] [DMG]  InteractionModelRevision = 12
+[1761342779.053] [107777:107779] [DMG] }
+[1761342779.053] [107777:107779] [TOO] Endpoint: 2 Cluster: 0x0000_0402 Attribute 0x0000_0000 DataVersion: 2292082662
+[1761342779.053] [107777:107779] [TOO]   MeasuredValue: 11400
+[1761342779.053] [107777:107779] [DMG] Refresh LivenessCheckTime for 14265 milliseconds with SubscriptionId = 0x1a8413c8 Peer = 01:0000000000000001
+[1761342779.053] [107777:107779] [EM] <<< [E:2401r S:703 M:108345160 (Ack:128294407)] (S) Msg TX from 000000000001B669 to 1:0000000000000001 [932D] [UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540] --- Type 0001:01 (IM:StatusResponse) (B:42)
+[1761342779.053] [107777:107779] [EM] ??1 [E:2401r S:703 M:108345160] (S) Msg Retransmission to 1:0000000000000001 scheduled for 400ms from now [State:Active II:500 AI:300 AT:4000]
+[1761342779.114] [107777:107779] [EM] >>> [E:2401r S:703 M:128294408 (Ack:108345160)] (S) Msg RX from 1:0000000000000001 [932D] to 000000000001B669 --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+[1761342779.114] [107777:107779] [EM] Found matching exchange: 2401r, Delegate: (nil)
+[1761342779.114] [107777:107779] [EM] Rxd Ack; Removing MessageCounter:108345160 from Retrans Table on exchange 2401r
+[1761342780.092] [107777:107779] [EM] >>> [E:2402r S:703 M:128294409] (S) Msg RX from 1:0000000000000001 [932D] to 000000000001B669 --- Type 0001:05 (IM:ReportData) (B:72)
+[1761342780.092] [107777:107779] [EM] Handling via exchange: 2402r, Delegate: 0x55cdff84a8e8
+[1761342780.092] [107777:107779] [DMG] ReportDataMessage =
+[1761342780.092] [107777:107779] [DMG] {
+[1761342780.092] [107777:107779] [DMG]  SubscriptionId = 0x1a8413c8,
+[1761342780.092] [107777:107779] [DMG]  AttributeReportIBs =
+[1761342780.092] [107777:107779] [DMG]  [
+[1761342780.092] [107777:107779] [DMG]          AttributeReportIB =
+[1761342780.092] [107777:107779] [DMG]          {
+[1761342780.092] [107777:107779] [DMG]                  AttributeDataIB =
+[1761342780.092] [107777:107779] [DMG]                  {
+[1761342780.092] [107777:107779] [DMG]                          DataVersion = 0x889e67e7,
+[1761342780.092] [107777:107779] [DMG]                          AttributePathIB =
+[1761342780.092] [107777:107779] [DMG]                          {
+[1761342780.092] [107777:107779] [DMG]                                  Endpoint = 0x2,
+[1761342780.092] [107777:107779] [DMG]                                  Cluster = 0x402,
+[1761342780.092] [107777:107779] [DMG]                                  Attribute = 0x0000_0000,
+[1761342780.092] [107777:107779] [DMG]                          }
+[1761342780.092] [107777:107779] [DMG]
+[1761342780.092] [107777:107779] [DMG]                          Data = 5100 (signed),
+[1761342780.092] [107777:107779] [DMG]                  },
+[1761342780.092] [107777:107779] [DMG]
+[1761342780.092] [107777:107779] [DMG]          },
+[1761342780.092] [107777:107779] [DMG]
+[1761342780.092] [107777:107779] [DMG]  ],
+[1761342780.092] [107777:107779] [DMG]
+[1761342780.092] [107777:107779] [DMG]  InteractionModelRevision = 12
+[1761342780.092] [107777:107779] [DMG] }
+[1761342780.092] [107777:107779] [TOO] Endpoint: 2 Cluster: 0x0000_0402 Attribute 0x0000_0000 DataVersion: 2292082663
+[1761342780.092] [107777:107779] [TOO]   MeasuredValue: 5100
+[1761342780.092] [107777:107779] [DMG] Refresh LivenessCheckTime for 14265 milliseconds with SubscriptionId = 0x1a8413c8 Peer = 01:0000000000000001
+[1761342780.092] [107777:107779] [EM] <<< [E:2402r S:703 M:108345161 (Ack:128294409)] (S) Msg TX from 000000000001B669 to 1:0000000000000001 [932D] [UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540] --- Type 0001:01 (IM:StatusResponse) (B:42)
+[1761342780.092] [107777:107779] [EM] ??1 [E:2402r S:703 M:108345161] (S) Msg Retransmission to 1:0000000000000001 scheduled for 375ms from now [State:Active II:500 AI:300 AT:4000]
+[1761342780.152] [107777:107779] [EM] >>> [E:2402r S:703 M:128294410 (Ack:108345161)] (S) Msg RX from 1:0000000000000001 [932D] to 000000000001B669 --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+[1761342780.152] [107777:107779] [EM] Found matching exchange: 2402r, Delegate: (nil)
+[1761342780.152] [107777:107779] [EM] Rxd Ack; Removing MessageCounter:108345161 from Retrans Table on exchange 2402r
+[1761342781.130] [107777:107779] [EM] >>> [E:2403r S:703 M:128294411] (S) Msg RX from 1:0000000000000001 [932D] to 000000000001B669 --- Type 0001:05 (IM:ReportData) (B:72)
+[1761342781.130] [107777:107779] [EM] Handling via exchange: 2403r, Delegate: 0x55cdff84a8e8
+[1761342781.130] [107777:107779] [DMG] ReportDataMessage =
+[1761342781.130] [107777:107779] [DMG] {
+[1761342781.130] [107777:107779] [DMG]  SubscriptionId = 0x1a8413c8,
+[1761342781.130] [107777:107779] [DMG]  AttributeReportIBs =
+[1761342781.130] [107777:107779] [DMG]  [
+[1761342781.130] [107777:107779] [DMG]          AttributeReportIB =
+[1761342781.130] [107777:107779] [DMG]          {
+[1761342781.130] [107777:107779] [DMG]                  AttributeDataIB =
+[1761342781.130] [107777:107779] [DMG]                  {
+[1761342781.130] [107777:107779] [DMG]                          DataVersion = 0x889e67e8,
+[1761342781.130] [107777:107779] [DMG]                          AttributePathIB =
+[1761342781.130] [107777:107779] [DMG]                          {
+[1761342781.130] [107777:107779] [DMG]                                  Endpoint = 0x2,
+[1761342781.130] [107777:107779] [DMG]                                  Cluster = 0x402,
+[1761342781.130] [107777:107779] [DMG]                                  Attribute = 0x0000_0000,
+[1761342781.130] [107777:107779] [DMG]                          }
+[1761342781.130] [107777:107779] [DMG]
+[1761342781.130] [107777:107779] [DMG]                          Data = 9500 (signed),
+[1761342781.130] [107777:107779] [DMG]                  },
+[1761342781.130] [107777:107779] [DMG]
+[1761342781.130] [107777:107779] [DMG]          },
+[1761342781.130] [107777:107779] [DMG]
+[1761342781.130] [107777:107779] [DMG]  ],
+[1761342781.130] [107777:107779] [DMG]
+[1761342781.130] [107777:107779] [DMG]  InteractionModelRevision = 12
+[1761342781.130] [107777:107779] [DMG] }
+[1761342781.130] [107777:107779] [TOO] Endpoint: 2 Cluster: 0x0000_0402 Attribute 0x0000_0000 DataVersion: 2292082664
+[1761342781.130] [107777:107779] [TOO]   MeasuredValue: 9500
+[1761342781.130] [107777:107779] [DMG] Refresh LivenessCheckTime for 14265 milliseconds with SubscriptionId = 0x1a8413c8 Peer = 01:0000000000000001
+[1761342781.130] [107777:107779] [EM] <<< [E:2403r S:703 M:108345162 (Ack:128294411)] (S) Msg TX from 000000000001B669 to 1:0000000000000001 [932D] [UDP:[fe80::d6d4:daff:fe5c:c7a4%wlan0]:5540] --- Type 0001:01 (IM:StatusResponse) (B:42)
+[1761342781.131] [107777:107779] [EM] ??1 [E:2403r S:703 M:108345162] (S) Msg Retransmission to 1:0000000000000001 scheduled for 401ms from now [State:Active II:500 AI:300 AT:4000]
+[1761342781.194] [107777:107779] [EM] >>> [E:2403r S:703 M:128294412 (Ack:108345162)] (S) Msg RX from 1:0000000000000001 [932D] to 000000000001B669 --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+[1761342781.194] [107777:107779] [EM] Found matching exchange: 2403r, Delegate: (nil)
+[1761342781.194] [107777:107779] [EM] Rxd Ack; Removing MessageCounter:108345162 from Retrans Table on exchange 2403r

@@ -1,0 +1,387 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+I (31) boot: ESP-IDF 4c2820d3 2nd stage bootloader
+I (31) boot: compile time Sep 19 2025 08:05:32
+I (31) boot: Multicore bootloader
+I (33) boot: chip revision: v3.0
+I (35) boot.esp32: SPI Speed      : 40MHz
+I (39) boot.esp32: SPI Mode       : DIO
+I (43) boot.esp32: SPI Flash Size : 4MB
+I (46) boot: Enabling RNG early entropy source...
+I (51) boot: Partition Table:
+I (53) boot: ## Label            Usage          Type ST Offset   Length
+I (60) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000
+I (66) boot:  1 nvs              WiFi data        01 02 00010000 0000c000
+I (73) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000
+I (79) boot:  3 otadata          OTA data         01 00 0001d000 00002000
+I (86) boot:  4 phy_init         RF data          01 01 0001f000 00001000
+I (92) boot:  5 ota_0            OTA app          00 10 00020000 001e0000
+I (99) boot:  6 ota_1            OTA app          00 11 00200000 001e0000
+I (105) boot:  7 fctry            WiFi data        01 02 003e0000 00006000
+I (112) boot: End of partition table
+I (115) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=462a4h (287396) map
+I (221) esp_image: segment 1: paddr=000662cc vaddr=3ff80000 size=0001ch (    28) load
+I (221) esp_image: segment 2: paddr=000662f0 vaddr=3ffbdb60 size=06250h ( 25168) load
+I (234) esp_image: segment 3: paddr=0006c548 vaddr=40080000 size=03ad0h ( 15056) load
+I (240) esp_image: segment 4: paddr=00070020 vaddr=400d0020 size=112db8h (1125816) map
+I (625) esp_image: segment 5: paddr=00182de0 vaddr=40083ad0 size=1ae94h (110228) load
+I (683) boot: Loaded app from partition at offset 0x20000
+I (683) boot: Disabling RNG early entropy source...
+I (694) cpu_start: Multicore app
+I (702) cpu_start: Pro cpu start user code
+I (702) cpu_start: cpu freq: 160000000 Hz
+I (702) app_init: Application information:
+I (702) app_init: Project name:     demo-badge
+I (706) app_init: App version:      not.a.flag
+I (710) app_init: Compile time:     Sep 19 2025 08:05:19
+I (716) app_init: ELF file SHA256:  c7686c3eb...
+I (720) app_init: ESP-IDF:          4c2820d3
+I (724) efuse_init: Min chip rev:     v0.0
+I (728) efuse_init: Max chip rev:     v3.99 
+I (732) efuse_init: Chip rev:         v3.0
+I (736) heap_init: Initializing. RAM available for dynamic allocation:
+I (742) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM
+I (747) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM
+I (752) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM
+I (757) heap_init: At 3FFD9290 len 00006D70 (27 KiB): DRAM
+I (762) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (768) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (773) heap_init: At 4009E964 len 0000169C (5 KiB): IRAM
+I (780) spi_flash: detected chip: winbond
+I (782) spi_flash: flash io: dio
+I (789) coexist: coex firmware version: e727207
+I (791) main_task: Started on CPU0
+I (801) main_task: Calling app_main()
+I (801) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 
+I (801) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 
+I (811) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 
+I (821) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 
+I (821) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 
+I (831) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 
+I (851) lowpower_evb_epaper: before epaper init, heap: 157564
+I (851) epaper: gpio init ok
+I (851) epaper: spi init ok
+I (7261) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (7271) button: IoT Button Version: 4.1.3
+I (7271) app_main: Light created with endpoint_id 1
+I (7281) app_main: Creating temperature sensor endpoint
+I (7281) app_main: Temperature sensor created... Getting endpoint ID
+I (7281) app_main: Temperature sensor created with endpoint_id 2
+I (7301) wifi:wifi driver task: 3ffdf510, prio:23, stack:6656, core=0
+I (7311) wifi:wifi firmware version: 79fa3f41ba
+I (7311) wifi:wifi certification version: v7.0
+I (7311) wifi:config NVS flash: enabled
+I (7311) wifi:config nano formatting: disabled
+I (7321) wifi:Init data frame dynamic rx buffer num: 32
+I (7321) wifi:Init static rx mgmt buffer num: 5
+I (7331) wifi:Init management short buffer num: 32
+I (7331) wifi:Init dynamic tx buffer num: 32
+I (7331) wifi:Init static rx buffer size: 1600
+I (7341) wifi:Init static rx buffer num: 10
+I (7341) wifi:Init dynamic rx buffer num: 32
+I (7351) wifi_init: rx ba win: 6
+I (7351) wifi_init: accept mbox: 6
+I (7351) wifi_init: tcpip mbox: 32
+I (7361) wifi_init: udp mbox: 6
+I (7361) wifi_init: tcp mbox: 6
+I (7361) wifi_init: tcp tx win: 5760
+I (7361) wifi_init: tcp rx win: 5760
+I (7371) wifi_init: tcp mss: 1440
+I (7371) wifi_init: WiFi IRAM OP enabled
+I (7371) wifi_init: WiFi RX IRAM OP enabled
+I (7401) chip[DL]: NVS set: chip-counters/reboot-count = 14 (0xE)
+I (7401) chip[DL]: Real time clock set to 946684800 (2000-01-01 00:00:00 UTC)
+I (7401) BTDM_INIT: BT controller compile version [dc1cd58]
+I (7411) BTDM_INIT: Bluetooth MAC: d4:d4:da:5c:c7:a6
+I (7411) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07
+I (7491) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)
+I (7871) CHIP[DL]: BLE host-controller synced
+E (8371) chip[DL]: Long dispatch time: 964 ms, for event type 2
+I (8371) chip[DL]: Starting ESP WiFi layer
+I (8371) wifi:mode : sta (d4:d4:da:5c:c7:a4)
+I (8371) wifi:enable tsf
+W (8371) wifi:Haven't to connect to a suitable AP now!
+I (8381) chip[DL]: Attempting to connect WiFi station interface
+I (8381) chip[DL]: I (8381) chip[DL]: WiFi station state change: NotConnected -> Connecting
+W (8391) wifi:Haven't to connect to a suitable AP now!
+Posting ESPSystemEvent: Wifi Event with eventId : 43
+E (8401) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F
+I (8401) chip[DL]: I (8411) chip[DL]: Done driving station state, nothing else to do...
+Posting ESPSystemEvent: Wifi Event with eventId : 2
+I (8421) chip[SVR]: Initializing subscription resumption storage...
+I (8431) chip[SVR]: Server initializing...
+I (8431) chip[TS]: Last Known Good Time: 2023-10-14T01:16:48
+I (8441) chip[FP]: Fabric index 0x1 was retrieved from storage. Compressed FabricId 0xE0A2AA1887F9932D, FabricId 0x0000000000000001, NodeId 0x0000000000000001, VendorId 0xFFF1
+I (8451) chip[DMG]: AccessControl: initializing
+I (8461) chip[DMG]: Examples::AccessControlDelegate::Init
+I (8461) chip[DMG]: AccessControl: setting
+I (8461) chip[DMG]: DefaultAclStorage: initializing
+I (8471) chip[DMG]: DefaultAclStorage: 1 entries loaded
+I (8471) chip[SVR]: WARNING: mTestEventTriggerDelegate is null
+I (8531) chip[ZCL]: Using ZAP configuration...
+I (8531) esp_matter_cluster: Cluster plugin init common callback
+I (8531) chip[DMG]: AccessControlCluster: initializing
+I (8531) chip[ZCL]: WRITE ERR: ep 0 clus 0x0000_0030 attr 0x0000_0000 not supported
+I (8541) chip[ZCL]: Initiating Admin Commissioning cluster.
+I (8541) chip[SVR]: Fabric already commissioned. Disabling BLE advertisement
+I (8551) chip[IN]: CASE Server enabling CASE session setups
+I (8561) chip[SVR]: Joining Multicast groups
+I (8561) chip[SVR]: Server Listening...
+I (8561) data_model: Dynamic endpoint 0 added
+I (8571) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000003's Attribute 0x00000001 is 1 **********
+I (8581) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x00000000 is 128 **********
+I (8591) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x0000FFFC is 1 **********
+I (8601) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********
+I (8611) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00004003 is null **********
+I (8621) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 0 **********
+I (8631) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 0 **********
+I (8641) chip[ZCL]: Endpoint 1 On/off already set to new value
+I (8651) data_model: Dynamic endpoint 1 added
+I (8651) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000003's Attribute 0x00000001 is 2 **********
+I (8661) data_model: Dynamic endpoint 2 added
+I (8671) chip[DL]: WIFI_EVENT_STA_START
+E (8671) data_model: Cluster cannot be NULL.
+W (8671) wifi:Haven't to connect to a suitable AP now!
+E (8681) data_model: Attribute cannot be NULL
+I (8681) chip[DL]: Attempting to connect WiFi station interface
+E (8691) wifi:sta is connecting, return error
+E (8691) chip[DL]: esp_wifi_connect() failed: ESP_ERR_WIFI_CONN
+I (8701) NimBLE: GAP procedure initiated: stop advertising.
+
+I (8711) chip[DL]: BLE deinit successful and memory reclaimed
+I (10801) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (10801) wifi:state: init -> auth (0xb0)
+I (10811) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 43
+I (10811) wifi:state: auth -> assoc (0x0)
+I (10821) wifi:state: assoc -> run (0x10)
+I (10831) wifi:<ba-add>idx:0 (ifx:0, ac:22:0b:24:ae:7a), tid:0, ssn:0, winSize:64
+I (10841) wifi:connected with CyberQuest, aid = 2, channel 6, BW20, bssid = ac:22:0b:24:ae:7a
+I (10841) wifi:security: WPA2-PSK, phy: bgn, rssi: -42
+I (10851) wifi:pm start, type: 1
+
+I (10851) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (10861) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (10861) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 4
+I (10871) chip[DL]: WIFI_EVENT_STA_CONNECTED
+I (10871) chip[DL]: WiFi station state change: Connecting -> Connecting_Succeeded
+I (10881) chip[DL]: WiFi station state change: Connecting_Succeeded -> Connected
+I (10891) chip[DL]: WiFi station interface connected
+I (10891) chip[DL]: Done driving station state, nothing else to do...
+I (10901) chip[DL]: Updating advertising data
+I (11561) app_main: TemperatureMeasurement cluster present - proceeding to set attributes
+I (11561) app_main: TemperatureMeasurement - setting MinMeasuredValue to 3200
+I (11561) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000402's Attribute 0x00000001 is null **********
+I (11571) esp_matter_attribute: ********** W : Endpoint 0x0002's Cluster 0x00000402's Attribute 0x00000001 is 3200 **********
+I (11581) app_main: TemperatureMeasurement - setting MaxMeasuredValue to 12600
+I (11591) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000402's Attribute 0x00000002 is null **********
+I (11601) esp_matter_attribute: ********** W : Endpoint 0x0002's Cluster 0x00000402's Attribute 0x00000002 is 12600 **********
+I (11611) app_main: TemperatureMeasurement - setting MeasuredValue to 6700
+I (11621) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000402's Attribute 0x00000000 is null **********
+I (11631) esp_matter_attribute: ********** W : Endpoint 0x0002's Cluster 0x00000402's Attribute 0x00000000 is 6700 **********
+> I (12161) app_main: Temperature update timer started - rotating through flag characters
+I (12161) main_task: Returned from app_main()
+I (12291) chip[DL]: Posting ESPSystemEvent: IP Event with eventId : 3
+I (12291) chip[DL]: IP_EVENT_GOT_IP6
+I (12291) chip[DL]: IPv6 addr available. Ready on WIFI_STA_DEF interface: fe80:0000:0000:0000:d6d4:daff:fe5c:c7a4
+I (12311) app_main: Interface IP Address changed
+I (12311) chip[DIS]: Updating services using commissioning mode 0
+I (12311) chip[DIS]: CHIP minimal mDNS started advertising.
+I (12331) chip[DIS]: Advertise operational node E0A2AA1887F9932D-0000000000000001
+I (12331) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: E0A2AA1887F9932D-0000000000000001.
+I (12341) chip[DIS]: mDNS service published: _matter._tcp
+I (12351) chip[DIS]: Updating services using commissioning mode 0
+I (12351) chip[DIS]: CHIP minimal mDNS started advertising.
+I (12361) chip[DIS]: Advertise operational node E0A2AA1887F9932D-0000000000000001
+I (12361) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: E0A2AA1887F9932D-0000000000000001.
+I (12371) chip[DIS]: mDNS service published: _matter._tcp
+I (12381) chip[SVR]: Server initialization complete
+I (12391) esp_netif_handlers: sta ip: 192.168.1.103, mask: 255.255.255.0, gw: 192.168.1.1
+I (12391) chip[DL]: Posting ESPSystemEvent: IP Event with eventId : 0
+I (12401) chip[IM]: Resuming 1 subscriptions in 0 seconds
+I (12401) chip[DL]: IP_EVENT_STA_GOT_IP
+I (12411) chip[DL]: IPv4 address changed on WiFi station interface: 192.168.1.103/255.255.255.0 gateway 192.168.1.1
+I (12411) chip[DL]: IPv4 Internet connectivity ESTABLISHED
+I (12421) app_main: Interface IP Address changed
+I (12421) chip[DIS]: Updating services using commissioning mode 0
+I (12441) chip[DIS]: CHIP minimal mDNS started advertising.
+I (12451) chip[DIS]: Advertise operational node E0A2AA1887F9932D-0000000000000001
+I (12451) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: E0A2AA1887F9932D-0000000000000001.
+I (12471) chip[DIS]: mDNS service published: _matter._tcp
+I (12481) chip[DIS]: Lookup started for E0A2AA1887F9932D-000000000001B669
+I (12681) chip[DIS]: Checking node lookup status for E0A2AA1887F9932D-000000000001B669 after 200 ms
+I (13161) app_main: Updating temperature to ASCII 'C' -> value: 6700 (67.00°C)
+I (14161) app_main: Updating temperature to ASCII 'Q' -> value: 8100 (81.00°C)
+I (15161) app_main: Updating temperature to ASCII '2' -> value: 5000 (50.00°C)
+I (16161) app_main: Updating temperature to ASCII '5' -> value: 5300 (53.00°C)
+I (17161) app_main: Updating temperature to ASCII '{' -> value: 12300 (123.00°C)
+I (18161) app_main: Updating temperature to ASCII 't' -> value: 11600 (116.00°C)
+I (19161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (20161) app_main: Updating temperature to ASCII 'm' -> value: 10900 (109.00°C)
+I (21161) app_main: Updating temperature to ASCII 'p' -> value: 11200 (112.00°C)
+I (22161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (23161) app_main: Updating temperature to ASCII 'r' -> value: 11400 (114.00°C)
+I (24161) app_main: Updating temperature to ASCII '4' -> value: 5200 (52.00°C)
+I (25161) app_main: Updating temperature to ASCII 't' -> value: 11600 (116.00°C)
+I (26161) app_main: Updating temperature to ASCII 'u' -> value: 11700 (117.00°C)
+I (27161) app_main: Updating temperature to ASCII 'r' -> value: 11400 (114.00°C)
+I (28161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (29161) app_main: Updating temperature to ASCII '_' -> value: 9500 (95.00°C)
+I (30161) app_main: Updating temperature to ASCII '1' -> value: 4900 (49.00°C)
+I (31161) app_main: Updating temperature to ASCII 's' -> value: 11500 (115.00°C)
+I (32161) app_main: Updating temperature to ASCII '_' -> value: 9500 (95.00°C)
+I (33161) app_main: Updating temperature to ASCII 't' -> value: 11600 (116.00°C)
+I (34161) app_main: Updating temperature to ASCII 'h' -> value: 10400 (104.00°C)
+I (35161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (36161) app_main: Updating temperature to ASCII '_' -> value: 9500 (95.00°C)
+I (37161) app_main: Updating temperature to ASCII 'k' -> value: 10700 (107.00°C)
+I (38161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (39161) app_main: Updating temperature to ASCII 'y' -> value: 12100 (121.00°C)
+I (40161) app_main: Updating temperature to ASCII '}' -> value: 12500 (125.00°C)
+I (41161) app_main: Updating temperature to ASCII 'C' -> value: 6700 (67.00°C)
+I (42161) app_main: Updating temperature to ASCII 'Q' -> value: 8100 (81.00°C)
+I (43161) app_main: Updating temperature to ASCII '2' -> value: 5000 (50.00°C)
+E (43481) chip[DIS]: Timeout waiting for mDNS resolution.
+I (44161) app_main: Updating temperature to ASCII '5' -> value: 5300 (53.00°C)
+I (45161) app_main: Updating temperature to ASCII '{' -> value: 12300 (123.00°C)
+I (46161) app_main: Updating temperature to ASCII 't' -> value: 11600 (116.00°C)
+I (47161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (48161) app_main: Updating temperature to ASCII 'm' -> value: 10900 (109.00°C)
+I (49161) app_main: Updating temperature to ASCII 'p' -> value: 11200 (112.00°C)
+I (50161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (51161) app_main: Updating temperature to ASCII 'r' -> value: 11400 (114.00°C)
+I (52161) app_main: Updating temperature to ASCII '4' -> value: 5200 (52.00°C)
+I (53161) app_main: Updating temperature to ASCII 't' -> value: 11600 (116.00°C)
+I (54161) app_main: Updating temperature to ASCII 'u' -> value: 11700 (117.00°C)
+I (55161) app_main: Updating temperature to ASCII 'r' -> value: 11400 (114.00°C)
+I (56161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (57161) app_main: Updating temperature to ASCII '_' -> value: 9500 (95.00°C)
+I (57481) chip[DIS]: Checking node lookup status for E0A2AA1887F9932D-000000000001B669 after 45000 ms
+E (57481) chip[DIS]: OperationalSessionSetup[1:000000000001B669]: operational discovery failed: 32
+E (57491) chip[DMG]: Failed to establish CASE for subscription-resumption with error '32'
+I (57491) chip[IM]: Schedule subscription resumption when failing to establish session, Retries: 1
+I (58161) app_main: Updating temperature to ASCII '1' -> value: 4900 (49.00°C)
+I (59161) app_main: Updating temperature to ASCII 's' -> value: 11500 (115.00°C)
+I (60161) app_main: Updating temperature to ASCII '_' -> value: 9500 (95.00°C)
+I (61161) app_main: Updating temperature to ASCII 't' -> value: 11600 (116.00°C)
+I (62161) app_main: Updating temperature to ASCII 'h' -> value: 10400 (104.00°C)
+I (63161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (64161) app_main: Updating temperature to ASCII '_' -> value: 9500 (95.00°C)
+I (65161) app_main: Updating temperature to ASCII 'k' -> value: 10700 (107.00°C)
+I (66161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (67161) app_main: Updating temperature to ASCII 'y' -> value: 12100 (121.00°C)
+I (68161) app_main: Updating temperature to ASCII '}' -> value: 12500 (125.00°C)
+I (69161) app_main: Updating temperature to ASCII 'C' -> value: 6700 (67.00°C)
+I (70161) app_main: Updating temperature to ASCII 'Q' -> value: 8100 (81.00°C)
+I (71161) app_main: Updating temperature to ASCII '2' -> value: 5000 (50.00°C)
+I (72161) app_main: Updating temperature to ASCII '5' -> value: 5300 (53.00°C)
+I (73161) app_main: Updating temperature to ASCII '{' -> value: 12300 (123.00°C)
+I (74161) app_main: Updating temperature to ASCII 't' -> value: 11600 (116.00°C)
+I (75161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (76161) app_main: Updating temperature to ASCII 'm' -> value: 10900 (109.00°C)
+I (77161) app_main: Updating temperature to ASCII 'p' -> value: 11200 (112.00°C)
+I (78161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (79161) app_main: Updating temperature to ASCII 'r' -> value: 11400 (114.00°C)
+I (80161) app_main: Updating temperature to ASCII '4' -> value: 5200 (52.00°C)
+I (80391) chip[EM]: >>> [E:8980r S:0 M:47743046] (U) Msg RX from 0:4418F0F70D2F3C86 [0000] to 0000000000000000 --- Type 0000:30 (SecureChannel:CASE_Sigma1) (B:196)
+I (80401) chip[IN]: CASE Server received Sigma1 message . Starting handshake. EC 0x3ffc8288
+I (80401) chip[EM]: <<< [E:8980r S:0 M:212530044 (Ack:47743046)] (U) Msg TX from 0000000000000000 to 0:4418F0F70D2F3C86 [0000] [UDP:[FE80::7C95:923C:78B:F456%st1]:33273] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:26)
+I (80431) chip[SC]: Received Sigma1 msg
+I (80441) chip[SC]: CASE matched destination ID: fabricIndex 1, NodeID 0x0000000000000001
+I (81031) chip[EM]: <<< [E:8980r S:0 M:212530045 (Ack:47743046)] (U) Msg TX from 0000000000000000 to 0:4418F0F70D2F3C86 [0000] [UDP:[FE80::7C95:923C:78B:F456%st1]:33273] --- Type 0000:31 (SecureChannel:CASE_Sigma2) (B:751)
+I (81051) chip[EM]: ??1 [E:8980r S:0 M:212530045] (U) Msg Retransmission to 0:0000000000000000 scheduled for 335ms from now [State:Active II:500 AI:300 AT:4000]
+I (81061) chip[SC]: Sent Sigma2 msg
+I (81061) chip[EM]: >>> [E:8980r S:0 M:47743047 (Ack:212530045)] (U) Msg RX from 0:4418F0F70D2F3C86 [0000] to 0000000000000000 --- Type 0000:32 (SecureChannel:CASE_Sigma3) (B:598)
+I (81081) chip[EM]: <<< [E:8980r S:0 M:212530046 (Ack:47743047)] (U) Msg TX from 0000000000000000 to 0:4418F0F70D2F3C86 [0000] [UDP:[FE80::7C95:923C:78B:F456%st1]:33273] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:26)
+I (81101) chip[SC]: Received Sigma3 msg
+E (81111) chip[SC]: The device does not support GetClock_RealTimeMS() API: 6c.  Falling back to Last Known Good UTC Time
+E (82291) chip[DL]: Long dispatch time: 1177 ms, for event type 2
+I (82291) app_main: Updating temperature to ASCII 't' -> value: 11600 (116.00°C)
+I (82291) app_main: Updating temperature to ASCII 'u' -> value: 11700 (117.00°C)
+I (82351) chip[EM]: <<< [E:8980r S:0 M:212530047 (Ack:47743047)] (U) Msg TX from 0000000000000000 to 0:4418F0F70D2F3C86 [0000] [UDP:[FE80::7C95:923C:78B:F456%st1]:33273] --- Type 0000:40 (SecureChannel:StatusReport) (B:34)
+I (82371) chip[EM]: ??1 [E:8980r S:0 M:212530047] (U) Msg Retransmission to 0:0000000000000000 scheduled for 352ms from now [State:Active II:500 AI:300 AT:4000]
+I (82381) chip[SC]: SecureSession[0x3ffc6858, LSID:34015]: State change 'kEstablishing' --> 'kActive'
+I (82381) chip[IN]: CASE Session established to peer: <000000000001B669, 1>
+I (82401) chip[EM]: >>> [E:8981r S:34015 M:15008839] (S) Msg RX from 1:000000000001B669 [932D] to 0000000000000001 --- Type 0001:08 (IM:InvokeCommandRequest) (B:59)
+I (82421) esp_matter_command: Received command 0x00000001 for endpoint 0x0001's cluster 0x00000006
+I (82421) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 0 **********
+I (82431) chip[ZCL]: Toggle ep1 on/off from state 0 to 1
+I (82431) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********
+I (82441) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00004001 is 0 **********
+I (82461) chip[ZCL]: On Command - OffWaitTime :  0
+I (82461) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00004002 is 0 **********
+I (82471) chip[ZCL]: On/Toggle Command - Stop Timer
+I (82471) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00004000 is 1 **********
+I (82481) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 0 **********
+I (82501) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 1 **********
+I (84351) chip[EM]: <<< [E:8981r S:34015 M:17613333 (Ack:15008839)] (S) Msg TX from 0000000000000001 to 1:000000000001B669 [932D] [UDP:[FE80::7C95:923C:78B:F456%st1]:33273] --- Type 0001:09 (IM:InvokeCommandResponse) (B:67)
+I (84371) chip[EM]: ??1 [E:8981r S:34015 M:17613333] (S) Msg Retransmission to 1:000000000001B669 scheduled for 370ms from now [State:Active II:500 AI:300 AT:4000]
+E (84381) chip[DL]: Long dispatch time: 1985 ms, for event type 3
+I (84381) chip[EM]: >>> [E:8980r S:0 M:47743048 (Ack:212530047)] (U) Msg RX from 0:4418F0F70D2F3C86 [0000] to 0000000000000000 --- Type 0000:10 (SecureChannel:StandaloneAck) (B:26)
+I (84401) chip[EM]: >>> [E:8981r S:34015 M:15008839] (S) Msg RX from 1:000000000001B669 [932D] to 0000000000000001 --- Type 0001:08 (IM:InvokeCommandRequest) (B:59)
+I (84421) chip[EM]: <<< [E:8981r S:34015 M:17613334 (Ack:15008839)] (S) Msg TX from 0000000000000001 to 1:000000000001B669 [932D] [UDP:[FE80::7C95:923C:78B:F456%st1]:33273] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+I (84441) chip[EM]: >>> [E:8981r S:34015 M:15008839] (S) Msg RX from 1:000000000001B669 [932D] to 0000000000000001 --- Type 0001:08 (IM:InvokeCommandRequest) (B:59)
+I (84461) chip[EM]: <<< [E:8981r S:34015 M:17613335 (Ack:15008839)] (S) Msg TX from 0000000000000001 to 1:000000000001B669 [932D] [UDP:[FE80::7C95:923C:78B:F456%st1]:33273] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+I (84481) app_main: Updating temperature to ASCII 'r' -> value: 11400 (114.00°C)
+I (84481) chip[EM]: >>> [E:8981r S:34015 M:15008839] (S) Msg RX from 1:000000000001B669 [932D] to 0000000000000001 --- Type 0001:08 (IM:InvokeCommandRequest) (B:59)
+I (84501) chip[EM]: <<< [E:8981r S:34015 M:17613336 (Ack:15008839)] (S) Msg TX from 0000000000000001 to 1:000000000001B669 [932D] [UDP:[FE80::7C95:923C:78B:F456%st1]:33273] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+I (84511) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (84531) chip[EM]: >>> [E:8981r S:34015 M:15008840 (Ack:17613333)] (S) Msg RX from 1:000000000001B669 [932D] to 0000000000000001 --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+I (85161) app_main: Updating temperature to ASCII '_' -> value: 9500 (95.00°C)
+I (86161) app_main: Updating temperature to ASCII '1' -> value: 4900 (49.00°C)
+I (87161) app_main: Updating temperature to ASCII 's' -> value: 11500 (115.00°C)
+I (88161) app_main: Updating temperature to ASCII '_' -> value: 9500 (95.00°C)
+I (89161) app_main: Updating temperature to ASCII 't' -> value: 11600 (116.00°C)
+I (89401) chip[EM]: >>> [E:41889r S:0 M:115895973] (U) Msg RX from 0:81DD51FB37920D47 [0000] to 0000000000000000 --- Type 0000:30 (SecureChannel:CASE_Sigma1) (B:196)
+I (89411) chip[IN]: CASE Server received Sigma1 message . Starting handshake. EC 0x3ffc8288
+I (89421) chip[EM]: <<< [E:41889r S:0 M:212530048 (Ack:115895973)] (U) Msg TX from 0000000000000000 to 0:81DD51FB37920D47 [0000] [UDP:[FE80::7C95:923C:78B:F456%st1]:55414] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:26)
+I (89441) chip[SC]: Received Sigma1 msg
+I (89451) chip[SC]: CASE matched destination ID: fabricIndex 1, NodeID 0x0000000000000001
+I (90041) chip[EM]: <<< [E:41889r S:0 M:212530049 (Ack:115895973)] (U) Msg TX from 0000000000000000 to 0:81DD51FB37920D47 [0000] [UDP:[FE80::7C95:923C:78B:F456%st1]:55414] --- Type 0000:31 (SecureChannel:CASE_Sigma2) (B:751)
+I (90061) chip[EM]: ??1 [E:41889r S:0 M:212530049] (U) Msg Retransmission to 0:0000000000000000 scheduled for 391ms from now [State:Active II:500 AI:300 AT:4000]
+I (90081) chip[SC]: Sent Sigma2 msg
+I (90091) chip[EM]: >>> [E:41889r S:0 M:115895974 (Ack:212530049)] (U) Msg RX from 0:81DD51FB37920D47 [0000] to 0000000000000000 --- Type 0000:32 (SecureChannel:CASE_Sigma3) (B:598)
+I (90101) chip[EM]: <<< [E:41889r S:0 M:212530050 (Ack:115895974)] (U) Msg TX from 0000000000000000 to 0:81DD51FB37920D47 [0000] [UDP:[FE80::7C95:923C:78B:F456%st1]:55414] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:26)
+I (90121) chip[SC]: Received Sigma3 msg
+E (90131) chip[SC]: The device does not support GetClock_RealTimeMS() API: 6c.  Falling back to Last Known Good UTC Time
+E (91311) chip[DL]: Long dispatch time: 1177 ms, for event type 2
+I (91311) app_main: Updating temperature to ASCII 'h' -> value: 10400 (104.00°C)
+I (91311) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (91371) chip[EM]: <<< [E:41889r S:0 M:212530051 (Ack:115895974)] (U) Msg TX from 0000000000000000 to 0:81DD51FB37920D47 [0000] [UDP:[FE80::7C95:923C:78B:F456%st1]:55414] --- Type 0000:40 (SecureChannel:StatusReport) (B:34)
+I (91391) chip[EM]: ??1 [E:41889r S:0 M:212530051] (U) Msg Retransmission to 0:0000000000000000 scheduled for 374ms from now [State:Active II:500 AI:300 AT:4000]
+I (91401) chip[SC]: SecureSession[0x3ffc6930, LSID:34016]: State change 'kEstablishing' --> 'kActive'
+I (91401) chip[IN]: CASE Session established to peer: <000000000001B669, 1>
+I (91421) chip[EM]: >>> [E:41890r S:34016 M:177083638] (S) Msg RX from 1:000000000001B669 [932D] to 0000000000000001 --- Type 0001:08 (IM:InvokeCommandRequest) (B:59)
+I (91431) esp_matter_command: Received command 0x00000000 for endpoint 0x0001's cluster 0x00000006
+I (91441) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 1 **********
+I (91451) chip[ZCL]: Toggle ep1 on/off from state 1 to 0
+I (91451) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 1 **********
+I (91461) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 0 **********
+I (93321) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********
+I (93321) chip[ZCL]: Off completed. reset OnTime to  0
+I (93331) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00004001 is 0 **********
+I (93341) chip[EM]: <<< [E:41890r S:34016 M:90125059 (Ack:177083638)] (S) Msg TX from 0000000000000001 to 1:000000000001B669 [932D] [UDP:[FE80::7C95:923C:78B:F456%st1]:55414] --- Type 0001:09 (IM:InvokeCommandResponse) (B:67)
+I (93361) chip[EM]: ??1 [E:41890r S:34016 M:90125059] (S) Msg Retransmission to 1:000000000001B669 scheduled for 380ms from now [State:Active II:500 AI:300 AT:4000]
+E (93381) chip[DL]: Long dispatch time: 1962 ms, for event type 3
+I (93381) chip[EM]: >>> [E:41889r S:0 M:115895975 (Ack:212530051)] (U) Msg RX from 0:81DD51FB37920D47 [0000] to 0000000000000000 --- Type 0000:10 (SecureChannel:StandaloneAck) (B:26)
+I (93401) chip[EM]: >>> [E:41890r S:34016 M:177083638] (S) Msg RX from 1:000000000001B669 [932D] to 0000000000000001 --- Type 0001:08 (IM:InvokeCommandRequest) (B:59)
+I (93411) chip[EM]: <<< [E:41890r S:34016 M:90125060 (Ack:177083638)] (S) Msg TX from 0000000000000001 to 1:000000000001B669 [932D] [UDP:[FE80::7C95:923C:78B:F456%st1]:55414] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+I (93431) app_main: Updating temperature to ASCII '_' -> value: 9500 (95.00°C)
+I (93441) chip[EM]: >>> [E:41890r S:34016 M:177083638] (S) Msg RX from 1:000000000001B669 [932D] to 0000000000000001 --- Type 0001:08 (IM:InvokeCommandRequest) (B:59)
+I (93461) chip[EM]: <<< [E:41890r S:34016 M:90125061 (Ack:177083638)] (S) Msg TX from 0000000000000001 to 1:000000000001B669 [932D] [UDP:[FE80::7C95:923C:78B:F456%st1]:55414] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+I (93481) chip[EM]: >>> [E:41890r S:34016 M:177083638] (S) Msg RX from 1:000000000001B669 [932D] to 0000000000000001 --- Type 0001:08 (IM:InvokeCommandRequest) (B:59)
+I (93491) chip[EM]: <<< [E:41890r S:34016 M:90125062 (Ack:177083638)] (S) Msg TX from 0000000000000001 to 1:000000000001B669 [932D] [UDP:[FE80::7C95:923C:78B:F456%st1]:55414] --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+I (93511) app_main: Updating temperature to ASCII 'k' -> value: 10700 (107.00°C)
+I (93511) chip[EM]: >>> [E:41890r S:34016 M:177083639 (Ack:90125059)] (S) Msg RX from 1:000000000001B669 [932D] to 0000000000000001 --- Type 0000:10 (SecureChannel:StandaloneAck) (B:34)
+I (94161) app_main: Updating temperature to ASCII '3' -> value: 5100 (51.00°C)
+I (95161) app_main: Updating temperature to ASCII 'y' -> value: 12100 (121.00°C)
+I (96161) app_main: Updating temperature to ASCII '}' -> value: 12500 (125.00°C)

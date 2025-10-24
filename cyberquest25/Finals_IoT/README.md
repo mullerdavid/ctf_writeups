@@ -69,3 +69,9 @@ Challenge difficulty: medium
 # Writeup
 
 [Writeup](WRITEUP.md)
+
+# Hardvare
+
+The device is a [DFROBOT DFR0676](https://wiki.dfrobot.com/e-Ink_Display_Module_for_ESP32_SKU_DFR0676).
+
+It connects to the hardcoded WIFI with SSID `CyberQuest` and password `HitTheRoadJack`.
