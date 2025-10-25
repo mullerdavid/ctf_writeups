@@ -8,6 +8,8 @@ There were 8 clicks of turn lane indicator every 5-10 minutes.
 
 <video src="workdir/device.mp4" controls ></video>
 
+[Watch device.mp4](workdir/device.mp4)
+
 *Thanks `baltazar` for the image/video.*
 
 # CAN
