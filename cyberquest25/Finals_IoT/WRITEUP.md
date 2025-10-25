@@ -192,7 +192,9 @@ The `basicinformation` help has the list of available attributes. One of them re
 
 ## Pairing with phone
 
-Using the XOR decoded QR code, it is possible to commission it with phone instead of the `chip-tool`. Reading the temperature sensor on matter is harder this way.
+Using the XOR decoded QR code, it is possible to commission it with phone instead of the `chip-tool`. Reading the temperature sensor over matter is harder this way. On iOS, the hardware version is not visible at all.
+
+![](screenshots/6.jpg)
 
 ## Programmable Button
 After commissioning, pressing the Programmable Button (IO39) is also switching the light switch, revealing the other flag.
