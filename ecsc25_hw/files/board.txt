@@ -1,0 +1,11 @@
+Main <-> Crypto
+	PA4 <- 100 -> PA4
+	PA5 <- 100 -> PA5
+	PA6 <- 100 -> PA6
+	PA7 <- 100 -> PA7
+Main
+	PA2 pulled up to VCC (4.7k)
+Crypto
+	PA2 pulled down to GND (4.7k)
+LED
+	PF4 <- 2.2k -> LED
