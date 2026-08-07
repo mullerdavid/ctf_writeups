@@ -1,0 +1,206 @@
+---- Opened the serial port COM5 ----
+14:59:09:249 ---- Sent utf8 encoded message: "debug\r\n" ----
+14:59:09:249 -> debug
+14:59:09:249 -> dbg: enabled debugging
+14:59:09:249 -> $ 
+14:59:14:406 ---- Sent utf8 encoded message: "setnonce,4919\r\n" ----
+14:59:14:373 -> setnonce,4919
+14:59:14:379 -> dbg: set nonce to 4919
+14:59:14:379 -> error: not allowed to set nonce=4919
+14:59:14:385 -> result=0
+14:59:14:385 -> $ 
+14:59:18:758 ---- Sent utf8 encoded message: "setnonce,1\r\n" ----
+14:59:18:763 -> setnonce,1
+14:59:18:763 -> dbg: set nonce to 1
+14:59:18:763 -> dbg: current nonce=1
+14:59:18:763 -> result=1
+14:59:18:765 -> $ 
+14:59:20:652 ---- Sent utf8 encoded message: "enctxt,test123\r\n" ----
+14:59:20:661 -> enctxt,test123
+14:59:20:661 -> dbg: enctxt: test123
+14:59:20:670 -> dbg: executing set nonce cmd
+14:59:20:670 -> dbg: calculating _crc16_update for nonce
+14:59:20:673 -> dbg: setting nonce to 1
+14:59:20:709 -> dbg: verify set nonce response
+14:59:20:709 -> dbg: result=1
+14:59:20:745 -> dbg: executing get stream cmd
+14:59:20:781 -> dbg: parse response
+14:59:20:793 -> dbg: verify _crc16_update result
+14:59:20:793 -> dbg: perform encryption
+14:59:20:817 -> ciphertext=0c8aa1fe578e32
+14:59:20:817 -> dbg: result=1
+14:59:20:841 -> $ 
+14:59:21:798 ---- Sent utf8 encoded message: "enctxt,test123\r\n" ----
+14:59:21:801 -> enctxt,test123
+14:59:21:801 -> dbg: enctxt: test123
+14:59:21:813 -> dbg: executing set nonce cmd
+14:59:21:813 -> dbg: calculating _crc16_update for nonce
+14:59:21:825 -> dbg: setting nonce to 1
+14:59:21:861 -> dbg: verify set nonce response
+14:59:21:861 -> dbg: result=1
+14:59:21:885 -> dbg: executing get stream cmd
+14:59:21:921 -> dbg: parse response
+14:59:21:933 -> dbg: verify _crc16_update result
+14:59:21:933 -> dbg: perform encryption
+14:59:21:971 -> ciphertext=0c8aa1fe578e32
+14:59:21:971 -> dbg: result=1
+14:59:21:981 -> $ 
+14:59:24:824 ---- Sent utf8 encoded message: "enctxt,test123test\r\n" ----
+14:59:24:825 -> enctxt,test123test
+14:59:24:837 -> dbg: enctxt: test123test
+14:59:24:843 -> dbg: executing set nonce cmd
+14:59:24:843 -> dbg: calculating _crc16_update for nonce
+14:59:24:849 -> dbg: setting nonce to 1
+14:59:24:887 -> dbg: verify set nonce response
+14:59:24:887 -> dbg: result=1
+14:59:24:921 -> dbg: executing get stream cmd
+14:59:24:957 -> dbg: parse response
+14:59:24:957 -> dbg: verify _crc16_update result
+14:59:24:969 -> dbg: perform encryption
+14:59:24:993 -> ciphertext=0c8aa1fe578e3233ddec63
+14:59:24:993 -> dbg: result=1
+14:59:25:017 -> $ 
+14:59:27:926 ---- Sent utf8 encoded message: "setnonce,2\r\n" ----
+14:59:27:930 -> setnonce,2
+14:59:27:930 -> dbg: set nonce to 2
+14:59:27:930 -> dbg: current nonce=2
+14:59:27:930 -> result=1
+14:59:27:933 -> $ 
+14:59:30:500 ---- Sent utf8 encoded message: "enctxt,test123\r\n" ----
+14:59:30:489 -> enctxt,test123
+14:59:30:489 -> dbg: enctxt: test123
+14:59:30:501 -> dbg: executing set nonce cmd
+14:59:30:501 -> dbg: calculating _crc16_update for nonce
+14:59:30:513 -> dbg: setting nonce to 2
+14:59:30:537 -> dbg: verify set nonce response
+14:59:30:549 -> dbg: result=1
+14:59:30:574 -> dbg: executing get stream cmd
+14:59:30:609 -> dbg: parse response
+14:59:30:621 -> dbg: verify _crc16_update result
+14:59:30:621 -> dbg: perform encryption
+14:59:30:645 -> ciphertext=7888a49bca9edd
+14:59:30:657 -> dbg: result=1
+14:59:30:669 -> $ 
+14:59:32:004 ---- Sent utf8 encoded message: "enctxt,test123\r\n" ----
+14:59:32:013 -> enctxt,test123
+14:59:32:013 -> dbg: enctxt: test123
+14:59:32:022 -> dbg: executing set nonce cmd
+14:59:32:022 -> dbg: calculating _crc16_update for nonce
+14:59:32:025 -> dbg: setting nonce to 2
+14:59:32:061 -> dbg: verify set nonce response
+14:59:32:061 -> dbg: result=1
+14:59:32:097 -> dbg: executing get stream cmd
+14:59:32:137 -> dbg: parse response
+14:59:32:145 -> dbg: verify _crc16_update result
+14:59:32:145 -> dbg: perform encryption
+14:59:32:169 -> ciphertext=7888a49bca9edd
+14:59:32:169 -> dbg: result=1
+14:59:32:193 -> $ 
+14:59:33:968 ---- Sent utf8 encoded message: "enctxt,test123test\r\n" ----
+14:59:33:945 -> enctxt,test123test
+14:59:33:945 -> dbg: enctxt: test123test
+14:59:33:955 -> dbg: executing set nonce cmd
+14:59:33:955 -> dbg: calculating _crc16_update for nonce
+14:59:33:957 -> dbg: setting nonce to 2
+14:59:33:993 -> dbg: verify set nonce response
+14:59:34:005 -> dbg: result=1
+14:59:34:029 -> dbg: executing get stream cmd
+14:59:34:065 -> dbg: parse response
+14:59:34:077 -> dbg: verify _crc16_update result
+14:59:34:077 -> dbg: perform encryption
+14:59:34:101 -> ciphertext=7888a49bca9edd0fc0d87d
+14:59:34:101 -> dbg: result=1
+14:59:34:125 -> $ 
+14:59:36:872 ---- Sent utf8 encoded message: "setnonce,1337\r\n" ----
+14:59:36:873 -> setnonce,1337
+14:59:36:873 -> dbg: set nonce to 1337
+14:59:36:889 -> dbg: current nonce=1337
+14:59:36:889 -> result=1
+14:59:36:889 -> $ 
+14:59:38:375 ---- Sent utf8 encoded message: "enctxt,test123\r\n" ----
+14:59:38:385 -> enctxt,test123
+14:59:38:385 -> dbg: enctxt: test123
+14:59:38:393 -> dbg: executing set nonce cmd
+14:59:38:393 -> dbg: calculating _crc16_update for nonce
+14:59:38:397 -> dbg: setting nonce to 1337
+14:59:38:433 -> dbg: verify set nonce response
+14:59:38:433 -> dbg: result=1
+14:59:38:469 -> dbg: executing get stream cmd
+14:59:38:505 -> dbg: parse response
+14:59:38:517 -> dbg: verify _crc16_update result
+14:59:38:517 -> dbg: perform encryption
+14:59:38:541 -> ciphertext=434dc848cc636b
+14:59:38:541 -> dbg: result=1
+14:59:38:565 -> $ 
+14:59:39:766 ---- Sent utf8 encoded message: "enctxt,test123\r\n" ----
+14:59:39:765 -> enctxt,test123
+14:59:39:777 -> dbg: enctxt: test123
+14:59:39:784 -> dbg: executing set nonce cmd
+14:59:39:784 -> dbg: calculating _crc16_update for nonce
+14:59:39:789 -> dbg: setting nonce to 1337
+14:59:39:825 -> dbg: verify set nonce response
+14:59:39:825 -> dbg: result=1
+14:59:39:861 -> dbg: executing get stream cmd
+14:59:39:897 -> dbg: parse response
+14:59:39:909 -> dbg: verify _crc16_update result
+14:59:39:909 -> dbg: perform encryption
+14:59:39:933 -> ciphertext=434dc848cc636b
+14:59:39:933 -> dbg: result=1
+14:59:39:957 -> $ 
+14:59:41:941 ---- Sent utf8 encoded message: "enctxt,test123test\r\n" ----
+14:59:41:949 -> enctxt,test123test
+14:59:41:949 -> dbg: enctxt: test123test
+14:59:41:959 -> dbg: executing set nonce cmd
+14:59:41:959 -> dbg: calculating _crc16_update for nonce
+14:59:41:961 -> dbg: setting nonce to 1337
+14:59:42:004 -> dbg: verify set nonce response
+14:59:42:009 -> dbg: result=1
+14:59:42:033 -> dbg: executing get stream cmd
+14:59:42:069 -> dbg: parse response
+14:59:42:081 -> dbg: verify _crc16_update result
+14:59:42:081 -> dbg: perform encryption
+14:59:42:105 -> ciphertext=434dc848cc636b2883ae74
+14:59:42:105 -> dbg: result=1
+14:59:42:129 -> $ 
+14:59:47:362 ---- Sent utf8 encoded message: "encflag\r\n" ----
+14:59:47:361 -> encflag
+14:59:47:373 -> dbg: executing set nonce cmd
+14:59:47:379 -> dbg: calculating _crc16_update for nonce
+14:59:47:379 -> dbg: setting nonce to 4919
+14:59:47:422 -> dbg: verify set nonce response
+14:59:47:422 -> dbg: result=1
+14:59:47:457 -> dbg: executing get stream cmd
+14:59:47:481 -> dbg: parse response
+14:59:47:493 -> dbg: verify _crc16_update result
+14:59:47:505 -> dbg: perform encryption
+14:59:47:525 -> ciphertext=f49eb500de2c7cfdf49f0a7ff16b25b838d4814aa056190909435a
+14:59:47:529 -> dbg: result=1
+14:59:47:553 -> $ 
+14:59:48:334 ---- Sent utf8 encoded message: "encflag\r\n" ----
+14:59:48:333 -> encflag
+14:59:48:345 -> dbg: executing set nonce cmd
+14:59:48:351 -> dbg: calculating _crc16_update for nonce
+14:59:48:351 -> dbg: setting nonce to 4919
+14:59:48:393 -> dbg: verify set nonce response
+14:59:48:393 -> dbg: result=1
+14:59:48:429 -> dbg: executing get stream cmd
+14:59:48:455 -> dbg: parse response
+14:59:48:465 -> dbg: verify _crc16_update result
+14:59:48:477 -> dbg: perform encryption
+14:59:48:502 -> ciphertext=f49eb500de2c7cfdf49f0a7ff16b25b838d4814aa056190909435a
+14:59:48:503 -> dbg: result=1
+14:59:48:525 -> $ 
+14:59:49:272 ---- Sent utf8 encoded message: "encflag\r\n" ----
+14:59:49:281 -> encflag
+14:59:49:287 -> dbg: executing set nonce cmd
+14:59:49:287 -> dbg: calculating _crc16_update for nonce
+14:59:49:293 -> dbg: setting nonce to 4919
+14:59:49:329 -> dbg: verify set nonce response
+14:59:49:329 -> dbg: result=1
+14:59:49:365 -> dbg: executing get stream cmd
+14:59:49:401 -> dbg: parse response
+14:59:49:401 -> dbg: verify _crc16_update result
+14:59:49:413 -> dbg: perform encryption
+14:59:49:436 -> ciphertext=f49eb500de2c7cfdf49f0a7ff16b25b838d4814aa056190909435a
+14:59:49:437 -> dbg: result=1
+14:59:49:461 -> $ 
