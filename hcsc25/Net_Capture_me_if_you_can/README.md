@@ -27,3 +27,11 @@ Challenge description and source files in Capture me if you can #1.
 # Writeup
 
 [Writeup](WRITEUP.md)
+
+# Remarks
+
+Use `liboqs` `0.13.0`, current `main` does not support `Dilithium5` with that name anymore.
+
+```dockerfile
+RUN git clone --depth 1 --branch 0.13.0 --single-branch https://github.com/open-quantum-safe/liboqs
+```
