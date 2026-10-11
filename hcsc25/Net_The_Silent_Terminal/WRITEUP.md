@@ -1,22 +1,26 @@
-# Heading level 1
+# Zip
 
-TODO: writeup comes here
-
-## Relative screenshot image
-
+The zip contains a network capture.
 
 ![](screenshots/1.png)
 
-## Link
+# Telnet
 
-This is a [Github](https://github.com) link. 
+There is a telnet session, with credentials inside.
 
-This is a [link](#code-highligh) to heading.
+![](screenshots/2.png)
 
-## Code highligh
+The credentials are `john:CUReatOP`.
 
-This is `inline`.
+# Terminal
+
+Connecting to the service with the credentials returns the flag.
 
 ```bash
-echo "Syntax highlight"
+nc 10.10.1.12 9239
 ```
+
+![](screenshots/3.png)
+
+# Flag
+`HCSC{PL41n_T3xT_TrnSf3r_1s_R1sKy}`
