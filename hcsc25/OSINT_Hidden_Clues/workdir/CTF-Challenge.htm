@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Challenge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0px 0px 20px rgba(0, 255, 170, 0.3);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, #00ffaa, #00aaff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.8;
+            margin-left: 8px;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .hint {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .container:hover {
+            box-shadow: 0px 0px 30px rgba(0, 255, 170, 0.6);
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="title">Welcome to the CTF Challenge</span>
+        <span class="subtitle">Can you find the hidden clue?</span>
+        <p class="hint">(Hint: Sometimes things are not what they seem... 🔍)</p>
+        <div class="hidden">first clue: Q2lwaDNySHVudA== </div>
+    </div>
+
+
+
+</body></html>
