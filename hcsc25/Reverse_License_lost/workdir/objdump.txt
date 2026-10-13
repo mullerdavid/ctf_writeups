@@ -1,0 +1,831 @@
+TEXT license/license.CheckValidity(SB) /home/incarrnati0n/Documents/CTF/hcsc25/ctf-licenselost/backend/license/license.go
+  license.go:16		0x644580		4c8d642490		LEAQ -0x70(SP), R12				
+  license.go:16		0x644585		4d3b6610		CMPQ R12, 0x10(R14)				
+  license.go:16		0x644589		0f86d6070000		JBE 0x644d65					
+  license.go:16		0x64458f		55			PUSHQ BP					
+  license.go:16		0x644590		4889e5			MOVQ SP, BP					
+  license.go:16		0x644593		4881ece8000000		SUBQ $0xe8, SP					
+  header.go:40		0x64459a		48898c2408010000	MOVQ CX, 0x108(SP)				
+  header.go:40		0x6445a2		48899c2400010000	MOVQ BX, 0x100(SP)				
+  header.go:40		0x6445aa		48898424f8000000	MOVQ AX, 0xf8(SP)				
+  license.go:17		0x6445b2		488b4818		MOVQ 0x18(AX), CX				
+  license.go:17		0x6445b6		4889d8			MOVQ BX, AX					
+  license.go:17		0x6445b9		ffd1			CALL CX						
+  license.go:17		0x6445bb		4889442458		MOVQ AX, 0x58(SP)				
+  header.go:40		0x6445c0		90			NOPL						
+  header.go:22		0x6445c1		488d057dc20e00		LEAQ 0xec27d(IP), AX				
+  header.go:22		0x6445c8		bb1b000000		MOVL $0x1b, BX					
+  header.go:22		0x6445cd		e84e0ef8ff		CALL net/textproto.CanonicalMIMEHeaderKey(SB)	
+  header.go:22		0x6445d2		4889442478		MOVQ AX, 0x78(SP)				
+  header.go:22		0x6445d7		48895c2438		MOVQ BX, 0x38(SP)				
+  header.go:22		0x6445dc		488d05bd4e0800		LEAQ 0x84ebd(IP), AX				
+  header.go:22		0x6445e3		e87828ddff		CALL runtime.newobject(SB)			
+  header.go:22		0x6445e8		4889442470		MOVQ AX, 0x70(SP)				
+  header.go:22		0x6445ed		48c7400801000000	MOVQ $0x1, 0x8(AX)				
+  header.go:22		0x6445f5		488d0dd46b1500		LEAQ 0x156bd4(IP), CX				
+  header.go:22		0x6445fc		488908			MOVQ CX, 0(AX)					
+  header.go:22		0x6445ff		488d051a410c00		LEAQ 0xc411a(IP), AX				
+  header.go:22		0x644606		488b5c2458		MOVQ 0x58(SP), BX				
+  header.go:22		0x64460b		488b4c2478		MOVQ 0x78(SP), CX				
+  header.go:22		0x644610		488b7c2438		MOVQ 0x38(SP), DI				
+  header.go:22		0x644615		e8c64bdcff		CALL runtime.mapassign_faststr(SB)		
+  header.go:22		0x64461a		48c7400801000000	MOVQ $0x1, 0x8(AX)				
+  header.go:22		0x644622		48c7401001000000	MOVQ $0x1, 0x10(AX)				
+  header.go:22		0x64462a		833d2f7b380000		CMPL runtime.writeBarrier(SB), $0x0		
+  header.go:22		0x644631		7507			JNE 0x64463a					
+  header.go:22		0x644633		488b4c2470		MOVQ 0x70(SP), CX				
+  header.go:22		0x644638		eb14			JMP 0x64464e					
+  header.go:22		0x64463a		e8e138e3ff		CALL runtime.gcWriteBarrier2(SB)		
+  header.go:22		0x64463f		488b4c2470		MOVQ 0x70(SP), CX				
+  header.go:22		0x644644		49890b			MOVQ CX, 0(R11)					
+  header.go:22		0x644647		488b10			MOVQ 0(AX), DX					
+  header.go:22		0x64464a		49895308		MOVQ DX, 0x8(R11)				
+  header.go:22		0x64464e		488908			MOVQ CX, 0(AX)					
+  license.go:18		0x644651		488b8c24f8000000	MOVQ 0xf8(SP), CX				
+  license.go:18		0x644659		488b4918		MOVQ 0x18(CX), CX				
+  license.go:18		0x64465d		488b842400010000	MOVQ 0x100(SP), AX				
+  license.go:18		0x644665		ffd1			CALL CX						
+  license.go:18		0x644667		4889442450		MOVQ AX, 0x50(SP)				
+  header.go:40		0x64466c		90			NOPL						
+  header.go:22		0x64466d		488d05fbc90e00		LEAQ 0xec9fb(IP), AX				
+  header.go:22		0x644674		bb1c000000		MOVL $0x1c, BX					
+  header.go:22		0x644679		e8a20df8ff		CALL net/textproto.CanonicalMIMEHeaderKey(SB)	
+  header.go:22		0x64467e		4889442478		MOVQ AX, 0x78(SP)				
+  header.go:22		0x644683		48895c2438		MOVQ BX, 0x38(SP)				
+  header.go:22		0x644688		488d05114e0800		LEAQ 0x84e11(IP), AX				
+  header.go:22		0x64468f		e8cc27ddff		CALL runtime.newobject(SB)			
+  header.go:22		0x644694		4889442470		MOVQ AX, 0x70(SP)				
+  header.go:22		0x644699		48c7400813000000	MOVQ $0x13, 0x8(AX)				
+  header.go:22		0x6446a1		488d0d248a0e00		LEAQ 0xe8a24(IP), CX				
+  header.go:22		0x6446a8		488908			MOVQ CX, 0(AX)					
+  header.go:22		0x6446ab		488d056e400c00		LEAQ 0xc406e(IP), AX				
+  header.go:22		0x6446b2		488b5c2450		MOVQ 0x50(SP), BX				
+  header.go:22		0x6446b7		488b4c2478		MOVQ 0x78(SP), CX				
+  header.go:22		0x6446bc		488b7c2438		MOVQ 0x38(SP), DI				
+  header.go:22		0x6446c1		e81a4bdcff		CALL runtime.mapassign_faststr(SB)		
+  header.go:22		0x6446c6		48c7400801000000	MOVQ $0x1, 0x8(AX)				
+  header.go:22		0x6446ce		48c7401001000000	MOVQ $0x1, 0x10(AX)				
+  header.go:22		0x6446d6		833d837a380000		CMPL runtime.writeBarrier(SB), $0x0		
+  header.go:22		0x6446dd		7507			JNE 0x6446e6					
+  header.go:22		0x6446df		488b4c2470		MOVQ 0x70(SP), CX				
+  header.go:22		0x6446e4		eb14			JMP 0x6446fa					
+  header.go:22		0x6446e6		e83538e3ff		CALL runtime.gcWriteBarrier2(SB)		
+  header.go:22		0x6446eb		488b4c2470		MOVQ 0x70(SP), CX				
+  header.go:22		0x6446f0		49890b			MOVQ CX, 0(R11)					
+  header.go:22		0x6446f3		488b10			MOVQ 0(AX), DX					
+  header.go:22		0x6446f6		49895308		MOVQ DX, 0x8(R11)				
+  header.go:22		0x6446fa		488908			MOVQ CX, 0(AX)					
+  license.go:19		0x6446fd		488b8c24f8000000	MOVQ 0xf8(SP), CX				
+  license.go:19		0x644705		488b4918		MOVQ 0x18(CX), CX				
+  license.go:19		0x644709		488b842400010000	MOVQ 0x100(SP), AX				
+  license.go:19		0x644711		ffd1			CALL CX						
+  license.go:19		0x644713		4889442448		MOVQ AX, 0x48(SP)				
+  header.go:40		0x644718		90			NOPL						
+  header.go:22		0x644719		488d056bc90e00		LEAQ 0xec96b(IP), AX				
+  header.go:22		0x644720		bb1c000000		MOVL $0x1c, BX					
+  header.go:22		0x644725		e8f60cf8ff		CALL net/textproto.CanonicalMIMEHeaderKey(SB)	
+  header.go:22		0x64472a		4889442478		MOVQ AX, 0x78(SP)				
+  header.go:22		0x64472f		48895c2438		MOVQ BX, 0x38(SP)				
+  header.go:22		0x644734		488d05654d0800		LEAQ 0x84d65(IP), AX				
+  header.go:22		0x64473b		0f1f440000		NOPL 0(AX)(AX*1)				
+  header.go:22		0x644740		e81b27ddff		CALL runtime.newobject(SB)			
+  header.go:22		0x644745		4889442470		MOVQ AX, 0x70(SP)				
+  header.go:22		0x64474a		48c740088a000000	MOVQ $0x8a, 0x8(AX)				
+  header.go:22		0x644752		488d0d9cad0f00		LEAQ 0xfad9c(IP), CX				
+  header.go:22		0x644759		488908			MOVQ CX, 0(AX)					
+  header.go:22		0x64475c		488d05bd3f0c00		LEAQ 0xc3fbd(IP), AX				
+  header.go:22		0x644763		488b5c2448		MOVQ 0x48(SP), BX				
+  header.go:22		0x644768		488b4c2478		MOVQ 0x78(SP), CX				
+  header.go:22		0x64476d		488b7c2438		MOVQ 0x38(SP), DI				
+  header.go:22		0x644772		e8694adcff		CALL runtime.mapassign_faststr(SB)		
+  header.go:22		0x644777		48c7400801000000	MOVQ $0x1, 0x8(AX)				
+  header.go:22		0x64477f		48c7401001000000	MOVQ $0x1, 0x10(AX)				
+  header.go:22		0x644787		833dd279380000		CMPL runtime.writeBarrier(SB), $0x0		
+  header.go:22		0x64478e		7507			JNE 0x644797					
+  header.go:22		0x644790		488b4c2470		MOVQ 0x70(SP), CX				
+  header.go:22		0x644795		eb14			JMP 0x6447ab					
+  header.go:22		0x644797		e88437e3ff		CALL runtime.gcWriteBarrier2(SB)		
+  header.go:22		0x64479c		488b4c2470		MOVQ 0x70(SP), CX				
+  header.go:22		0x6447a1		49890b			MOVQ CX, 0(R11)					
+  header.go:22		0x6447a4		488b10			MOVQ 0(AX), DX					
+  header.go:22		0x6447a7		49895308		MOVQ DX, 0x8(R11)				
+  header.go:22		0x6447ab		488908			MOVQ CX, 0(AX)					
+  license.go:20		0x6447ae		488b8c24f8000000	MOVQ 0xf8(SP), CX				
+  license.go:20		0x6447b6		488b4918		MOVQ 0x18(CX), CX				
+  license.go:20		0x6447ba		488b842400010000	MOVQ 0x100(SP), AX				
+  license.go:20		0x6447c2		ffd1			CALL CX						
+  license.go:20		0x6447c4		4889442468		MOVQ AX, 0x68(SP)				
+  header.go:22		0x6447c9		488d056c5f0e00		LEAQ 0xe5f6c(IP), AX				
+  header.go:22		0x6447d0		bb0c000000		MOVL $0xc, BX					
+  header.go:22		0x6447d5		e8460cf8ff		CALL net/textproto.CanonicalMIMEHeaderKey(SB)	
+  header.go:22		0x6447da		4889442478		MOVQ AX, 0x78(SP)				
+  header.go:22		0x6447df		48895c2438		MOVQ BX, 0x38(SP)				
+  header.go:22		0x6447e4		488d05b54c0800		LEAQ 0x84cb5(IP), AX				
+  header.go:22		0x6447eb		e87026ddff		CALL runtime.newobject(SB)			
+  header.go:22		0x6447f0		4889442470		MOVQ AX, 0x70(SP)				
+  header.go:22		0x6447f5		48c7400810000000	MOVQ $0x10, 0x8(AX)				
+  header.go:22		0x6447fd		488d0dde750e00		LEAQ 0xe75de(IP), CX				
+  header.go:22		0x644804		488908			MOVQ CX, 0(AX)					
+  header.go:22		0x644807		488d05123f0c00		LEAQ 0xc3f12(IP), AX				
+  header.go:22		0x64480e		488b5c2468		MOVQ 0x68(SP), BX				
+  header.go:22		0x644813		488b4c2478		MOVQ 0x78(SP), CX				
+  header.go:22		0x644818		488b7c2438		MOVQ 0x38(SP), DI				
+  header.go:22		0x64481d		0f1f00			NOPL 0(AX)					
+  header.go:22		0x644820		e8bb49dcff		CALL runtime.mapassign_faststr(SB)		
+  header.go:22		0x644825		48c7400801000000	MOVQ $0x1, 0x8(AX)				
+  header.go:22		0x64482d		48c7401001000000	MOVQ $0x1, 0x10(AX)				
+  header.go:22		0x644835		833d2479380000		CMPL runtime.writeBarrier(SB), $0x0		
+  header.go:22		0x64483c		7507			JNE 0x644845					
+  header.go:22		0x64483e		488b542470		MOVQ 0x70(SP), DX				
+  header.go:22		0x644843		eb14			JMP 0x644859					
+  header.go:22		0x644845		e8d636e3ff		CALL runtime.gcWriteBarrier2(SB)		
+  header.go:22		0x64484a		488b542470		MOVQ 0x70(SP), DX				
+  header.go:22		0x64484f		498913			MOVQ DX, 0(R11)					
+  header.go:22		0x644852		4c8b00			MOVQ 0(AX), R8					
+  header.go:22		0x644855		4d894308		MOVQ R8, 0x8(R11)				
+  header.go:22		0x644859		488910			MOVQ DX, 0(AX)					
+  license.go:22		0x64485c		488b942408010000	MOVQ 0x108(SP), DX				
+  license.go:22		0x644864		48837a0804		CMPQ 0x8(DX), $0x4				
+  header.go:40		0x644869		752f			JNE 0x64489a					
+  license.go:22		0x64486b		4c8b02			MOVQ 0(DX), R8					
+  license.go:22		0x64486e		41813848454144		CMPL 0(R8), $0x44414548				
+  license.go:22		0x644875		7523			JNE 0x64489a					
+  license.go:23		0x644877		488b8c24f8000000	MOVQ 0xf8(SP), CX				
+  license.go:23		0x64487f		488b4928		MOVQ 0x28(CX), CX				
+  license.go:23		0x644883		488b842400010000	MOVQ 0x100(SP), AX				
+  license.go:23		0x64488b		bbc8000000		MOVL $0xc8, BX					
+  license.go:23		0x644890		ffd1			CALL CX						
+  license.go:26		0x644892		488b942408010000	MOVQ 0x108(SP), DX				
+  license.go:26		0x64489a		48837a0807		CMPQ 0x8(DX), $0x7				
+  license.go:26		0x64489f		90			NOPL						
+  license.go:26		0x6448a0		753f			JNE 0x6448e1					
+  license.go:26		0x6448a2		4c8b02			MOVQ 0(DX), R8					
+  license.go:26		0x6448a5		4181384f505449		CMPL 0(R8), $0x4954504f				
+  license.go:26		0x6448ac		7533			JNE 0x6448e1					
+  license.go:26		0x6448ae		66418178044f4e		CMPW 0x4(R8), $0x4e4f				
+  license.go:26		0x6448b5		752a			JNE 0x6448e1					
+  license.go:26		0x6448b7		4180780653		CMPB 0x6(R8), $0x53				
+  license.go:26		0x6448bc		7523			JNE 0x6448e1					
+  license.go:27		0x6448be		488b8c24f8000000	MOVQ 0xf8(SP), CX				
+  license.go:27		0x6448c6		488b4928		MOVQ 0x28(CX), CX				
+  license.go:27		0x6448ca		488b842400010000	MOVQ 0x100(SP), AX				
+  license.go:27		0x6448d2		bbc8000000		MOVL $0xc8, BX					
+  license.go:27		0x6448d7		ffd1			CALL CX						
+  license.go:30		0x6448d9		488b942408010000	MOVQ 0x108(SP), DX				
+  license.go:30		0x6448e1		48837a0804		CMPQ 0x8(DX), $0x4				
+  license.go:30		0x6448e6		7555			JNE 0x64493d					
+  license.go:30		0x6448e8		4c8b02			MOVQ 0(DX), R8					
+  license.go:30		0x6448eb		418138504f5354		CMPL 0(R8), $0x54534f50				
+  license.go:30		0x6448f2		7549			JNE 0x64493d					
+  license.go:35		0x6448f4		488d05a5df0900		LEAQ 0x9dfa5(IP), AX				
+  license.go:35		0x6448fb		0f1f440000		NOPL 0(AX)(AX*1)				
+  license.go:35		0x644900		e85b25ddff		CALL runtime.newobject(SB)			
+  license.go:35		0x644905		48898424e0000000	MOVQ AX, 0xe0(SP)				
+  license.go:37		0x64490d		488b8c2408010000	MOVQ 0x108(SP), CX				
+  license.go:37		0x644915		488b5140		MOVQ 0x40(CX), DX				
+  license.go:37		0x644919		488b4948		MOVQ 0x48(CX), CX				
+  license.go:37		0x64491d		48894c2440		MOVQ CX, 0x40(SP)				
+  license.go:37		0x644922		4885d2			TESTQ DX, DX					
+  license.go:37		0x644925		7447			JE 0x64496e					
+  license.go:37		0x644927		488b5a08		MOVQ 0x8(DX), BX				
+  license.go:37		0x64492b		488b358ea73500		MOVQ license/license..typeAssert.0(SB), SI	
+  license.go:37		0x644932		488b3e			MOVQ 0(SI), DI					
+  license.go:37		0x644935		8b5210			MOVL 0x10(DX), DX				
+  license.go:37		0x644938		e9ea030000		JMP 0x644d27					
+  license.go:31		0x64493d		488b8424f8000000	MOVQ 0xf8(SP), AX				
+  license.go:31		0x644945		488b9c2400010000	MOVQ 0x100(SP), BX				
+  license.go:31		0x64494d		488d0da0800e00		LEAQ 0xe80a0(IP), CX				
+  license.go:31		0x644954		bf12000000		MOVL $0x12, DI					
+  license.go:31		0x644959		be90010000		MOVL $0x190, SI					
+  license.go:31		0x64495e		6690			NOPW						
+  license.go:31		0x644960		e89bf9fcff		CALL net/http.Error(SB)				
+  license.go:32		0x644965		4881c4e8000000		ADDQ $0xe8, SP					
+  license.go:32		0x64496c		5d			POPQ BP						
+  license.go:32		0x64496d		c3			RET						
+  license.go:37		0x64496e		4889542478		MOVQ DX, 0x78(SP)				
+  stream.go:32		0x644973		488d05c60a0d00		LEAQ 0xd0ac6(IP), AX				
+  stream.go:32		0x64497a		e8e124ddff		CALL runtime.newobject(SB)			
+  stream.go:32		0x64497f		488b4c2478		MOVQ 0x78(SP), CX				
+  stream.go:32		0x644984		488908			MOVQ CX, 0(AX)					
+  stream.go:32		0x644987		833dd277380000		CMPL runtime.writeBarrier(SB), $0x0		
+  stream.go:32		0x64498e		7507			JNE 0x644997					
+  stream.go:32		0x644990		488b542440		MOVQ 0x40(SP), DX				
+  stream.go:32		0x644995		eb0d			JMP 0x6449a4					
+  stream.go:32		0x644997		e86435e3ff		CALL runtime.gcWriteBarrier1(SB)		
+  stream.go:32		0x64499c		488b542440		MOVQ 0x40(SP), DX				
+  stream.go:32		0x6449a1		498913			MOVQ DX, 0(R11)					
+  stream.go:32		0x6449a4		48895008		MOVQ DX, 0x8(AX)				
+  license.go:37		0x6449a8		488d1df1570700		LEAQ 0x757f1(IP), BX				
+  license.go:37		0x6449af		488b8c24e0000000	MOVQ 0xe0(SP), CX				
+  license.go:37		0x6449b7		e8a427ffff		CALL encoding/json.(*Decoder).Decode(SB)	
+  license.go:37		0x6449bc		0f1f4000		NOPL 0(AX)					
+  license.go:39		0x6449c0		4885c0			TESTQ AX, AX					
+  license.go:39		0x6449c3		751f			JNE 0x6449e4					
+  license.go:44		0x6449c5		488b9424e0000000	MOVQ 0xe0(SP), DX				
+  license.go:44		0x6449cd		488b02			MOVQ 0(DX), AX					
+  license.go:44		0x6449d0		4889442478		MOVQ AX, 0x78(SP)				
+  license.go:44		0x6449d5		488b5a08		MOVQ 0x8(DX), BX				
+  license.go:44		0x6449d9		48895c2438		MOVQ BX, 0x38(SP)				
+  license.go:44		0x6449de		31c9			XORL CX, CX					
+  license.go:44		0x6449e0		31f6			XORL SI, SI					
+  license.go:83		0x6449e2		eb3c			JMP 0x644a20					
+  license.go:40		0x6449e4		488b8424f8000000	MOVQ 0xf8(SP), AX				
+  license.go:40		0x6449ec		488b9c2400010000	MOVQ 0x100(SP), BX				
+  license.go:40		0x6449f4		488d0d0b800e00		LEAQ 0xe800b(IP), CX				
+  license.go:40		0x6449fb		bf12000000		MOVL $0x12, DI					
+  license.go:40		0x644a00		be90010000		MOVL $0x190, SI					
+  license.go:40		0x644a05		e8f6f8fcff		CALL net/http.Error(SB)				
+  license.go:41		0x644a0a		4881c4e8000000		ADDQ $0xe8, SP					
+  license.go:41		0x644a11		5d			POPQ BP						
+  license.go:41		0x644a12		c3			RET						
+  license.go:83		0x644a13		4889f8			MOVQ DI, AX					
+  license.go:51		0x644a16		4c89d2			MOVQ R10, DX					
+  license.go:83		0x644a19		4c89c1			MOVQ R8, CX					
+  license.go:83		0x644a1c		0f1f4000		NOPL 0(AX)					
+  license.go:83		0x644a20		4839d9			CMPQ CX, BX					
+  license.go:83		0x644a23		0f8d9e000000		JGE 0x644ac7					
+  license.go:83		0x644a29		440fb60408		MOVZX 0(AX)(CX*1), R8				
+  license.go:83		0x644a2e		4181f880000000		CMPL R8, $0x80					
+  license.go:83		0x644a35		7d06			JGE 0x644a3d					
+  license.go:83		0x644a37		4c8d4101		LEAQ 0x1(CX), R8				
+  license.go:83		0x644a3b		eb2e			JMP 0x644a6b					
+  license.go:83		0x644a3d		48894c2428		MOVQ CX, 0x28(SP)				
+  license.go:85		0x644a42		4889742430		MOVQ SI, 0x30(SP)				
+  license.go:83		0x644a47		e8b462e2ff		CALL runtime.decoderune(SB)			
+  license.go:84		0x644a4c		488b442478		MOVQ 0x78(SP), AX				
+  license.go:84		0x644a51		488b4c2428		MOVQ 0x28(SP), CX				
+  license.go:51		0x644a56		488b9424e0000000	MOVQ 0xe0(SP), DX				
+  license.go:85		0x644a5e		488b742430		MOVQ 0x30(SP), SI				
+  license.go:83		0x644a63		4989d8			MOVQ BX, R8					
+  license.go:83		0x644a66		488b5c2438		MOVQ 0x38(SP), BX				
+  license.go:84		0x644a6b		4c8d4901		LEAQ 0x1(CX), R9				
+  license.go:44		0x644a6f		4889c7			MOVQ AX, DI					
+  license.go:84		0x644a72		48b8abaaaaaaaaaaaaaa	MOVQ $0xaaaaaaaaaaaaaaab, AX			
+  license.go:35		0x644a7c		4989d2			MOVQ DX, R10					
+  license.go:84		0x644a7f		49f7e9			IMULQ R9					
+  license.go:84		0x644a82		488d140a		LEAQ 0(DX)(CX*1), DX				
+  license.go:84		0x644a86		488d5201		LEAQ 0x1(DX), DX				
+  license.go:84		0x644a8a		48c1fa02		SARQ $0x2, DX					
+  license.go:84		0x644a8e		4d89cb			MOVQ R9, R11					
+  license.go:84		0x644a91		49c1f93f		SARQ $0x3f, R9					
+  license.go:84		0x644a95		4c29ca			SUBQ R9, DX					
+  license.go:84		0x644a98		488d1452		LEAQ 0(DX)(DX*2), DX				
+  license.go:84		0x644a9c		48d1e2			SHLQ $0x1, DX					
+  license.go:84		0x644a9f		90			NOPL						
+  license.go:84		0x644aa0		4c39da			CMPQ DX, R11					
+  license.go:84		0x644aa3		0f856affffff		JNE 0x644a13					
+  license.go:83		0x644aa9		4839d9			CMPQ CX, BX					
+  license.go:84		0x644aac		0f836a020000		JAE 0x644d1c					
+  license.go:84		0x644ab2		0fb6140f		MOVZX 0(DI)(CX*1), DX				
+  license.go:84		0x644ab6		80fa2d			CMPL DL, $0x2d					
+  license.go:84		0x644ab9		0f8554ffffff		JNE 0x644a13					
+  license.go:85		0x644abf		48ffc6			INCQ SI						
+  license.go:85		0x644ac2		e94cffffff		JMP 0x644a13					
+  license.go:89		0x644ac7		4883fe03		CMPQ SI, $0x3					
+  license.go:89		0x644acb		0f8522010000		JNE 0x644bf3					
+  license.go:51		0x644ad1		488b02			MOVQ 0(DX), AX					
+  license.go:51		0x644ad4		488b5a08		MOVQ 0x8(DX), BX				
+  license.go:51		0x644ad8		e8c3020000		CALL license/license.enoughNumbers(SB)		
+  license.go:51		0x644add		0f1f00			NOPL 0(AX)					
+  license.go:51		0x644ae0		84c0			TESTL AL, AL					
+  license.go:53		0x644ae2		0f84dc000000		JE 0x644bc4					
+  license.go:58		0x644ae8		488b8c24e0000000	MOVQ 0xe0(SP), CX				
+  license.go:58		0x644af0		488b01			MOVQ 0(CX), AX					
+  license.go:58		0x644af3		488b5908		MOVQ 0x8(CX), BX				
+  license.go:58		0x644af7		e884040000		CALL license/license.sumNumbers(SB)		
+  license.go:58		0x644afc		0f1f4000		NOPL 0(AX)					
+  license.go:58		0x644b00		84c0			TESTL AL, AL					
+  license.go:60		0x644b02		0f848d000000		JE 0x644b95					
+  license.go:65		0x644b08		488b8c24e0000000	MOVQ 0xe0(SP), CX				
+  license.go:65		0x644b10		488b01			MOVQ 0(CX), AX					
+  license.go:65		0x644b13		488b5908		MOVQ 0x8(CX), BX				
+  license.go:65		0x644b17		e8e4050000		CALL license/license.validLetters(SB)		
+  license.go:65		0x644b1c		0f1f4000		NOPL 0(AX)					
+  license.go:65		0x644b20		84c0			TESTL AL, AL					
+  license.go:67		0x644b22		7442			JE 0x644b66					
+  license.go:72		0x644b24		488b8c24f8000000	MOVQ 0xf8(SP), CX				
+  license.go:72		0x644b2c		488b4928		MOVQ 0x28(CX), CX				
+  license.go:72		0x644b30		488b842400010000	MOVQ 0x100(SP), AX				
+  license.go:72		0x644b38		bbc8000000		MOVL $0xc8, BX					
+  license.go:72		0x644b3d		ffd1			CALL CX						
+  license.go:73		0x644b3f		488b8c24f8000000	MOVQ 0xf8(SP), CX				
+  license.go:73		0x644b47		4885c9			TESTQ CX, CX					
+  license.go:73		0x644b4a		0f84d2000000		JE 0x644c22					
+  license.go:73		0x644b50		488b5908		MOVQ 0x8(CX), BX				
+  license.go:73		0x644b54		488b1585a53500		MOVQ license/license..typeAssert.1(SB), DX	
+  license.go:73		0x644b5b		488b32			MOVQ 0(DX), SI					
+  license.go:73		0x644b5e		8b4910			MOVL 0x10(CX), CX				
+  license.go:73		0x644b61		e97b010000		JMP 0x644ce1					
+  license.go:68		0x644b66		488b8424f8000000	MOVQ 0xf8(SP), AX				
+  license.go:68		0x644b6e		488b9c2400010000	MOVQ 0x100(SP), BX				
+  license.go:68		0x644b76		488d0db5dd0e00		LEAQ 0xeddb5(IP), CX				
+  license.go:68		0x644b7d		bf1f000000		MOVL $0x1f, DI					
+  license.go:68		0x644b82		be90010000		MOVL $0x190, SI					
+  license.go:68		0x644b87		e874f7fcff		CALL net/http.Error(SB)				
+  license.go:69		0x644b8c		4881c4e8000000		ADDQ $0xe8, SP					
+  license.go:69		0x644b93		5d			POPQ BP						
+  license.go:69		0x644b94		c3			RET						
+  license.go:61		0x644b95		488b8424f8000000	MOVQ 0xf8(SP), AX				
+  license.go:61		0x644b9d		488b9c2400010000	MOVQ 0x100(SP), BX				
+  license.go:61		0x644ba5		488d0d86dd0e00		LEAQ 0xedd86(IP), CX				
+  license.go:61		0x644bac		bf1f000000		MOVL $0x1f, DI					
+  license.go:61		0x644bb1		be90010000		MOVL $0x190, SI					
+  license.go:61		0x644bb6		e845f7fcff		CALL net/http.Error(SB)				
+  license.go:62		0x644bbb		4881c4e8000000		ADDQ $0xe8, SP					
+  license.go:62		0x644bc2		5d			POPQ BP						
+  license.go:62		0x644bc3		c3			RET						
+  license.go:54		0x644bc4		488b8424f8000000	MOVQ 0xf8(SP), AX				
+  license.go:54		0x644bcc		488b9c2400010000	MOVQ 0x100(SP), BX				
+  license.go:54		0x644bd4		488d0d57dd0e00		LEAQ 0xedd57(IP), CX				
+  license.go:54		0x644bdb		bf1f000000		MOVL $0x1f, DI					
+  license.go:54		0x644be0		be90010000		MOVL $0x190, SI					
+  license.go:54		0x644be5		e816f7fcff		CALL net/http.Error(SB)				
+  license.go:55		0x644bea		4881c4e8000000		ADDQ $0xe8, SP					
+  license.go:55		0x644bf1		5d			POPQ BP						
+  license.go:55		0x644bf2		c3			RET						
+  license.go:47		0x644bf3		488b8424f8000000	MOVQ 0xf8(SP), AX				
+  license.go:47		0x644bfb		488b9c2400010000	MOVQ 0x100(SP), BX				
+  license.go:47		0x644c03		488d0d28dd0e00		LEAQ 0xedd28(IP), CX				
+  license.go:47		0x644c0a		bf1f000000		MOVL $0x1f, DI					
+  license.go:47		0x644c0f		be90010000		MOVL $0x190, SI					
+  license.go:47		0x644c14		e8e7f6fcff		CALL net/http.Error(SB)				
+  license.go:48		0x644c19		4881c4e8000000		ADDQ $0xe8, SP					
+  license.go:48		0x644c20		5d			POPQ BP						
+  license.go:48		0x644c21		c3			RET						
+  stream.go:193		0x644c22		488dbc2480000000	LEAQ 0x80(SP), DI				
+  stream.go:193		0x644c2a		488d7fe0		LEAQ -0x20(DI), DI				
+  stream.go:193		0x644c2e		660f1f840000000000	NOPW 0(AX)(AX*1)				
+  stream.go:193		0x644c37		660f1f840000000000	NOPW 0(AX)(AX*1)				
+  stream.go:193		0x644c40		48896c24f0		MOVQ BP, -0x10(SP)				
+  stream.go:193		0x644c45		488d6c24f0		LEAQ -0x10(SP), BP				
+  stream.go:193		0x644c4a		e85c39e3ff		CALL 0x4785ab					
+  stream.go:193		0x644c4f		488b6d00		MOVQ 0(BP), BP					
+  stream.go:193		0x644c53		48898c2480000000	MOVQ CX, 0x80(SP)				
+  stream.go:193		0x644c5b		488b842400010000	MOVQ 0x100(SP), AX				
+  stream.go:193		0x644c63		4889842488000000	MOVQ AX, 0x88(SP)				
+  stream.go:193		0x644c6b		c68424a000000001	MOVB $0x1, 0xa0(SP)				
+  license.go:73		0x644c73		e848a3e2ff		CALL runtime.makemap_small(SB)			
+  license.go:73		0x644c78		4889442460		MOVQ AX, 0x60(SP)				
+  license.go:74		0x644c7d		4889c3			MOVQ AX, BX					
+  license.go:74		0x644c80		488d0dce440e00		LEAQ 0xe44ce(IP), CX				
+  license.go:74		0x644c87		bf07000000		MOVL $0x7, DI					
+  license.go:74		0x644c8c		488d054da90900		LEAQ 0x9a94d(IP), AX				
+  license.go:74		0x644c93		e84845dcff		CALL runtime.mapassign_faststr(SB)		
+  license.go:74		0x644c98		48c7400815000000	MOVQ $0x15, 0x8(AX)				
+  license.go:74		0x644ca0		833db974380000		CMPL runtime.writeBarrier(SB), $0x0		
+  license.go:74		0x644ca7		740b			JE 0x644cb4					
+  license.go:74		0x644ca9		488b10			MOVQ 0(AX), DX					
+  license.go:74		0x644cac		e84f32e3ff		CALL runtime.gcWriteBarrier1(SB)		
+  license.go:74		0x644cb1		498913			MOVQ DX, 0(R11)					
+  license.go:74		0x644cb4		488d15b1910e00		LEAQ 0xe91b1(IP), DX				
+  license.go:74		0x644cbb		488910			MOVQ DX, 0(AX)					
+  license.go:73		0x644cbe		488d842480000000	LEAQ 0x80(SP), AX				
+  license.go:73		0x644cc6		488d1d13a90900		LEAQ 0x9a913(IP), BX				
+  license.go:73		0x644ccd		488b4c2460		MOVQ 0x60(SP), CX				
+  license.go:73		0x644cd2		e8a92bffff		CALL encoding/json.(*Encoder).Encode(SB)	
+  license.go:76		0x644cd7		4881c4e8000000		ADDQ $0xe8, SP					
+  license.go:76		0x644cde		5d			POPQ BP						
+  license.go:76		0x644cdf		90			NOPL						
+  license.go:76		0x644ce0		c3			RET						
+  license.go:73		0x644ce1		4989c8			MOVQ CX, R8					
+  license.go:73		0x644ce4		4821f1			ANDQ SI, CX					
+  license.go:73		0x644ce7		48c1e104		SHLQ $0x4, CX					
+  license.go:73		0x644ceb		4c8b4c0a08		MOVQ 0x8(DX)(CX*1), R9				
+  license.go:73		0x644cf0		4939d9			CMPQ R9, BX					
+  license.go:73		0x644cf3		741d			JE 0x644d12					
+  license.go:73		0x644cf5		498d4801		LEAQ 0x1(R8), CX				
+  license.go:73		0x644cf9		4d85c9			TESTQ R9, R9					
+  license.go:73		0x644cfc		75e3			JNE 0x644ce1					
+  license.go:73		0x644cfe		488d05dba33500		LEAQ license/license..typeAssert.1(SB), AX	
+  license.go:73		0x644d05		e856e8dcff		CALL runtime.typeAssert(SB)			
+  license.go:73		0x644d0a		4889c1			MOVQ AX, CX					
+  license.go:73		0x644d0d		e910ffffff		JMP 0x644c22					
+  license.go:73		0x644d12		488b4c0a10		MOVQ 0x10(DX)(CX*1), CX				
+  license.go:73		0x644d17		e906ffffff		JMP 0x644c22					
+  license.go:84		0x644d1c		4889c8			MOVQ CX, AX					
+  license.go:84		0x644d1f		4889d9			MOVQ BX, CX					
+  license.go:84		0x644d22		e89935e3ff		CALL runtime.panicIndex(SB)			
+  license.go:37		0x644d27		4989d0			MOVQ DX, R8					
+  license.go:37		0x644d2a		4821fa			ANDQ DI, DX					
+  license.go:37		0x644d2d		48c1e204		SHLQ $0x4, DX					
+  license.go:37		0x644d31		4c8b4c1608		MOVQ 0x8(SI)(DX*1), R9				
+  license.go:37		0x644d36		4939d9			CMPQ R9, BX					
+  license.go:37		0x644d39		741e			JE 0x644d59					
+  license.go:37		0x644d3b		498d5001		LEAQ 0x1(R8), DX				
+  license.go:37		0x644d3f		90			NOPL						
+  license.go:37		0x644d40		4d85c9			TESTQ R9, R9					
+  license.go:37		0x644d43		75e2			JNE 0x644d27					
+  license.go:37		0x644d45		488d0574a33500		LEAQ license/license..typeAssert.0(SB), AX	
+  license.go:37		0x644d4c		e80fe8dcff		CALL runtime.typeAssert(SB)			
+  license.go:37		0x644d51		4889c2			MOVQ AX, DX					
+  license.go:37		0x644d54		e915fcffff		JMP 0x64496e					
+  license.go:37		0x644d59		488b541610		MOVQ 0x10(SI)(DX*1), DX				
+  license.go:37		0x644d5e		6690			NOPW						
+  license.go:37		0x644d60		e909fcffff		JMP 0x64496e					
+  license.go:16		0x644d65		4889442408		MOVQ AX, 0x8(SP)				
+  license.go:16		0x644d6a		48895c2410		MOVQ BX, 0x10(SP)				
+  license.go:16		0x644d6f		48894c2418		MOVQ CX, 0x18(SP)				
+  license.go:16		0x644d74		e8a712e3ff		CALL runtime.morestack_noctxt.abi0(SB)		
+  license.go:16		0x644d79		488b442408		MOVQ 0x8(SP), AX				
+  license.go:16		0x644d7e		488b5c2410		MOVQ 0x10(SP), BX				
+  license.go:16		0x644d83		488b4c2418		MOVQ 0x18(SP), CX				
+  license.go:16		0x644d88		e9f3f7ffff		JMP license/license.CheckValidity(SB)		
+
+TEXT license/license.enoughNumbers(SB) /home/incarrnati0n/Documents/CTF/hcsc25/ctf-licenselost/backend/license/license.go
+  license.go:98		0x644da0		493b6610		CMPQ SP, 0x10(R14)			
+  license.go:98		0x644da4		0f86bd000000		JBE 0x644e67				
+  license.go:98		0x644daa		55			PUSHQ BP				
+  license.go:98		0x644dab		4889e5			MOVQ SP, BP				
+  license.go:98		0x644dae		4883ec60		SUBQ $0x60, SP				
+  license.go:98		0x644db2		4889442470		MOVQ AX, 0x70(SP)			
+  license.go:101	0x644db7		90			NOPL					
+  strings.go:361	0x644db8		488d0da63a0e00		LEAQ 0xe3aa6(IP), CX			
+  strings.go:361	0x644dbf		bf01000000		MOVL $0x1, DI				
+  strings.go:361	0x644dc4		31f6			XORL SI, SI				
+  strings.go:361	0x644dc6		49c7c0ffffffff		MOVQ $-0x1, R8				
+  strings.go:361	0x644dcd		e82e14eaff		CALL strings.genSplit(SB)		
+  strings.go:361	0x644dd2		4889442440		MOVQ AX, 0x40(SP)			
+  strings.go:361	0x644dd7		48895c2430		MOVQ BX, 0x30(SP)			
+  license.go:102	0x644ddc		440f117c2450		MOVUPS X15, 0x50(SP)			
+  license.go:102	0x644de2		e8599be2ff		CALL runtime.convTslice(SB)		
+  license.go:102	0x644de7		488d1532ba0700		LEAQ 0x7ba32(IP), DX			
+  license.go:102	0x644dee		4889542450		MOVQ DX, 0x50(SP)			
+  license.go:102	0x644df3		4889442458		MOVQ AX, 0x58(SP)			
+  print.go:314		0x644df8		488b1d31523600		MOVQ os.Stdout(SB), BX			
+  print.go:314		0x644dff		488d05ba941500		LEAQ go:itab.*os.File,io.Writer(SB), AX	
+  print.go:314		0x644e06		488d4c2450		LEAQ 0x50(SP), CX			
+  print.go:314		0x644e0b		bf01000000		MOVL $0x1, DI				
+  print.go:314		0x644e10		4889fe			MOVQ DI, SI				
+  print.go:314		0x644e13		e868cde8ff		CALL fmt.Fprintln(SB)			
+  license.go:103	0x644e18		488b542440		MOVQ 0x40(SP), DX			
+  license.go:103	0x644e1d		488b442430		MOVQ 0x30(SP), AX			
+  license.go:103	0x644e22		31c9			XORL CX, CX				
+  license.go:103	0x644e24		eb34			JMP 0x644e5a				
+  license.go:103	0x644e26		4889442438		MOVQ AX, 0x38(SP)			
+  license.go:103	0x644e2b		4889542448		MOVQ DX, 0x48(SP)			
+  license.go:103	0x644e30		488b02			MOVQ 0(DX), AX				
+  license.go:103	0x644e33		488b5a08		MOVQ 0x8(DX), BX			
+  license.go:104	0x644e37		e864000000		CALL license/license.countNumbers(SB)	
+  license.go:103	0x644e3c		488b542448		MOVQ 0x48(SP), DX			
+  license.go:103	0x644e41		4883c210		ADDQ $0x10, DX				
+  license.go:103	0x644e45		488b4c2438		MOVQ 0x38(SP), CX			
+  license.go:103	0x644e4a		48ffc9			DECQ CX					
+  license.go:105	0x644e4d		4883f802		CMPQ AX, $0x2				
+  license.go:105	0x644e51		400f94c6		SETE SI					
+  license.go:103	0x644e55		4889c8			MOVQ CX, AX				
+  license.go:111	0x644e58		89f1			MOVL SI, CX				
+  license.go:103	0x644e5a		4885c0			TESTQ AX, AX				
+  license.go:103	0x644e5d		7fc7			JG 0x644e26				
+  license.go:111	0x644e5f		89c8			MOVL CX, AX				
+  license.go:111	0x644e61		4883c460		ADDQ $0x60, SP				
+  license.go:111	0x644e65		5d			POPQ BP					
+  license.go:111	0x644e66		c3			RET					
+  license.go:98		0x644e67		4889442408		MOVQ AX, 0x8(SP)			
+  license.go:98		0x644e6c		48895c2410		MOVQ BX, 0x10(SP)			
+  license.go:98		0x644e71		e8aa11e3ff		CALL runtime.morestack_noctxt.abi0(SB)	
+  license.go:98		0x644e76		488b442408		MOVQ 0x8(SP), AX			
+  license.go:98		0x644e7b		488b5c2410		MOVQ 0x10(SP), BX			
+  license.go:98		0x644e80		e91bffffff		JMP license/license.enoughNumbers(SB)	
+
+TEXT license/license.countNumbers(SB) /home/incarrnati0n/Documents/CTF/hcsc25/ctf-licenselost/backend/license/license.go
+  license.go:114	0x644ea0		493b6610		CMPQ SP, 0x10(R14)			
+  license.go:114	0x644ea4		0f86b0000000		JBE 0x644f5a				
+  license.go:114	0x644eaa		55			PUSHQ BP				
+  license.go:114	0x644eab		4889e5			MOVQ SP, BP				
+  license.go:114	0x644eae		4883ec28		SUBQ $0x28, SP				
+  license.go:116	0x644eb2		4889442438		MOVQ AX, 0x38(SP)			
+  license.go:116	0x644eb7		48895c2440		MOVQ BX, 0x40(SP)			
+  license.go:116	0x644ebc		31c9			XORL CX, CX				
+  license.go:116	0x644ebe		31d2			XORL DX, DX				
+  license.go:116	0x644ec0		eb12			JMP 0x644ed4				
+  license.go:118	0x644ec2		4c8d4201		LEAQ 0x1(DX), R8			
+  license.go:118	0x644ec6		400fb6f6		MOVZX SI, SI				
+  license.go:118	0x644eca		4885f6			TESTQ SI, SI				
+  license.go:118	0x644ecd		490f45d0		CMOVNE R8, DX				
+  license.go:116	0x644ed1		4889f9			MOVQ DI, CX				
+  license.go:116	0x644ed4		4839cb			CMPQ BX, CX				
+  license.go:116	0x644ed7		7e78			JLE 0x644f51				
+  license.go:118	0x644ed9		4889542418		MOVQ DX, 0x18(SP)			
+  license.go:116	0x644ede		0fb63408		MOVZX 0(AX)(CX*1), SI			
+  license.go:116	0x644ee2		81fe80000000		CMPL SI, $0x80				
+  license.go:116	0x644ee8		7d06			JGE 0x644ef0				
+  license.go:116	0x644eea		488d7901		LEAQ 0x1(CX), DI			
+  license.go:116	0x644eee		eb19			JMP 0x644f09				
+  license.go:116	0x644ef0		e80b5ee2ff		CALL runtime.decoderune(SB)		
+  license.go:118	0x644ef5		488b542418		MOVQ 0x18(SP), DX			
+  license.go:116	0x644efa		89c6			MOVL AX, SI				
+  license.go:116	0x644efc		4889df			MOVQ BX, DI				
+  license.go:116	0x644eff		488b442438		MOVQ 0x38(SP), AX			
+  license.go:116	0x644f04		488b5c2440		MOVQ 0x40(SP), BX			
+  digit.go:9		0x644f09		81feff000000		CMPL SI, $0xff				
+  digit.go:9		0x644f0f		7f12			JG 0x644f23				
+  digit.go:10		0x644f11		83fe30			CMPL SI, $0x30				
+  digit.go:10		0x644f14		7c09			JL 0x644f1f				
+  digit.go:10		0x644f16		83fe39			CMPL SI, $0x39				
+  digit.go:10		0x644f19		400f9ec6		SETLE SI				
+  digit.go:10		0x644f1d		eba3			JMP 0x644ec2				
+  digit.go:10		0x644f1f		31f6			XORL SI, SI				
+  digit.go:10		0x644f21		eb9f			JMP 0x644ec2				
+  license.go:116	0x644f23		48897c2420		MOVQ DI, 0x20(SP)			
+  digit.go:12		0x644f28		488b05e1843500		MOVQ unicode.Digit(SB), AX		
+  digit.go:12		0x644f2f		89f3			MOVL SI, BX				
+  digit.go:12		0x644f31		e8ca93e4ff		CALL unicode.isExcludingLatin(SB)	
+  license.go:118	0x644f36		488b542418		MOVQ 0x18(SP), DX			
+  license.go:116	0x644f3b		488b5c2440		MOVQ 0x40(SP), BX			
+  license.go:116	0x644f40		488b7c2420		MOVQ 0x20(SP), DI			
+  license.go:117	0x644f45		89c6			MOVL AX, SI				
+  license.go:116	0x644f47		488b442438		MOVQ 0x38(SP), AX			
+  license.go:117	0x644f4c		e971ffffff		JMP 0x644ec2				
+  license.go:122	0x644f51		4889d0			MOVQ DX, AX				
+  license.go:122	0x644f54		4883c428		ADDQ $0x28, SP				
+  license.go:122	0x644f58		5d			POPQ BP					
+  license.go:122	0x644f59		c3			RET					
+  license.go:114	0x644f5a		4889442408		MOVQ AX, 0x8(SP)			
+  license.go:114	0x644f5f		48895c2410		MOVQ BX, 0x10(SP)			
+  license.go:114	0x644f64		e8b710e3ff		CALL runtime.morestack_noctxt.abi0(SB)	
+  license.go:114	0x644f69		488b442408		MOVQ 0x8(SP), AX			
+  license.go:114	0x644f6e		488b5c2410		MOVQ 0x10(SP), BX			
+  license.go:114	0x644f73		e928ffffff		JMP license/license.countNumbers(SB)	
+
+TEXT license/license.sumNumbers(SB) /home/incarrnati0n/Documents/CTF/hcsc25/ctf-licenselost/backend/license/license.go
+  license.go:125	0x644f80		493b6610		CMPQ SP, 0x10(R14)			
+  license.go:125	0x644f84		0f8650010000		JBE 0x6450da				
+  license.go:125	0x644f8a		55			PUSHQ BP				
+  license.go:125	0x644f8b		4889e5			MOVQ SP, BP				
+  license.go:125	0x644f8e		4883ec70		SUBQ $0x70, SP				
+  license.go:125	0x644f92		4889842480000000	MOVQ AX, 0x80(SP)			
+  license.go:128	0x644f9a		90			NOPL					
+  strings.go:361	0x644f9b		488d0dc3380e00		LEAQ 0xe38c3(IP), CX			
+  strings.go:361	0x644fa2		bf01000000		MOVL $0x1, DI				
+  strings.go:361	0x644fa7		31f6			XORL SI, SI				
+  strings.go:361	0x644fa9		49c7c0ffffffff		MOVQ $-0x1, R8				
+  strings.go:361	0x644fb0		e84b12eaff		CALL strings.genSplit(SB)		
+  license.go:130	0x644fb5		31c9			XORL CX, CX				
+  license.go:130	0x644fb7		eb13			JMP 0x644fcc				
+  license.go:139	0x644fb9		488d5101		LEAQ 0x1(CX), DX			
+  license.go:130	0x644fbd		4883c010		ADDQ $0x10, AX				
+  license.go:130	0x644fc1		48ffcb			DECQ BX					
+  license.go:137	0x644fc4		4983f806		CMPQ R8, $0x6				
+  license.go:139	0x644fc8		480f4cca		CMOVL DX, CX				
+  license.go:130	0x644fcc		4885db			TESTQ BX, BX				
+  license.go:130	0x644fcf		7e27			JLE 0x644ff8				
+  license.go:130	0x644fd1		48895c2458		MOVQ BX, 0x58(SP)			
+  license.go:139	0x644fd6		48894c2448		MOVQ CX, 0x48(SP)			
+  license.go:130	0x644fdb		4889442468		MOVQ AX, 0x68(SP)			
+  license.go:130	0x644fe0		488b10			MOVQ 0(AX), DX				
+  license.go:130	0x644fe3		4889542460		MOVQ DX, 0x60(SP)			
+  license.go:130	0x644fe8		488b7008		MOVQ 0x8(AX), SI			
+  license.go:130	0x644fec		4889742440		MOVQ SI, 0x40(SP)			
+  license.go:130	0x644ff1		31ff			XORL DI, DI				
+  license.go:130	0x644ff3		4531c0			XORL R8, R8				
+  license.go:131	0x644ff6		eb19			JMP 0x645011				
+  license.go:145	0x644ff8		4883f904		CMPQ CX, $0x4				
+  license.go:145	0x644ffc		750b			JNE 0x645009				
+  license.go:146	0x644ffe		b801000000		MOVL $0x1, AX				
+  license.go:146	0x645003		4883c470		ADDQ $0x70, SP				
+  license.go:146	0x645007		5d			POPQ BP					
+  license.go:146	0x645008		c3			RET					
+  license.go:148	0x645009		31c0			XORL AX, AX				
+  license.go:148	0x64500b		4883c470		ADDQ $0x70, SP				
+  license.go:148	0x64500f		5d			POPQ BP					
+  license.go:148	0x645010		c3			RET					
+  license.go:131	0x645011		4839f7			CMPQ DI, SI				
+  license.go:131	0x645014		7da3			JGE 0x644fb9				
+  license.go:133	0x645016		4c89442438		MOVQ R8, 0x38(SP)			
+  license.go:131	0x64501b		440fb60c3a		MOVZX 0(DX)(DI*1), R9			
+  license.go:131	0x645020		4181f980000000		CMPL R9, $0x80				
+  license.go:131	0x645027		7d05			JGE 0x64502e				
+  license.go:131	0x645029		48ffc7			INCQ DI					
+  license.go:131	0x64502c		eb32			JMP 0x645060				
+  license.go:131	0x64502e		4889d0			MOVQ DX, AX				
+  license.go:131	0x645031		4889f3			MOVQ SI, BX				
+  license.go:131	0x645034		4889f9			MOVQ DI, CX				
+  license.go:131	0x645037		e8c45ce2ff		CALL runtime.decoderune(SB)		
+  license.go:139	0x64503c		488b4c2448		MOVQ 0x48(SP), CX			
+  license.go:131	0x645041		488b542460		MOVQ 0x60(SP), DX			
+  license.go:131	0x645046		488b742440		MOVQ 0x40(SP), SI			
+  license.go:133	0x64504b		4c8b442438		MOVQ 0x38(SP), R8			
+  license.go:131	0x645050		4189c1			MOVL AX, R9				
+  license.go:131	0x645053		4889df			MOVQ BX, DI				
+  license.go:130	0x645056		488b442468		MOVQ 0x68(SP), AX			
+  license.go:130	0x64505b		488b5c2458		MOVQ 0x58(SP), BX			
+  digit.go:9		0x645060		4181f9ff000000		CMPL R9, $0xff				
+  digit.go:9		0x645067		7f15			JG 0x64507e				
+  digit.go:10		0x645069		4183f930		CMPL R9, $0x30				
+  digit.go:10		0x64506d		7c0a			JL 0x645079				
+  digit.go:10		0x64506f		4183f939		CMPL R9, $0x39				
+  digit.go:10		0x645073		410f9ec2		SETLE R10				
+  digit.go:10		0x645077		eb49			JMP 0x6450c2				
+  digit.go:10		0x645079		4531d2			XORL R10, R10				
+  digit.go:10		0x64507c		eb44			JMP 0x6450c2				
+  license.go:131	0x64507e		44894c2434		MOVL R9, 0x34(SP)			
+  license.go:131	0x645083		48897c2450		MOVQ DI, 0x50(SP)			
+  digit.go:12		0x645088		488b0581833500		MOVQ unicode.Digit(SB), AX		
+  digit.go:12		0x64508f		4489cb			MOVL R9, BX				
+  digit.go:12		0x645092		e86992e4ff		CALL unicode.isExcludingLatin(SB)	
+  license.go:139	0x645097		488b4c2448		MOVQ 0x48(SP), CX			
+  license.go:131	0x64509c		488b542460		MOVQ 0x60(SP), DX			
+  license.go:130	0x6450a1		488b5c2458		MOVQ 0x58(SP), BX			
+  license.go:131	0x6450a6		488b742440		MOVQ 0x40(SP), SI			
+  license.go:131	0x6450ab		488b7c2450		MOVQ 0x50(SP), DI			
+  license.go:133	0x6450b0		4c8b442438		MOVQ 0x38(SP), R8			
+  license.go:133	0x6450b5		448b4c2434		MOVL 0x34(SP), R9			
+  license.go:132	0x6450ba		4189c2			MOVL AX, R10				
+  license.go:130	0x6450bd		488b442468		MOVQ 0x68(SP), AX			
+  license.go:132	0x6450c2		4584d2			TESTL R10, R10				
+  license.go:132	0x6450c5		0f8446ffffff		JE 0x645011				
+  license.go:133	0x6450cb		4183c1d0		ADDL $-0x30, R9				
+  license.go:133	0x6450cf		4d63c9			MOVSXD R9, R9				
+  license.go:133	0x6450d2		4d01c8			ADDQ R9, R8				
+  license.go:133	0x6450d5		e937ffffff		JMP 0x645011				
+  license.go:125	0x6450da		4889442408		MOVQ AX, 0x8(SP)			
+  license.go:125	0x6450df		48895c2410		MOVQ BX, 0x10(SP)			
+  license.go:125	0x6450e4		e8370fe3ff		CALL runtime.morestack_noctxt.abi0(SB)	
+  license.go:125	0x6450e9		488b442408		MOVQ 0x8(SP), AX			
+  license.go:125	0x6450ee		488b5c2410		MOVQ 0x10(SP), BX			
+  license.go:125	0x6450f3		e988feffff		JMP license/license.sumNumbers(SB)	
+
+TEXT license/license.validLetters(SB) /home/incarrnati0n/Documents/CTF/hcsc25/ctf-licenselost/backend/license/license.go
+  license.go:153	0x645100		4c8da42478ffffff	LEAQ 0xffffff78(SP), R12		
+  license.go:153	0x645108		4d3b6610		CMPQ R12, 0x10(R14)			
+  license.go:153	0x64510c		0f8614030000		JBE 0x645426				
+  license.go:153	0x645112		55			PUSHQ BP				
+  license.go:153	0x645113		4889e5			MOVQ SP, BP				
+  license.go:153	0x645116		4881ec00010000		SUBQ $0x100, SP				
+  license.go:153	0x64511d		4889842410010000	MOVQ AX, 0x110(SP)			
+  license.go:155	0x645125		90			NOPL					
+  strings.go:361	0x645126		488d0d38370e00		LEAQ 0xe3738(IP), CX			
+  strings.go:361	0x64512d		bf01000000		MOVL $0x1, DI				
+  strings.go:361	0x645132		31f6			XORL SI, SI				
+  strings.go:361	0x645134		49c7c0ffffffff		MOVQ $-0x1, R8				
+  strings.go:361	0x64513b		0f1f440000		NOPL 0(AX)(AX*1)			
+  strings.go:361	0x645140		e8bb10eaff		CALL strings.genSplit(SB)		
+  strings.go:361	0x645145		48898424b8000000	MOVQ AX, 0xb8(SP)			
+  strings.go:361	0x64514d		48895c2438		MOVQ BX, 0x38(SP)			
+  license.go:157	0x645152		440f11bc24d0000000	MOVUPS X15, 0xd0(SP)			
+  license.go:157	0x64515b		440f11bc24e0000000	MOVUPS X15, 0xe0(SP)			
+  license.go:157	0x645164		440f11bc24f0000000	MOVUPS X15, 0xf0(SP)			
+  license.go:157	0x64516d		440f117c2470		MOVUPS X15, 0x70(SP)			
+  license.go:157	0x645173		440f117c2478		MOVUPS X15, 0x78(SP)			
+  license.go:157	0x645179		440f11bc2488000000	MOVUPS X15, 0x88(SP)			
+  license.go:157	0x645182		440f11bc2498000000	MOVUPS X15, 0x98(SP)			
+  license.go:157	0x64518b		440f11bc24a8000000	MOVUPS X15, 0xa8(SP)			
+  license.go:157	0x645194		48ba8080808080808080	MOVQ $0x8080808080808080, DX		
+  license.go:157	0x64519e		4889542470		MOVQ DX, 0x70(SP)			
+  license.go:157	0x6451a3		488d542470		LEAQ 0x70(SP), DX			
+  license.go:157	0x6451a8		48899424e0000000	MOVQ DX, 0xe0(SP)			
+  license.go:157	0x6451b0		e82bc6e2ff		CALL runtime.rand(SB)			
+  license.go:157	0x6451b5		48898424d8000000	MOVQ AX, 0xd8(SP)			
+  license.go:159	0x6451bd		488b9424b8000000	MOVQ 0xb8(SP), DX			
+  license.go:159	0x6451c5		4c8b4c2438		MOVQ 0x38(SP), R9			
+  license.go:159	0x6451ca		31c0			XORL AX, AX				
+  license.go:159	0x6451cc		31c9			XORL CX, CX				
+  license.go:159	0x6451ce		31db			XORL BX, BX				
+  license.go:159	0x6451d0		eb07			JMP 0x6451d9				
+  license.go:159	0x6451d2		4883c210		ADDQ $0x10, DX				
+  license.go:159	0x6451d6		49ffc9			DECQ R9					
+  license.go:159	0x6451d9		4d85c9			TESTQ R9, R9				
+  license.go:159	0x6451dc		7e26			JLE 0x645204				
+  license.go:159	0x6451de		4c894c2468		MOVQ R9, 0x68(SP)			
+  license.go:159	0x6451e3		48899424c8000000	MOVQ DX, 0xc8(SP)			
+  license.go:159	0x6451eb		488b32			MOVQ 0(DX), SI				
+  license.go:159	0x6451ee		4889b424c0000000	MOVQ SI, 0xc0(SP)			
+  license.go:159	0x6451f6		488b7a08		MOVQ 0x8(DX), DI			
+  license.go:159	0x6451fa		48897c2440		MOVQ DI, 0x40(SP)			
+  license.go:159	0x6451ff		4531c0			XORL R8, R8				
+  license.go:160	0x645202		eb25			JMP 0x645229				
+  license.go:180	0x645204		4883f808		CMPQ AX, $0x8				
+  license.go:180	0x645208		7512			JNE 0x64521c				
+  license.go:180	0x64520a		4883f904		CMPQ CX, $0x4				
+  license.go:180	0x64520e		750c			JNE 0x64521c				
+  license.go:180	0x645210		4881fbb0040000		CMPQ BX, $0x4b0				
+  license.go:180	0x645217		0f9ec1			SETLE CL				
+  license.go:180	0x64521a		eb02			JMP 0x64521e				
+  license.go:180	0x64521c		31c9			XORL CX, CX				
+  license.go:180	0x64521e		89c8			MOVL CX, AX				
+  license.go:180	0x645220		4881c400010000		ADDQ $0x100, SP				
+  license.go:180	0x645227		5d			POPQ BP					
+  license.go:180	0x645228		c3			RET					
+  license.go:160	0x645229		4939f8			CMPQ R8, DI				
+  license.go:160	0x64522c		7da4			JGE 0x6451d2				
+  license.go:180	0x64522e		48895c2458		MOVQ BX, 0x58(SP)			
+  license.go:180	0x645233		48894c2448		MOVQ CX, 0x48(SP)			
+  license.go:171	0x645238		4889442450		MOVQ AX, 0x50(SP)			
+  license.go:160	0x64523d		460fb61406		MOVZX 0(SI)(R8*1), R10			
+  license.go:160	0x645242		4181fa80000000		CMPL R10, $0x80				
+  license.go:160	0x645249		7d05			JGE 0x645250				
+  license.go:160	0x64524b		49ffc0			INCQ R8					
+  license.go:160	0x64524e		eb3d			JMP 0x64528d				
+  license.go:160	0x645250		4889f0			MOVQ SI, AX				
+  license.go:160	0x645253		4889fb			MOVQ DI, BX				
+  license.go:160	0x645256		4c89c1			MOVQ R8, CX				
+  license.go:160	0x645259		e8a25ae2ff		CALL runtime.decoderune(SB)		
+  license.go:180	0x64525e		488b4c2448		MOVQ 0x48(SP), CX			
+  license.go:159	0x645263		488b9424c8000000	MOVQ 0xc8(SP), DX			
+  license.go:160	0x64526b		488bb424c0000000	MOVQ 0xc0(SP), SI			
+  license.go:160	0x645273		488b7c2440		MOVQ 0x40(SP), DI			
+  license.go:159	0x645278		4c8b4c2468		MOVQ 0x68(SP), R9			
+  license.go:160	0x64527d		4189c2			MOVL AX, R10				
+  license.go:160	0x645280		4989d8			MOVQ BX, R8				
+  license.go:171	0x645283		488b442450		MOVQ 0x50(SP), AX			
+  license.go:180	0x645288		488b5c2458		MOVQ 0x58(SP), BX			
+  license.go:160	0x64528d		4489542434		MOVL R10, 0x34(SP)			
+  license.go:160	0x645292		4c89442460		MOVQ R8, 0x60(SP)			
+  license.go:160	0x645297		660f1f840000000000	NOPW 0(AX)(AX*1)			
+  digit.go:9		0x6452a0		4181faff000000		CMPL R10, $0xff				
+  digit.go:9		0x6452a7		7f15			JG 0x6452be				
+  digit.go:10		0x6452a9		4183fa30		CMPL R10, $0x30				
+  digit.go:10		0x6452ad		7c0a			JL 0x6452b9				
+  digit.go:10		0x6452af		4183fa39		CMPL R10, $0x39				
+  digit.go:10		0x6452b3		410f9ec3		SETLE R11				
+  digit.go:10		0x6452b7		eb4a			JMP 0x645303				
+  digit.go:10		0x6452b9		4531db			XORL R11, R11				
+  digit.go:10		0x6452bc		eb45			JMP 0x645303				
+  digit.go:12		0x6452be		488b054b813500		MOVQ unicode.Digit(SB), AX		
+  digit.go:12		0x6452c5		4489d3			MOVL R10, BX				
+  digit.go:12		0x6452c8		e83390e4ff		CALL unicode.isExcludingLatin(SB)	
+  license.go:180	0x6452cd		488b4c2448		MOVQ 0x48(SP), CX			
+  license.go:159	0x6452d2		488b9424c8000000	MOVQ 0xc8(SP), DX			
+  license.go:180	0x6452da		488b5c2458		MOVQ 0x58(SP), BX			
+  license.go:160	0x6452df		488bb424c0000000	MOVQ 0xc0(SP), SI			
+  license.go:160	0x6452e7		488b7c2440		MOVQ 0x40(SP), DI			
+  license.go:160	0x6452ec		4c8b442460		MOVQ 0x60(SP), R8			
+  license.go:159	0x6452f1		4c8b4c2468		MOVQ 0x68(SP), R9			
+  license.go:165	0x6452f6		448b542434		MOVL 0x34(SP), R10			
+  license.go:161	0x6452fb		4189c3			MOVL AX, R11				
+  license.go:171	0x6452fe		488b442450		MOVQ 0x50(SP), AX			
+  license.go:161	0x645303		4584db			TESTL R11, R11				
+  license.go:161	0x645306		0f851dffffff		JNE 0x645229				
+  license.go:165	0x64530c		488d054dac0900		LEAQ 0x9ac4d(IP), AX			
+  license.go:165	0x645313		488d9c24d0000000	LEAQ 0xd0(SP), BX			
+  license.go:165	0x64531b		4489d1			MOVL R10, CX				
+  license.go:165	0x64531e		6690			NOPW					
+  license.go:165	0x645320		e81b26dcff		CALL runtime.mapaccess1_fast32(SB)	
+  license.go:165	0x645325		803800			CMPB 0(AX), $0x0			
+  license.go:165	0x645328		0f85ed000000		JNE 0x64541b				
+  license.go:168	0x64532e		488d052bac0900		LEAQ 0x9ac2b(IP), AX			
+  license.go:168	0x645335		488d9c24d0000000	LEAQ 0xd0(SP), BX			
+  license.go:168	0x64533d		8b4c2434		MOVL 0x34(SP), CX			
+  license.go:168	0x645341		e81a2adcff		CALL runtime.mapassign_fast32(SB)	
+  license.go:168	0x645346		c60001			MOVB $0x1, 0(AX)			
+  digit.go:9		0x645349		8b5c2434		MOVL 0x34(SP), BX			
+  digit.go:9		0x64534d		81fbff000000		CMPL BX, $0xff				
+  letter.go:195		0x645353		7719			JA 0x64536e				
+  letter.go:196		0x645355		0fb6d3			MOVZX BL, DX				
+  letter.go:196		0x645358		488d35c1e03100		LEAQ unicode.properties(SB), SI		
+  letter.go:196		0x64535f		0fb61416		MOVZX 0(SI)(DX*1), DX			
+  letter.go:196		0x645363		83e260			ANDL $0x60, DX				
+  letter.go:196		0x645366		80fa40			CMPL DL, $0x40				
+  letter.go:196		0x645369		0f94c2			SETE DL					
+  license.go:170	0x64536c		eb19			JMP 0x645387				
+  letter.go:198		0x64536e		488b05ab803500		MOVQ unicode.Lower(SB), AX		
+  letter.go:198		0x645375		e8868fe4ff		CALL unicode.isExcludingLatin(SB)	
+  digit.go:9		0x64537a		8b5c2434		MOVL 0x34(SP), BX			
+  digit.go:9		0x64537e		488d359be03100		LEAQ unicode.properties(SB), SI		
+  license.go:170	0x645385		89c2			MOVL AX, DX				
+  license.go:170	0x645387		84d2			TESTL DL, DL				
+  license.go:170	0x645389		740f			JE 0x64539a				
+  license.go:171	0x64538b		488b442450		MOVQ 0x50(SP), AX			
+  license.go:171	0x645390		48ffc0			INCQ AX					
+  license.go:180	0x645393		488b4c2448		MOVQ 0x48(SP), CX			
+  license.go:171	0x645398		eb51			JMP 0x6453eb				
+  license.go:171	0x64539a		660f1f440000		NOPW 0(AX)(AX*1)			
+  digit.go:9		0x6453a0		81fbff000000		CMPL BX, $0xff				
+  letter.go:186		0x6453a6		7712			JA 0x6453ba				
+  letter.go:187		0x6453a8		0fb6d3			MOVZX BL, DX				
+  letter.go:187		0x6453ab		0fb61416		MOVZX 0(SI)(DX*1), DX			
+  letter.go:187		0x6453af		83e260			ANDL $0x60, DX				
+  letter.go:187		0x6453b2		80fa20			CMPL DL, $0x20				
+  letter.go:187		0x6453b5		0f94c2			SETE DL					
+  license.go:172	0x6453b8		eb19			JMP 0x6453d3				
+  letter.go:189		0x6453ba		488b0567803500		MOVQ unicode.Upper(SB), AX		
+  letter.go:189		0x6453c1		e83a8fe4ff		CALL unicode.isExcludingLatin(SB)	
+  license.go:176	0x6453c6		8b5c2434		MOVL 0x34(SP), BX			
+  license.go:176	0x6453ca		488d354fe03100		LEAQ unicode.properties(SB), SI		
+  license.go:172	0x6453d1		89c2			MOVL AX, DX				
+  license.go:173	0x6453d3		488b4c2448		MOVQ 0x48(SP), CX			
+  license.go:173	0x6453d8		488d7901		LEAQ 0x1(CX), DI			
+  license.go:180	0x6453dc		0fb6d2			MOVZX DL, DX				
+  license.go:180	0x6453df		4885d2			TESTQ DX, DX				
+  license.go:180	0x6453e2		480f45cf		CMOVNE DI, CX				
+  license.go:171	0x6453e6		488b442450		MOVQ 0x50(SP), AX			
+  license.go:176	0x6453eb		4863d3			MOVSXD BX, DX				
+  license.go:176	0x6453ee		488b7c2458		MOVQ 0x58(SP), DI			
+  license.go:176	0x6453f3		488d1c3a		LEAQ 0(DX)(DI*1), BX			
+  license.go:159	0x6453f7		488b9424c8000000	MOVQ 0xc8(SP), DX			
+  license.go:160	0x6453ff		488bb424c0000000	MOVQ 0xc0(SP), SI			
+  license.go:160	0x645407		488b7c2440		MOVQ 0x40(SP), DI			
+  license.go:160	0x64540c		4c8b442460		MOVQ 0x60(SP), R8			
+  license.go:159	0x645411		4c8b4c2468		MOVQ 0x68(SP), R9			
+  license.go:176	0x645416		e90efeffff		JMP 0x645229				
+  license.go:166	0x64541b		31c0			XORL AX, AX				
+  license.go:166	0x64541d		4881c400010000		ADDQ $0x100, SP				
+  license.go:166	0x645424		5d			POPQ BP					
+  license.go:166	0x645425		c3			RET					
+  license.go:153	0x645426		4889442408		MOVQ AX, 0x8(SP)			
+  license.go:153	0x64542b		48895c2410		MOVQ BX, 0x10(SP)			
+  license.go:153	0x645430		e8eb0be3ff		CALL runtime.morestack_noctxt.abi0(SB)	
+  license.go:153	0x645435		488b442408		MOVQ 0x8(SP), AX			
+  license.go:153	0x64543a		488b5c2410		MOVQ 0x10(SP), BX			
+  license.go:153	0x64543f		90			NOPL					
+  license.go:153	0x645440		e9bbfcffff		JMP license/license.validLetters(SB)	
