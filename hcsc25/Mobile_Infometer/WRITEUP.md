@@ -29,7 +29,7 @@ The hardcoded string suggests this is not the intended solution.
     private final Bitmap b(Context context) {
         try {
             byte[] e = e(context); // InputStream open = context.getAssets().open("encrypted_data.txt");
-            byte[] g = g();
+            byte[] g = g(); // getNativeKey()
             SecretKeySpec secretKeySpec = new SecretKeySpec(g, "AES");
             IvParameterSpec ivParameterSpec = new IvParameterSpec(g);
             Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
@@ -132,6 +132,42 @@ navigateTo('navigation_truth')
 ```
 
 ![](screenshots/3.png)
+
+# Reversing Native
+
+Opening the `x86_64` `libnative-lib.so` in Ghidra also reveals the easily recoverable key.
+
+```c
+
+undefined8 Java_hu_hcsc_infometer_ui_truth_UltimateTruth_getNativeKey(long *param_1)
+
+{
+  char *pcVar1;
+  undefined8 *puVar2;
+  undefined8 uVar3;
+  
+  puVar2 = (undefined8 *)operator.new(0x30);
+  *puVar2 = 0x3861623132303164;
+  puVar2[1] = 0x3235333334636531;
+  pcVar1 = (char *)(puVar2 + 2);
+  pcVar1[0] = '5';
+  pcVar1[1] = '6';
+  pcVar1[2] = '7';
+  pcVar1[3] = '1';
+  builtin_strncpy((char *)((long)puVar2 + 0x14),"b984",4);
+  pcVar1 = (char *)(puVar2 + 3);
+  pcVar1[0] = 'f';
+  pcVar1[1] = 'b';
+  pcVar1[2] = 'a';
+  pcVar1[3] = 'd';
+  builtin_strncpy((char *)((long)puVar2 + 0x1c),"b2c8",4);
+  *(undefined1 *)(puVar2 + 4) = 0;
+                    /* try { // try from 001170d0 to 001170db has its CatchHandler @ 001170f2 */
+  uVar3 = (**(code **)(*param_1 + 0x538))(param_1,puVar2);
+  operator.delete(puVar2);
+  return uVar3;
+}
+```
 
 # Decrypting
 
