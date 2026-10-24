@@ -14,7 +14,7 @@ The board is randomized with various colors.
 
 ## Flag
 
-The flag is handed out when you reach over 70 ponts. It is also printed to the javascript console on client side when received.
+The flag is handed out when you reach over 70 points. It is also printed to the javascript console on client side when received.
 
 ## Score
 

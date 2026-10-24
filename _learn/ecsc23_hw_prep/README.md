@@ -1,4 +1,4 @@
-# ECSC preparatoion HW
+# ECSC preparation HW
 
 These are some hardware challenges that were created for ECSC preparation.
 

@@ -2,7 +2,7 @@
 
 Checking with many stego tools for wav files lead to nothing.
 
-# Spectogram
+# Spectrogram
 
 Checking the spectogram reveals no hidden message there.
 

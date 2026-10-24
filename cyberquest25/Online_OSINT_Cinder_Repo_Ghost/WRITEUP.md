@@ -25,4 +25,4 @@ TAGW=$(printf 'dGtuMzogMFIxRzFO'     | base64 -d)
 `CQ25{PH4NT0M_1ND3X_0R1G1N}`
 
 # Remarks
-Looks like an AI slop. Instead ziping the actual repo and hand that to players, the script has everything visible. There is a `—` long dash usually found in AI answers to suggest it was made by AI.
+Looks like an AI slop. Instead zipping the actual repo and hand that to players, the script has everything visible. There is a `—` long dash usually found in AI answers to suggest it was made by AI.

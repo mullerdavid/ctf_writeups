@@ -23,7 +23,7 @@ The description suggest XOR decoding with 2 bytes.
 echo DBZ7G28JeHJzEA1zcg1vDgp3CApwcg== | base64 -d | python xor-brute.py --length 2 --crib CQ25
 ```
 
-This is not the flag appearantly. There is also a `matter` logo on it. IoT devices can use this for pairing.
+This is not the flag apparently. There is also a `matter` logo on it. IoT devices can use this for pairing.
 
 <https://www.matteralpha.com/explainer/how-does-matter-qr-code-work>
 
@@ -249,7 +249,7 @@ zgrep -aEo 'CQ25{.*}' dump.zip
 
 # Restore
 
-To restore to uncomissioned state and show the QR code again, just erase the range below.
+To restore to uncommissioned state and show the QR code again, just erase the range below.
 
 ```bash
 esptool erase_region 0x10000 0xC000

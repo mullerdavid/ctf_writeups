@@ -27,7 +27,7 @@ It is sending the updates via websocket.
 
 # CAN service
 
-Conneting via `nc` reveals some text based protocol. The dump [dump1.txt](workdir/dump1.txt) has some CAN messages.
+Connecting via `nc` reveals some text based protocol. The dump [dump1.txt](workdir/dump1.txt) has some CAN messages.
 
 It opens with `< hi >` and various `< frame >`. The website also mentions `< open can 0 >` and `< ramwode >`.
 

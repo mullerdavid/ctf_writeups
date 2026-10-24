@@ -12,7 +12,7 @@ There is a [traffic.pcap](workdir/traffic.pcap) and [router.txt](workdir/router.
 
 # Pcap
 
-There are various packets in the pcap. It is another generated non-realistic pcap with some information hidden. None of the framents contain a full connection.
+There are various packets in the pcap. It is another generated non-realistic pcap with some information hidden. None of the fragments contain a full connection.
 
 There are a few [SSH private key](workdir/ssh_key.txt) fragments in email protocols: SMTP, IMAP, POP. It can be stitched together based on begin end and middle part.
 

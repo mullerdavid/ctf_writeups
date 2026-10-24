@@ -6,7 +6,7 @@ There is a login page when visiting the site.
 
 # Login form
 
-There is northing else here, just a simple form that is sent via javascript, sending a json to `login.php`.
+There is nothing else here, just a simple form that is sent via javascript, sending a json to `login.php`.
 
 ```bash
 curl -v 'http://10.10.100.112:48080/login.php' -X POST --data-raw '{"username": "administrator", "password": "admin"}'

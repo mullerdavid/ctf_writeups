@@ -38,7 +38,7 @@ The website can run certain commands.
 
 ![](screenshots/1.png)
 
-As `ls` works, we can extract the available binaries and check what is avaliable.
+As `ls` works, we can extract the available binaries and check what is available.
 
 
 ```bash
@@ -115,7 +115,7 @@ alias unalias='echo "UUU ALMOST!!"'
 alias alias='echo "You thought, I did not changed this??"'
 ```
 
-The `/usr/bin/sudo` was also renamed to `sudo.real` and replaced with a sinple print.
+The `/usr/bin/sudo` was also renamed to `sudo.real` and replaced with a simple print.
 
 ```
 -e #!/bin/bash

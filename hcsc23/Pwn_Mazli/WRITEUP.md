@@ -49,7 +49,7 @@ Opening in GDB or any disassembler we get the following.
 Note the following: 
  - `4011f5:` rand function without seed, result goes to `%eax` and moved to `-0x4(%rbp)`.
    - stopping here can read the random from `%eax`. which is `0x6b8b4567` every time.
- - 401229: scanf, rhis is reading our input into `%eax`
+ - 401229: scanf, this is reading our input into `%eax`
  - 401231: XORing `%eax` with the random number at `-0x4(%rbp)`.
  - 401234: comparing `%eax` with `$0xd06f00d1` constant. If true, printing the flag.
 

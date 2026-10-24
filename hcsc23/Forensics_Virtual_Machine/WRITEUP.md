@@ -151,7 +151,7 @@ Defender also picks the executable file up after removing the C drive from the e
 
 The [malware](workdir/malware/persistence.exe.zip) can be analyzed dynamically.
 
-Running it with Proocmon reveals that the malware is looking for [thumbs.db](workdir/malware/thumbs.db) in `C:\Users\Public\Music\thumbs.db`, which is not that common. This path is one of the flags.
+Running it with Procmon reveals that the malware is looking for [thumbs.db](workdir/malware/thumbs.db) in `C:\Users\Public\Music\thumbs.db`, which is not that common. This path is one of the flags.
 
 ![](screenshots/25.png)
 
@@ -175,7 +175,7 @@ Amongst the Winapi calls, various `WinINet` calls are also performed for the C2 
 
 ![](screenshots/19.png)
 
-Based on the [documentation](https://learn.microsoft.com/en-us/windows/win32/wininet/enabling-internet-functionality#setting-the-user-agent), the User-Agentet can be set in `InternetOpenW`.
+Based on the [documentation](https://learn.microsoft.com/en-us/windows/win32/wininet/enabling-internet-functionality#setting-the-user-agent), the User-Agent can be set in `InternetOpenW`.
 
 Using a breakpoint there reveals the User-Agent. This is not yet one of the flags, will see later why.
 

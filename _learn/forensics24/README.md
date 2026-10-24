@@ -1,4 +1,4 @@
-# Forensics Excercise
+# Forensics Exercise
 
 This is a simulated forensics analysis with 2 loosely connected parts that should be completed in order.
 

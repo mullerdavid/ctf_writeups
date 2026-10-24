@@ -1,6 +1,6 @@
 # Checking the site
 
-The website is the Racoon City Police Department's website.
+The website is the Raccoon City Police Department's website.
 
 ![](screenshots/1.png)
 

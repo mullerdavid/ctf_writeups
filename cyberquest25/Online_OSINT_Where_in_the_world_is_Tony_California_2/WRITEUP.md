@@ -1,6 +1,6 @@
 # Conversation
 
-The [conversation.txt](files/conversation.txt) mentiones a few keys which can be used to set some constraints.
+The [conversation.txt](files/conversation.txt) mentions a few keys which can be used to set some constraints.
 
 # Country
 

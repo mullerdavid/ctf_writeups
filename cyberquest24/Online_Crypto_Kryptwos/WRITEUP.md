@@ -1,4 +1,4 @@
-# Krytwos
+# Kryptwos
 
 Kryptos is a sculpture with some encrypted messages inside, in 4 blocks, similar to the challenge.
 

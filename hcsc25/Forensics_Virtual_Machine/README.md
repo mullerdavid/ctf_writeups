@@ -2,7 +2,7 @@
 
 A virtual machine image was distributed with multiple challenges for a forensics investigation.
 
-The VM files are hosted here: [SharedFiles](/SharedFiles.md) in the hcsc25 subfolder. TODO: add files
+The VM files are hosted here: [SharedFiles](/SharedFiles.md) in the hcsc25 subfolder.
 
 # Context of the challenge
 

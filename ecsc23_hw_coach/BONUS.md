@@ -27,7 +27,7 @@ Very small modification result in almost exactly the same binary. Such modificat
 Running `mpy_cross` on the slightly modified python results in very similar code. The difference can be checked easily. The frozen modul in the firmware can be found easily as well with a few bytes long nearby pattern as well. This makes easily patching this 1 byte different things.
 
 ## Board swap
-I wanted to further tinker with the challenge at home with the devices I have, but I had different RP2040 based device, YD-RP2040, a cheap chinase Pico variant with LED which could be utilized as the TPM LED. 
+I wanted to further tinker with the challenge at home with the devices I have, but I had different RP2040 based device, YD-RP2040, a cheap Chinese Pico variant with LED which could be utilized as the TPM LED. 
 
 ![](screenshots/31.png)
 

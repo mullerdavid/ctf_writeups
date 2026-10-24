@@ -39,7 +39,7 @@ We ran out of time and our precious files were encrypted and messages popping up
 
 # Packet capture
 
-It is always a good idea to run packet capture in the background for malware suspected machines, it migh have payloads or keys traveling the wire that might help.
+It is always a good idea to run packet capture in the background for malware suspected machines, it might have payloads or keys traveling the wire that might help.
 
 Although there was nothing suspicious before the malware got executed.
 
@@ -61,7 +61,7 @@ The classes and functions are perfectly readable.
 
 ## Protections
 
-There are some anti debug protections (checking for debugger) and an `IdentityCheck` function, basically checking the region and username/computername. *Also acts as a safeguard not to accidently encrypt your own files.*
+There are some anti debug protections (checking for debugger) and an `IdentityCheck` function, basically checking the region and username/computername. *Also acts as a safeguard not to accidentally encrypt your own files.*
 
 ![](screenshots/9.png)
 
