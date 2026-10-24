@@ -138,7 +138,7 @@ And this is luckily printing the flag, so there is no need to play with the extr
 
 # Remarks
 
-Running it in x64dbg is actually passing `0xAADC0DED` when triggering the exception. This can be patched runtime.
+Running it in x64dbg is actually passing `0xAADC0DED` when triggering the exception. This can be patched runtime. This probably happens because [RaiseException](https://learn.microsoft.com/en-us/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception) is clearing bit 28 in `dwExceptionCode` (reserved).
 
 ![](screenshots/9.png)
 

@@ -42,7 +42,7 @@ fines
 lines // typo?
 ```
 
-You need to guess these three: `charging.starting.fines`. The word `fines` is not actually a typo. The flag has nothing to do with the place it marks, either.
+You need to guess these three from ~112 options: `charging.starting.fines`. The word `fines` is not actually a typo. The flag has nothing to do with the place it marks, either.
 
 Searching it leads to a Blogspot [blog](https://ctfmother.blogspot.com/2025/03/everyone-its-me-again-emily.html).
 
