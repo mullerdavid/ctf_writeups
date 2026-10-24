@@ -2,7 +2,7 @@
 
 Hardware challenge from ECSC 2025 ("chain attack"). The board has two AVR64DD32 MCUs (`Main` and `Crypto`) connected to each other. 
 
-The MCUs are connected with 4 wires. The boards had tap points on this bus, so a Saleae logic analyser can be used to sniff on it.
+The MCUs are connected with 4 wires. The boards had tap points on this bus.
 
 # Hardware
 
@@ -24,6 +24,12 @@ LED on both
 
 TODO: add photo of the board
 
+# Logic Analyser
+
+A Saleae logic analyser (or clone) was provided and can be used to sniff on the tap ponints.
+
+If you don't have a logic analyser, use [logic_analyser_run.sr](workdir/logic_analyser_run.sr) and [logic_analyser_run_uart.txt](workdir/logic_analyser_run_uart.txt) as an exammple run.
+
 # Firmware
 
 Normally the firmware was not available to the players. They were flashed with flash and ram protection, so reading them via UPDI is not available. Do not use these for solving. The flag is also there in plaintext.
@@ -42,6 +48,8 @@ As an alternative, the firmwares were binary patched to work on 2x Curiosity Nan
 Just connect the PA4-5-6-7 ports.
 
 TODO: add stacked board image
+
+In case you don't have 2 boards, you can use any other MCU with SPI capabilites to solve the challenge, just use the provided logic analyser capture again.
 
 # Writeup
 
