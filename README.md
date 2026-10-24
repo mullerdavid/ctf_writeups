@@ -1,3 +1,11 @@
+# Archive
+
+⚠️ The repository is now in an archive state. ⚠️
+
+Online CTFs are now dominated by agentic AI, so results reflect tooling more than hands-on skill. This pushes organizers toward quantity over quality and is killing the spirit of competition. 
+
+For this reason, this repo is on life support. Only exceptional challenges will be added.
+
 # Info
 
 This repository is an archive of some of the cyber security games. Some of them have detailed writeups included. Check the folders for details.
