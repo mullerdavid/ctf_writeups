@@ -26,7 +26,7 @@ TODO: add photo of the board
 
 # Firmware
 
-Normally the firmware was not available to the players. They were flashed with flash and ram protection, so reading them via UPDI is not available. Do not use these for solving. 
+Normally the firmware was not available to the players. They were flashed with flash and ram protection, so reading them via UPDI is not available. Do not use these for solving. The flag is also there in plaintext.
 
 The original firmware is in [ecsc25-chain-attack-fw.7z](files/ecsc25-chain-attack-fw.7z), together with a readme about flashing. It has a safeguard for the 2 different MCUs, so they can not be flashed incorrectly.
 
