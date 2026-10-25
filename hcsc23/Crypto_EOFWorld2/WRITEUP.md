@@ -76,4 +76,4 @@ The `/FormXob.63123a782b0f2086bdac6cf5544f3f75 11 0 R` also has 16 bytes.
 63 12 3a 78 2b 0f 20 86 bd ac 6c f5 54 4f 3f 75
 ```
 
-TODO: solve it
+TODO: solve it, probably literal key from readme: `A kulcs: kitartás!`
