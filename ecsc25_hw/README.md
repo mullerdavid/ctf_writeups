@@ -22,7 +22,7 @@ LED on both
 	PF4 <- 2.2k -> LED
 ```
 
-TODO: add photo of the board
+![](screenshots/1.jpg)
 
 # Logic Analyser
 
@@ -40,14 +40,14 @@ The original firmware is in [ecsc25-chain-attack-fw.7z](files/ecsc25-chain-attac
 
 As an alternative, the firmwares were binary patched to work on 2x Curiosity Nano AVR64DD32 dev boards. They have no safeguards for the MCUs. The `unlocked` versions have no check for the locking:
 
-| MCU | Board | Curiosity Nano |
+| MCU | ECSC | Curiosity Nano |
 |---|---|---|
 | Main | [EnigmaMainMCUFW2_unlocked.hex](files/EnigmaMainMCUFW2_unlocked.hex) | [EnigmaMainMCUFW2_unlocked_nano.hex](files/EnigmaMainMCUFW2_unlocked_nano.hex) |
 | Crypto | [EnigmaCryptoMCUFW_unlocked.hex](files/EnigmaCryptoMCUFW_unlocked.hex) | [EnigmaCryptoMCUFW_unlocked_nano.hex](files/EnigmaCryptoMCUFW_unlocked_nano.hex) |
 
-Just connect the PA4-5-6-7 ports.
+Just connect the PA-4-5-6-7 ports.
 
-TODO: add stacked board image
+![](screenshots/2.jpg)
 
 In case you don't have 2 boards, you can use any other MCU with SPI capabilites to solve the challenge, just use the provided logic analyser capture again.
 
